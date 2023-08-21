@@ -92,6 +92,16 @@ Nuestra plataforma tiene como objetivo respaldar a los usuarios en la consecuci�
 
 #### 1.2.2.3 Lean UX Hyphotesis Statements  
 
+- Creemos que nuestra platforma tiene el potencial de contribuir a la reducción del consumo de energía en los hogares, gracias a la información derivada de los datos proporcionados por los usuarios. Consideraremos que hemos tenido un impacto positivo cuando notemos una gran cantidad de comentarios favorables por parte de los usuarios hacia nuestra plataforma.
+
+- Creemos que los usuarios iniciales estarán compuestos mayormente por residentes de Lima y pequeñas empresas. Validaremos esta hipótesis al analizar los datos demográficos de los usuarios.
+
+- Creemos que nuestras ganancias económicas provendrán tanto de los anuncios que se muestren en la página, como de las suscripciones premium ofrecidas a los usuarios. Consideraremos que hemos alcanzado el éxito si observamos un aumento en el número de usuarios suscritos a las membresías.
+
+- Creemos que las otras aplicaciones que midan el consumo energético serán nuestra principal competencia. Nuestra estrategia para sobresalir radica en ofrecer a los usuarios información y beneficios más completos que las alternativas existentes, lo cual será respaldado por las calificaciones positivas de los usuarios.
+
+- Creemos que el mayor riesgo para nuestra plataforma es la insatisfacción de los usuarios. Para abordar esta preocupación, confiamos en proporcionar información relevante y valiosa. Validaremos esta solución observando expresiones de satisfacción por parte de los usuarios.
+  
 #### 1.2.2.4 Lean UX Canvas  
 
 ## 1.3 Segmentos Objetivo  
