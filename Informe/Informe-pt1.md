@@ -6,7 +6,7 @@ WS52 - Juan Carlos Tinoco Licas
 # Course Project - Final Report TB1  
 
 Integrantes:
-- a
+- Obispo Rios, Lucero Abigail
 - Cuevas Rios, Eric Fernando
 - Tasayco Vilcamiza, Damaris
 - a
@@ -16,7 +16,8 @@ Ciclo 2023-02
 ---  
  Versión| Fecha| Integrante| Descripcion de modificación|
  :-----|:-----:|:-----:|-----:
- TB1 | 21/08/23 | Eric Cuevas| Se añadio la descripcion de la startup asi como los Lean UX problem statements y los segmentos objetivos
+ TB1 | 21/08/23 | Eric Cuevas| Se añadio la descripcion de la startup asi como los Lean UX problem statements y los segmentos objetivos.
+ TB2 | 21/08/23 | Lucero Obispo| Se añadio los user outcomes, business assumptions y user assumptions.
 ---
 1. Capitulo 1: Introduccion   
    1.1 Startup Profile   
