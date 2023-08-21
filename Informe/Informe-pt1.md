@@ -8,7 +8,7 @@ WS52 - Juan Carlos Tinoco Licas
 Integrantes:
 - a
 - Cuevas Rios, Eric Fernando
-- a
+- Tasayco Vilcamiza, Damaris
 - a
 - a
 
