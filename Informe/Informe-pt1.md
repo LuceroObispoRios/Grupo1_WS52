@@ -130,6 +130,10 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 
 # Capitulo 2: Requirements Elicitation & Analysis  
 
+## 2.1 Competidores
+
+### 2.1.1 Análisis Competitivo
+
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
 
