@@ -19,6 +19,7 @@ Ciclo 2023-02
  TB1 | 23/08/23 | Eric Cuevas| Se añadio los antecendentes y problematica, el lean UX canva y los segmentos objetivo
  TB1 | 23/08/23 | Lucero Obispo| Se añadio los lean ux problem statements, assumptions y hypothesis statements
  TB1 | 23/08/23 | Andrea O'Higgins| ..
+ TB1 | 23/08/23 | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores
 ---
 1. Capitulo 1: Introduccion   
    1.1 Startup Profile   
@@ -137,6 +138,11 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 ![ACompetitivo1](ACParte1.png)
 ![ACompetitivo1](ACParte2.png)
 ![ACompetitivo1](ACParte3.png)
+
+### 2.1.2 Estrategias y tácticas frente a competidores
+
+La estrategia que se plantea para la plataforma "Carga sin Estrés" es desarrollar una aplicación y sitio web de manera eficiente y eficaz con un presupuesto detallado. Además, se plantea contar con un servicio técnico 24/7 que asista a toda la comunidad en cualquier hora y día para evitar inconvenientes en los servicios y garantizar una gratificante experiencia.
+Analizando las oportunidades, se puede concluir que debemos implementar las tendencias tecnológicas del mercado como IA, desarrollar anuncios publicitarios para aumentar los ingresos. Por otro lado, analizando las amenazas, se observa que hay varios competidores grandes con más años de experiencia, pero no han tenido críticas positivas en sus plataformas (sitio web y apps), así como también funcionalidades novedosas. Por esto, "Carga sin Estrés" se compromete a siempre escuchar a los consumidores y sus problemáticas, también siempre adaptarse al cambio e innovar. 
 
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
