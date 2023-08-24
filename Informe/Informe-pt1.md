@@ -144,6 +144,31 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 La estrategia que se plantea para la plataforma "Carga sin Estrés" es desarrollar una aplicación y sitio web de manera eficiente y eficaz con un presupuesto detallado. Además, se plantea contar con un servicio técnico 24/7 que asista a toda la comunidad en cualquier hora y día para evitar inconvenientes en los servicios y garantizar una gratificante experiencia.
 Analizando las oportunidades, se puede concluir que debemos implementar las tendencias tecnológicas del mercado como IA, desarrollar anuncios publicitarios para aumentar los ingresos. Por otro lado, analizando las amenazas, se observa que hay varios competidores grandes con más años de experiencia, pero no han tenido críticas positivas en sus plataformas (sitio web y apps), así como también funcionalidades novedosas. Por esto, "Carga sin Estrés" se compromete a siempre escuchar a los consumidores y sus problemáticas, también siempre adaptarse al cambio e innovar. 
 
+## 2.3 Needfinding
+
+### 2.3.1 User Personas
+**User Persona Ciudadano**
+
+![User Persona Ciudadano](UserPersona_ciudadano.png)
+
+**User Persona Empresa**
+
+![User Persona Ciudadano](UserPersona_empresa.png)
+
+### 2.3.2 User Task Matrix
+**User Task Matrix Ciudadano**
+
+![User Task Matrix Ciudadano](UserTaskMatrix_ciudadano.png)
+
+**User Task Matrix Empresa**
+
+![User Task Matrix Ciudadano](UserTaskMatrix_empresa.png)
+
+### 2.3.3 User Journey Mapping
+**User Journey Mapping Ciudadano**
+
+**User Journey Mapping Empresa**
+
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
 
