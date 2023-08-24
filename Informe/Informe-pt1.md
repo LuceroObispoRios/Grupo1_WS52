@@ -134,6 +134,8 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 
 ### 2.1.1 Análisis Competitivo
 
+![Análisis competitivo - Parte 1](Análisis competitivo - Parte 1.png)
+
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
 
