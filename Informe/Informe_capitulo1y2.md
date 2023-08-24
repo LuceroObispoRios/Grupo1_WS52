@@ -119,7 +119,7 @@ c. ***User Outcomes***
 - **Creemos que** nuestras ganancias económicas vendrán por parte de comisiones por transaccion (cada vez que un usuario solicite un servicio), así como de las membresías premium brindadas a los usuarios que son trabajadores de empresas de mudanzas y carga. **Sabremos que** hemos tenido éxito cuando incrementen en un 10% el número de usuarios con membresías respecto al mes anterior.
   
 #### 1.2.2.4 Lean UX Canvas  
-![Lean UX Canvas](LeanUXCanvas.png)
+![Lean UX Canvas](/Informe/Imagenes/LeanUXCanvas.png)
 
 ## 1.3 Segmentos Objetivo  
 * Individuos de 18 a 50 años
@@ -135,9 +135,9 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 
 ### 2.1.1 Análisis Competitivo
 
-![ACompetitivo1](ACParte1.png)
-![ACompetitivo1](ACParte2.png)
-![ACompetitivo1](ACParte3.png)
+![ACompetitivo1](/Informe/Imagenes/ACParte1.png)
+![ACompetitivo1](/Informe/Imagenes/ACParte2.png)
+![ACompetitivo1](/Informe/Imagenes/ACParte3.png)
 
 ### 2.1.2 Estrategias y tácticas frente a competidores
 
@@ -149,20 +149,20 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 ### 2.3.1 User Personas
 **User Persona Ciudadano**
 
-![User Persona Ciudadano](UserPersona_ciudadano.png)
+![User Persona Ciudadano](/Informe/Imagenes/UserPersona_ciudadano.png)
 
 **User Persona Empresa**
 
-![User Persona Ciudadano](UserPersona_empresa.png)
+![User Persona Ciudadano](/Informe/Imagenes/UserPersona_empresa.png)
 
 ### 2.3.2 User Task Matrix
 **User Task Matrix Ciudadano**
 
-![User Task Matrix Ciudadano](UserTaskMatrix_ciudadano.png)
+![User Task Matrix Ciudadano](/Informe/Imagenes/UserTaskMatrix_ciudadano.png)
 
 **User Task Matrix Empresa**
 
-![User Task Matrix Ciudadano](UserTaskMatrix_empresa.png)
+![User Task Matrix Ciudadano](/Informe/Imagenes/UserTaskMatrix_empresa.png)
 
 ### 2.3.3 User Journey Mapping
 **User Journey Mapping Ciudadano**
@@ -172,20 +172,20 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
 
-![Empathy Mapping ciudadano](EmpathyMap_Ciudadano.png)
+![Empathy Mapping ciudadano](/Informe/Imagenes/EmpathyMap_Ciudadano.png)
 
 **Empathy Mapping Empresa**
 
-![Empathy Mapping empresa](EmpathyMap_Empresa.png)
+![Empathy Mapping empresa](/Informe/Imagenes/EmpathyMap_Empresa.png)
 
 ### 2.3.5 As-is Scenario Mapping
 **As Is Ciudadano**
 
-![as is segmento ciudadano](As-is_Ciudadano.png)
+![as is segmento ciudadano](/Informe/Imagenes/As-is_Ciudadano.png)
 
 **As Is Empresa**
 
-![as is segmento empresa](As-is_Empresa.png)
+![as is segmento empresa](/Informe/Imagenes/As-is_Empresa.png)
 
 **Bibliografia**
 --
