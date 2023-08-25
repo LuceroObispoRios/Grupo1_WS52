@@ -167,7 +167,11 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 ### 2.3.3 User Journey Mapping
 **User Journey Mapping Ciudadano**
 
+![User Journey Mapping Ciudadano](/Informe/Imagenes/UserJourneyMap_ciudadano.png)
+
 **User Journey Mapping Empresa**
+
+![User Journey Mapping Empresa](/Informe/Imagenes/UserJourneyMap_empresa.png)
 
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
