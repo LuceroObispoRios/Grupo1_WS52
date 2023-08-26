@@ -24,6 +24,8 @@ Para la elaboración del Landing Page, se utilizó la paleta de colores (Color),
 
 ### 4.1.2. Web Style Guidelines
 
+En esta sección elaboramos un prototipo y diseñamos las interfaces requeridas para nuestro sitio web, en la cual contiene muchas opciones de información del objetivo de nuestra aplicación para nuestros usuarios así como también para reservar empresas de transporte dedicados a la mudanza. Hemos adaptado nuestras ideas claras para que sea de fácil uso. Además, de que disponga con todas las necesidades de los clientes. Es por ello que se añadió una sección de asesor y contacto para tener comunicación clara y concisa con los usuarios, implementando también un espacio para los comentarios sean positivos y negativos a nuestra aplicación ya sea recomendaciones o dudas al respecto de cualquier reserva. Por último agregamos nuestras redes sociales para que los usuarios puedan investigar acerca de nuestra empresa y verifiquen que somos confiables para su seguridad en su nueva experiencia de mudanza.
+
 ## 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems.
