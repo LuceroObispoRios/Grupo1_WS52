@@ -77,18 +77,18 @@ En esta sección visualizaremos la guía de estilos para la versión web. Asimis
 
 ### 4.6.2. Software Architecture Container Diagrams.
 
-![Container Diagram](Informe/Imagenes/Contenedor.png)
+![Container Diagram](/Informe/Imagenes/Contenedor.png)
 
 ### 4.6.3. Software Architecture Components Diagrams.
 **Service Context**
 
-![Service Component Diagram](Informe/Imagenes/ServiceComponents.png)
+![Service Component Diagram](/Informe/Imagenes/ServiceComponents.png)
 
 **Account Context**
-![Account Component Diagram](Informe/Imagenes/AccountComponents.png)
+![Account Component Diagram](/Informe/Imagenes/AccountComponents.png)
 
 **Notification Context**
-![Notification Component Diagram](Informe/Imagenes/NotificationComponents.png)
+![Notification Component Diagram](/Informe/Imagenes/NotificationComponents.png)
 
 ## 4.7. Software Object-Oriented Design.
 
