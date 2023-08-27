@@ -44,6 +44,9 @@ En esta sección visualizaremos la guía de estilos para la versión web. Asimis
 #### Buttons
 ![Web Style Guidelines](/Informe/Imagenes/Buttons.png)
 
+#### Icons
+![Web Style Guidelines](/Informe/Imagenes/Icons.png)
+
 ## 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems.
