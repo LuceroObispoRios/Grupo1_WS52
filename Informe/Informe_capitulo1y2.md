@@ -9,7 +9,7 @@ Integrantes:
 - Obispo Rios, Lucero Abigail
 - Cuevas Rios, Eric Fernando
 - Tasayco Vilcamiza, Damaris
-- a
+- O'Higgins Rosales, Andrea Namie
 - a
 
 Ciclo 2023-02
@@ -18,7 +18,7 @@ Ciclo 2023-02
  :-----|:-----:|:-----:|:-----
  TB1 | 23/08/23 | Eric Cuevas| Se añadio los antecendentes y problematica, el lean UX canva y los segmentos objetivo
  TB1 | 23/08/23 | Lucero Obispo| Se añadio los lean ux problem statements, assumptions y hypothesis statements
- TB1 | 23/08/23 | Andrea O'Higgins| ..
+ TB1 | 23/08/23 | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams.
  TB1 | 23/08/23 | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores
 ---
 1. Capitulo 1: Introduccion   
@@ -185,11 +185,11 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 ### 2.3.5 As-is Scenario Mapping
 **As Is Ciudadano**
 
-![as is segmento ciudadano](/Informe/Imagenes/As-is_Ciudadano.png)
+![As is segmento ciudadano](/Informe/Imagenes/As-is_Ciudadano.png)
 
 **As Is Empresa**
 
-![as is segmento empresa](/Informe/Imagenes/As-is_Empresa.png)
+![As is segmento empresa](/Informe/Imagenes/As-is_Empresa.png)
 
 **Bibliografia**
 --

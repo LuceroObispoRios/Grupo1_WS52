@@ -3,11 +3,11 @@
 
 **To Be Ciudadano**
 
-![to be segmento ciudadano](/Informe/Imagenes/To-be_Ciudadano.png)
+![To be segmento ciudadano](/Informe/Imagenes/To-be_Ciudadano.png)
 
 **To Be Empresa**
 
-![to be segmento empresa](/Informe/Imagenes/To-be_Empresa.png)
+![To be segmento empresa](/Informe/Imagenes/To-be_Empresa.png)
 
 ## 3.2. User Stories
 
