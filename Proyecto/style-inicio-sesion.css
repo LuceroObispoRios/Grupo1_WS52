@@ -91,7 +91,7 @@
   }
   
   .remember-me label {
-    display: inline-block; /* Hace que el label sea un elemento en línea pero acepte márgenes */
+    display: inline-block;
     color: #565656;
     margin-right: 10px;
   }
@@ -115,7 +115,7 @@
   }
   
   .login-form .action {
-    text-align: center; /* Centrar los botones horizontalmente */
+    text-align: center;
   }
   
   .login-form .action button:hover {
