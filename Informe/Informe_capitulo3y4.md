@@ -118,4 +118,5 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 ## 4.8. Database Design.
 
 ### 4.8.1. Database Diagram.
+![Database](/Informe/Imagenes/CargaSinEstresDB.png)
 
