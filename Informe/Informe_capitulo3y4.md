@@ -101,8 +101,10 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 
 ### 4.3.1. Landing Page Wireframe.
 ![LandingPage_wireframe](/Informe/Imagenes/wireframe_LandingPage.png)  
+![mobile-wireframe](/Informe/Imagenes/wireframe-mobile-landing.png)  
 ### 4.3.2. Landing Page Mock-up.
 ![LandingPage_mock_up](/Informe/Imagenes/mockup_LandingPage.png)
+![mobile-mockup](/Informe/Imagenes/landing-mobile.png)  
 ## 4.4. Web Applications UX/UI Design.  
 
 ### 4.4.1. Web Applications Wireframes.  
@@ -111,14 +113,21 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 ![inicio-sesion-wireframe](/Informe/Imagenes/wireframe-login.png)  
 ![busqueda-wireframe](/Informe/Imagenes/wireframe-busqueda.png)  
 ### 4.4.2. Web Applications Wireflow Diagrams.  
-
+![wireframe-flow1](/Informe/Imagenes/wireframes-flow1.png)  
+  
+![wireframe-flow2](/Informe/Imagenes/wireframes-flow2.png)  
 ### 4.4.2. Web Applications Mock-ups.  
 ![registro-cliente-mockup](/Informe/Imagenes/mockup-registro-cliente.png)  
 ![registro-empresa-mockup](/Informe/Imagenes/mockup-registro-empresa.png)  
 ![inicio-sesion-mockup](/Informe/Imagenes/mockup_login.png)  
 ![busqueda-mockup](/Informe/Imagenes/mockup-busqueda.png)  
+![mobile-login-mockup](/Informe/Imagenes/login-mobile.png)
+![mobile-cliente-mockup](/Informe/Imagenes/registro-cliente-mobile.png)  
+![mobile-empresa-mockup](/Informe/Imagenes/registro-empresa.mobile.png)  
 ### 4.4.3. Web Applications User Flow Diagrams.  
-
+![mockup-flow1](/Informe/Imagenes/mockup-flow1.png)  
+  
+![mockup-flow2](/Informe/Imagenes/mockup-flow2.png) 
 ## 4.5. Web Applications Prototyping.  
 
 ## 4.6. Domain-Driven Software Architecture.  
