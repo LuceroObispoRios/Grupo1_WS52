@@ -100,8 +100,9 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 ## 4.3. Landing Page UI Design.
 
 ### 4.3.1. Landing Page Wireframe.
+![LandingPage_wireframe](/Informe/Imagenes/wireframe_LandingPage.png)  
 ### 4.3.2. Landing Page Mock-up.
-
+![LandingPage_mock_up](/Informe/Imagenes/mockup_LandingPage.png)
 ## 4.4. Web Applications UX/UI Design.
 
 ### 4.4.1. Web Applications Wireframes.
