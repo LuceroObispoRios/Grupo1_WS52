@@ -33,7 +33,7 @@ Ciclo 2023-02
    1.2.2.3 Lean UX Hyphotesis Statemenets   
    1.2.2.4 Lean UX Canvas  
    1.3 Segmentos objetivo.
-2. Capítulo 1: Requirements Elicitation & Analysis  
+2. Capítulo 2: Requirements Elicitation & Analysis  
    2.1 Competidores.  
    2.1.1 Análisis competitivo.  
    2.1.2 Estrategias y tácticas frente a competidores.  
@@ -119,6 +119,11 @@ Fotografia de Perfil: [foto]()
 * Nombres y Apellidos: Lucero Abigail Obispo Rios  
 Carrera: Ingenieria de Software  
 Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
+Fotografia de Perfil: [foto]()
+
+* Nombres y Apellidos: Damaris Tasayco Vilcamiza  
+Carrera: Ingenieria de Software  
+Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.
 Fotografia de Perfil: [foto]()  
 
 ## 1.2 Solution profile  
