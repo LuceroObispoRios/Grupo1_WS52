@@ -106,11 +106,17 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 ## 4.4. Web Applications UX/UI Design.  
 
 ### 4.4.1. Web Applications Wireframes.  
-
+![registro-cliente-wireframe](/Informe/Imagenes/wireframe-registro-cliente.png)  
+![registro-empresa-wireframe](/Informe/Imagenes/wireframe-registro-empresa.png)  
+![inicio-sesion-wireframe](/Informe/Imagenes/wireframe-login.png)  
+![busqueda-wireframe](/Informe/Imagenes/wireframe-busqueda.png)  
 ### 4.4.2. Web Applications Wireflow Diagrams.  
 
 ### 4.4.2. Web Applications Mock-ups.  
-
+![registro-cliente-mockup](/Informe/Imagenes/mockup-registro-cliente.png)  
+![registro-empresa-mockup](/Informe/Imagenes/mockup-registro-empresa.png)  
+![inicio-sesion-mockup](/Informe/Imagenes/mockup_login.png)  
+![busqueda-mockup](/Informe/Imagenes/mockup-busqueda.png)  
 ### 4.4.3. Web Applications User Flow Diagrams.  
 
 ## 4.5. Web Applications Prototyping.  
