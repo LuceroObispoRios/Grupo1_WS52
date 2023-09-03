@@ -103,42 +103,45 @@ A continuación, se definirán las etiquetas a utilizar para agrupar conjuntos d
 ![LandingPage_wireframe](/Informe/Imagenes/wireframe_LandingPage.png)  
 ### 4.3.2. Landing Page Mock-up.
 ![LandingPage_mock_up](/Informe/Imagenes/mockup_LandingPage.png)
-## 4.4. Web Applications UX/UI Design.
+## 4.4. Web Applications UX/UI Design.  
 
-### 4.4.1. Web Applications Wireframes.
-### 4.4.2. Web Applications Wireflow Diagrams.
-### 4.4.2. Web Applications Mock-ups.
-### 4.4.3. Web Applications User Flow Diagrams.
+### 4.4.1. Web Applications Wireframes.  
 
-## 4.5. Web Applications Prototyping.
+### 4.4.2. Web Applications Wireflow Diagrams.  
 
-## 4.6. Domain-Driven Software Architecture.
+### 4.4.2. Web Applications Mock-ups.  
 
-### 4.6.1. Software Architecture Context Diagram.
+### 4.4.3. Web Applications User Flow Diagrams.  
 
-![Context Diagram](/Informe/Imagenes/Contexto.png)
+## 4.5. Web Applications Prototyping.  
 
-### 4.6.2. Software Architecture Container Diagrams.
+## 4.6. Domain-Driven Software Architecture.  
 
-![Container Diagram](/Informe/Imagenes/Contenedor.png)
+### 4.6.1. Software Architecture Context Diagram.  
 
-### 4.6.3. Software Architecture Components Diagrams.
+![Context Diagram](/Informe/Imagenes/Contexto.png)  
+
+### 4.6.2. Software Architecture Container Diagrams.  
+
+![Container Diagram](/Informe/Imagenes/Contenedor.png)  
+
+### 4.6.3. Software Architecture Components Diagrams.  
 **Service Context**
 
-![Service Component Diagram](/Informe/Imagenes/ServiceComponents.png)
+![Service Component Diagram](/Informe/Imagenes/ServiceComponents.png)  
 
 **Account Context**
-![Account Component Diagram](/Informe/Imagenes/AccountComponents.png)
+![Account Component Diagram](/Informe/Imagenes/AccountComponents.png)  
 
 **Notification Context**
-![Notification Component Diagram](/Informe/Imagenes/NotificationComponents.png)
+![Notification Component Diagram](/Informe/Imagenes/NotificationComponents.png)  
 
-## 4.7. Software Object-Oriented Design.
+## 4.7. Software Object-Oriented Design.  
 
-### 4.7.1. Class Diagrams.
-![General Style Guidelines](/Informe/Imagenes/DiagramaDeClases.png)
+### 4.7.1. Class Diagrams.  
+![General Style Guidelines](/Informe/Imagenes/DiagramaDeClases.png)  
 
-### 4.7.2. Class Dictionary.
+### 4.7.2. Class Dictionary.  
 ![Class_Dictionary_1](/Informe/Imagenes/ClassDictionary1.JPG)  
 ![Class_Dictionary_2](/Informe/Imagenes/ClassDictionary2.JPG)  
 ![Class_Dictionary_3](/Informe/Imagenes/ClassDictionary3.JPG)  
