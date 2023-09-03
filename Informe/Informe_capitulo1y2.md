@@ -15,11 +15,11 @@ Ciclo 2023-02
 ---  
  Versión| Fecha| Integrante| Descripción de modificación|
  :-----|:-----:|:-----:|:-----
- TB1 | 23/08/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo
- TB1 | 23/08/23 | Lucero Obispo| Se añadió los lean ux problem statements, assumptions y hypothesis statements
- TB1 | 23/08/23 | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams.
- TB1 | 23/08/23 | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores.
- TB1 | 01/09/23 | Lucero Obispo| Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags.
+ TB1 | 23/08/23 - 03/09/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo, se avanzo con los wireframes y mockups, se añadio el class dictionary y el diagrama de base de datos
+ TB1 | 23/08/23 - 03/09/23  | Lucero Obispo| Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags.
+ TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams.
+ TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores.
+ 
 ---
 1. Capitulo 1: Introducción  
    1.1 Startup Profile     
@@ -195,7 +195,7 @@ c. ***User Outcomes***
 El primer segmento objetivo son los individuos de 18 a 50 años, quienes usualmente son los que requieren servicios de mudanza y carga, además de información sobre las empresas y servicios de mudanza a los que pueden acceder. 
 * Empresas de mudanza 
   
-Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga formales, quienes desean nuevas avenidas para promocionar sus servicios asi como una manera de reslatar del resto del sector.
+Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga formales, quienes desean nuevas avenidas para promocionar sus servicios asi como una manera de resaltar del resto del sector.
 
 # Capitulo 2: Requirements Elicitation & Analysis  
 
