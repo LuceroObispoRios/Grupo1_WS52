@@ -288,7 +288,7 @@ Tengo varios medios: propagandas instaladas en la movilidad de la empresa, a vec
 Son 2 puntos fuertes. El primero es cuando se transportan los objetos a lugares alejados como a otras provincias. El segundo es la baja comunicación porque la empresa en donde trabaja no tiene una plataforma (página web), ni muchas redes sociales, por lo que se les hace difícil contactarse con más clientes.
 
   
-*Individuos de 18 a 50 años*
+*Individuos de 18 a 50 años:*
 
 Primera entrevista:  
 Entrevistado: Génesis Solano  
@@ -320,12 +320,15 @@ Entrevistador: Andrea O'Higgins
 
 ### 2.2.3 Análisis de entrevistas
 
--
--
--
--
--
--
+*Representantes de Empresas:*
+
+*Individuos de 18 a 50 años:*
+
+Análisis de la segunda entrevista:
+Sergio es un ciudadano limeño que considera útil que una empresa de mudanzas ofrezca distintos servicios como el embalaje y montaje/desmontaje de muebles, y señala la importancia en la seguridad de los bienes en el proceso de mudanza. Además, comenta que en caso se tuviera que mudar, le preocuparía la puntualidad de la entrega de sus bienes ya que debido a sus clases universitarias, no dispondría de mucho tiempo si la empresa experimentara algún retraso. En cuanto a la plataforma de mudanzas y transporte, opina que es una buena idea para facilitar el proceso de mudanza. Respecto a las características que prefiere que tenga la plataforma, le gustaría que ofreciera la opción de pago en línea y la posibilidad de consultar reseñas de otras personas para conocer más acerca de las empresas de mudanza.
+
+Análisis de la tercera entrevista:
+Virginia es una ciudadana limeña que considera importante que las empresas de mudanza y transporte estén capacitados en el área para poder transportar las pertenencias correctamente y garantizar la seguridad de los bienes en caso de daños. Ella comenta que, previo a su mudanza, le recomendaron no llevar vidrios, lozas u objetos frágiles debido a que podrían romperse por los desniveles de la pista. Por esta razón, sintió preocupación por sus pertenencias y decidió transportarlas en su propio vehículo. Además, sugiere que en tales circunstancias sería beneficioso que los camiones dispongan de un lugar seguro para los objetos delicados. En cuanto a la plataforma de mudanzas y transporte, ella considera que sería muy útil ya que le ahorraría tiempo, y comenta que le brindaría la opción de poder escoger entre varias empresas y sus cotizaciones. 
 
 ## 2.3 Needfinding
 
