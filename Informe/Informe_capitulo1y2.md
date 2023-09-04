@@ -126,6 +126,11 @@ Carrera: Ingenieria de Software
 Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.
 Fotografia de Perfil: [foto]()  
 
+* Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
+Carrera: Ingenieria de Software  
+Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.
+Fotografia de Perfil: 
+
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problematica  
 En la actualidad, una de las actividades presentes en la vida de las personas es el cambio de lugar de residencia. Sea por diferentes motivos, como acercarse al centro de estudios o de trabajo, como resultado de sus metas a corto o largo plazo, e inclusive para mejorar su propia calidad de vida. Esto se refleja, como ejemplo, en el hecho de que aproximadamente 200,000 indiviudos migran internamente en Lima. Entre esta cantidad, un 58% se muda a una ubicación relativamente nueva, mientras que un 42% prefiere mudarse a una zona cercana a su ubicación anterior (IPSOS, 2019), asi como en la realidad que, aparte de la migración interna, el numero de inmigrantes que vienen a residir en Perú aumenta cada año, siendo el aumento en 2020 de 1.069.745 personas (Expansion, 2020).  
@@ -294,6 +299,24 @@ Entrevistador: Damaris Tasayco
 - Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
 - ![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
 
+Segunda entrevista: 
+Entrevistado: Sergio Leandro  
+Edad: 19 años  
+Residencia: Lima  
+Ocupación: Estudiante  
+Entrevistador: Andrea O'Higgins
+-
+- Enlace [https://youtu.be/NQDztyjvZPk]
+
+
+Tercera entrevista: 
+Entrevistado: Virginia Borja  
+Edad: 22 años  
+Residencia: Lima  
+Ocupación: Estudiante  
+Entrevistador: Andrea O'Higgins
+-
+- Enlace [https://youtu.be/XEo_xdtp6bQ]
 
 ### 2.2.3 Análisis de entrevistas
 
