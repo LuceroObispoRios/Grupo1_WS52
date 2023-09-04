@@ -93,15 +93,23 @@ Acceptance Tests de los User Stories con el código de .feature
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
 Durante este sprint, nos enfocamos en completar el landing page y en las páginas de registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
-![landing page](/Informe/Imagenes/execution_sprint1.jpg)  
-![landing page](/Informe/Imagenes/execution2_sprint1.jpg)  
-![landing page](/Informe/Imagenes/execution3_sprint1.jpg)  
-![inicio sesion](/Informe/Imagenes/execution4_sprint1.jpg)  
-![busqueda empresa](/Informe/Imagenes/execution5_sprint1.jpg)  
-![busqueda empresa](/Informe/Imagenes/execution6_sprint1.jpg)  
-![registro cliente](/Informe/Imagenes/execution7_sprint1.jpg) 
-![registro empresa](/Informe/Imagenes/execution8_sprint1.jpg) 
-![registro empresa](/Informe/Imagenes/execution9_sprint1.jpg) 
+![landing page](/Informe/Imagenes/execution_sprint1.JPG)  
+
+![landing page](/Informe/Imagenes/execution2_sprint1.JPG)  
+
+![landing page](/Informe/Imagenes/execution3_sprint1.JPG)  
+
+![inicio sesion](/Informe/Imagenes/execution4_sprint1.JPG)  
+
+![busqueda empresa](/Informe/Imagenes/execution5_sprint1.JPG)  
+
+![busqueda empresa](/Informe/Imagenes/execution6_sprint1.JPG)  
+
+![registro cliente](/Informe/Imagenes/execution7_sprint1.JPG) 
+
+![registro empresa](/Informe/Imagenes/execution8_sprint1.JPG) 
+
+![registro empresa](/Informe/Imagenes/execution9_sprint1.JPG) 
 
 Link al repositorio de codigo: [https://github.com/LuceroObispoRios/Grupo1_WS52.git]  
 Link a la plataforma:  
