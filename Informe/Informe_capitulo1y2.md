@@ -131,7 +131,8 @@ Fotografia de Perfil: [foto]()
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
 Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.
-Fotografia de Perfil: [<img src="/Informe/Imagenes/integrante2.JPG" width="150"/>](/Informe/Imagenes/integrante4.jpg) 
+Fotografia de Perfil:  
+[<img src="/Informe/Imagenes/integrante4.jpg" width="150"/>](/Informe/Imagenes/integrante4.jpg) 
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problematica  
@@ -259,15 +260,35 @@ Entrevistado: Felix Bianchi
 Residencia: Lima  
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
-Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
+  
+Resumen de entrevista :  
+0:16 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
+"La forma de captar tradicional es aquella que esta referida a los carteles publicitarios, no solo en el pequeño local sino tambien en otros vehiculos que disponemos propios, tenemos digamos referencias con información del servicio que brindamos en nuestro negocio y en estos ultimos tiempos hemos apelado mucho a los medios tecnologicos y aparecemos en una pequeña pagina web que actualizamos cada cierto tiempo"  
+  
+3:56 - "¿Sus clientes suelen requerir que ustedes hagan los servicios de embalaje o armado de muebles?"  
+"Es un servicio adicional que brindamos con respecto al tema del embalaje cuando asi lo requieran los clientes y en ciertas circunstancias porque asi lo requiere el protocolo con respecto a aquellos bienes que son son fragiles, y con respecto al armado de los muebles digamos que lo brindamos como un servicio adicional, no es frecuente" 
+  
+4:35 - "¿Cuales son los mayores desafios que ha enfrentado su empresa al llevar a cabo sus servicios en los ultimos años?"  
+"Si bien es cierto que en los ultimos años ha habido un incremento importante con respecto a los servicios que demandan nuestros clientes, tambien hemos visto un crecimiento en cuanto al tema de la competencia, entonces frente a estas circunstancias es impotante llegar a los clientes a travez de los medios tecnologicos"  
   
 - Segunda entrevista:  
 Entrevistado: Jorge Rosales  
 Residencia: Lima  
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
-Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
-
+Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
+  
+Resumen de entrevista:  
+0:15 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
+"Tenemos una politica de comunicación via el uso de periodicos, via uso de avisos publicados y tambien de manera minima a travez de los medios de internet en una pagina web que tenemos."  
+  
+1:35 - "¿De qué manera garantiza que los bienes de los clientes son transportados de manera segura?"  
+"La empresa tiene un protocolo para el traslado de todos estos bienes, ya sean bienes de uso que son sensibles, productos que son bienes duros, nosotros lo que hacemos es empacamos previamente todos los bienes, o en todo caso los desarmamos si son muy grandes y se adecua su transporte de manera que nulo o el minimo daño posible"  
+  
+4:59 - "¿Que opina usted sobre la idea de tener una membresía premium que coloque tu empresa en una lista destacada para captar clientes en nuestra página web?"  
+"Nosotros con el transcurrir de los años hemos crecido y yo creo que estar incluidos en una lisyta premiun nos ayudara a aumentar nuestra cartera de clientes y de paso promocionar nuestra empresa lo que conllevaria a un crecimiento que es lo que buscamos."  
+  
 - Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
@@ -323,7 +344,10 @@ Enlace [https://youtu.be/XEo_xdtp6bQ]
 ### 2.2.3 Análisis de entrevistas
 
 ***Representantes de Empresas:***  
-- En cuanto a la pregunta respecto a los medios para captar potenciales clientes, todos los entrevistados indicaron que utilizan frecuentemente la forma tradicional como avisos publicitarios, ya sea en los periódicos,  paredes o en los vehículos de la empresa en donde trabajan. Asimismo, dos de los tres entrevistados afirmaron que su empresa cuenta con una página web en donde se publicitan ocasionalmente, pues no es su medio principal para captar clientes.
+- En cuanto a la pregunta respecto a los medios para captar potenciales clientes, todos los entrevistados indicaron que utilizan frecuentemente la forma tradicional como avisos publicitarios, ya sea en los periódicos,  paredes o en los vehículos de la empresa en donde trabajan. Asimismo, dos de los tres entrevistados afirmaron que su empresa cuenta con una página web en donde se publicitan ocasionalmente, pues no es su medio principal para captar clientes.  
+- Se pudo rescatar que todos los entrevistados afirmaron que su empresa de mudanza o carga ya poseia protocolos para el transporte de objetos pesados y/o fragiles, asi como politicas para mantener informados a los clientes de la posición de sus pertenencias.  
+- Se puede afirmar que los entrevistados piensan que una aplicación/pagina web que sirva para promocionar sus negocios y ayudarlos a conectar con más clientes seria de mucha ayuda, siendo que una de las principales dificultades que han encontrado este tipo de negocios en los ultimos años es la competencia.  
+  
   
 ***Individuos de 18 a 50 años:***  
 
