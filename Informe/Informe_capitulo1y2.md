@@ -305,8 +305,8 @@ Edad: 19 años
 Residencia: Lima  
 Ocupación: Estudiante  
 Entrevistador: Andrea O'Higgins
--
 - Enlace [https://youtu.be/NQDztyjvZPk]
+- ![cliente-entrevista2](/Informe/Imagenes/cliente-entrevista2.jpg)
 
 
 Tercera entrevista: 
@@ -315,8 +315,8 @@ Edad: 22 años
 Residencia: Lima  
 Ocupación: Estudiante  
 Entrevistador: Andrea O'Higgins
--
 - Enlace [https://youtu.be/XEo_xdtp6bQ]
+- ![cliente-entrevista3](/Informe/Imagenes/cliente-entrevista3.jpg)
 
 ### 2.2.3 Análisis de entrevistas
 
