@@ -15,8 +15,10 @@ Otras cuestiones del manejo del codigo son utilizar letras minusculas, para mant
 ### 5.1.3. Source Code Style Guide & Conventions.
 
 ### 5.1.4. Software Deployment Configuration.
-
-
+Para almacenar y manejar el flujo de trabajo del equipo, hemos creado un repositorio en GitHub. Utilizaremos "main" como la rama principal para el desarrollo.
+Para su configuración es necesario clonar el repositorio desde GitHub con el URL: https://github.com/LuceroObispoRios/Grupo1_WS52.git.  Este proceso descargará todo el contenido del repositorio en la máquina local.
+Para el entorno de desarrollo se utilizará el Visual Studio Code.
+A medida que el proyecto avance, se agregarán más elementos de configuración, incluyendo configuración para la base de datos relacional, configuración de pruebas y configuración de gestión de paquetes y dependencias.
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 
