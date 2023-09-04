@@ -245,7 +245,14 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 
 ### 2.2.2 Registro de entrevistas
 
--
+Primera entrevista:  
+Entrevistado: Génesis Solano
+Edad: 19 años 
+Residencia: Lima
+Ocupación: Estudiante 
+Entrevistador: Damaris Tasayco 
+Enlace: 
+- ![Registro de Entrevistas](/Informe/Imagenes/RegistroEntrevista1.mp4)
 -
 -
 -
