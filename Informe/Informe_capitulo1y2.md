@@ -292,7 +292,7 @@ Residencia: Lima
 Ocupación: Estudiante  
 Entrevistador: Damaris Tasayco  
 - Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
-
+- ![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
 
 
 ### 2.2.3 Análisis de entrevistas
