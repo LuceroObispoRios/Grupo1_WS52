@@ -120,7 +120,13 @@ Link al video de ejecución:
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
+***Primer Sprint***  
 Durante el primer sprint, el equipo optó por dividir los puntos entre todos los integrantes por cada capítulo para completar el informe. También, se optó por dividir las páginas por integrante teniendo en cuenta que estas deberán ser responsive y funcionales. Para asegurar que todo esté realizado correctamente, se organizaron reuniones constantes que se llevaron a cabo a través de Google Meet, donde se logró completar el informe y el código de las páginas landing page, registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
-A continuación, se presentan screenshots que reflejan el trabajo realizado durante este sprint.
+A continuación, se presentan screenshots que reflejan el trabajo realizado durante este sprint.  
 
+![team collaboration](/Informe/Imagenes/teamcollaboration_sprint1.png)   
+
+![team collaboration](/Informe/Imagenes/teamcollaboration2_sprint1.png)   
+
+![team collaboration](/Informe/Imagenes/teamcollaboration3_sprint1.png)   
 
