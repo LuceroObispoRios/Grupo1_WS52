@@ -245,24 +245,33 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 
 ### 2.2.2 Registro de entrevistas
 
+*Representantes de Empresas:*  
+  
 Primera entrevista:  
+Entrevistado: Felix Bianchi  
+Residencia: Lima  
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Eric Cuevas  
+- Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+  
+Segunda entrevista:  
+Entrevistado: Jorge Rosales  
+Residencia: Lima  
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Eric Cuevas  
+- Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+  
+*Individuos de 18 a 50 años*
 
-Entrevistado: Génesis Solano
-
-Edad: 19 años
-
-Residencia: Lima
-
-Ocupación: Estudiante
-
-Entrevistador: Damaris Tasayco
-
+Primera entrevista:  
+Entrevistado: Génesis Solano  
+Edad: 19 años  
+Residencia: Lima  
+Ocupación: Estudiante  
+Entrevistador: Damaris Tasayco  
 - Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
--
--
--
--
--
+
+
 
 ### 2.2.3 Análisis de entrevistas
 
