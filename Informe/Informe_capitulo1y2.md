@@ -16,7 +16,7 @@ Ciclo 2023-02
  Versión| Fecha| Integrante| Descripción de modificación|
  :-----|:-----:|:-----:|:-----
  TB1 | 23/08/23 - 03/09/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo, se avanzo con los wireframes y mockups, se añadio el class dictionary y el diagrama de base de datos
- TB1 | 23/08/23 - 03/09/23  | Lucero Obispo| Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags.
+ TB1 | 23/08/23 - 03/09/23  | Lucero Obispo|Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags. Se realizo 1 entrevista a trabajador de empresa, su registro y analisis. Para el sprint 1, se realizo el source code style guide of conventions y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas.
  TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams.
  TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores.
  
@@ -119,7 +119,7 @@ Fotografia de Perfil: [foto]()
 * Nombres y Apellidos: Lucero Abigail Obispo Rios  
 Carrera: Ingenieria de Software  
 Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
-Fotografia de Perfil: [foto]()
+Fotografia de Perfil: [foto](/Informe/Imagenes/integrante1.jpg)
 
 * Nombres y Apellidos: Damaris Tasayco Vilcamiza  
 Carrera: Ingenieria de Software  
@@ -250,28 +250,28 @@ Analizando las oportunidades, se puede concluir que debemos implementar las tend
 
 ### 2.2.2 Registro de entrevistas
 
-*Representantes de Empresas:*  
+***Representantes de Empresas:***  
   
-Primera entrevista:  
+- Primera entrevista:  
 Entrevistado: Felix Bianchi  
 Residencia: Lima  
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
-- Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
   
-Segunda entrevista:  
+- Segunda entrevista:  
 Entrevistado: Jorge Rosales  
 Residencia: Lima  
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
-- Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
 
-Tercera entrevista:
-Entrevistado: Alfredo Lozano
-Residencia: San Martin de Porres, Lima
-Ocupación: Trabajador de empresa de mudanza  
-Entrevistador: Lucero Obispo
-- Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/Ea9mRd3nFgJArirTrr6W4xcBgCUQABn-OynwWffnpxCjIw?e=3fkGlu]
+- Tercera entrevista:  
+Entrevistado: Alfredo Lozano  
+Residencia: San Martin de Porres, Lima  
+Ocupación: Trabajador de empresa de mudanza    
+Entrevistador: Lucero Obispo  
+Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/Ea9mRd3nFgJArirTrr6W4xcBgCUQABn-OynwWffnpxCjIw?e=3fkGlu]  
 ![empresa-entrevista3](/Informe/Imagenes/empresa-entrevista3.JPG)
 
 Resumen de entrevista:
@@ -288,47 +288,46 @@ Tengo varios medios: propagandas instaladas en la movilidad de la empresa, a vec
 Son 2 puntos fuertes. El primero es cuando se transportan los objetos a lugares alejados como a otras provincias. El segundo es la baja comunicación porque la empresa en donde trabaja no tiene una plataforma (página web), ni muchas redes sociales, por lo que se les hace difícil contactarse con más clientes.
 
   
-*Individuos de 18 a 50 años:*
+***Individuos de 18 a 50 años:***  
 
-Primera entrevista:  
+- Primera entrevista:  
 Entrevistado: Génesis Solano  
 Edad: 19 años  
 Residencia: Lima  
 Ocupación: Estudiante  
 Entrevistador: Damaris Tasayco  
-- Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
-- ![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
+Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
+![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
 
-Segunda entrevista: 
+- Segunda entrevista: 
 Entrevistado: Sergio Leandro  
 Edad: 19 años  
 Residencia: Lima  
 Ocupación: Estudiante  
 Entrevistador: Andrea O'Higgins
-- Enlace [https://youtu.be/NQDztyjvZPk]
-- ![cliente-entrevista2](/Informe/Imagenes/cliente-entrevista2.jpg)
+Enlace [https://youtu.be/NQDztyjvZPk]
+![cliente-entrevista2](/Informe/Imagenes/cliente-entrevista2.jpg)
 
 
-Tercera entrevista: 
+- Tercera entrevista: 
 Entrevistado: Virginia Borja  
 Edad: 22 años  
 Residencia: Lima  
 Ocupación: Estudiante  
-Entrevistador: Andrea O'Higgins
-- Enlace [https://youtu.be/XEo_xdtp6bQ]
-- ![cliente-entrevista3](/Informe/Imagenes/cliente-entrevista3.jpg)
+Entrevistador: Andrea O'Higgins  
+Enlace [https://youtu.be/XEo_xdtp6bQ]  
+![cliente-entrevista3](/Informe/Imagenes/cliente-entrevista3.jpg)  
 
 ### 2.2.3 Análisis de entrevistas
 
-*Representantes de Empresas:*
+***Representantes de Empresas:***  
+- En cuanto a la pregunta respecto a los medios para captar potenciales clientes, todos los entrevistados indicaron que utilizan frecuentemente la forma tradicional como avisos publicitarios, ya sea en los periódicos,  paredes o en los vehículos de la empresa en donde trabajan. Asimismo, dos de los tres entrevistados afirmaron que su empresa cuenta con una página web en donde se publicitan ocasionalmente, pues no es su medio principal para captar clientes.
+  
+***Individuos de 18 a 50 años:***  
 
-*Individuos de 18 a 50 años:*
+- Análisis de la segunda entrevista: Sergio es un ciudadano limeño que considera útil que una empresa de mudanzas ofrezca distintos servicios como el embalaje y montaje/desmontaje de muebles, y señala la importancia en la seguridad de los bienes en el proceso de mudanza. Además, comenta que en caso se tuviera que mudar, le preocuparía la puntualidad de la entrega de sus bienes ya que debido a sus clases universitarias, no dispondría de mucho tiempo si la empresa experimentara algún retraso. En cuanto a la plataforma de mudanzas y transporte, opina que es una buena idea para facilitar el proceso de mudanza. Respecto a las características que prefiere que tenga la plataforma, le gustaría que ofreciera la opción de pago en línea y la posibilidad de consultar reseñas de otras personas para conocer más acerca de las empresas de mudanza.
 
-Análisis de la segunda entrevista:
-Sergio es un ciudadano limeño que considera útil que una empresa de mudanzas ofrezca distintos servicios como el embalaje y montaje/desmontaje de muebles, y señala la importancia en la seguridad de los bienes en el proceso de mudanza. Además, comenta que en caso se tuviera que mudar, le preocuparía la puntualidad de la entrega de sus bienes ya que debido a sus clases universitarias, no dispondría de mucho tiempo si la empresa experimentara algún retraso. En cuanto a la plataforma de mudanzas y transporte, opina que es una buena idea para facilitar el proceso de mudanza. Respecto a las características que prefiere que tenga la plataforma, le gustaría que ofreciera la opción de pago en línea y la posibilidad de consultar reseñas de otras personas para conocer más acerca de las empresas de mudanza.
-
-Análisis de la tercera entrevista:
-Virginia es una ciudadana limeña que considera importante que las empresas de mudanza y transporte estén capacitados en el área para poder transportar las pertenencias correctamente y garantizar la seguridad de los bienes en caso de daños. Ella comenta que, previo a su mudanza, le recomendaron no llevar vidrios, lozas u objetos frágiles debido a que podrían romperse por los desniveles de la pista. Por esta razón, sintió preocupación por sus pertenencias y decidió transportarlas en su propio vehículo. Además, sugiere que en tales circunstancias sería beneficioso que los camiones dispongan de un lugar seguro para los objetos delicados. En cuanto a la plataforma de mudanzas y transporte, ella considera que sería muy útil ya que le ahorraría tiempo, y comenta que le brindaría la opción de poder escoger entre varias empresas y sus cotizaciones. 
+- Análisis de la tercera entrevista: Virginia es una ciudadana limeña que considera importante que las empresas de mudanza y transporte estén capacitados en el área para poder transportar las pertenencias correctamente y garantizar la seguridad de los bienes en caso de daños. Ella comenta que, previo a su mudanza, le recomendaron no llevar vidrios, lozas u objetos frágiles debido a que podrían romperse por los desniveles de la pista. Por esta razón, sintió preocupación por sus pertenencias y decidió transportarlas en su propio vehículo. Además, sugiere que en tales circunstancias sería beneficioso que los camiones dispongan de un lugar seguro para los objetos delicados. En cuanto a la plataforma de mudanzas y transporte, ella considera que sería muy útil ya que le ahorraría tiempo, y comenta que le brindaría la opción de poder escoger entre varias empresas y sus cotizaciones. 
 
 ## 2.3 Needfinding
 
@@ -379,14 +378,22 @@ Virginia es una ciudadana limeña que considera importante que las empresas de m
 
 **Bibliografia**
 --
+Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
+
 El comercio. (s.f.). Diario Gestion. Los agentes especializados para mudarte a otro espacio.  
 https://archivo.elcomercio.pe/especial/50-ideas-de-negocios/noticias/agentes-especializados-cambiar-espacios-noticia-1992612  
 
 Expansion. (2020). Datosmacro. Sube el número de inmigrantes que viven en Perú.
-https://datosmacro.expansion.com/demografia/migracion/inmigracion/peru#:~:text=En%20los%20últimos%20años%2C%20el,%2C%20un%20691%2C17%25.  
+https://datosmacro.expansion.com/demografia/migracion/inmigracion/peru#:~:text=En%20los%20últimos%20años%2C%20el,%2C%20un%20691%2C17%25.   
 
 Expresso. (2019). ¿Sabías que la mayoría de personas busca una empresa de mudanza a último momento?  
 https://www.expreso.com.pe/opinion/sabias-que-la-mayoria-de-personas-busca-una-empresa-de-mudanza-a-ultimo-momento/  
 
 Ipsos. (2019). Alrededor de 200,000 personas se mudan cada año en Lima.
-https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-09/alrededor_de_200000_personas_se_mudan_cada_ano_en_lima.pdf  
+https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-09/alrededor_de_200000_personas_se_mudan_cada_ano_en_lima.pdf    
+
+MDN Web Docs. (s.f.). CSS Coding Style Guide. Recuperado de: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS [Fecha de consulta: 04 de septiembre de 2023]  
+
+MDN Web Docs. (s.f.). Code Style Guide. Recuperado de: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide [Fecha de consulta: 04 de septiembre de 2023]  
+
+W3Schools. (s.f.). HTML5 Syntax. Recuperado de: https://www.w3schools.com/html/html5_syntax.asp [Fecha de consulta: 04 de septiembre de 2023]  
