@@ -261,6 +261,7 @@ Residencia: Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
 Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
+![empresa-entrevista1](/Informe/Imagenes/empresa-entrevista1.JPG)  
   
 Resumen de entrevista :  
 0:16 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
@@ -278,6 +279,7 @@ Residencia: Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
 Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
+![empresa-entrevista2](/Informe/Imagenes/empresa-entrevista2.JPG)  
   
 Resumen de entrevista:  
 0:15 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
