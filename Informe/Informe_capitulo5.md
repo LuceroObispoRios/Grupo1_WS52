@@ -136,7 +136,11 @@ Link al video de ejecución:
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
+*Para este **primer** Sprint no fue contemplado la evidencia de la documentación de nuestros servicios.*
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+
+*Para este **primer** avance, el cual abarcaba la landing page, asi como el registro y login de usuarios, no se llevo a cabo un despliegue de la aplicación.*  
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
