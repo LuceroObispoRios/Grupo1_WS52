@@ -44,6 +44,31 @@ Otras cuestiones del manejo del codigo son utilizar letras minusculas, para mant
 
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
+Acceptance Tests de los User Stories con el código de .feature
+
+![feature 1](Informe/Imagenes/feature-us01.png)
+
+![feature 2](Informe/Imagenes/feature-us02.png)
+
+![feature 3](Informe/Imagenes/feature-us03.png)
+
+![feature 4](Informe/Imagenes/feature-us04.png)
+
+![feature 5](Informe/Imagenes/feature-us05.png)
+
+![feature 6](Informe/Imagenes/feature-us06.png)
+
+![feature 7](Informe/Imagenes/feature-us07.png)
+
+![feature 8](Informe/Imagenes/feature-us08.png)
+
+![feature 9](Informe/Imagenes/feature-us09.png)
+
+![feature 10](Informe/Imagenes/feature-us10.png)
+
+![feature 11](Informe/Imagenes/feature-us11.png)
+
+
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
