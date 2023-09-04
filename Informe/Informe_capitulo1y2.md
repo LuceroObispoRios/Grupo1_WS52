@@ -260,6 +260,28 @@ Residencia: Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
 - Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]  
+
+Tercera entrevista:
+Entrevistado: Alfredo Lozano
+Residencia: San Martin de Porres, Lima
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Lucero Obispo
+- Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/Ea9mRd3nFgJArirTrr6W4xcBgCUQABn-OynwWffnpxCjIw?e=3fkGlu]
+![empresa-entrevista3](/Informe/Imagenes/empresa-entrevista3.JPG)
+
+Resumen de entrevista:
+0:22 - ¿Cuál es el medio actual por el cual capta a sus potenciales clientes?  
+Tengo varios medios: propagandas instaladas en la movilidad de la empresa, a veces en la misma avenida se colocan los avisos en los postes de luz o paredes, y por medio de la red social facebook.
+
+0:51 - ¿Cuántos servicios de transporte realizó aproximadamente en los últimos 12 meses?  
+“Son bastantes, es un promedio de 2 a 3 semanales, tendría que multiplicarse, más de 200 por ahi”  
+
+01:18 - ¿Cómo comunica y mantiene informados a sus clientes durante todo el proceso de mudanza?  
+“Por ahora los tenemos informados por medio de los celulares”  
+
+02:51 - ¿Cuáles son los mayores desafíos que ha enfrentado su empresa al llevar a cabo sus servicios en los últimos años?  
+Son 2 puntos fuertes. El primero es cuando se transportan los objetos a lugares alejados como a otras provincias. El segundo es la baja comunicación porque la empresa en donde trabaja no tiene una plataforma (página web), ni muchas redes sociales, por lo que se les hace difícil contactarse con más clientes.
+
   
 *Individuos de 18 a 50 años*
 
