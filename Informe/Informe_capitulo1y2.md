@@ -131,7 +131,7 @@ Fotografia de Perfil: [foto]()
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
 Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.
-Fotografia de Perfil: 
+Fotografia de Perfil: [<img src="/Informe/Imagenes/integrante2.JPG" width="150"/>](/Informe/Imagenes/integrante4.jpg) 
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problematica  
