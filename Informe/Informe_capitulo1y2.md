@@ -18,7 +18,7 @@ Ciclo 2023-02
  TB1 | 23/08/23 - 03/09/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo, se avanzo con los wireframes y mockups, se añadio el class dictionary y el diagrama de base de datos
  TB1 | 23/08/23 - 03/09/23  | Lucero Obispo|Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags. Se realizo 1 entrevista a trabajador de empresa, su registro y analisis. Para el sprint 1, se realizo el source code style guide of conventions y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas.
  TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, registro y entrevista. Se avanzó con los wireframes , mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
- TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores.
+ TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano.
  
 ---
 1. Capitulo 1: Introducción  
@@ -126,7 +126,7 @@ Fotografia de Perfil:
 * Nombres y Apellidos: Damaris Tasayco Vilcamiza  
 Carrera: Ingenieria de Software  
 Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.
-Fotografia de Perfil: [foto]()  
+Fotografia de Perfil: ![foto](/Informe/Imagenes/foto2.png)  
 
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
