@@ -333,7 +333,7 @@ Entrevistador: Andrea O'Higgins
 Enlace [https://youtu.be/NQDztyjvZPk]
 ![cliente-entrevista2](/Informe/Imagenes/cliente-entrevista2.jpg)
 
-Resumen de entrevista:
+Resumen de entrevista :
 0:21 - ¿Qué servicios considera esenciales al contratar una empresa de mudanzas o transporte de muebles? (embalaje, desmontaje/montaje, etc.)
 Considero esencial que la empresa de mudanzas ofrezca servicios de embalaje profesional , así como servicio de desmontaje/montaje de muebles. No tengo mucho tiempo ni experiencia en hacerlo yo mismo, así que prefiero que los expertos lo hagan.
 
@@ -352,7 +352,7 @@ Entrevistador: Andrea O'Higgins
 Enlace [https://youtu.be/XEo_xdtp6bQ]  
 ![cliente-entrevista3](/Informe/Imagenes/cliente-entrevista3.jpg)  
 
-Resumen de entrevista:
+Resumen de entrevista :
 0:16 - ¿Qué servicios considera esenciales al contratar una empresa de mudanzas o transporte de muebles? (embalaje, desmontaje/montaje, etc.)
 Creo que el montaje y desmontaje de muebles. Creo que es esencial porque en mi caso cuando he requerido de este servicio, ha sido porque son muebles muy grandes que no caben en una camioneta o en un auto. Entonces he necesitado no solamente que lo deje en la dirección, sino que,... el hecho de mover tu mueble hasta el elevador y del elevador a tu cocina era esencial que venga alguien que pueda desmontarlo y montarlo, un equipo en todo caso.
 
