@@ -299,7 +299,7 @@ Entrevistador: Lucero Obispo
 Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/Ea9mRd3nFgJArirTrr6W4xcBgCUQABn-OynwWffnpxCjIw?e=3fkGlu]  
 ![empresa-entrevista3](/Informe/Imagenes/empresa-entrevista3.JPG)
 
-Resumen de entrevista:
+Resumen de entrevista:  
 0:22 - ¿Cuál es el medio actual por el cual capta a sus potenciales clientes?  
 Tengo varios medios: propagandas instaladas en la movilidad de la empresa, a veces en la misma avenida se colocan los avisos en los postes de luz o paredes, y por medio de la red social facebook.
 
