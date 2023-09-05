@@ -102,7 +102,7 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 
 #### 5.2.1.2. Sprint Backlog 1.
 
-|     Sprint #         |     Sprint 2                |                           |                                                        |                                                                                             |                   |                         |                      |
+|     Sprint #         |     Sprint 1                |                           |                                                        |                                                                                             |                   |                         |                      |
 |----------------------|-----------------------------|---------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
 |     User   Story     |                             |     Work –   Item/Task    |                                                        |                                                                                             |                   |                         |                      |
 |     Id               |     Título                  |     Id                    |     Título                                             |     Descripción                                                                             |     Estimación    |     Asignado   a        |     Estado           |
