@@ -114,13 +114,13 @@ Visión: Buscamos convertirnos en la principal plataforma en la industria de mud
 * Nombres y Apellidos: Eric Fernando Cuevas Rios  
 Carrera: Ingenieria de Software  
 Acerca De: Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
-Fotografia de Perfil:
+Fotografia de Perfil:  
 [<img src="/Informe/Imagenes/integrante2.JPG" width="150"/>](/Informe/Imagenes/integrante2.JPG)   
 
 * Nombres y Apellidos: Lucero Abigail Obispo Rios  
 Carrera: Ingenieria de Software  
 Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
-Fotografia de Perfil: [foto](/Informe/Imagenes/integrante1.jpg)
+Fotografia de Perfil:  
 [<img src="/Informe/Imagenes/integrante1.jpg" width="150"/>](/Informe/Imagenes/integrante1.jpg)   
 
 * Nombres y Apellidos: Damaris Tasayco Vilcamiza  
@@ -130,7 +130,7 @@ Fotografia de Perfil: [foto]()
 
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
-Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.
+Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
 Fotografia de Perfil:  
 [<img src="/Informe/Imagenes/integrante4.jpg" width="150"/>](/Informe/Imagenes/integrante4.jpg) 
 
