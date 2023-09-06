@@ -136,6 +136,15 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 
 #### 5.2.1.3. Development Evidence for Sprint Review.
 
+| **Repository**                                      | **Branch** |             **Commit Id**                 | **Commit Message**                        | **Commit Message Body** | **Commited on (Date)** |
+|--------|----------|--------|-------|-------|--------|
+| https://github.com/LuceroObispoRios/Grupo1_WS52.git | main       |  adeab3adab0d7d8e516d4d737b6a9a53e90a7ae5 | Create index.html                         |           -             |        29/08/2023      |
+|                                                     | main       | 1c5836a269bf7a816ea2fef09057784bf48f6247  | Update Index.html                         |           -             |        30/08/2023      |
+|                                                     | main       | ffe7eb207a661f4b70ebd9e49a84506d54349f43  | Add files via upload (inicio-sesion.html) |           -             |        31/08/2023      |
+|                                                     | main       | f0e3e5ca74f48dd4289f57f836c774ea0caa357f  | Add files via upload (reg-empresa.html    |           -             |        02/09/2023      |
+|                                                     | main       | 51e1be5e36f6677bd62e7544d1e18a84e83462d7  | Add files via upload (reg-cliente.html)   |           -             |        03/09/2023      |
+
+
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
