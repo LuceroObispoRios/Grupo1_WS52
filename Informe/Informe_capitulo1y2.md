@@ -321,7 +321,8 @@ Edad: 19 años
 Residencia: Lima  
 Ocupación: Estudiante  
 Entrevistador: Damaris Tasayco  
-Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
+Enlace: https://youtu.be/yz41xdoFBmw
+
 ![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
 
 Resumen de entrevista:
