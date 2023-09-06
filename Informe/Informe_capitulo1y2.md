@@ -324,6 +324,20 @@ Entrevistador: Damaris Tasayco
 Enlace: ![Entrevista N°1](/Informe/Imagenes/RegistroEntrevista1.mp4)
 ![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
 
+Resumen de entrevista:
+
+0:40 - ¿Qué servicios considera esenciales al contratar una empresa de mudanzas o transporte de muebles? (embalaje, desmontaje/montaje, etc.)
+
+Al contratar una empresa de mudanzas, considero esenciales los siguientes servicios: Embalaje debido a que prefiero que la empresa se encargue del embalaje de mis pertenencias, especialmente artículos frágiles y delicados. Asimismo, también desmontaje/montaje ya que es importante que la empresa tenga personal capacitado para desmontar y montar muebles, ya que esto ahorra mucho tiempo y esfuerzo. Finalmente el transporte seguro debido a que la empresa debe garantizar un transporte seguro y protegido de mis muebles y pertenencias.
+
+02:12 - ¿Cuál es la parte más estresante del proceso de transporte de sus bienes para usted?
+
+La parte más estresante del proceso de transporte de mis bienes es la incertidumbre sobre si todo llegará en buenas condiciones y a tiempo. También me preocupa la organización de la mudanza y el manejo de imprevistos.
+
+03:41 - ¿Qué características considera importantes en una aplicación web de búsqueda y reserva de servicios de mudanza?
+
+En una aplicación web de búsqueda y reserva de servicios de mudanza, considero importantes las siguientes características: Comparación de cotizaciones de múltiples empresas de mudanzas, reseñas y calificaciones de otras personas que han utilizado los servicios, herramienta de planificación de mudanza con lista de verificación y calendario, comunicación en tiempo real con la empresa de mudanzas, seguimiento en línea del estado de la mudanza y la ubicación de mis pertenencias y opción de pago en línea segura.
+
 - Segunda entrevista:  
 Entrevistado: Sergio Leandro  
 Edad: 19 años  
@@ -372,7 +386,7 @@ Seguridad y facilidades para desmontar o montar inmuebles, creo que eso es lo m�
   
 ***Individuos de 18 a 50 años:***  
 
-- Análisis de la primera entrevista: Génesis es una ciudadada chinchana que considero esencial los siguientes servicios: emabalaje, desmontaje/montaje, transporte seguro, seguro de mudanza, almacenamiento temporal. Asimismo, prefiere que la empresa de mudanzas realice la mayoría del embalaje y el montaje/desmontaje de los muebles, además menciona que las tareas requieren experiencia y habilidad, confía en que los profesionales lo hagan correctamente. Finalmente menciona que no tiene experiencias previas negativas con empresas de mudanzas, pero le preocupa la falta de comunicación y profesionalismo en algunas de ellas. Quiere evitar retrasos y sorpresas desagradables en el futuro.
+- Análisis de la primera entrevista: Génesis es una ciudadada chinchana que considera esencial los siguientes servicios: embalaje, desmontaje/montaje, transporte seguro, seguro de mudanza, almacenamiento temporal. Asimismo, prefiere que la empresa de mudanzas realice la mayoría del embalaje y el montaje/desmontaje de los muebles, además menciona que las tareas requieren experiencia y habilidad, confía en que los profesionales lo hagan correctamente. Finalmente menciona que no tiene experiencias previas negativas con empresas de mudanzas, pero le preocupa la falta de comunicación y profesionalismo en algunas de ellas. Quiere evitar retrasos y sorpresas desagradables en el futuro.
 
 - Análisis de la segunda entrevista: Sergio es un ciudadano limeño que considera útil que una empresa de mudanzas ofrezca distintos servicios como el embalaje y montaje/desmontaje de muebles, y señala la importancia en la seguridad de los bienes en el proceso de mudanza. Además, comenta que en caso se tuviera que mudar, le preocuparía la puntualidad de la entrega de sus bienes ya que debido a sus clases universitarias, no dispondría de mucho tiempo si la empresa experimentara algún retraso. En cuanto a la plataforma de mudanzas y transporte, opina que es una buena idea para facilitar el proceso de mudanza. Respecto a las características que prefiere que tenga la plataforma, le gustaría que ofreciera la opción de pago en línea y la posibilidad de consultar reseñas de otras personas para conocer más acerca de las empresas de mudanza.
 
