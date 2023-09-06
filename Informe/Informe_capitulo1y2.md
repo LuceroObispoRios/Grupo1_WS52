@@ -15,10 +15,10 @@ Ciclo 2023-02
 ---  
  Versión| Fecha| Integrante| Descripción de modificación|
  :-----|:-----:|:-----:|:-----
- TB1 | 23/08/23 - 03/09/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo, se avanzo con los wireframes y mockups, se añadio el class dictionary y el diagrama de base de datos
+ TB1 | 23/08/23 - 03/09/23 | Eric Cuevas| Se añadió los antecendentes y problematica, el lean UX canva y los segmentos objetivo, se avanzo con los wireframes y mockups, se añadio el class dictionary y el diagrama de base de datos. Se añadio el source code management, sprint planning 1 y Software deployment evidence 1. En codigo, se hizo la pagina de registro de empresas.
  TB1 | 23/08/23 - 03/09/23  | Lucero Obispo|Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags. Se realizo 1 entrevista a trabajador de empresa, su registro y analisis. Para el sprint 1, se realizo el source code style guide of conventions y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas.
- TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, registro y entrevista. Se avanzó con los wireframes , mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
- TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano.
+ TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, diseño, registro y analisis de la entrevista. Se avanzó con los wireframes, mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
+ TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, se codifico el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano, asi como su registro y analisis.
  
 ---
 1. Capitulo 1: Introducción  
@@ -97,10 +97,11 @@ Ciclo 2023-02
    5.2.1.7. Software Deployment Evidence for Sprint Review.  
    5.2.1.8. Team Collaboration Insights during Sprint.  
 ---
- Criterio Especifico| Acciones Realizadas| Conclusiones|
- :-----|:-----:|-----:
-Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería | TB1-  | En conclusion...
- ---
+| Criterio Específico | Acciones realizadas | Conclusiones |
+|---------|---------|---------|
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se realizó una entrevista a un ciudadano. Además, se realizaron meetings con el equipo<br><br> *Eric Cuevas Rios* <br>- Se realizó dos entrevistas al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica los resultados del informe. <br>  <br> *Lucero Obispo Rios* <br> - Se realizó una entrevista al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica la ejecucion del pagina web. <br><br> *Andrea O´Higgins Rosales* <br> - Se realizó dos entrevistas a ciudadanos. Además, se realizaron meetings con el equipo | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transferir y receptar ideas a fin de construir una solución hacia un problema identificado. Por ejemplo, al realizar entrevistas. Por otro lado, también es relevante comunicarse con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. Además, concluimos que dado un análisis y especificaciones de requisitos como también el diseño, la implementación, validación y despliegue del producto logramos definir una estructura robusta para el desarrollo del aplicativo web "Carga sin Estrés". |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br>  - Se desarrollo el analisis competitivo, el product backlog, historias de usuario, entre otros <br><br> *Eric Cuevas Rios* <br> - Se desarrollo los procesos de Lean UX, historias de Usuario, diagramas de modelado, entre otros <br>  <br> *Lucero Obispo Rios* <br> - Se desarrollo los procesos de Lean UX, historias de usuario, digrama de clases, entre otros <br><br> *Andrea O´Higgins Rosales* <br> - Se desarrollo los as-is y to-be scenario mapping, diagramas c4, historias de usuario, entre otros  | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transmitir mensajes legibles, limpios e intuitivos. Por ejemplo, al documentar una descripción de "Carga sin Estrés". Por otro lado, también es relevante transmitir mensajes en los medios remotos con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. |
+
 # Capitulo 1 : Introducción  
 ## 1.1 Startup profile  
 ### 1.1.1 Descripción de la startup  
@@ -125,8 +126,9 @@ Fotografia de Perfil:
 
 * Nombres y Apellidos: Damaris Tasayco Vilcamiza  
 Carrera: Ingenieria de Software  
-Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.
-Fotografia de Perfil: ![foto](/Informe/Imagenes/foto2.png)  
+Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
+Fotografia de Perfil:  
+ ![foto](/Informe/Imagenes/foto2.png)  
 
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
