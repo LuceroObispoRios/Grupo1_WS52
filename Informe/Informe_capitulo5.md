@@ -214,7 +214,7 @@ Durante este sprint, nos enfocamos en completar el landing page y en las página
 
 Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
 Link a la plataforma:  https://luceroobisporios.github.io/Grupo1_WS52/Proyecto/Index.html  
-Link al video de ejecución: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EZZ2hsAYR71KiQslOddJOg4BaK4_Aef0GD1AgtN9KJnhaw?e=oWunaL  
+Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-DZ4etNm-LF_cYg/view?usp=sharing   
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
@@ -261,7 +261,7 @@ W3Schools. (s.f.). HTML5 Syntax. Recuperado de: https://www.w3schools.com/html/h
 # Anexos  
 ## Anexo Videos de Exposiciones  
 
-- TB1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EZZ2hsAYR71KiQslOddJOg4BaK4_Aef0GD1AgtN9KJnhaw?e=oWunaL
+- TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
 
 
 
