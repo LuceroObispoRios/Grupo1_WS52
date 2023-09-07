@@ -116,25 +116,25 @@ Visión: Buscamos convertirnos en la principal plataforma en la industria de mud
 Carrera: Ingenieria de Software  
 Acerca De: Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
 Fotografia de Perfil:  
-[<img src="/Informe/Imagenes/integrante2.JPG" width="150"/>](/Informe/Imagenes/integrante2.JPG)   
+![profile2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true)   
 
 * Nombres y Apellidos: Lucero Abigail Obispo Rios  
 Carrera: Ingenieria de Software  
 Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
 Fotografia de Perfil:  
-[<img src="/Informe/Imagenes/integrante1.jpg" width="150"/>](/Informe/Imagenes/integrante1.jpg)   
+![profile1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true)
 
 * Nombres y Apellidos: Damaris Tasayco Vilcamiza  
 Carrera: Ingenieria de Software  
 Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
 Fotografia de Perfil:  
- ![foto](/Informe/Imagenes/foto2.png)  
+ ![profile3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true)
 
 * Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
 Carrera: Ingenieria de Software  
 Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
 Fotografia de Perfil:  
-[<img src="/Informe/Imagenes/integrante4.jpg" width="150"/>](/Informe/Imagenes/integrante4.jpg) 
+![profile4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true)
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problematica  
@@ -202,7 +202,7 @@ c. ***User Outcomes***
 - **Creemos que** nuestras ganancias económicas vendrán por parte de comisiones por transaccion (cada vez que un usuario solicite un servicio), así como de las membresías premium brindadas a los usuarios que son trabajadores de empresas de mudanzas y carga. **Sabremos que** hemos tenido éxito cuando incrementen en un 10% el número de usuarios con membresías respecto al mes anterior.
   
 #### 1.2.2.4 Lean UX Canvas  
-![Lean UX Canvas](https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/LeanUXCanvas.png?raw=true)
+![Lean UX Canvas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/LeanUXCanvas.png?raw=true)
 
 ## 1.3 Segmentos Objetivo  
 * Individuos de 18 a 50 años
@@ -218,9 +218,9 @@ Nuestro segundo segmento objetivo serían las Empresas de mudanzas y carga forma
 
 ### 2.1.1 Análisis Competitivo
 
-![ACompetitivo1](/Informe/Imagenes/ACParte1.png)
-![ACompetitivo1](/Informe/Imagenes/ACParte2.png)
-![ACompetitivo1](/Informe/Imagenes/ACParte3.png)
+![ACompetitivo1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ACParte1.png?raw=true)  
+![ACompetitivo1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ACParte2.png?raw=true)  
+![ACompetitivo1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ACParte3.png?raw=true)  
 
 ### 2.1.2 Estrategias y tácticas frente a competidores
 
@@ -263,7 +263,7 @@ Residencia: Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
 Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
-![empresa-entrevista1](/Informe/Imagenes/empresa-entrevista1.JPG)  
+![empresa-entrevista1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/empresa-entrevista1.JPG?raw=true)  
   
 Resumen de entrevista :  
 0:16 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
@@ -281,7 +281,7 @@ Residencia: Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Eric Cuevas  
 Enlace [https://www.youtube.com/watch?v=IIlxXJBREP8]
-![empresa-entrevista2](/Informe/Imagenes/empresa-entrevista2.JPG)  
+![empresa-entrevista2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/empresa-entrevista2.JPG?raw=true)  
   
 Resumen de entrevista:  
 0:15 - "¿Cual es el medio actual por el cual capta a sus potenciales clientes?"  
@@ -299,7 +299,7 @@ Residencia: San Martin de Porres, Lima
 Ocupación: Trabajador de empresa de mudanza    
 Entrevistador: Lucero Obispo  
 Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/Ea9mRd3nFgJArirTrr6W4xcBgCUQABn-OynwWffnpxCjIw?e=3fkGlu]  
-![empresa-entrevista3](/Informe/Imagenes/empresa-entrevista3.JPG)
+![empresa-entrevista3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/empresa-entrevista3.JPG?raw=true)  
 
 Resumen de entrevista:  
 0:22 - ¿Cuál es el medio actual por el cual capta a sus potenciales clientes?  
@@ -325,7 +325,7 @@ Ocupación: Estudiante
 Entrevistador: Damaris Tasayco  
 Enlace: https://youtu.be/yz41xdoFBmw
 
-![cliente-entrevista1](/Informe/Imagenes/cliente-entrevista1.jpg)
+![cliente-entrevista1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/cliente-entrevista1.jpg?raw=true)  
 
 Resumen de entrevista:
 
@@ -348,7 +348,7 @@ Residencia: Lima
 Ocupación: Estudiante  
 Entrevistador: Andrea O'Higgins
 Enlace [https://youtu.be/NQDztyjvZPk]
-![cliente-entrevista2](/Informe/Imagenes/cliente-entrevista2.jpg)
+![cliente-entrevista2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/cliente-entrevista2.jpg?raw=true)  
 
 Resumen de entrevista:  
 0:21 - ¿Qué servicios considera esenciales al contratar una empresa de mudanzas o transporte de muebles? (embalaje, desmontaje/montaje, etc.)  
@@ -367,7 +367,7 @@ Residencia: Lima
 Ocupación: Estudiante  
 Entrevistador: Andrea O'Higgins  
 Enlace [https://youtu.be/XEo_xdtp6bQ]  
-![cliente-entrevista3](/Informe/Imagenes/cliente-entrevista3.jpg)  
+![cliente-entrevista3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/cliente-entrevista3.jpg?raw=true)    
 
 Resumen de entrevista:  
 0:16 - ¿Qué servicios considera esenciales al contratar una empresa de mudanzas o transporte de muebles? (embalaje, desmontaje/montaje, etc.)  
@@ -400,44 +400,44 @@ Seguridad y facilidades para desmontar o montar inmuebles, creo que eso es lo m�
 ### 2.3.1 User Personas
 **User Persona Ciudadano**
 
-![User Persona Ciudadano](/Informe/Imagenes/UserPersona_ciudadano.png)
+![User Persona Ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserPersona_ciudadano.png?raw=true)  
 
 **User Persona Empresa**
 
-![User Persona Ciudadano](/Informe/Imagenes/UserPersona_empresa.png)
+![User Persona Ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserPersona_empresa.png?raw=true)  
 
 ### 2.3.2 User Task Matrix
 **User Task Matrix Ciudadano**
 
-![User Task Matrix Ciudadano](/Informe/Imagenes/UserTaskMatrix_ciudadano.png)
+![User Task Matrix Ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserTaskMatrix_ciudadano.png?raw=true)  
 
 **User Task Matrix Empresa**
 
-![User Task Matrix Ciudadano](/Informe/Imagenes/UserTaskMatrix_empresa.png)
+![User Task Matrix Ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserTaskMatrix_empresa.png?raw=true)  
 
 ### 2.3.3 User Journey Mapping
 **User Journey Mapping Ciudadano**
 
-![User Journey Mapping Ciudadano](/Informe/Imagenes/UserJourneyMap_ciudadano.png)
+![User Journey Mapping Ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserJourneyMap_ciudadano.png?raw=true)  
 
 **User Journey Mapping Empresa**
 
-![User Journey Mapping Empresa](/Informe/Imagenes/UserJourneyMap_empresa.png)
+![User Journey Mapping Empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/UserJourneyMap_empresa.png?raw=true)  
 
 ### 2.3.4 Empathy Mapping
 **Empathy Mapping Ciudadano**
 
-![Empathy Mapping ciudadano](/Informe/Imagenes/EmpathyMap_Ciudadano.png)
+![Empathy Mapping ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EmpathyMap_Ciudadano.png?raw=true)
 
 **Empathy Mapping Empresa**
 
-![Empathy Mapping empresa](/Informe/Imagenes/EmpathyMap_Empresa.png)
+![Empathy Mapping empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EmpathyMap_Empresa.png?raw=true)
 
 ### 2.3.5 As-is Scenario Mapping
 **As Is Ciudadano**
 
-![As is segmento ciudadano](/Informe/Imagenes/As-is_Ciudadano.png)
+![As is segmento ciudadano](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/As-is_Ciudadano.png?raw=true)
 
 **As Is Empresa**
 
-![As is segmento empresa](/Informe/Imagenes/As-is_Empresa.png)
+![As is segmento empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/As-is_Empresa.png?raw=true)
