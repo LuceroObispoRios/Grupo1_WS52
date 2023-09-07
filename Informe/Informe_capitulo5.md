@@ -222,7 +222,8 @@ Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
-*Para este **primer** avance, el cual abarcaba la landing page, asi como el registro y login de usuarios, no se llevo a cabo un despliegue de la aplicación.*  
+* Para este **primer** avance, el cual abarcaba la landing page, asi como el registro y login de usuarios, se llevo a cabo un desplegue por medio de GitHub Pages.  
+![Page_deployment](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/deployment.png?raw=true)  
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
