@@ -22,7 +22,7 @@ la instalación, la cual es guiada e intuitiva.
 
 **Auto Rename Tag (Extensión de Visual Studio Code)**: La extensión "AutoRenameTag" es una herramienta esencial que simplifica la edición de etiquetas HTML en el desarrollo web. Esta extensión permite cambiar automáticamente el nombre de una etiqueta y su cierre correspondiente cuando se modifica una de ellas. Esta extensión ahorra tiempo y posibles errores al equipo dado a la cantidad de actualizaciones en el código.
 
-![Extension Auto Rename Tag](/Informe/Imagenes/AutoRenameTag.png)(https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AutoRenameTag.png?raw=true)  
+![Extension Auto Rename Tag](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AutoRenameTag.png?raw=true)  
 
 **vscode-styled-components (Extensión de Visual Studio Code)**: La extensión "vscode-styled-components" fue de gran utilidad para el desarrollo del código CSS.  Los beneficios que esta extensión puede ofrecer es dar detalle sobre las propiedades y autocompletado  inteligente para las plantillas de estilo dentro de  componentes. Esto facilita la creación de CSS-JS de manera eficiente y ayuda a mantener  un código limpio y organizado.
 
