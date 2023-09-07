@@ -11,22 +11,22 @@ Para el presente trabajo, por motivo de comodidad, dominio o preferencia de cier
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a 
 la instalación, la cual es guiada e intuitiva. 	
 
-![Visual Studio Code](/Informe/Imagenes/VisualStudioCodeLogo.png)
+![Visual Studio Code](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/VisualStudioCodeLogo.png?raw=true)  
 
 
 *Se han utilizado las siguientes extensiones, todas ellas se encuentran dentro de la tienda de extensiones en el IDE Visual Studio Code:*
 
 **Live Server (Extensión de Visual Studio Code)**: La extensión "Live Server" es una herramienta esencial para cualquier desarrollador web que busque agilizar el proceso de desarrollo y pruebas de aplicaciones web. Con esta herramienta podemos tener una experiencia de desarrollo en tiempo real, permitiéndonos ver los cambios que realizamos en el Landing Page y el aplicativo web de inmediato en el navegador, sin necesidad de recargar la página manualmente. Esto nos permite  concentrarnos en la lógica y la apariencia de nuestro diseño sin interrupciones.
 
-![Extension Live Server](/Informe/Imagenes/LiveServer.png)
+![Extension Live Server](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/LiveServer.png?raw=true)  
 
 **Auto Rename Tag (Extensión de Visual Studio Code)**: La extensión "AutoRenameTag" es una herramienta esencial que simplifica la edición de etiquetas HTML en el desarrollo web. Esta extensión permite cambiar automáticamente el nombre de una etiqueta y su cierre correspondiente cuando se modifica una de ellas. Esta extensión ahorra tiempo y posibles errores al equipo dado a la cantidad de actualizaciones en el código.
 
-![Extension Auto Rename Tag](/Informe/Imagenes/AutoRenameTag.png)
+![Extension Auto Rename Tag](/Informe/Imagenes/AutoRenameTag.png)(https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AutoRenameTag.png?raw=true)  
 
 **vscode-styled-components (Extensión de Visual Studio Code)**: La extensión "vscode-styled-components" fue de gran utilidad para el desarrollo del código CSS.  Los beneficios que esta extensión puede ofrecer es dar detalle sobre las propiedades y autocompletado  inteligente para las plantillas de estilo dentro de  componentes. Esto facilita la creación de CSS-JS de manera eficiente y ayuda a mantener  un código limpio y organizado.
 
-![Extensión vscode-style-components](/Informe/Imagenes/vscode-style-components.png)
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/vscode-style-components.png?raw=true)  
 
 
 **Git**: Dado que es necesario colaborar en el proyecto tanto del landing page como el aplicativo web de  manera remota. Se optó por el sistema de control de versiones GIT. Dado que permite la colaboración activa de los miembros del equipo incluso cuando no tengan acceso a internet. Cada miembro almacena  un clon local del proyecto y puede realizar las actualizaciones correspondientes.    
@@ -35,14 +35,14 @@ la instalación, la cual es guiada e intuitiva.
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a 
 la instalación, la cual es guiada e intuitiva.
 
-![Extensión vscode-style-components](/Informe/Imagenes/gitLogo.png)
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitLogo.png?raw=true)
 
 **Github**: GitHub es la herramienta perfecta para nuestro equipo. En primer lugar, nos permite  mantener un control preciso de cada cambio en nuestro código, lo que facilita la colaboración  en tiempo real y minimiza los conflictos. Además, es posible realizar revisiones de código,  abrir problemas y fusionar solicitudes de extracción de manera fluida hace que nuestro  trabajo en equipo sea más eficiente y efectivo. En resumen, GitHub se ha convertido en el  núcleo de nuestra estrategia de desarrollo.
 
 Ruta de descarga: https://desktop.github.com    
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a la instalación, la cual es guiada e intuitiva.
 
-![Extensión vscode-style-components](/Informe/Imagenes/GitHubLogo.png)
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/GitHubLogo.png?raw=true)
 
 ### 5.1.2. Source Code Management.
 El repositorio de Github donde esta el proyecto y el markdown de este informe será [https://github.com/LuceroObispoRios/Grupo1_WS52.git]  
@@ -82,7 +82,7 @@ Para el entorno de desarrollo se utilizará el Visual Studio Code.
 Primero se eligió la rama en donde se alojará y desplegará el landing page. Este será la rama deployment con la carpeta origen en el /root.
 Guardamos la configuración y github nos proporcionó el link de la página. Luego de unos minutos la página pudo visualizarse correctamente.
 
-![landing page deployment configuration](/Informe/Imagenes/landing-page-deployment.jpeg)
+![landing page deployment configuration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-page-deployment.jpeg?raw=true)
 
 A medida que el proyecto avance, se agregarán más elementos de configuración, incluyendo configuración para la base de datos relacional, configuración de pruebas y configuración de gestión de paquetes y dependencias.
 
@@ -149,68 +149,68 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
 
-![feature 1](/Informe/Imagenes/feature-us01.png)
+![feature 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)    
 
-![feature 2](/Informe/Imagenes/feature-us02.png)
+![feature 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us02.png?raw=true)  
 
-![feature 3](/Informe/Imagenes/feature-us03.png)
+![feature 3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us03.png?raw=true)
 
-![feature 4](/Informe/Imagenes/feature-us04.png)
+![feature 4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us04.png?raw=true)
 
-![feature 5](/Informe/Imagenes/feature-us05.png)
+![feature 5](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us05.png?raw=true)
 
-![feature 6](/Informe/Imagenes/feature-us06.png)
+![feature 6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us06.png?raw=true)
 
-![feature 7](/Informe/Imagenes/feature-us07.png)
+![feature 7](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us07.png?raw=true)
 
-![feature 8](/Informe/Imagenes/feature-us08.png)
+![feature 8](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us08.png?raw=true)
 
-![feature 9](/Informe/Imagenes/feature-us09.png)
+![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)
 
-![feature 10](/Informe/Imagenes/feature-us10.png)
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)
 
-![feature 11](/Informe/Imagenes/feature-us11.png)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)
 
-![feature 12](/Informe/Imagenes/US012.jpg)
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US012.jpg?raw=true)  
 
-![feature 13](/Informe/Imagenes/US013.jpg)
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US013.jpg?raw=true)  
+ 
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US014.jpg?raw=true)  
 
-![feature 14](/Informe/Imagenes/US014.jpg)
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US015.jpg?raw=true)  
 
-![feature 15](/Informe/Imagenes/US015.jpg)
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US016.jpg?raw=true)  
 
-![feature 16](/Informe/Imagenes/US016.jpg)
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US017.jpg?raw=true)  
 
-![feature 17](/Informe/Imagenes/US017.jpg)
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US018.jpg?raw=true)  
+ 
+![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true) 
 
-![feature 18](/Informe/Imagenes/US018.jpg)
+![feature 20](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US020.jpg?raw=true)  
 
-![feature 19](/Informe/Imagenes/US019.jpg)
-
-![feature 20](/Informe/Imagenes/US020.jpg)
-
-![feature 21](/Informe/Imagenes/US021.jpg)
+![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)  
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
 Durante este sprint, nos enfocamos en completar el landing page y en las páginas de registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
-![landing page](/Informe/Imagenes/execution_sprint1.JPG)  
+![landing page](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution_sprint1.JPG?raw=true)   
 
-![landing page](/Informe/Imagenes/execution2_sprint1.JPG)  
+![landing page](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution2_sprint1.JPG?raw=true)   
 
-![landing page](/Informe/Imagenes/execution3_sprint1.JPG)  
+![landing page](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution3_sprint1.JPG?raw=true)   
 
-![inicio sesion](/Informe/Imagenes/execution4_sprint1.JPG)  
+![inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution4_sprint1.JPG?raw=true)   
 
-![busqueda empresa](/Informe/Imagenes/execution5_sprint1.JPG)  
+![busqueda empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution5_sprint1.JPG?raw=true)   
 
-![busqueda empresa](/Informe/Imagenes/execution6_sprint1.JPG)  
+![busqueda empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution6_sprint1.JPG?raw=true)   
 
-![registro cliente](/Informe/Imagenes/execution7_sprint1.JPG) 
+![registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution7_sprint1.JPG?raw=true)  
 
-![registro empresa](/Informe/Imagenes/execution8_sprint1.JPG) 
+![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution8_sprint1.JPG?raw=true)  
 
-![registro empresa](/Informe/Imagenes/execution9_sprint1.JPG) 
+![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution9_sprint1.JPG?raw=true)  
 
 Link al repositorio de codigo: [https://github.com/LuceroObispoRios/Grupo1_WS52.git]  
 Link a la plataforma:  [https://luceroobisporios.github.io/Grupo1_WS52/Proyecto/Index.html]  
@@ -229,11 +229,11 @@ Link al video de ejecución:  [https://upcedupe-my.sharepoint.com/:v:/g/personal
 Durante el primer sprint, el equipo optó por dividir los puntos entre todos los integrantes por cada capítulo para completar el informe. También, se optó por dividir las páginas por integrante teniendo en cuenta que estas deberán ser responsive y funcionales. Para asegurar que todo esté realizado correctamente, se organizaron reuniones constantes que se llevaron a cabo a través de Google Meet, donde se logró completar el informe y el código de las páginas landing page, registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
 A continuación, se presentan screenshots que reflejan el trabajo realizado durante este sprint.  
 
-![team collaboration](/Informe/Imagenes/teamcollaboration_sprint1.png)   
+![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration_sprint1.png?raw=true)     
 
-![team collaboration](/Informe/Imagenes/teamcollaboration2_sprint1.png)   
+![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration2_sprint1.png?raw=true)  
 
-![team collaboration](/Informe/Imagenes/teamcollaboration3_sprint1.png)   
+![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration3_sprint1.png?raw=true)  
 
 
 # Bibliografia
