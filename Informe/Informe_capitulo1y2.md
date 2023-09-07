@@ -202,7 +202,7 @@ c. ***User Outcomes***
 - **Creemos que** nuestras ganancias económicas vendrán por parte de comisiones por transaccion (cada vez que un usuario solicite un servicio), así como de las membresías premium brindadas a los usuarios que son trabajadores de empresas de mudanzas y carga. **Sabremos que** hemos tenido éxito cuando incrementen en un 10% el número de usuarios con membresías respecto al mes anterior.
   
 #### 1.2.2.4 Lean UX Canvas  
-![Lean UX Canvas](/Informe/Imagenes/LeanUXCanvas.png)
+![Lean UX Canvas](https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/LeanUXCanvas.png?raw=true)
 
 ## 1.3 Segmentos Objetivo  
 * Individuos de 18 a 50 años
