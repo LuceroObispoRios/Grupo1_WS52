@@ -1,4 +1,4 @@
-# Capítulo 3: Requirements Specification
+# Capítulo 3: Requirements Specifications
 ## 3.1. To-Be Scenario Mapping
 
 **To Be Ciudadano**
