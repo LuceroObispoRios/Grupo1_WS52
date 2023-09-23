@@ -1,6 +1,8 @@
-
 <template>
-
+  <div>
+    <toolbar-company></toolbar-company>
+  </div>
+  
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -119,9 +121,11 @@
 </template>
 
 <script>
+import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
+  
 export default {
   name: 'CompanySettingsForm',
-
+  components: {toolbarCompany},
   data() {
     return {
       companyName: '',
