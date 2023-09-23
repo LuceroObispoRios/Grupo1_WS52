@@ -1,15 +1,6 @@
 
 <template>
 
-  <div>
-    <pv-menubar class="sticky bg-primary" aria-label="Toolbar">
-      <template #start>
-        <pv-button label="Carga sin Estres" icon="pi pi-bars" @click="" aria-label="Sidebar button"></pv-button>
-      </template>
-      <template #end></template>
-    </pv-menubar>
-  </div>
-
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -125,11 +116,6 @@
     </div>
   </div>
 
-  <footer class ="public-footer" aria-label="footer">
-    <p> Copyright <span>&copy;</span> Carga sin Estres, All rights reserved.</p>
-    <br>
-    <p>   Developed by Eric Cuevas - U202112766   </p>
-  </footer>
 </template>
 
 <script>
