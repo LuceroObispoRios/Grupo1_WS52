@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <toolbar-home></toolbar-home>
+  </div>
+  
   <div class="login-form">
     <form @submit.prevent="onSubmit">
       <img src="image/logo2.png" class="logo" alt="Logo"/>
@@ -39,9 +43,11 @@
 
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
+import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
+  
 export default {
   name : "Login-Form",
-
+  components: {ToolbarHome},
   data() {
     return {
       emailVerify: '',
@@ -112,7 +118,11 @@ export default {
           });
         } else if (companyResponse.data.length > 0) {
           // Las credenciales son válidas para una empresa, redirigir a la página correspondiente
-          this.$router.push('/company-settings');
+          this.$router.push({
+            path: '/company-settings/:id',
+            name: 'company-settings',
+            params: { id: companyResponse.data[0].id },
+          });
         } else {
           this.errorMessage = 'Credenciales incorrectas. Intente nuevamente.';
         }

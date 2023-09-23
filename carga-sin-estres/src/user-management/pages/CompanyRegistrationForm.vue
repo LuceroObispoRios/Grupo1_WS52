@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <toolbar-home></toolbar-home>
+  </div>
+  
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -61,8 +65,10 @@
 
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
+import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
 export default {
   name: 'CompanyRegistrationForm',
+  components: {ToolbarHome},
 
   data() {
     return {

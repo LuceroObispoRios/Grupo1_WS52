@@ -2,53 +2,17 @@
 import FooterContent from "@/public/pages/footer-content.component.vue";
 export default {
   name: "app",
-  components:{ FooterContent },
-  data() {
-    return {
-      drawer: false,
-      items: [
-        { label: "Busqueda de empresas", to: "/company-search" },
-        { label: "Iniciar Sesion", to: "/login" },
-        { label: "Registrar Cliente", to: "/register-client" },
-        { label: "Registrar Empresa", to: "/register-company" },
-      ],
-    };
-  },
-};
+  components: {FooterContent}
+}
 </script>
 
 <template>
-  <pv-toast></pv-toast>
-  <header>
-    <pv-toolbar class="bg-primary">
-      <template #start>
-        <pv-button class="p-button-text text-white" icon="pi pi-bars" @click="drawer = !drawer" ></pv-button>
-        <h3>Carga Sin Estres</h3>
-      </template>
-      <template #end>
-        <div class="flex-column">
-          <router-link
-              v-for="item in items"
-              :to="item.to"
-              custom
-              v-slot="{ navigate, href }"
-              :key="item.label"
-          >
-            <pv-button
-                class="p-button-text text-white"
-                :href="href"
-                @click="navigate">
-            {{ item.label }}
-            </pv-button>
-          </router-link>
-        </div>
-      </template>
-    </pv-toolbar>
-  </header>
-  <pv-sidebar v-model:visible="drawer"> </pv-sidebar>
-  <RouterView />
-  <footer-content> </footer-content>
+  <div>
+    <router-view></router-view>
+    <footer-content></footer-content>
+  </div>
 </template>
+
 
 
 <style scoped>
