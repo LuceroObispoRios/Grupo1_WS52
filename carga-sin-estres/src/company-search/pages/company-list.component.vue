@@ -1,8 +1,13 @@
 <script>
   import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
   import { FilterMatchMode } from "primevue/api";
+  import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+  
   export default{
     name: "company-list",
+    components:{
+      toolbarClient,
+    },
     data(){
       return{
         companies: [],
@@ -52,6 +57,10 @@
 
 <template>
   <div>
+    <div>
+      <toolbar-client></toolbar-client>
+    </div>
+
     <div class="card">
       <pv-toolbar class="mb-4">
         <template #start>

@@ -1,8 +1,10 @@
 <script>
 import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
-
+import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+  
 export default {
   name: 'company-detail',
+  components: {toolbarClient},
   data() {
     return {
       id: null,
@@ -41,6 +43,10 @@ export default {
 </script>
 
 <template>
+  <div>
+    <toolbar-client></toolbar-client>
+  </div>
+  
   <!-- INFORMACION DE LA EMPRESA -->
   <pv-card class="custom-card">
     <template #title>
