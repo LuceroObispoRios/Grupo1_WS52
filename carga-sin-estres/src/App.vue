@@ -1,6 +1,8 @@
 <script>
+import FooterContent from "@/public/pages/footer-content.component.vue";
 export default {
   name: "app",
+  components:{ FooterContent },
   data() {
     return {
       drawer: false,
@@ -45,6 +47,7 @@ export default {
   </header>
   <pv-sidebar v-model:visible="drawer"> </pv-sidebar>
   <RouterView />
+  <footer-content> </footer-content>
 </template>
 
 
