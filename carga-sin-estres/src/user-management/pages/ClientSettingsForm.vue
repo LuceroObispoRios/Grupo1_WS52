@@ -2,6 +2,10 @@
 <template>
 
   <div class="container">
+    <div>
+    <toolbar-client></toolbar-client>
+    </div>
+    
     <div class="container-back">
       <div class="user-info">
         <form @submit.prevent="onSubmit" id="settings">
@@ -30,9 +34,13 @@
 
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
+import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+  
 export default {
   name: "ClientSettingsForm",
-
+  components:{
+    toolbarClient,
+  },
   data() {
     return {
       client: {
