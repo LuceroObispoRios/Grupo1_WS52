@@ -87,5 +87,109 @@
       "password": "123456",
       "id": 1
     }
+  ],
+  "bookingHistory":[
+    {
+      "id": "1",
+      "bookingDate": "2023-07-15",
+      "pickupAddress": "Ate",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-07-25",
+      "movingTime": "08:00",
+      "status": "Finalizado",
+      "payment": {
+        "totalAmount": 350,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Transporte y mudanzas Rapi2",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo1.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "bookingDate": "2023-08-16",
+      "pickupAddress": "Lince",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-08-21",
+      "movingTime": "11:30",
+      "status": "Finalizado",
+      "payment": {
+        "totalAmount": 250,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Romabe transporte",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo2.jpg"
+      }
+    },
+    {
+      "id": "3",
+      "bookingDate": "2023-09-10",
+      "pickupAddress": "Barranco",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-09-10",
+      "movingTime": "16:00",
+      "status": "Finalizado",
+      "payment": {
+        "totalAmount": 50,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Mudate Facil",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo3.png"
+      }
+    },
+    {
+      "id": "4",
+      "bookingDate": "2023-09-10",
+      "pickupAddress": "Barranco",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-09-10",
+      "movingTime": "16:00",
+      "status": "Finalizado",
+      "payment": {
+        "totalAmount": 350,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Bodegas y mudanzas Santana",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo4.png"
+      }
+    },
+    {
+      "id": "5",
+      "bookingDate": "2023-09-10",
+      "pickupAddress": "Barranco",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-09-10",
+      "movingTime": "16:00",
+      "status": "Finalizado",
+      "payment": {
+        "totalAmount": 350,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Practi Mudanza",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo5.png"
+      }
+    },
+    {
+      "id": "6",
+      "bookingDate": "2023-09-20",
+      "pickupAddress": "Barranco",
+      "destinationAddress": "Barranco",
+      "movingDate": "2023-10-10",
+      "movingTime": "16:00",
+      "status": "En curso",
+      "payment": {
+        "totalAmount": 350,
+        "paymentMethod": "Tarjeta de Crédito"
+      },
+      "hiredCompany":{
+        "name":"Malpartida Carga y mudanza",
+        "logo":"https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo6.png"
+      }
+    }
   ]
 }

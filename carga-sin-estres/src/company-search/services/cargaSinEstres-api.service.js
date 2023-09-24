@@ -7,6 +7,9 @@ export class cargaSinEstresApiService{
     getById(id) {
         return http.get(`/companies/${id}`);
     }
+    getAllBookings() {
+        return http.get('/bookingHistory');
+    }
 
     getClientsForLogin(email, password){
         return http.get( `/clients?email=${email}&password=${password}`);
