@@ -8,6 +8,7 @@ export default {
       items: [
         { label: 'Editar Perfil', to: '/client-settings/:id' },
         { label: 'Busqueda de empresas', to: '/company-search' },
+        { label: 'Historial de Reservas', to: '/bookingHistory' },
         { label: 'Cerrar Sesion', to: '/home' },
       ],
     };
