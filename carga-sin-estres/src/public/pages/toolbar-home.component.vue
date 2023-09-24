@@ -26,6 +26,7 @@ export default {
           <h3>Carga Sin Estres</h3>
         </template>
         <template #end>
+
           <div class="flex-column">
             <router-link
                 v-for="item in items"
@@ -42,6 +43,7 @@ export default {
               </pv-button>
             </router-link>
           </div>
+
         </template>
       </pv-toolbar>
     </header>
