@@ -6,7 +6,8 @@ import ClientRegistrationForm from '../user-management/pages/ClientRegistrationF
 import CompanyRegistrationForm from '../user-management/pages/CompanyRegistrationForm.vue'
 import CompanySettingsForm from '../user-management/pages/CompanySettingsForm.vue'
 import ClientSettingsForm from '../user-management/pages/ClientSettingsForm.vue'
-import HomeView from "@/public/pages/HomeView.component.vue";
+import HomeView from "@/public/pages/HomeView.component.vue"
+import bookingList from "@/bookingHistory/pages/booking-list.component.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,7 @@ const router = createRouter({
         { path: '/register-company', name: 'register-company', component: CompanyRegistrationForm},
         { path: '/company-settings/:id', name: 'company-settings', component: CompanySettingsForm, props: true},
         { path: '/client-settings/:id', name: 'client-settings', component: ClientSettingsForm, props: true},
+        { path: '/bookingHistory', name: 'bookingHistory', component: bookingList}
     ]
 })
 export default router
