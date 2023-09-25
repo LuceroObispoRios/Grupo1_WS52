@@ -1,8 +1,12 @@
 <template>
   <div>
+  <toolbar-boleta></toolbar-boleta>
+  </div>
+
+  <div>
     <h2>Boleta de Compra</h2>
     <div class="boleta">
-      <img src="public/Cargalogo.png" alt="Imagen" style="height: 200px"><br><br>
+      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 200px"><br><br>
       <table class="info">
         <tr>
           <td><strong>Nombres:</strong></td>
@@ -35,10 +39,14 @@
 </template>
 
 <script>
-import JsPDF from 'jspdf';  // Importar JsPDF como un módulo ES6
+import JsPDF from 'jspdf';
+import toolbarBoleta from "@/public/pages/toolbar-boleta.component.vue";
+import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
+import ToolbarClient from "@/public/pages/toolbar-client.component.vue";  // Importar JsPDF como un módulo ES6
 
 export default {
   name: 'BoletaModal',
+  components: {ToolbarClient, toolbarCompany, toolbarBoleta},
   props: {
     nombre: String,
     apellido: String,
@@ -51,7 +59,6 @@ export default {
   methods: {
     descargarBoleta() {
       // Aquí implementamos la lógica para generar y descargar la boleta en PDF con JsPDF
-
       const doc = new JsPDF();
 
       // Definir los estilos para el título y el contenido
