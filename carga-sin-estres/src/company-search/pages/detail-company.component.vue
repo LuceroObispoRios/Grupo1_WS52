@@ -1,7 +1,7 @@
 <script>
 import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
 import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  
+
 export default {
   name: 'company-detail',
   components: {toolbarClient},
@@ -13,6 +13,20 @@ export default {
         id: null,
         idCompany: null,
         services: null,
+        bookingDate: null,
+        pickupAddress: null,
+        destinationAddress: null,
+        movingDate: null,
+        movingTime: null,
+        status: null,
+        payment: {
+          totalAmount: null,
+          paymentMethod: null,
+        },
+        hiredCompany: {
+          name: null,
+          logo: null,
+        },
       },
       cargaSinEstres_service: null,
     };
@@ -27,6 +41,12 @@ export default {
   methods:{
     submitForm(){
       this.reservation.idCompany=this.company.id;
+      this.reservation.hiredCompany.name = this.company.name;
+      this.reservation.hiredCompany.logo = this.company.photo;
+      this.reservation.status="En curso";
+      this.reservation.payment.totalAmount=0;
+      this.reservation.payment.paymentMethod="Por definir";
+
       this.addReservation();
     },
     addReservation(){
@@ -46,11 +66,10 @@ export default {
   <div>
     <toolbar-client></toolbar-client>
   </div>
-  
   <!-- INFORMACION DE LA EMPRESA -->
   <pv-card class="custom-card">
     <template #title>
-      <img :src="company.photo" alt="Logo Company" class="company-logo">
+      <img :src="company.photo" alt="logo de empresa" class="company-logo">
     </template>
 
     <template #content>
@@ -58,10 +77,35 @@ export default {
         <h2 class="company-name">{{ company.name }}</h2>
         <p class="company-type">Empresa</p>
       </div>
+
+      <div class="company-services">
+        <p class="label">Descripcion: </p>
+        <p class="value">{{ company.description }}</p>
+      </div>
+
       <div class="company-services">
         <p class="label">Servicios: </p>
-        <p class="value">{{ company.services }}</p>
+        <div class="company-services">
+          <ul>
+            <li class="value" v-if="company.transporte">Transporte</li>
+            <li class="value" v-if="company.carga">Carga</li>
+            <li class="value" v-if="company.embalaje">Embalaje</li>
+            <li class="value" v-if="company.montaje">Montaje</li>
+            <li class="value" v-if="company.desmontaje">Desmontaje</li>
+          </ul>
+        </div>
       </div>
+
+      <div class="company-services">
+        <p class="label">Direccion: </p>
+        <p class="value">{{ company.direccion }}</p>
+      </div>
+
+      <div class="company-services">
+        <p class="label">Numero de contacto: </p>
+        <p class="value">{{ company.numeroContacto }}</p>
+      </div>
+
     </template>
   </pv-card>
 
@@ -70,9 +114,21 @@ export default {
   <div class="custom-addReservation">
     <pv-panel header="Reservar" toggleable>
       <form @submit.prevent="submitForm" id="add-reservation" class="reservation-info">
+        <label for="bookingDate">Fecha de hoy:</label><br>
+        <input type="text" v-model="reservation.bookingDate" id="bookingDate"  required><br>
         <label for="services">Servicios:</label><br>
         <input type="text" v-model="reservation.services" id="services"  required><br>
-        <button type="submit" >Realizar reserva</button>
+        <label for="pickupAddress">Direccion de entrega:</label><br>
+        <input type="text" v-model="reservation.pickupAddress" id="pickupAddress"  required><br>
+        <label for="destinationAddress">Direccion de destino:</label><br>
+        <input type="text" v-model="reservation.destinationAddress" id="destinationAddress"  required><br>
+        <label for="movingDate">Fecha cuando el servicio se lleva a cabo:</label><br>
+        <input type="text" v-model="reservation.movingDate" id="movingDate"  required><br>
+        <label for="movingTime">Hora cuando el servicio se lleva a cabo:</label><br>
+        <input type="text" v-model="reservation.movingTime" id="movingTime"  required><br>
+
+        <button type="submit">Realizar reserva</button>
+
       </form>
     </pv-panel>
   </div>
@@ -96,8 +152,8 @@ export default {
   text-align: left;
 }
 
-.custom-card mat-card-title {
-  font-size: 24px;
+.custom-card .company-name {
+  font-size: 30px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -151,7 +207,6 @@ export default {
 .reservation-info input[type="text"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
