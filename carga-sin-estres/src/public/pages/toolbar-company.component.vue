@@ -19,9 +19,9 @@ export default {
   <div>
     <pv-toast></pv-toast>
     <header>
-      <pv-toolbar class="bg-primary">
+      <pv-toolbar class="bg-black">
         <template #start>
-          <h3>Carga Sin Estres</h3>
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 70px">
         </template>
         <template #end>
           <div class="flex-column">
@@ -50,5 +50,12 @@ export default {
 </template>
 
 <style scoped>
-
+.bg-black {
+  background-color: #1f1e1e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 </style>
