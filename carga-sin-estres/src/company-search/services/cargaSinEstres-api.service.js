@@ -4,11 +4,12 @@ export class cargaSinEstresApiService{
     getAll() {
         return http.get('/companies');
     }
-    getById(id) {
-        return http.get(`/companies/${id}`);
-    }
+
     getAllBookings() {
         return http.get('/bookingHistory');
+    }
+    getById(id) {
+        return http.get(`/companies/${id}`);
     }
 
     getClientsForLogin(email, password){
@@ -19,7 +20,7 @@ export class cargaSinEstresApiService{
     }
 
     createReservation(data) {
-        return http.post('/reservations', data);
+        return http.post('/bookingHistory', data);
     }
 
     createClient(data){
