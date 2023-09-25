@@ -65,7 +65,7 @@ export default {
 }
 
 .navbar-nav .nav-item {
-  margin-right: 120px;
+  margin-right: 20px;
 }
 
 .nav-link {
@@ -76,7 +76,7 @@ export default {
   color: #ffffff;
   background-color: #000000;
   border-color: #000000;
-  margin-right: 50px;
+  margin-left: 10px;
 }
 
 .btn-outline-dark:hover {
@@ -89,7 +89,7 @@ export default {
   color: #fff;
   background-color: #ff8800;
   border-color: #ff8800;
-  margin-right: 120px;
+  margin-left: 10px;
 }
 
 .btn-outline-orange:hover {
