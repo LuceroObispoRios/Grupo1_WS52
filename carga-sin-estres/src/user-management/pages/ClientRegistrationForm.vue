@@ -7,7 +7,7 @@
     <div class="container-back">
       <div class="user-info">
         <div class="left-section">
-          <img src="image/logo2.png" alt="Avatar" />
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Avatar" />
           <h5>Carga sin Estres</h5>
         </div>
         <form @submit.prevent="onSubmit" id="myForm">
