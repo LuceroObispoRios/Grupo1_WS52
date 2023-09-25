@@ -55,12 +55,17 @@ export default {
   z-index: 1000;
 }
 
+.navbar-toggler {
+  background-color: #ffffff !important;
+  margin-left:300px;
+}
+
 .navbar-toggler-icon {
   color: #ffffff !important;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 15px;
+  margin-right: 120px;
 }
 
 .nav-link {
@@ -71,7 +76,7 @@ export default {
   color: #ffffff;
   background-color: #000000;
   border-color: #000000;
-  margin-left: 20px;
+  margin-right: 50px;
 }
 
 .btn-outline-dark:hover {
@@ -84,7 +89,7 @@ export default {
   color: #fff;
   background-color: #ff8800;
   border-color: #ff8800;
-  margin-left: 20px;
+  margin-right: 120px;
 }
 
 .btn-outline-orange:hover {
