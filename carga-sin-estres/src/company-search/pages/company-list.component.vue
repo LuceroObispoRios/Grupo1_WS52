@@ -2,7 +2,6 @@
   import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
   import { FilterMatchMode } from "primevue/api";
   import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  
   export default{
     name: "company-list",
     components:{
@@ -92,7 +91,15 @@
 
         <pv-column field="id" header="Id" :sortable="true" style="min-width: 12rem"></pv-column>
         <pv-column field="name" header="Nombre" :sortable="true" style="min-width: 15rem"></pv-column>
-        <pv-column field="services" header="Servicios" :sortable="true" style="min-width: 30rem"></pv-column>
+        <pv-column field="services" header="Servicios" :sortable="true" style="min-width: 30rem">
+          <template #body="slotProps">
+            <span v-if="slotProps.data.transporte">Transporte, </span>
+            <span v-if="slotProps.data.carga">Carga, </span>
+            <span v-if="slotProps.data.embalaje">Embalaje, </span>
+            <span v-if="slotProps.data.montaje">Montaje, </span>
+            <span v-if="slotProps.data.desmontaje">Desmontaje</span>
+          </template>
+        </pv-column>
 
         <pv-column field="photo" header="Logo" style="min-width: 12rem">
           <template #body="slotProps">

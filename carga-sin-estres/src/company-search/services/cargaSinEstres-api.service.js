@@ -34,6 +34,10 @@ export class cargaSinEstresApiService{
         return http.put(`/clients/${id}`, data);
     }
 
+    updateCompany(id, data) {
+        return http.put(`/companies/${id}`, data); // no lo lee
+    }
+
     delete(id) {
         return http.delete(`/companies/${id}`);
     }

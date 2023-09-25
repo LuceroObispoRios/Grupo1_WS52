@@ -8,12 +8,18 @@ export default {
 
 <template>
   <div>
-    <router-view></router-view>
-    <footer-content></footer-content>
+     <div class="main-content">
+       <router-view></router-view>
+     </div>
+     <footer-content></footer-content>
   </div>
 </template>
 
-
-
 <style scoped>
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 </style>
