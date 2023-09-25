@@ -5,7 +5,7 @@
   
   <div class="login-form">
     <form @submit.prevent="onSubmit">
-      <img src="image/logo2.png" class="logo" alt="Logo"/>
+      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" class="logo" alt="Logo"/>
       <h1>Carga Sin Estrés</h1>
 
       <div class="content">
@@ -32,13 +32,14 @@
 
         <div class="action" id="actionButtons">
           <button id="login-button" type="submit">Iniciar Sesión</button>
-          <button id="cancel-button" type="button" @click="cancel">Cancelar</button>
+          <button id="cancel-button" type="button" @click="cancelar" >Cancelar</button>
         </div>
         <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
 
       </div>
     </form>
   </div>
+  <br><br><br>
 </template>
 
 <script>
@@ -133,8 +134,8 @@ export default {
       //aqui te lleva a la pagina de inicio
     },
 
-    cancel() {
-      // Lógica para cancelar el inicio de sesión // enviar a landing page
+    cancelar() {
+      this.$router.push('/home');
     }
 
   }
@@ -262,4 +263,5 @@ button:hover {
   font-weight: bold;
   margin-top: 10px;
 }
+
 </style>
