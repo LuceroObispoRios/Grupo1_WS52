@@ -2,96 +2,48 @@
   <div>
     <toolbar-company></toolbar-company>
   </div>
-  
+
+  <br><br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">
         <form @submit.prevent="onSubmit">
           <h2>Editar Datos de Perfil de Empresa</h2>
           <div class="right-section">
-            <input
-                type="text"
-                placeholder="Nombre de la empresa"
-                v-model="companyName"
-            />
-            <input
-                type="text"
-                placeholder="Correo"
-                v-model="correo"
-            />
-            <input
-                type="text"
-                placeholder="Dirección"
-                v-model="direccion"
-            />
-            <input
-                type="text"
-                placeholder="Teléfono"
-                v-model="numeroContacto"
-                pattern="[0-9]+"
-            />
-            <input
-                type="password"
-                placeholder="Contraseña"
-                v-model="contrasena"
-            />
-            <input
-                type="password"
-                placeholder="Confirmar contraseña"
-                v-model="confirmarContrasena"
-            />
+            <input type="text" placeholder="Nombre de la empresa" v-model="formData.name" id="name"/>
+            <input type="text" placeholder="email" v-model="formData.email" id="email"/>
+            <input type="text" placeholder="Dirección" v-model="formData.direccion" id="direccion"/>
+            <input type="text" placeholder="Teléfono" v-model="formData.numeroContacto" pattern="[0-9]+" id="numeroContacto"/>
+            <input type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
+            <input type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
+            <input type="text" placeholder="Link a la imagen" v-model="formData.photo" id="photo"/>
           </div>
 
           <div class="service-boxes">
             <p>Marque los servicios que ofrece su empresa:</p>
             <div class="checkboxes col">
               <div class="check row-1">
-                <input
-                    type="checkbox"
-                    name="transporte"
-                    v-model="transporte"
-                    value="transporte"
-                />
+                <input type="checkbox" name="transporte" v-model="formData.transporte" value="transporte"/>
                 <label for="transporte">Transporte</label>
               </div>
 
               <div class="check row-1">
-                <input
-                    type="checkbox"
-                    name="carga"
-                    v-model="carga"
-                    value="carga"
-                />
+                <input type="checkbox" name="carga" v-model="formData.carga" value="carga"/>
                 <label for="carga">Carga</label>
               </div>
 
               <div class="check row-1">
-                <input
-                    type="checkbox"
-                    name="embalaje"
-                    v-model="embalaje"
-                    value="embalaje"
-                />
+                <input type="checkbox" name="embalaje" v-model="formData.embalaje" value="embalaje"/>
                 <label for="embalaje">Embalaje</label>
               </div>
 
               <div class="check row-1">
-                <input
-                    type="checkbox"
-                    name="montaje"
-                    v-model="montaje"
-                    value="montaje"
-                />
+                <input type="checkbox" name="montaje" v-model="formData.montaje" value="montaje"/>
                 <label for="montaje">Montaje</label>
               </div>
 
               <div class="check row-1">
-                <input
-                    type="checkbox"
-                    name="desmontaje"
-                    v-model="desmontaje"
-                    value="desmontaje"
-                />
+                <input type="checkbox" name="desmontaje" v-model="formData.desmontaje" value="desmontaje"/>
                 <label for="desmontaje">Desmontaje</label>
               </div>
             </div>
@@ -99,76 +51,101 @@
 
           <div class="description-box">
             <label for="description">Descripción corta de la empresa:</label>
-            <textarea
-                name="description"
-                v-model="description"
-                rows="6"
-            ></textarea>
+            <textarea name="description" v-model="formData.description" rows="6"></textarea>
           </div>
 
           <button id="submitButton" type="submit">Guardar cambios</button>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <div
-              id="errorMessages"
-              class="error-messages"
-              v-html="errorMessage"
-          ></div>
+          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
         </form>
       </div>
     </div>
   </div>
+  <br><br><br>
 
 </template>
 
 <script>
 import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
+import {cargaSinEstresApiService} from "@/company-search/services/cargaSinEstres-api.service";
   
 export default {
   name: 'CompanySettingsForm',
   components: {toolbarCompany},
+
   data() {
     return {
-      companyName: '',
-      correo: '',
-      direccion: '',
-      numeroContacto: '',
-      contrasena: '',
-      confirmarContrasena: '',
-      transporte: false,
-      carga: false,
-      embalaje: false,
-      montaje: false,
-      desmontaje: false,
-      description: '',
+      company:{
+        name: '',
+        email: '',
+        direccion: '',
+        numeroContacto: '',
+        password: '',
+        photo: '', //link como enlace en texto
+        transporte: false,
+        carga: false,
+        embalaje: false,
+        montaje: false,
+        desmontaje: false,
+        description: '',
+        id: '',
+        },
+      confirmarpassword: '',
       errorMessage: '',
+      id: null,
+      formData:{
+        name: '',
+        email: '',
+        direccion: '',
+        numeroContacto: '',
+        password: '',
+        confirmarpassword: '',
+        photo: '', //link como enlace en texto
+        transporte: false,
+        carga: false,
+        embalaje: false,
+        montaje: false,
+        desmontaje: false,
+        description: '',
+      },
+      apiService: new cargaSinEstresApiService(),
     };
   },
+
+  created() {
+    this.id = this.$route.params.id;
+    console.log("id empresa settings:", this.id);
+  },
+
   methods: {
+
     onSubmit() {
       this.errorMessage = '';
       const formData = {
-        companyName: this.companyName,
-        correo: this.correo,
-        direccion: this.direccion,
-        numeroContacto: this.numeroContacto,
-        contrasena: this.contrasena,
-        confirmarContrasena: this.confirmarContrasena,
-        transporte: this.transporte,
-        carga: this.carga,
-        embalaje: this.embalaje,
-        montaje: this.montaje,
-        desmontaje: this.desmontaje,
-        description: this.description,
+        name: this.formData.name,
+        email: this.formData.email,
+        direccion: this.formData.direccion,
+        numeroContacto: this.formData.numeroContacto,
+        password: this.formData.password,
+        confirmarpassword: this.formData.confirmarpassword,
+        photo: this.formData.photo,
+        transporte: this.formData.transporte,
+        carga: this.formData.carga,
+        embalaje: this.formData.embalaje,
+        montaje: this.formData.montaje,
+        desmontaje: this.formData.desmontaje,
+        description: this.formData.description,
+        id: this.id,
       };
 
       let warnings = '';
 
-      if (formData.companyName.length < 1) {
+      if (formData.name.length < 1) {
         warnings += 'El nombre no es válido <br>';
       }
 
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.correo)) {
-        warnings += 'El correo no es válido <br>';
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+        warnings += 'El email no es válido <br>';
       }
 
       if (formData.direccion.length < 1) {
@@ -179,26 +156,62 @@ export default {
         warnings += 'El número de contacto no es válido <br>';
       }
 
-      if (formData.contrasena.length < 6) {
+      if (formData.password.length < 6) {
         warnings += 'La contraseña debe tener al menos 6 caracteres <br>';
       }
 
-      if (formData.contrasena !== formData.confirmarContrasena) {
+      console.log(formData.password);
+      console.log(formData.confirmarpassword);
+
+      if (formData.password !== formData.confirmarpassword) {
         warnings += 'Las contraseñas no coinciden <br>';
       }
-
-      // Puedes agregar más validaciones según tus necesidades
 
       this.errorMessage = warnings;
 
       if (!this.errorMessage) {
-        // Lógica para enviar el formulario
-        console.log(formData);
+        console.log('Nuevos Ajustes de empresa: ', formData);
+        this.updateCompany(); //llamada a la función para actualizar los datos de la empresa
+      }
+    },
+
+    updateCompany(){
+      this.company.name = this.formData.name;
+      this.company.email = this.formData.email;
+      this.company.direccion = this.formData.direccion;
+      this.company.numeroContacto = this.formData.numeroContacto;
+      this.company.password = this.formData.password;
+      this.company.photo = this.formData.photo;
+      this.company.transporte = this.formData.transporte;
+      this.company.carga = this.formData.carga;
+      this.company.embalaje = this.formData.embalaje;
+      this.company.montaje = this.formData.montaje;
+      this.company.desmontaje = this.formData.desmontaje;
+      this.company.description = this.formData.description;
+      this.company.id = this.id;
+      this.saveUpdatedCompanyToServer();
+
+    },
+
+    async saveUpdatedCompanyToServer(){
+      try {
+        console.log("id a actualizar: ", this.company.id )
+        console.log("company data: ", this.company)
+        const response = await this.apiService.updateCompany(this.company.id , this.company);
+
+        if (response.status === 200) {
+          console.log('Datos de la empresa actualizados con éxito:', response.data);
+
+        } else {
+          console.error('Error al actualizar los datos de la empresa:', response.data);
+        }
+      } catch (error) {
+        console.error('Error al actualizar los datos de la empresa:', error);
       }
     },
 
     cancel() {
-      // Lógica para cancelar el registro
+      this.$router.push('/bookingHistory');
     },
 
   },
@@ -206,10 +219,6 @@ export default {
 </script>
 
 <style scoped>
-html {
-  overflow-y: scroll;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -219,7 +228,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 3rem 3rem 3rem 3rem;
+  margin: 5rem auto auto auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
