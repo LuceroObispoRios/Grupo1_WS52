@@ -1,13 +1,13 @@
 <script>
 
 export default {
-  name: "toolbar-company",
+  name: "toolbar-boleta",
   data() {
     return {
       drawer: false,
       items: [
-        { label: 'Editar Perfil', to: '/company-settings/:id' },
-        { label: 'Cerrar Sesion', to: '/home' }
+        { label: "Inicio", to: "/" },
+        { label: 'Editar Perfil', to: '/client-settings/:id' },
       ],
     };
   },
@@ -46,7 +46,7 @@ export default {
 
     <RouterView />
   </div>
-
+<br><br><br><br><br>
 </template>
 
 <style scoped>
