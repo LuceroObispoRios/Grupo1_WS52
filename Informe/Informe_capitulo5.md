@@ -148,7 +148,7 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 
 Para este Sprint se desarrolló el Frontend de la plataforma.  
 
-![Development Evidence]()
+![Development Evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
 
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
