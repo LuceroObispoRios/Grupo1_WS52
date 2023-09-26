@@ -1,17 +1,16 @@
 
 <template>
+  <div>
+    <toolbar-client></toolbar-client>
+  </div>
 
   <div class="container">
-    <div>
-    <toolbar-client></toolbar-client>
-    </div>
-    
     <div class="container-back">
       <div class="user-info">
         <form @submit.prevent="onSubmit" id="settings">
           <h2>Editar datos de Perfil de Cliente</h2>
           <div class="right-section">
-            <input type="text" placeholder="name" v-model="formData.name"  />
+            <input type="text" placeholder="name" v-model="formData.name" /> <!--falta id?-->
             <input type="text" placeholder="Apellido Materno" v-model="formData.apellidoMaterno" />
             <input type="text" placeholder="Apellido Paterno" v-model="formData.apellidoPaterno"  />
             <input type="text" placeholder="Celular" v-model="formData.celular"  />
@@ -23,6 +22,7 @@
             <input type="password" placeholder="Repetir contraseña" v-model="formData.confirmarpassword"  />
           </div>
           <button id="submitButton" type="submit">Guardar cambios</button>
+          <router-link to="/company-search" class="btn btn-outline-orange">Cancelar</router-link>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
           <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
         </form>
@@ -73,6 +73,7 @@ export default {
     this.id = this.$route.params.id;
     console.log("id cliente settings:", this.id);
   },
+
   methods: {
     onSubmit() {
       this.errorMessage = '';
@@ -116,8 +117,7 @@ export default {
 
       if (!this.errorMessage) {
         console.log('Nuevos ajustes de usuario: ', formData);
-        this.updateClient(); // Aquí puedes agregar la lógica para guardar los cambios en el objeto JSON correspondiente
-
+        this.updateClient(); // Actualizar con los datos del formulario
       }
     },
 
@@ -133,8 +133,6 @@ export default {
       this.client.id = this.id;
 
       this.saveUpdatedClientDataToServer();
-
-      //this.$router.push('/client-settings');  //Ajustar a la ruta donde quieras ir
 
     },
 
@@ -153,9 +151,9 @@ export default {
       }
     },
 
-    cancel() {
-      // Lógica para cancelar la edición
-    },
+    cancel(){
+      this.$router.push('/company-search');
+    }
 
   },
 };
