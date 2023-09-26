@@ -144,10 +144,17 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 |                                                     | main       | f0e3e5ca74f48dd4289f57f836c774ea0caa357f  | Add files via upload (reg-empresa.html    |           -             |        02/09/2023      |
 |                                                     | main       | 51e1be5e36f6677bd62e7544d1e18a84e83462d7  | Add files via upload (reg-cliente.html)   |           -             |        03/09/2023      |
 
+#### 5.2.2.3. Development Evidence for Sprint Review.
+
+Para este Sprint se desarrolló el Frontend de la plataforma.  
+
+![Development Evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
 
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
+
+![Testing Suite Evidence]()
 
 ![feature 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)    
 
@@ -167,29 +174,23 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 
 ![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)
 
-![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US10.jpg)
 
-![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US11.jpg)
 
-![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US012.jpg?raw=true)  
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US12.jpg)  
 
-![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US013.jpg?raw=true)  
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US13.jpg)  
  
-![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US014.jpg?raw=true)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US14.jpg)  
 
-![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US015.jpg?raw=true)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg)  
 
-![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US016.jpg?raw=true)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US16.jpg)  
 
-![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US017.jpg?raw=true)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US17.jpg)  
 
-![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US018.jpg?raw=true)  
- 
-![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true) 
-
-![feature 20](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US020.jpg?raw=true)  
-
-![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)  
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US18.jpg) 
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
@@ -236,6 +237,21 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
 
 ![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration3_sprint1.png?raw=true)  
 
+### 5.2.2. Sprint 2
+
+#### 5.2.2.4. Testing Suite Evidence for Sprint Review.
+
+Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
+  
+![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
+![feature 02](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature02-sprint2.png?raw=true)  
+![feature 03](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature03-sprint2.png?raw=true)  
+![feature 04](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature04-sprint2.png?raw=true)  
+![feature 05](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature05-sprint2.png?raw=true)  
+![feature 06](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature06-sprint2.png?raw=true)  
+![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
+![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
+![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)  
 
 # Bibliografia
 --

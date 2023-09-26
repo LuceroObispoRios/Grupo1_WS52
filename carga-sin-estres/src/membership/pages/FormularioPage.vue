@@ -1,10 +1,10 @@
 <template>
   <div>
     <toolbar-company></toolbar-company>
+    <br><br><br><br>
   </div>
 
   <div>
-      <h2>Formulario-Membresía</h2><hr>
     <div class="container1">
     <form @submit.prevent="submitForm" id="customer-info" class="left-container">
       <label for="nombre">Nombres:</label><br>
@@ -25,12 +25,11 @@
       <select v-model="tipoTarjeta" required>
         <option value="visa">Visa</option>
         <option value="mastercard">MasterCard</option>
-        <!-- Agrega más opciones según tus necesidades -->
       </select><br><br>
-      <button type="submit">Continuar</button> <!-- Cambia @click por type="submit" -->
+      <button type="submit">Continuar</button>
     </form>
       <div class="right-container">
-        <img src="public/Cargalogo.png" alt="Imagen" class="floating-image">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
       </div>
     </div>
   </div>
@@ -55,18 +54,15 @@ export default {
       apellido: '',
       ruc: '',
       direccion: '',
-      tipoMembresia: '', // Agrega una propiedad para el tipo de membresía
+      tipoMembresia: '',
       tipoTarjeta: '',
     };
   },
   methods: {
     submitForm() {
-      // Asegúrate de que contadorBoletas sea un número antes de incrementarlo
       //if (typeof this.$root.$options.$contadorBoletas === 'number')
       {
-        const contadorBoletas = ++this.$root.$options.$contadorBoletas; // Incrementar el contador global de boletas
-
-        // Simular una solicitud al servidor (aquí puedes enviar los datos al servidor si es necesario)
+        const contadorBoletas = ++this.$root.$options.$contadorBoletas;
         setTimeout(() => {
           // Redirigir al usuario a la página de la boleta con el número de boleta obtenido
           this.$router.push({
@@ -81,7 +77,7 @@ export default {
               tipoTarjeta: this.tipoTarjeta,
             },
           });
-        }, ); // Simula una solicitud al servidor después de 2 segundos.
+        }, );
       }
     },
   },
@@ -98,35 +94,35 @@ h2{
 .container1 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinea el contenido en la parte superior */
-  max-width: 800px; /* Ancho máximo del contenido */
+  align-items: flex-start;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
 /* Estilos para el formulario en la mitad izquierda */
 .left-container {
-  flex: 3; /* Ocupa el espacio disponible */
+  flex: 3;
   background-color: #e8a300;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 60px;
-  margin-right: 20px; /* Espacio entre el formulario y la imagen */
-  margin-top: 20px; /* Agrega margen superior */
-  margin-bottom: 20px; /* Agrega margen inferior */
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Estilos para las etiquetas dentro del formulario */
 .left-container label {
   font-weight: bold;
-  margin-bottom: 10px; /* Reduce el margen inferior para alinearlas mejor */
+  margin-bottom: 10px;
   font-size: 15px;
-  width: 90px; /* Ancho fijo para todas las etiquetas */
-  display: inline-block; /* Alinea las etiquetas en línea */
+  width: 90px;
+  display: inline-block;
 }
 
 input[type="text"] {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -135,7 +131,7 @@ input[type="text"] {
 }
 
 input[type="number"] {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -145,24 +141,22 @@ input[type="number"] {
 
 /* Estilos para la imagen a la derecha */
 .right-container {
-  flex: 1; /* Ocupa el espacio disponible */
-  text-align: center; /* Alinea el contenido en el centro horizontal */
-  display: flex; /* Utiliza flexbox para centrar verticalmente */
-  flex-direction: column; /* Alinea los elementos verticalmente */
-  align-items: center; /* Centra verticalmente */
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Estilos para la imagen */
 .floating-image {
-  width: 300px; /* Ajusta el ancho según tus necesidades */
-  /*border-radius: 10px; /* Agrega bordes redondeados */
-  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
-  margin-top: 120px; /* Ajusta el margen superior para mover la imagen más abajo */
+  width: 150px;
+  margin-top: 120px;
   height: 400px;
 }
 
 /* Estilos para el botón "Continuar" */
-#submit {
+submit {
   background-color: #ee8f00;
   color: #fff;
   padding: 10px 20px;
@@ -171,10 +165,11 @@ input[type="number"] {
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* Agrega margen superior para separar el botón */
+  margin-top: 20px;
+  text-align:center;
 }
 
-#submit:hover {
+submit:hover {
   background-color: #ee8f00;
 }
 </style>
