@@ -107,34 +107,34 @@ Ciclo 2023-02
 ### 1.1.1 Descripción de la startup  
 Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma que conecta a los clientes con empresas de mudanzas, ofreciendo un servicio integral. Por un lado, permite a los usuarios interactuar de manera eficiente con las empresas de mudanza, optimizando el proceso completo. A través de la plataforma, los clientes pueden describir sus necesidades de mudanza y recibir propuestas detalladas de empresas de mudanzas asociadas. Por otro lado, las empresas de mudanzas obtienen visibilidad y prestigio por un servicio satisfactorio, lo que ayudara en el funcionamiento de estas.
 
-Misión: Nuestra misión es simplificar y mejorar el proceso de mudanza para los usuarios, al mismo tiempo que brindamos nuevas oportunidades de negocio para las empresas de mudanzas, todo esto a través de una plataforma accesible y fácil de usar.
+**Misión:** Nuestra misión es simplificar y mejorar el proceso de mudanza para los usuarios, al mismo tiempo que brindamos nuevas oportunidades de negocio para las empresas de mudanzas, todo esto a través de una plataforma accesible y fácil de usar.
 
-Visión: Buscamos convertirnos en la principal plataforma en la industria de mudanzas y transporte de bienes grandes como muebles, siendo reconocidos por nuestra capacidad para conectar de manera eficaz a los clientes con las empresas de mudanzas, proporcionando una experiencia sin problemas y confiable para todos los involucrados.   
+**Visión:** Buscamos convertirnos en la principal plataforma en la industria de mudanzas y transporte de bienes grandes como muebles, siendo reconocidos por nuestra capacidad para conectar de manera eficaz a los clientes con las empresas de mudanzas, proporcionando una experiencia sin problemas y confiable para todos los involucrados.   
 
 ### 1.1.2 Perfiles de los integrantes del equipo  
-* Nombres y Apellidos: Eric Fernando Cuevas Rios  
-Carrera: Ingenieria de Software  
-Acerca De: Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
-Fotografia de Perfil:  
+* **Nombres y Apellidos:** Eric Fernando Cuevas Rios  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
+**Fotografia de Perfil:**  
 ![profile2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true)   
 
-* Nombres y Apellidos: Lucero Abigail Obispo Rios  
-Carrera: Ingenieria de Software  
-Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
-Fotografia de Perfil:  
+* **Nombres y Apellidos:** Lucero Abigail Obispo Rios  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
+**Fotografia de Perfil:**  
 ![profile1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true)
 
-* Nombres y Apellidos: Damaris Tasayco Vilcamiza  
-Carrera: Ingenieria de Software  
-Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
-Fotografia de Perfil:  
+* **Nombres y Apellidos:** Damaris Tasayco Vilcamiza  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
+**Fotografia de Perfil:**  
  ![profile3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true)
 
-* Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
-Carrera: Ingenieria de Software  
-Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
-Fotografia de Perfil:  
-![profile4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true)
+* **Nombres y Apellidos:** Andrea Namie O'Higgins Rosales  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
+**Fotografia de Perfil:**  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true" width="300" height="356" style="margin-left:50px;">
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problematica  
