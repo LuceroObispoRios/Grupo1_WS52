@@ -321,10 +321,6 @@ Por ultimo, los metodos POST bookingHistory, GET booking History, asi como los m
 Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js)
 
 **Captura de interaccion con datos de prueba**   
-  
-
-=======  
-    
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
