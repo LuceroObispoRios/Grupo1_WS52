@@ -272,6 +272,7 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
   
 #### 5.2.2.3. Development Evidence for Sprint Review.  
 
+Para este Sprint se desarrolló el Frontend de la plataforma.
 ![development evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
   
 #### 5.2.2.4. Testing Suite Evidence for Sprint Review.  
