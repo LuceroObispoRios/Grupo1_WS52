@@ -290,32 +290,11 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
 ![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)  
   
-#### 5.2.2.5. Execution Evidence for Sprint Review.   
-  
-#### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
-  
-#### 5.2.2.7. Software Deployment Evidence for Sprint Review.  
-  
-#### 5.2.2.8. Team Collaboration Insights during Sprint.  
-  
-=======
-
-Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
-  
-![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
-![feature 02](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature02-sprint2.png?raw=true)  
-![feature 03](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature03-sprint2.png?raw=true)  
-![feature 04](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature04-sprint2.png?raw=true)  
-![feature 05](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature05-sprint2.png?raw=true)  
-![feature 06](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature06-sprint2.png?raw=true)  
-![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
-![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
-![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)  
-
 #### 5.2.2.5. Execution Evidence for Sprint Review. 
+  
 ***Segundo Sprint***  
 Durante este sprint, nos enfocamos en terminar con la sección de manejo de usuario, lo cual engloba el registro y ajuste de datos de ambos tipos de usuario, asi como el inicio de sesión de la app, y tambien con la busqueda de empresas, vista principal del cliente. A su vez se avanzaran la vista de membresias para empresas, del historial de reservas del cliente, asi como los servicios y componentes del dominio Public.   
-
+  
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
 
 **Introducion:**  
@@ -348,10 +327,11 @@ Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo
 - Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric  
   
 ####5.2.2.7.Software Deployment Evidence for Sprint Review.  
+  
 La aplicación desplegada se encuentra en el siguiente enlace  
 [https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app),   
 más para su correcto funcionamiento, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)     
-
+  
 ####5.2.2.8.Team Collaboration Insights during Sprint.  
   
   
