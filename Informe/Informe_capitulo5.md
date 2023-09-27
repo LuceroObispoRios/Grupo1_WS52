@@ -273,6 +273,22 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ***Segundo Sprint***  
 Durante este sprint, nos enfocamos en terminar con la sección de manejo de usuario, lo cual engloba el registro y ajuste de datos de ambos tipos de usuario, asi como el inicio de sesión de la app, y tambien con la busqueda de empresas, vista principal del cliente. A su vez se avanzaran la vista de membresias para empresas, del historial de reservas del cliente, asi como los servicios y componentes del dominio Public.   
 
+![Login-sprint2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution1.JPG?raw=true)  
+![Registrar-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution2.JPG?raw=true)
+![registrar-empresa1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution3.JPG?raw=true)
+![registrar-empresa2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution4.JPG?raw=true)
+![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution5.JPG?raw=true)
+![busqueda de empresas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution6.JPG?raw=true)
+![Carta de información de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution7.JPG?raw=true)
+![historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution8.JPG?raw=true)
+![ajustes de empresa 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution9.JPG?raw=true)
+![ajustes de empresa 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution10.JPG?raw=true)
+![membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution11.JPG?raw=true)
+![membresias2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution12.JPG?raw=true)
+
+Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
+Link a la plataforma: [https://cargasinestres-vue.web.app/home](https://cargasinestres-vue.web.app/home)
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
 
 **Introducion:**  
@@ -308,21 +324,31 @@ Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo
 - Despues de registrar el cliente Lucero. Como se puede ver, el db.json cambio, pues se ha agregado un nuevo registro que guarda la informacion del cliente lucero. Mediante la sintaxis POST /clients  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services2.JPG?raw=true)
 
-*Obtener la informacion de una empresa por su id*  
-- Mediante la sintaxis GET /companies/{id}. En la consola se puede visualizar la informacion obtenida de esa empresa en especifico
+*Obtener la informacion de una empresa por su id*   
+- Mediante la sintaxis GET /companies/{id}. En la consola se puede visualizar la informacion obtenida de esa empresa en especifico  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services3.JPG?raw=true)  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services4.JPG?raw=true)
 
 *Realizar una reserva*   
-- Mediante la sintaxis POST /bookingHistory. Se crea una reserva y se almacena el db.json, se puede ver en la consola la informacion de la nueva reserva.
+- Mediante la sintaxis POST /bookingHistory. Se crea una reserva y se almacena el db.json, se puede ver en la consola la informacion de la nueva reserva.  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services5.JPG?raw=true)
 
-**Editar datos de una empresa**  
+**Editar datos de una empresa**   
 - Antes de presionar el boton de guardar cambios, se puede ver en la consola que la informacion de la direccion de la empresa Mudanzas Plata es en Monterrico  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services6.JPG?raw=true)
 
-- Mediante la sintaxis PUT /clients/{id}. Se edita los datos de la empresa de mudanzas plata, y son reemplazados por la nueva informacion ingresada en el formulario. Por ejemplo la direccion cambio a San Isidro
+- Mediante la sintaxis PUT /clients/{id}. Se edita los datos de la empresa de mudanzas plata, y son reemplazados por la nueva informacion ingresada en el formulario. Por ejemplo la direccion cambio a San Isidro  
 ![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services7.JPG?raw=true)
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.  
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.  
+**GitFlow**     
+![gitflow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2.JPG?raw=true)  
+![gitflow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2_1.JPG?raw=true)  
+
+**Contribuitors**   
+![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)  
 
 # Bibliografia
 --
