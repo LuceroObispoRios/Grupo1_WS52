@@ -1,6 +1,6 @@
 <template>
   <div>
-  <toolbar-boleta></toolbar-boleta>
+    <toolbar-boleta></toolbar-boleta>
   </div>
 
   <div>
@@ -10,13 +10,17 @@
       <table class="info">
         <tr>
           <td><strong>Nombres:</strong></td>
-          <td>{{ nombre }}</td>
+          <td>{{ tipoUsuario === 'cliente' ? nombre : nombreEmpresa }}</td>
         </tr>
-        <tr>
+        <tr v-if="tipoUsuario === 'cliente'">
           <td><strong>Apellidos:</strong></td>
           <td>{{ apellido }}</td>
         </tr>
-        <tr>
+        <tr v-if="tipoUsuario === 'cliente'">
+          <td><strong>DNI:</strong></td>
+          <td>{{dni}}</td>
+        </tr>
+        <tr v-if="tipoUsuario === 'empresa'">
           <td><strong>RUC:</strong></td>
           <td>{{ ruc }}</td>
         </tr>
@@ -42,19 +46,21 @@
 import JsPDF from 'jspdf';
 import toolbarBoleta from "@/public/pages/toolbar-boleta.component.vue";
 import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
-import ToolbarClient from "@/public/pages/toolbar-client.component.vue";  // Importar JsPDF como un módulo ES6
+import ToolbarClient from "@/public/pages/toolbar-client.component.vue";
 
 export default {
   name: 'BoletaModal',
-  components: {ToolbarClient, toolbarCompany, toolbarBoleta},
+  components: { ToolbarClient, toolbarCompany, toolbarBoleta },
   props: {
+    tipoUsuario: String,
     nombre: String,
     apellido: String,
+    nombreEmpresa: String,
+    dni: Number,
     ruc: Number,
     direccion: String,
-    tipoMembresia: Number,
+    tipoMembresia: String,
     tipoTarjeta: String,
-    // numeroBoleta: String,
   },
   methods: {
     descargarBoleta() {
@@ -67,17 +73,20 @@ export default {
       // Agregar el título y el contenido a la boleta
       doc.text('Boleta de Compra', 20, 20);
       doc.text('Nombre:', 20, 40);
-      doc.text(this.nombre, 70, 40, estiloContenido);
-      doc.text('Apellido:', 20, 55);
-      doc.text(this.apellido, 70, 55, estiloContenido);
-      doc.text('RUC:', 20, 70);
-      doc.text(this.ruc.toString(), 70, 70, estiloContenido);
-      doc.text('Dirección:', 20, 85);
-      doc.text(this.direccion, 70, 85, estiloContenido);
-      doc.text('Tipo de Tarjeta:', 20, 100);
-      doc.text(this.tipoTarjeta, 70, 100, estiloContenido);
-      doc.text('Precio de Membresía:', 20, 115);
-      doc.text(this.tipoMembresia.toString(), 80, 115, estiloContenido);
+      doc.text(this.tipoUsuario === 'cliente' ? this.nombre : this.nombreEmpresa, 70, 40, estiloContenido);
+      if (this.tipoUsuario === 'cliente') {
+        doc.text('Apellido:', 20, 55);
+        doc.text(this.apellido, 70, 55, estiloContenido);
+      } else {
+        doc.text('RUC:', 20, 55);
+        doc.text(this.ruc, 70, 55, estiloContenido);
+      }
+      doc.text('Dirección:', 20, 70);
+      doc.text(this.direccion, 70, 70, estiloContenido);
+      doc.text('Tipo de Tarjeta:', 20, 85);
+      doc.text(this.tipoTarjeta, 70, 85, estiloContenido);
+      doc.text('Precio de Membresía:', 20, 100);
+      doc.text(this.tipoMembresia, 70, 100, estiloContenido);
 
       // Descargar la boleta como un archivo PDF.
       doc.save('boleta_compra.pdf');
