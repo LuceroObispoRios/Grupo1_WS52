@@ -255,9 +255,14 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
 ![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration3_sprint1.png?raw=true)  
 
 ### 5.2.2. Sprint 2
-
-#### 5.2.2.4. Testing Suite Evidence for Sprint Review.
-
+#### 5.2.2.1. Sprint Planning 2.  
+  
+#### 5.2.2.2. Sprint Backlog 2.  
+  
+#### 5.2.2.3. Development Evidence for Sprint Review.  
+  
+#### 5.2.2.4. Testing Suite Evidence for Sprint Review.  
+  
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
   
 ![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
@@ -269,7 +274,16 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
 ![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
 ![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)  
-
+  
+#### 5.2.2.5. Execution Evidence for Sprint Review.   
+  
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
+  
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.  
+  
+#### 5.2.2.8. Team Collaboration Insights during Sprint.  
+  
+  
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
