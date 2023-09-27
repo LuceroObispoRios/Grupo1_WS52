@@ -24,7 +24,7 @@
           <button id="submitButton" type="submit">Guardar cambios</button>
           <router-link to="/company-search" class="btn btn-outline-orange">Cancelar</router-link>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
+          <!--<div id="errorMessages" class="error-messages" v-html="errorMessage"></div>-->
         </form>
       </div>
     </div>
@@ -169,7 +169,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 3rem 5rem 3rem 5rem;
+  margin: auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
