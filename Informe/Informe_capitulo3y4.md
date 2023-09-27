@@ -38,7 +38,7 @@
 | Historial de reservas | Visualizar historial de reservas | Como usuario cliente quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación. | Escenario 1: El usuario ingresa a reservas. Dado que el usuario ingresa a la sección de reservas. Cuando seleccione el botón ver historial de reservas. Entonces aparecerá la página del historial. Escenario 2: El usuario visualiza su historial de reservas. Dado que el usuario se encuentra en la página del historial de reservas. Cuando el usuario haga scroll. Entonces la página le permitirá ver más reservas hechas anteriormente. Escenario 3: El usuario visualiza sus últimas reservas. Dado que el usuario ingresa a la sección de reservas. Cuando la plataforma carga la página. Entonces las últimas reservas se visualizarán primero y las más antiguas al último. | #5 |
 
 ## 3.3. Impact Mapping  
-![Impact_Map](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Impactmapping.jpg)
+![Impact_Map](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/Impactmapping.jpg?raw=true)
 
 ## 3.4. Product Backlog
 
