@@ -277,14 +277,6 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
   
 #### 5.2.2.5. Execution Evidence for Sprint Review.   
   
-#### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
-  
-#### 5.2.2.7. Software Deployment Evidence for Sprint Review.  
-  
-#### 5.2.2.8. Team Collaboration Insights during Sprint.  
-  
-=======
-
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
   
 ![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
@@ -332,6 +324,13 @@ Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo
 *Registrar Cliente*  
 - Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric
   
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.   
+   
+#### 5.2.2.8. Team Collaboration Insights during Sprint.   
+  
+    
+=======  
+    
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
