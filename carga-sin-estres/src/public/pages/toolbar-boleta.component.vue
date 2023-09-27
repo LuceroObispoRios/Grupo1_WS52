@@ -8,6 +8,8 @@ export default {
       items: [
         { label: "Inicio", to: "/" },
         { label: 'Editar Perfil', to: '/client-settings/:id' },
+        { label: 'Editar Membresia', to: '/formulario' },
+
       ],
     };
   },
@@ -57,5 +59,6 @@ export default {
   left: 0;
   width: 100%;
   z-index: 1000;
-}
+
 </style>
+

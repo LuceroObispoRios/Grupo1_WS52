@@ -72,7 +72,11 @@ Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la legibilidad, se 
 ***JavaScript:***  
 (file).js  
 Descripción: Lenguaje de programación que se usa para poder darle funcionalidades a las páginas web y que permita manipular su contenido y responder a acciones del usuario.  
-Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la comprensión del código, se utilizaran nombre de variables y funciones en minúscula, no abreviados y que describan su propósito. Asimismo, se dividirán funciones largas en funciones más pequeñas para facilitar la lectura.  
+Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la comprensión del código, se utilizaran nombre de variables y funciones en minúscula, no abreviados y que describan su propósito. Asimismo, se dividirán funciones largas en funciones más pequeñas para facilitar la lectura. 
+
+***Vue***
+Descripción: Framework de Javascript que se usa para construir interfaces de usuario interactivas y dinamicas en aplicaciones web.
+Convenciones: De acuerdo a Vue (s.f.), la nomenclatura debe estar en formato camelCase. Tambien, se utilizara el prefijo "v" en plantillas HTML como 'v-if', 'v-for', 'v-bind', etc.
 
 ### 5.1.4. Software Deployment Configuration.
 Para almacenar y manejar el flujo de trabajo del equipo, hemos creado un repositorio en GitHub. Utilizaremos "main" como la rama principal para el desarrollo.
@@ -275,11 +279,13 @@ MDN Web Docs. (s.f.). Code Style Guide. Recuperado de: https://developer.mozilla
 
 W3Schools. (s.f.). HTML5 Syntax. Recuperado de: https://www.w3schools.com/html/html5_syntax.asp [Fecha de consulta: 04 de septiembre de 2023]  
 
+Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?redirect=true [Fecha de consulta: 26 de septiembre de 2023]  
+
 # Anexos  
 ## Anexo Videos de Exposiciones  
 
 - TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-
+- TP: 
 
 
 
