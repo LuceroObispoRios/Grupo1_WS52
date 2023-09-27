@@ -271,8 +271,27 @@ Los metodos PUT clients y companies estan relacionados a las pantallas Client Se
 Los metodos GET companies y GET companies con parametro de id, estan relacionados a la pantalla de Busqueda de Empresas, donde el usuario puede ver la lista completa de empresa, y cuando le da click a una fila puede acceder a la informacion de una empresa en especifica.  
 Por ultimo, los metodos POST bookingHistory, GET booking History, asi como los metodos GET chat y POST chat permiten al usuario crear una reserva como visualizar en el historia de reservas, teniendo en cuenta que desde este historial se puede crear mensajes.
 
+**Tabla:**  
 
+|     **Endpoint**    | **Metodo HTTP** |           **Acciones (Explicacion del response)**                                                           | **Enlace** | 
+|--------|----------|--------|-------|
+|  /companies         |       GET       | 200 OK: Retorna la lista de todas las empresas registradas                                                  |    [https://cargasinestres-vue.web.app/company-search](https://cargasinestres-vue.web.app/company-search)     |
+|  /companies/{id}    |       GET       | 200 OK: Retorna información de la compañía correspondiente al ID especificado (parametro: id, ejemplo: '1') |    [https://cargasinestres-vue.web.app/company/1](https://cargasinestres-vue.web.app/company/1)        |
+|  /bookingHistory    |       POST      | 201 Created: Indica que la reserva ha sido creada exitosamente                                              |    [https://cargasinestres-vue.web.app/company/1](https://cargasinestres-vue.web.app/company/1)        |
+|  /bookingHistory    |       GET       | 200 OK: Retorna la lista de todas las reservas de historial registradas                                     |    [https://cargasinestres-vue.web.app/bookingHistory](https://cargasinestres-vue.web.app/bookingHistory)       |
+|  /clients           |       GET       | 200 OK: Retorna la información del cliente si el email y contrasena son válidas                             |    [https://cargasinestres-vue.web.app/login](https://cargasinestres-vue.web.app/login)   |
+|  /companies         |       GET       | 200 OK: Retorna la información de la empresa si el email y contrasena son válida                            |    [https://cargasinestres-vue.web.app/login](https://cargasinestres-vue.web.app/login)       |
+|  /clients           |       POST      | 201 Created: Indica que el cliente ha sido creado exitosamente                                              |    [https://cargasinestres-vue.web.app/register-client](https://cargasinestres-vue.web.app/register-client)     |
+|  /companies         |       POST      | 201 Created: Indica que la compañía ha sido creada exitosamente                                             |    [https://cargasinestres-vue.web.app/register-company](https://cargasinestres-vue.web.app/register-company)        |
+|  /clients/{id}      |       PUT       | 200 OK: Indica que los datos del cliente han sido actualizados exitosamente (parametro: id, ejemplo: '31')      |    [https://cargasinestres-vue.web.app/client-settings/1](https://cargasinestres-vue.web.app/client-settings/1)     |
+|  /companies/{id}    |       PUT       | 200 OK: Indica que los datos de la compañía han sido actualizados exitosamente (paranetro: id, ejemplo: '2')    |   [https://cargasinestres-vue.web.app/company-settings/8](https://cargasinestres-vue.web.app/company-settings/8)    |  
 
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js)
+
+**Captura de interaccion con datos de prueba**   
+*Registrar Cliente*  
+- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric
+  
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
