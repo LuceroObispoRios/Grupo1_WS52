@@ -1,176 +1,118 @@
-<template>
-  <div>
-    <toolbar-company></toolbar-company>
-    <br><br><br>
-  </div>
-
-  <div>
-    <div class="container1">
-    <form @submit.prevent="submitForm" id="customer-info" class="left-container">
-      <label for="nombre">Nombres:</label><br>
-      <input type="text" v-model="nombre" required><br>
-      <label for="apellido">Apellidos:</label><br>
-      <input type="text" v-model="apellido" required><br>
-      <label for="ruc">RUC:</label><br>
-      <input type="number" v-model="ruc" required><br>
-      <label for="direccion">Dirección:</label><br>
-      <input type="text" v-model="direccion" required><br>
-      <label for="tipoMembresia">Tipo de membresía:</label>
-      <select v-model="tipoMembresia" required>
-        <option value="35">1 Mes</option>
-        <option value="95">3 Meses</option>
-        <option value="365">1 Año</option>
-      </select><br>
-      <label for="tarjeta">Tipo de tarjeta:</label>
-      <select v-model="tipoTarjeta" required>
-        <option value="visa">Visa</option>
-        <option value="mastercard">MasterCard</option>
-      </select><br><br>
-      <button type="submit">Continuar</button>
-    </form>
-      <div class="right-container">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
-      </div>
-    </div>
-  </div>
-  <br>
-</template>
-
 <script>
-import boletaModal from "@/membership/pages/BoletaModal.vue";
-import toolbarCompanyComponent from "@/public/pages/toolbar-company.component.vue";
-import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
-
-export default {
-  name: 'FormularioPage',
-  components: {toolbarCompany, toolbarCompanyComponent },
-  computed: {
-    boletaModal() {
-      return boletaModal
-    }
-  },
-  data() {
-    return {
-      nombre: '',
-      apellido: '',
-      ruc: '',
-      direccion: '',
-      tipoMembresia: '',
-      tipoTarjeta: '',
-    };
-  },
-  methods: {
-    submitForm() {
-      //if (typeof this.$root.$options.$contadorBoletas === 'number')
-      {
-        const contadorBoletas = ++this.$root.$options.$contadorBoletas;
-        setTimeout(() => {
-          // Redirigir al usuario a la página de la boleta con el número de boleta obtenido
-          this.$router.push({
-            path: '/boleta',
-            query: {
-              numeroBoleta: contadorBoletas,
-              nombre: this.nombre,
-              apellido: this.apellido,
-              ruc: this.ruc,
-              direccion: this.direccion,
-              tipoMembresia: this.tipoMembresia,
-              tipoTarjeta: this.tipoTarjeta,
-            },
-          });
-        }, );
-      }
+  import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
+  import { FilterMatchMode } from "primevue/api";
+  import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+  export default{
+    name: "company-list",
+    components:{
+      toolbarClient,
     },
-  },
-};
+    data(){
+      return{
+        companies: [],
+        company: {},
+        companyService: null,
+        filters: {},
+      };
+    },
+    created(){
+      this.companyService = new cargaSinEstresApiService();
+      this.companyService.getAll()
+          .then((response) => {
+            this.companies = response.data;
+            console.log("Companies:");
+            console.log(this.companies);
+      });
+      this.initFilters();
+    },
+    methods:{
+      initFilters(){
+        this.filters = {
+          global:{
+            value: null,
+            matchMode: FilterMatchMode.CONTAINS,
+          }
+        }
+      },
+      handleRowClick(event) {
+        setTimeout(() => {
+          const companyId = event.data.id;
+          const companyData= JSON.stringify(event.data);
+          this.$router.push({
+            path: `/company/${companyId}`,
+            name: "company-detail",
+            params:{
+              id: companyId,
+            },
+            query:{
+              companyData,
+            }
+          });
+        });
+      }
+    }
+  }
 </script>
 
-<style>
-h2{
-  color: #181818;
-  font-size: 50px;
-}
+<template>
+  <div>
+    <div>
+      <toolbar-client></toolbar-client>
+    </div>
 
-/* Estilos para el contenedor principal */
-.container1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+    <div class="card">
+      <pv-toolbar class="mb-4">
+        <template #start>
+        </template>
 
-/* Estilos para el formulario en la mitad izquierda */
-.left-container {
-  flex: 3;
-  background-color: #e8a300;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 60px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+        <template #end>
+        </template>
+      </pv-toolbar>
 
-/* Estilos para las etiquetas dentro del formulario */
-.left-container label {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 15px;
-  width: 90px;
-  display: inline-block;
-}
+      <pv-data-table ref="dt" :value="companies" dataKey="id"
+                     :paginator="true" :rows="10"
+                     :filters="filters"
+                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
+                     :rowsPerPageOptions="[5, 10, 25]"
+                     currentPageReportTemplate="Se muestra {first} - {last} de {totalRecords} empresas"
+                     responsiveLayout="scroll"
+                     @row-click="handleRowClick"
+      >
 
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 12px;
-}
+        <template #header>
+          <div class="table-header flex flex-column md:flex-row md:justify-content-between">
+            <h5 class="mb-2 md:m-0 p-as-md-center text-xl">Busqueda de empresas</h5>
+            <span class="p-input-icon-left">
+              <i class="pi pi-search" />
+              <pv-input-text v-model="filters['global'].value" placeholder="Buscar..."/>
+            </span>
+          </div>
+        </template>
 
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 12px;
-}
+        <pv-column field="id" header="Id" :sortable="true" style="min-width: 12rem"></pv-column>
+        <pv-column field="name" header="Nombre" :sortable="true" style="min-width: 15rem"></pv-column>
+        <pv-column field="services" header="Servicios" :sortable="true" style="min-width: 30rem">
+          <template #body="slotProps">
+            <span v-if="slotProps.data.transporte">Transporte, </span>
+            <span v-if="slotProps.data.carga">Carga, </span>
+            <span v-if="slotProps.data.embalaje">Embalaje, </span>
+            <span v-if="slotProps.data.montaje">Montaje, </span>
+            <span v-if="slotProps.data.desmontaje">Desmontaje</span>
+          </template>
+        </pv-column>
 
-/* Estilos para la imagen a la derecha */
-.right-container {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+        <pv-column field="photo" header="Logo" style="min-width: 12rem">
+          <template #body="slotProps">
+            <img :src="slotProps.data.photo" alt="Logo" class="w-4 h-4 rounded-full">
+          </template>
+        </pv-column>
 
-/* Estilos para la imagen */
-.floating-image {
-  width: 150px;
-  margin-top: 120px;
-  height: 400px;
-}
+      </pv-data-table>
+    </div>
+  </div>
+</template>
 
-/* Estilos para el botón "Continuar" */
-submit {
-  background-color: #ee8f00;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
-  text-align:center;
-}
 
-submit:hover {
-  background-color: #ee8f00;
-}
+<style scoped>
+
 </style>
