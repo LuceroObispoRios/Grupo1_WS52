@@ -1,118 +1,136 @@
-<script>
-  import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
-  import { FilterMatchMode } from "primevue/api";
-  import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  export default{
-    name: "company-list",
-    components:{
-      toolbarClient,
-    },
-    data(){
-      return{
-        companies: [],
-        company: {},
-        companyService: null,
-        filters: {},
-      };
-    },
-    created(){
-      this.companyService = new cargaSinEstresApiService();
-      this.companyService.getAll()
-          .then((response) => {
-            this.companies = response.data;
-            console.log("Companies:");
-            console.log(this.companies);
-      });
-      this.initFilters();
-    },
-    methods:{
-      initFilters(){
-        this.filters = {
-          global:{
-            value: null,
-            matchMode: FilterMatchMode.CONTAINS,
-          }
-        }
-      },
-      handleRowClick(event) {
-        setTimeout(() => {
-          const companyId = event.data.id;
-          const companyData= JSON.stringify(event.data);
-          this.$router.push({
-            path: `/company/${companyId}`,
-            name: "company-detail",
-            params:{
-              id: companyId,
-            },
-            query:{
-              companyData,
-            }
-          });
-        });
-      }
-    }
-  }
-</script>
-
 <template>
   <div>
-    <div>
-      <toolbar-client></toolbar-client>
-    </div>
-
-    <div class="card">
-      <pv-toolbar class="mb-4">
-        <template #start>
-        </template>
-
-        <template #end>
-        </template>
-      </pv-toolbar>
-
-      <pv-data-table ref="dt" :value="companies" dataKey="id"
-                     :paginator="true" :rows="10"
-                     :filters="filters"
-                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
-                     :rowsPerPageOptions="[5, 10, 25]"
-                     currentPageReportTemplate="Se muestra {first} - {last} de {totalRecords} empresas"
-                     responsiveLayout="scroll"
-                     @row-click="handleRowClick"
-      >
-
-        <template #header>
-          <div class="table-header flex flex-column md:flex-row md:justify-content-between">
-            <h5 class="mb-2 md:m-0 p-as-md-center text-xl">Busqueda de empresas</h5>
-            <span class="p-input-icon-left">
-              <i class="pi pi-search" />
-              <pv-input-text v-model="filters['global'].value" placeholder="Buscar..."/>
-            </span>
-          </div>
-        </template>
-
-        <pv-column field="id" header="Id" :sortable="true" style="min-width: 12rem"></pv-column>
-        <pv-column field="name" header="Nombre" :sortable="true" style="min-width: 15rem"></pv-column>
-        <pv-column field="services" header="Servicios" :sortable="true" style="min-width: 30rem">
-          <template #body="slotProps">
-            <span v-if="slotProps.data.transporte">Transporte, </span>
-            <span v-if="slotProps.data.carga">Carga, </span>
-            <span v-if="slotProps.data.embalaje">Embalaje, </span>
-            <span v-if="slotProps.data.montaje">Montaje, </span>
-            <span v-if="slotProps.data.desmontaje">Desmontaje</span>
-          </template>
-        </pv-column>
-
-        <pv-column field="photo" header="Logo" style="min-width: 12rem">
-          <template #body="slotProps">
-            <img :src="slotProps.data.photo" alt="Logo" class="w-4 h-4 rounded-full">
-          </template>
-        </pv-column>
-
-      </pv-data-table>
+    <toolbar-boleta></toolbar-boleta>
+  </div>
+  
+  <div>
+    <h2>Boleta de Compra</h2>
+    <div class="boleta">
+      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 200px"><br><br>
+      <table class="info">
+        <tr>
+          <td><strong>Nombres:</strong></td>
+          <td>{{ nombre }}</td>
+        </tr>
+        <tr>
+          <td><strong>Apellidos:</strong></td>
+          <td>{{ apellido }}</td>
+        </tr>
+        <tr>
+          <td><strong>RUC:</strong></td>
+          <td>{{ ruc }}</td>
+        </tr>
+        <tr>
+          <td><strong>Dirección:</strong></td>
+          <td>{{ direccion }}</td>
+        </tr>
+        <tr>
+          <td><strong>Tipo de Tarjeta:</strong></td>
+          <td>{{ tipoTarjeta }}</td>
+        </tr>
+        <tr>
+          <td><strong>Precio de Membresía:</strong></td>
+          <td>{{ tipoMembresia }}</td>
+        </tr>
+      </table>
+      <button @click="descargarBoleta">Descargar Boleta</button>
     </div>
   </div>
+  <br>
 </template>
 
+<script>
+import JsPDF from 'jspdf';
+import toolbarBoleta from "@/public/pages/toolbar-boleta.component.vue";
+import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
+import ToolbarClient from "@/public/pages/toolbar-client.component.vue";  // Importar JsPDF como un módulo ES6
+
+export default {
+  name: 'BoletaModal',
+  components: {ToolbarClient, toolbarCompany, toolbarBoleta},
+  props: {
+    nombre: String,
+    apellido: String,
+    ruc: Number,
+    direccion: String,
+    tipoMembresia: Number,
+    tipoTarjeta: String,
+    // numeroBoleta: String,
+  },
+  methods: {
+    descargarBoleta() {
+      // Aquí implementamos la lógica para generar y descargar la boleta en PDF con JsPDF
+      const doc = new JsPDF();
+
+      // Definir los estilos para el título y el contenido
+      const estiloTitulo = { fontSize: 18, fontStyle: 'bold', marginBottom: 10 };
+      const estiloContenido = { fontSize: 14, marginBottom: 5 };
+      // Agregar el título y el contenido a la boleta
+      doc.text('Boleta de Compra', 20, 20);
+      doc.text('Nombre:', 20, 40);
+      doc.text(this.nombre, 70, 40, estiloContenido);
+      doc.text('Apellido:', 20, 55);
+      doc.text(this.apellido, 70, 55, estiloContenido);
+      doc.text('RUC:', 20, 70);
+      doc.text(this.ruc.toString(), 70, 70, estiloContenido);
+      doc.text('Dirección:', 20, 85);
+      doc.text(this.direccion, 70, 85, estiloContenido);
+      doc.text('Tipo de Tarjeta:', 20, 100);
+      doc.text(this.tipoTarjeta, 70, 100, estiloContenido);
+      doc.text('Precio de Membresía:', 20, 115);
+      doc.text(this.tipoMembresia.toString(), 80, 115, estiloContenido);
+
+      // Descargar la boleta como un archivo PDF.
+      doc.save('boleta_compra.pdf');
+    },
+  },
+};
+</script>
 
 <style scoped>
+h2 {
+  color: #181818;
+  font-size: 24px;
+  text-align: center;
+}
 
+.boleta {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.info {
+  width: 100%;
+}
+
+.info td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+button {
+  background-color: #ee8f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #ee8f00;
+}
 </style>
