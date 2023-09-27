@@ -113,19 +113,20 @@
       "description": "empresa"
     },
     {
+      "id": 8,
       "name": "Mudanzas Plata",
+      "photo": "https://mudanzasplata.com/wp-content/uploads/2021/07/cropped-logo-mudannzas-plata-transparente.png",
       "email": "plata@gmail.com",
-      "direccion": "San Isidro",
+      "direccion": "Monterrico",
       "numeroContacto": "912345678",
       "password": "123456",
-      "photo": "https://mudanzasplata.com/wp-content/uploads/2021/07/cropped-logo-mudannzas-plata-transparente.png",
-      "transporte": false,
+      "confirmarpassword": "123456",
+      "transporte": true,
       "carga": true,
       "embalaje": true,
       "montaje": true,
       "desmontaje": false,
-      "description": "Empresa ubicada en San Isidro",
-      "id": 8
+      "description": "empresa"
     }
   ],
   "clients": [
@@ -138,16 +139,6 @@
       "email": "e@gmail.com",
       "password": "123456",
       "id": 1
-    },
-    {
-      "name": "lucero",
-      "apellidoMaterno": "rios",
-      "apellidoPaterno": "obispo",
-      "celular": "912345678",
-      "direccion": "Monterrico",
-      "email": "lu@gmail.com",
-      "password": "123456",
-      "id": 2
     }
   ],
   "bookingHistory": [
@@ -166,7 +157,7 @@
       },
       "hiredCompany": {
         "name": "Transporte y mudanzas Rapi2",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo1.jpg"
+        "logo": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/logotipo-transporte-y-mudanzas-design-template-8ee4abec6c3d27c285e676c71f18c550_screen.jpg?ts=1626998647"
       }
     },
     {
@@ -184,7 +175,7 @@
       },
       "hiredCompany": {
         "name": "Romabe transporte",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo2.jpg"
+        "logo": "https://transporteromabe.com/wp-content/uploads/2021/07/Mudanzas-de-Arequipa-a-Lima-2.jpg"
       }
     },
     {
@@ -202,7 +193,7 @@
       },
       "hiredCompany": {
         "name": "Mudate Facil",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo3.png"
+        "logo": "https://www.zarla.com/images/zarla-mdate-fcil-1x1-2400x2400-20220329-q9j6rjmbw347xwbwmy3g.png?crop=1:1,smart&width=250&dpr=2"
       }
     },
     {
@@ -220,7 +211,7 @@
       },
       "hiredCompany": {
         "name": "Bodegas y mudanzas Santana",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo4.png"
+        "logo": "https://www.santanamudanzasybodegas.com/wp-content/uploads/2021/07/SANTANA-BODEGAS-Y-MUDANZAS-MUDANZAS-EN-CALI-MUDANZAS-NACIONALES-01.jpg"
       }
     },
     {
@@ -238,7 +229,7 @@
       },
       "hiredCompany": {
         "name": "Practi Mudanza",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo5.png"
+        "logo": "https://practimudanza.com/wp-content/uploads/2020/11/LOGO-RECTANGULAR-PRACTIMUDANZA-RGB-LOGO-MUDANZAS-MUDANZAS-EN-CALI-EMPRESAS-DE-MUDANZAS-EN-CALI-01.png"
       }
     },
     {
@@ -256,7 +247,7 @@
       },
       "hiredCompany": {
         "name": "Mudanzas Jurado",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo6.png"
+        "logo": "https://www.mudanzasjurado.com/uploads/UFOLSqyA/353x0_387x0/logo.jpg"
       }
     },
     {
@@ -274,18 +265,18 @@
       },
       "hiredCompany": {
         "name": "Mudanzas Plata",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo7.png"
+        "logo": "https://mudanzasplata.com/wp-content/uploads/2021/07/cropped-logo-mudannzas-plata-transparente.png"
       }
     },
     {
       "id": 8,
       "idCompany": 1,
-      "services": "Transporte, Carga",
-      "bookingDate": "2023/05/2",
-      "pickupAddress": "San Miguel",
-      "destinationAddress": "San Miguel",
-      "movingDate": "2023/09/31",
-      "movingTime": "12:00",
+      "services": "Transporte",
+      "bookingDate": "26-09-23",
+      "pickupAddress": "SMP",
+      "destinationAddress": "Surco",
+      "movingDate": "30-09-23",
+      "movingTime": "16:00",
       "status": "En curso",
       "payment": {
         "totalAmount": 0,
