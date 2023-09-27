@@ -166,8 +166,6 @@ Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente
 
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
 
-![Testing Suite Evidence]()
-
 ![feature 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)    
 
 ![feature 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us02.png?raw=true)  
