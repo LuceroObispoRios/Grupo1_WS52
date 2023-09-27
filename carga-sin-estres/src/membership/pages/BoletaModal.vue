@@ -1,8 +1,8 @@
 <template>
   <div>
-  <toolbar-boleta></toolbar-boleta>
+    <toolbar-boleta></toolbar-boleta>
   </div>
-
+  
   <div>
     <h2>Boleta de Compra</h2>
     <div class="boleta">
@@ -36,6 +36,7 @@
       <button @click="descargarBoleta">Descargar Boleta</button>
     </div>
   </div>
+  <br>
 </template>
 
 <script>
