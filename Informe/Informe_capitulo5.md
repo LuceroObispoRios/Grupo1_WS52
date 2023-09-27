@@ -321,14 +321,8 @@ Por ultimo, los metodos POST bookingHistory, GET booking History, asi como los m
 Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js)
 
 **Captura de interaccion con datos de prueba**   
-*Registrar Cliente*  
-- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric
   
-#### 5.2.2.7. Software Deployment Evidence for Sprint Review.   
-   
-#### 5.2.2.8. Team Collaboration Insights during Sprint.   
-  
-    
+
 =======  
     
 # Bibliografia
