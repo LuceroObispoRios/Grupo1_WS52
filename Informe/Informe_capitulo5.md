@@ -400,7 +400,7 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 ## Anexo Videos de Exposiciones  
 
 - TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-- TP: 
+- TP: https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing
 
 
 
