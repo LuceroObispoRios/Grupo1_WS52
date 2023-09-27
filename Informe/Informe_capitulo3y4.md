@@ -30,7 +30,7 @@
 ![User Story 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/US18.png?raw=true)
 
 ## 3.3. Impact Mapping  
-![Impact_Map](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ImpactMap.png?raw=true)
+![Impact_Map](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/Impactmapping.jpg?raw=true)
 
 ## 3.4. Product Backlog
 
