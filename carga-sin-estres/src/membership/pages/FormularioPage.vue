@@ -1,33 +1,53 @@
 <template>
   <div>
     <toolbar-company></toolbar-company>
-    <br><br><br><br>
+    <br><br><br>
   </div>
 
   <div>
     <div class="container1">
-    <form @submit.prevent="submitForm" id="customer-info" class="left-container">
-      <label for="nombre">Nombres:</label><br>
-      <input type="text" v-model="nombre" required><br>
-      <label for="apellido">Apellidos:</label><br>
-      <input type="text" v-model="apellido" required><br>
-      <label for="ruc">RUC:</label><br>
-      <input type="number" v-model="ruc" required><br>
-      <label for="direccion">Dirección:</label><br>
-      <input type="text" v-model="direccion" required><br>
-      <label for="tipoMembresia">Tipo de membresía:</label>
-      <select v-model="tipoMembresia" required>
-        <option value="35">1 Mes</option>
-        <option value="95">3 Meses</option>
-        <option value="365">1 Año</option>
-      </select><br>
-      <label for="tarjeta">Tipo de tarjeta:</label>
-      <select v-model="tipoTarjeta" required>
-        <option value="visa">Visa</option>
-        <option value="mastercard">MasterCard</option>
-      </select><br><br>
-      <button type="submit">Continuar</button>
-    </form>
+      <form @submit.prevent="submitForm" id="customer-info" class="left-container">
+        <label for="tipoUsuario">Seleccione el tipo de usuario:</label><br>
+        <input type="radio" id="cliente" value="cliente" v-model="tipoUsuario" required>
+        <label for="cliente">Cliente</label>
+        <input type="radio" id="empresa" value="empresa" v-model="tipoUsuario" required>
+        <label for="empresa">Empresa</label>
+        <br><br>
+
+        <!-- Campos para cliente -->
+        <div v-if="tipoUsuario === 'cliente' ">
+          <label for="nombre">Nombres:</label><br>
+          <input type="text" v-model="nombre" required><br>
+          <label for="apellido">Apellidos:</label><br>
+          <input type="text" v-model="apellido" required><br>
+          <label for="dni">DNI:</label><br>
+          <input type="text" v-model="dni" required><br>
+        </div>
+
+        <!-- Campos para empresa -->
+        <div v-if="tipoUsuario === 'empresa'">
+          <label for="nombreEmpresa">Nombre de Empresa:</label><br>
+          <input type="text" v-model="nombreEmpresa" required><br>
+          <label for="ruc">RUC:</label><br>
+          <input type="text" v-model="ruc" required><br>
+        </div>
+
+        <!-- Campos comunes -->
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" v-model="direccion" required><br>
+        <label for="tipoMembresia">Tipo de membresía:</label>
+        <select v-model="tipoMembresia" required>
+          <option value="35">1 Mes</option>
+          <option value="95">3 Meses</option>
+          <option value="365">1 Año</option>
+        </select><br>
+        <label for="tipoTarjeta">Tipo de tarjeta:</label>
+        <select v-model="tipoTarjeta" required>
+          <option value="visa">Visa</option>
+          <option value="mastercard">MasterCard</option>
+        </select><br><br>
+        <button type="submit">Continuar</button>
+      </form>
       <div class="right-container">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
       </div>
@@ -50,8 +70,11 @@ export default {
   },
   data() {
     return {
+      tipoUsuario: '',
       nombre: '',
       apellido: '',
+      dni: '',
+      nombreEmpresa: '',
       ruc: '',
       direccion: '',
       tipoMembresia: '',
@@ -60,26 +83,33 @@ export default {
   },
   methods: {
     submitForm() {
-      //if (typeof this.$root.$options.$contadorBoletas === 'number')
-      {
-        const contadorBoletas = ++this.$root.$options.$contadorBoletas;
-        setTimeout(() => {
-          // Redirigir al usuario a la página de la boleta con el número de boleta obtenido
-          this.$router.push({
-            path: '/boleta',
-            query: {
-              numeroBoleta: contadorBoletas,
-              nombre: this.nombre,
-              apellido: this.apellido,
-              ruc: this.ruc,
-              direccion: this.direccion,
-              tipoMembresia: this.tipoMembresia,
-              tipoTarjeta: this.tipoTarjeta,
-            },
-          });
-        }, );
+      // Crear un objeto para almacenar los datos del formulario
+      const formData = {
+        tipoUsuario: this.tipoUsuario,
+        direccion: this.direccion,
+        tipoMembresia: this.tipoMembresia,
+        tipoTarjeta: this.tipoTarjeta,
+      };
+      console.log(formData)
+      if (this.tipoUsuario === 'cliente') {
+        // Agregar datos específicos del cliente
+        formData.nombre = this.nombre;
+        formData.apellido = this.apellido;
+        formData.dni = this.dni;
+        console.log("cliente",this.nombre)
+      } else if (this.tipoUsuario === 'empresa') {
+        // Agregar datos específicos de la empresa
+        formData.nombreEmpresa = this.nombreEmpresa;
+        formData.ruc = this.ruc;
+        console.log("empresa",this.nombreEmpresa)
       }
-    },
+
+      // Redirigir al usuario a la página de la boleta con los datos del formulario
+      this.$router.push({
+        path: '/boleta',
+        query: formData,
+      });
+    }
   },
 };
 </script>
@@ -153,23 +183,5 @@ input[type="number"] {
   width: 150px;
   margin-top: 120px;
   height: 400px;
-}
-
-/* Estilos para el botón "Continuar" */
-submit {
-  background-color: #ee8f00;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
-  text-align:center;
-}
-
-submit:hover {
-  background-color: #ee8f00;
 }
 </style>
