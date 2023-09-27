@@ -345,8 +345,17 @@ Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo
 
 **Captura de interaccion con datos de prueba**   
 *Registrar Cliente*  
-- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric
+- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric  
   
+####5.2.2.7.Software Deployment Evidence for Sprint Review.  
+La aplicación desplegada se encuentra en el siguiente enlace  
+[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app),   
+más para su correcto funcionamiento, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)     
+
+####5.2.2.8.Team Collaboration Insights during Sprint.  
+  
+  
+--  
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
