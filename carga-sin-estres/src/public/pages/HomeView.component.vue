@@ -1,4 +1,3 @@
-
 <script>
 import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
 
@@ -21,6 +20,7 @@ export default {
 </script>
 
 <template>
+  <a href="https://wa.me/51950457066?text=Me%20gustaría%20saber%20los%20planes%20que%20ofrecen" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
   <div class="w-full">
     <toolbar-home></toolbar-home>
     <div class="landing-page">
@@ -48,7 +48,7 @@ export default {
             <div class="col-md-6">
               <div class="service-box">
                 <div class="service-icon">
-                  <img src="/icon1.webp" alt="Ícono 1">
+                  <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/icon1.webp?raw=true" alt="Ícono 1">
                 </div>
                 <h3><b>Carga Rápida</b></h3>
                 <p>Descubre servicios de carga disponibles en tu zona al momento de tu mudanza.</p>
@@ -57,7 +57,7 @@ export default {
             <div class="col-md-6">
               <div class="service-box">
                 <div class="service-icon">
-                  <img src="/icon2.png" alt="Ícono 2">
+                  <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/icon2.png?raw=true" alt="Ícono 2">
                 </div>
                 <h3><b>Reserva de Servicios</b></h3>
                 <p>Planea tu mudanza junto a la empresa que solicites, y define todos los detalles desde la comodidad de tu hogar.</p>
@@ -71,7 +71,7 @@ export default {
           <h2 class="text-center">SOBRE NOSOTROS</h2>
           <div class="row">
             <div class="col-md-6">
-              <img src="/logo1.png" alt="Logo" class="about-us-logo">
+              <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/logo1.png?raw=true" alt="Logo" class="about-us-logo">
             </div>
             <div class="col-md-6">
               <br><br>
@@ -128,21 +128,21 @@ export default {
           <div class="row">
             <div class="col-md-4">
               <div class="testimonial-box">
-                <img src="/testimonial1.png" alt="Testimonio 1" class="testimonial-img">
+                <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/testimonial1.png?raw=true" alt="Testimonio 1" class="testimonial-img">
                 <p>"Estoy extremadamente impresionado con el servicio de la empresa de mudanzas. ¡Recomiendo
                   encarecidamente sus servicios a cualquiera que necesite una mudanza!"<br><br>Juan Pérez</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="testimonial-box">
-                <img src="/testimonial2.png" alt="Testimonio 2" class="testimonial-img">
+                <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/testimonial2.png?raw=true" alt="Testimonio 2" class="testimonial-img">
                 <p>"Quiero expresar mi gratitud a la empresa de mudanzas por brindarme un servicio excelente. Si
                   estás buscando una empresa confiable para tu mudanza, no busques más."<br><br>Roberto Fernández</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="testimonial-box">
-                <img src="/testimonial3.png" alt="Testimonio 3" class="testimonial-img">
+                <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/testimonial3.png?raw=true" alt="Testimonio 3" class="testimonial-img">
                 <p>"Nunca pensé que una mudanza podría ser tan fluida hasta que encontré esta empresa. Definitivamente
                   volveré a elegirlos en el futuro y los recomendaré a mis amigos y familiares."<br><br>María González</p>
               </div>
@@ -159,7 +159,7 @@ export default {
 /* Estilos para la sección de presentación */
 .presentation {
   padding: 100px 0;
-  background-image: url('/fondo.jpeg');
+  background-image: url('https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/fondo.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -200,6 +200,7 @@ export default {
   color: #000000;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  text-align:center;
 }
 
 .service-box:hover {
@@ -244,6 +245,7 @@ export default {
   border-radius: 10px;
   padding: 20px;
   color: #333;
+  text-align:center;
 }
 
 /* Estilos para la sección "Planes para Empresa" */
@@ -258,6 +260,7 @@ export default {
 
 .plans h1 {
   color: #ffffff;
+  text-align:center;
 }
 
 .plan-box {
@@ -322,17 +325,4 @@ export default {
   margin-top:12px;
 }
 
-/* Estilos para el botón de scroll */
-.scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 24px;
-  background-color: #ff8800;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 40%;
-  cursor: pointer;
-  z-index: 999;
-}
 </style>
