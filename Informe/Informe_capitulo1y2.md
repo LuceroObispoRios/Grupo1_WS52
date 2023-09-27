@@ -131,7 +131,7 @@ Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma
 **Carrera:** Ingenieria de Software  
 **Acerca De:** Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
 **Fotografia de Perfil:**  
- <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true" width="160" height="190">
+ <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true" width="158" height="251">
 
 * **Nombres y Apellidos:** Andrea Namie O'Higgins Rosales  
 **Carrera:** Ingenieria de Software  
