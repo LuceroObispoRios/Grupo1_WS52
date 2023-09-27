@@ -7,7 +7,7 @@ export default {
       drawer: false,
       items: [
         { label: "Inicio", to: "/" },
-        { label: 'Editar Membresia', to: '/formulario' },
+        { label: 'Editar Perfil', to: '/client-settings/:id' },
       ],
     };
   },

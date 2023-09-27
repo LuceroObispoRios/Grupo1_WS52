@@ -19,7 +19,7 @@ export class cargaSinEstresApiService{
     }
 
     createReservation(data) {
-        return http.post('/reservations', data);
+        return http.post('/bookingHistory', data);
     }
 
     createClient(data){
