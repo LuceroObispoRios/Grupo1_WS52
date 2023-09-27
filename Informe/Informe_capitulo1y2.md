@@ -1,5 +1,5 @@
- <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/logoUPC.png?raw=true" width="400" height="132">     
-Ingenieria de Sistemas y Comunicaciones | Ingenieria de Software  
+ <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/logoUPC.png?raw=true" width="400" height="132">       
+Ingeniería de Sistemas y Comunicaciones | Ingenieria de Software  
 
 Para el curso de Aplicaciones Web  
 WS52 - Juan Carlos Tinoco Licas  
@@ -19,7 +19,10 @@ Ciclo 2023-02
  TB1 | 23/08/23 - 03/09/23  | Lucero Obispo|Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags. Se realizo 1 entrevista a trabajador de empresa, su registro y analisis. Para el sprint 1, se realizo el source code style guide of conventions y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas.
  TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, diseño, registro y analisis de la entrevista. Se avanzó con los wireframes, mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
  TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, se codifico el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano, asi como su registro y analisis.
- 
+  TP | 05/09/23 - 27/09/23  | Eric Cuevas|
+  TP | 05/09/23 - 27/09/23  | Lucero Obispo|
+  TP | 05/09/23 - 27/09/23  | Andrea O'Higgins| Se añadió el historial de reserva y el chat en la app, se diseñaron los wireframes y mockups. Se actualizó los user stories y features, y se agregó para el sprint2 el development evidence.
+  TP | 05/09/23 - 27/09/23  | Damaris Tasayco|
 ---
 1. Capitulo 1: Introducción  
    1.1 Startup Profile     
@@ -99,8 +102,8 @@ Ciclo 2023-02
 ---
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se realizó una entrevista a un ciudadano. Además, se realizaron meetings con el equipo<br><br> *Eric Cuevas Rios* <br>- Se realizó dos entrevistas al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica los resultados del informe. <br>  <br> *Lucero Obispo Rios* <br> - Se realizó una entrevista al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica la ejecucion del pagina web. <br><br> *Andrea O´Higgins Rosales* <br> - Se realizó dos entrevistas a ciudadanos. Además, se realizaron meetings con el equipo | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transferir y receptar ideas a fin de construir una solución hacia un problema identificado. Por ejemplo, al realizar entrevistas. Por otro lado, también es relevante comunicarse con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. Además, concluimos que dado un análisis y especificaciones de requisitos como también el diseño, la implementación, validación y despliegue del producto logramos definir una estructura robusta para el desarrollo del aplicativo web "Carga sin Estrés". |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br>  - Se desarrollo el analisis competitivo, el product backlog, historias de usuario, entre otros <br><br> *Eric Cuevas Rios* <br> - Se desarrollo los procesos de Lean UX, historias de Usuario, diagramas de modelado, entre otros <br>  <br> *Lucero Obispo Rios* <br> - Se desarrollo los procesos de Lean UX, historias de usuario, digrama de clases, entre otros <br><br> *Andrea O´Higgins Rosales* <br> - Se desarrollo los as-is y to-be scenario mapping, diagramas c4, historias de usuario, entre otros  | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transmitir mensajes legibles, limpios e intuitivos. Por ejemplo, al documentar una descripción de "Carga sin Estrés". Por otro lado, también es relevante transmitir mensajes en los medios remotos con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se realizó una entrevista a un ciudadano. Además, se realizaron meetings con el equipo<br><br> *Eric Cuevas Rios* <br>- Se realizó dos entrevistas al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica los resultados del informe. <br>  <br> *Lucero Obispo Rios* <br> - Se realizó una entrevista al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica la ejecucion del pagina web. <br><br> *Andrea O´Higgins Rosales* <br> - Se realizó dos entrevistas a ciudadanos. Además, se realizaron meetings con el equipo <br> **TP** <br> *Damaris Tasayco Vilcamiza* <br>  -Se desarrollo <br><br> *Eric Cuevas Rios* <br> -Se desarrollo <br>  <br> *Lucero Obispo Rios* <br> -Se desarrollo <br><br> *Andrea O'Higgins Rosales* <br> -| Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transferir y receptar ideas a fin de construir una solución hacia un problema identificado. Por ejemplo, al realizar entrevistas. Por otro lado, también es relevante comunicarse con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. Además, concluimos que dado un análisis y especificaciones de requisitos como también el diseño, la implementación, validación y despliegue del producto logramos definir una estructura robusta para el desarrollo del aplicativo web "Carga sin Estrés". |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br>  - Se desarrollo el analisis competitivo, el product backlog, historias de usuario, entre otros <br><br> *Eric Cuevas Rios* <br> - Se desarrollo los procesos de Lean UX, historias de Usuario, diagramas de modelado, entre otros <br>  <br> *Lucero Obispo Rios* <br> - Se desarrollo los procesos de Lean UX, historias de usuario, digrama de clases, entre otros <br><br> *Andrea O´Higgins Rosales* <br> - Se desarrollo los as-is y to-be scenario mapping, diagramas c4, historias de usuario, entre otros <br><br> **TP** <br> *Damaris Tasayco Vilcamiza* <br>  -Se desarrollo <br><br> *Eric Cuevas Rios* <br> -Se desarrollo <br>  <br> *Lucero Obispo Rios* <br> -Se desarrollo <br><br> *Andrea O'Higgins Rosales* <br> -Se desarrollo los archivos feature, actualización de los user stories y modificación del diagrama c4. | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transmitir mensajes legibles, limpios e intuitivos. Por ejemplo, al documentar una descripción de "Carga sin Estrés". Por otro lado, también es relevante transmitir mensajes en los medios remotos con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. |
 
 # Capitulo 1 : Introducción  
 ## 1.1 Startup profile  
@@ -116,28 +119,28 @@ Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma
 **Carrera:** Ingenieria de Software  
 **Acerca De:** Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
 **Fotografia de Perfil:**  
-![profile2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true)   
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true" width="160" height="245">   
 
 * **Nombres y Apellidos:** Lucero Abigail Obispo Rios  
 **Carrera:** Ingenieria de Software  
 **Acerca De:** Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
 **Fotografia de Perfil:**  
-![profile1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true)
+ <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true" width="160" height="255">
 
 * **Nombres y Apellidos:** Damaris Tasayco Vilcamiza  
 **Carrera:** Ingenieria de Software  
 **Acerca De:** Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
 **Fotografia de Perfil:**  
- ![profile3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true)
+ <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true" width="160" height="190">
 
 * **Nombres y Apellidos:** Andrea Namie O'Higgins Rosales  
 **Carrera:** Ingenieria de Software  
 **Acerca De:** Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
 **Fotografia de Perfil:**  
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true" width="300" height="356" style="margin-left:50px;">
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true" width="160" height="190">
 
 ## 1.2 Solution profile  
-### 1.2.1 Antecendentes y problematica  
+### 1.2.1 Antecendentes y problemática  
 En la actualidad, una de las actividades presentes en la vida de las personas es el cambio de lugar de residencia. Sea por diferentes motivos, como acercarse al centro de estudios o de trabajo, como resultado de sus metas a corto o largo plazo, e inclusive para mejorar su propia calidad de vida. Esto se refleja, como ejemplo, en el hecho de que aproximadamente 200,000 indiviudos migran internamente en Lima. Entre esta cantidad, un 58% se muda a una ubicación relativamente nueva, mientras que un 42% prefiere mudarse a una zona cercana a su ubicación anterior (IPSOS, 2019), asi como en la realidad que, aparte de la migración interna, el numero de inmigrantes que vienen a residir en Perú aumenta cada año, siendo el aumento en 2020 de 1.069.745 personas (Expansion, 2020).  
 Aun asi, dentro del propio sector de mudanza y transpote de carga como serian muebles o electrodomesticos, se presentan problemas para ambos las empresas de mudanza y transporte de bienes asi como para los propiops usuarios de estos servicios.
   
