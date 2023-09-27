@@ -20,7 +20,7 @@ Ciclo 2023-02
  TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, diseño, registro y analisis de la entrevista. Se avanzó con los wireframes, mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
  TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, se codifico el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano, asi como su registro y analisis.
   TP | 05/09/23 - 27/09/23  | Eric Cuevas|  Se desarrollo las partes de registro, login y ajustes de usuario de la app, se añadieron wireframes y mockups, se corrigio partes del sprint 1 asi como historias de Usuario, realize el deployment de la app y los puntos relazcionados a este.
-  TP | 05/09/23 - 27/09/23  | Lucero Obispo|
+  TP | 05/09/23 - 27/09/23  | Lucero Obispo| Se actualizo el diagrama de clases, labeling systems, descripcion de startup. Para el sprint 2, se realizo el services documentation y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas e informacion de empresa.
   TP | 05/09/23 - 27/09/23  | Andrea O'Higgins| Se añadió el historial de reserva y el chat en la app, se diseñaron los wireframes y mockups. Se actualizó los user stories y features, y se agregó para el sprint2 el development evidence.
   TP | 05/09/23 - 27/09/23  | Damaris Tasayco|
 ---
