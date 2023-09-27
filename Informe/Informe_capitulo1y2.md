@@ -1,9 +1,9 @@
-Universidad Peruana de ciencias aplicadas  
+ <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/logoUPC.png?raw=true" width="400" height="132">     
 Ingenieria de Sistemas y Comunicaciones | Ingenieria de Software  
 
 Para el curso de Aplicaciones Web  
 WS52 - Juan Carlos Tinoco Licas  
-# Course Project - Final Report TB1  
+# Course Project - Final Report TP  
 
 Integrantes:
 - Obispo Rios, Lucero Abigail
