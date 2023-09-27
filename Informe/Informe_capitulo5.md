@@ -293,6 +293,22 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ***Segundo Sprint***  
 Durante este sprint, nos enfocamos en terminar con la sección de manejo de usuario, lo cual engloba el registro y ajuste de datos de ambos tipos de usuario, asi como el inicio de sesión de la app, y tambien con la busqueda de empresas, vista principal del cliente. A su vez se avanzaran la vista de membresias para empresas, del historial de reservas del cliente, asi como los servicios y componentes del dominio Public.   
 
+![Login-sprint2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution1.JPG?raw=true)  
+![Registrar-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution2.JPG?raw=true)
+![registrar-empresa1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution3.JPG?raw=true)
+![registrar-empresa2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution4.JPG?raw=true)
+![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution5.JPG?raw=true)
+![busqueda de empresas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution6.JPG?raw=true)
+![Carta de información de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution7.JPG?raw=true)
+![historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution8.JPG?raw=true)
+![ajustes de empresa 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution9.JPG?raw=true)
+![ajustes de empresa 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution10.JPG?raw=true)
+![membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution11.JPG?raw=true)
+![membresias2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution12.JPG?raw=true)
+
+Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
+Link a la plataforma: [https://cargasinestres-vue.web.app/home](https://cargasinestres-vue.web.app/home)
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
 
 **Introducion:**  
@@ -321,6 +337,7 @@ Por ultimo, los metodos POST bookingHistory, GET booking History, asi como los m
 Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js)
 
 **Captura de interaccion con datos de prueba**   
+
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
