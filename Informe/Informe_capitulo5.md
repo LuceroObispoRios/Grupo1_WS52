@@ -302,8 +302,28 @@ Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo
 
 **Captura de interaccion con datos de prueba**   
 *Registrar Cliente*  
-- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric
-  
+- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services1.JPG?raw=true)
+
+- Despues de registrar el cliente Lucero. Como se puede ver, el db.json cambio, pues se ha agregado un nuevo registro que guarda la informacion del cliente lucero. Mediante la sintaxis POST /clients  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services2.JPG?raw=true)
+
+*Obtener la informacion de una empresa por su id*  
+- Mediante la sintaxis GET /companies/{id}. En la consola se puede visualizar la informacion obtenida de esa empresa en especifico
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services3.JPG?raw=true)  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services4.JPG?raw=true)
+
+*Realizar una reserva*   
+- Mediante la sintaxis POST /bookingHistory. Se crea una reserva y se almacena el db.json, se puede ver en la consola la informacion de la nueva reserva.
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services5.JPG?raw=true)
+
+**Editar datos de una empresa**  
+- Antes de presionar el boton de guardar cambios, se puede ver en la consola que la informacion de la direccion de la empresa Mudanzas Plata es en Monterrico  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services6.JPG?raw=true)
+
+- Mediante la sintaxis PUT /clients/{id}. Se edita los datos de la empresa de mudanzas plata, y son reemplazados por la nueva informacion ingresada en el formulario. Por ejemplo la direccion cambio a San Isidro
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services7.JPG?raw=true)
+
 # Bibliografia
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
