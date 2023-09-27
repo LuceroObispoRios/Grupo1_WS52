@@ -150,13 +150,17 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ### 4.3.2. Landing Page Mock-up.
 ![LandingPage_mock_up](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_LandingPage.png?raw=true)
 ![mobile-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-mobile.png?raw=true)  
-## 4.4. Web Applications UX/UI Design.  
 
-### 4.4.1. Web Applications Wireframes.  
+## 4.4. Web Applications UX/UI Design.  
+### 4.4.1. Web Applications Wireframes.    
+#### DESKTOP  
 ![registro-cliente-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-registro-cliente.png?raw=true)  
 ![registro-empresa-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-registro-empresa.png?raw=true)  
 ![inicio-sesion-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-login.png?raw=true)  
 ![busqueda-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-busqueda.png?raw=true)  
+
+#### MOBILE  
+
 
 ### 4.4.2. Web Applications Wireflow Diagrams.  
 ![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframes-flow1.png?raw=true)  
@@ -164,6 +168,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![wireframe-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframes-flow2.png?raw=true)  
 
 ### 4.4.2. Web Applications Mock-ups.  
+#### DESKTOP   
 ![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-cliente.png?raw=true)  
 ![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-empresa.png?raw=true)  
 ![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_login.png?raw=true)  
@@ -171,6 +176,8 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![mobile-login-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login-mobile.png?raw=true)
 ![mobile-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente-mobile.png?raw=true)  
 ![mobile-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa.mobile.png?raw=true)  
+
+#### MOBILE  
 
 ### 4.4.3. Web Applications User Flow Diagrams.  
 ![mockup-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow1.png?raw=true)  
