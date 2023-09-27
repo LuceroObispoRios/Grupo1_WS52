@@ -151,12 +151,15 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ## 4.4. Web Applications UX/UI Design.  
 ### 4.4.1. Web Applications Wireframes.    
 #### DESKTOP  
-![wireframe registro cliente]()  
-![wireframe registro empresa]()  
-![wireframe inicio sesion]() 
-![wireframe busqueda de empresa]() 
+![wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente-wireframe.png?raw=true)  
+![wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa-wireframe.png?raw=true)  
+![wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-login.png?raw=true) 
+![wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanySearch.png?raw=true) 
+![wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanyDetail.png?raw=true) 
 ![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-historial-reservas.png?raw=true)
 ![wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat.png?raw=true)
+![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-membresia.png?raw=true)
+
 
 
 
