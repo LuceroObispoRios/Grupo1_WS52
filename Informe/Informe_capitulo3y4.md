@@ -159,17 +159,20 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-historial-reservas.png?raw=true)
 ![wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat.png?raw=true)
 ![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-membresia.png?raw=true)
-
+![wireframe boleta]()
 
 
 
 #### MOBILE  
-![wireframe registro cliente]()
-![mobile wireframe inicio sesion]() 
-![mobile wireframe registro empresa]()
-![mobile wireframe busqueda de empresa]() 
+![mobile wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-registro-cliente.png?raw=true)
+![mobile wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-registro-empresa.png?raw=true)
+![mobile wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-login.png?raw=true) 
+![mobile wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanySearch.png?raw=true) 
+![mobile wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanyDetail.png?raw=true) 
 ![mobile wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-historial-reservas.png?raw=true)
 ![mobile wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-chat.png?raw=true)
+![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-membresia.png?raw=true)
+![wireframe boleta]()
 
 ### 4.4.2. Web Applications Wireflow Diagrams.  
 ![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframes-flow1.png?raw=true)  
@@ -178,15 +181,24 @@ incluso más sencilla en web dirigiendose al menu directamente.
 
 ### 4.4.2. Web Applications Mock-ups.  
 #### DESKTOP   
-![registro-cliente-mockup]()  
-![registro-empresa-mockup]()  
-![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_login.png?raw=true)  
-![busqueda-mockup]()  
-![mobile-login-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login-mobile.png?raw=true)
-![mobile-cliente-mockup]()  
-![mobile-empresa-mockup]()  
+![registro-cliente-mockup]()    
+![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa-mockup.png?raw=true)    
+![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_login.png?raw=true)    
+![busqueda-mockup]()    
+![mobile-login-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login-mobile.png?raw=true)  
+![mobile-cliente-mockup]()    
+![mobile-empresa-mockup]() 
 
-#### MOBILE  
+
+#### MOBILE   
+![mobile mockup registro cliente]() 
+![mobile mockup registro empresa]()  
+![mobile mockup inicio sesion]()  
+![mobile mockup busqueda de empresa]()  
+![mobile mockup detalle de empresa]()  
+![mobile mockup historial de reservas]()   
+![mobile mockup chat]() 
+![mobile mockup boleta]()  
 
 ### 4.4.3. Web Applications User Flow Diagrams.  
 ![mockup-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow1.png?raw=true)  
