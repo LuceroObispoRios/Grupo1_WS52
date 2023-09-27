@@ -22,9 +22,8 @@
             <input type="password" placeholder="Repetir contraseña" v-model="formData.confirmarpassword"  />
           </div>
           <button id="submitButton" type="submit">Guardar cambios</button>
-          <router-link to="/company-search" class="btn btn-outline-orange">Cancelar</router-link>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <!--<div id="errorMessages" class="error-messages" v-html="errorMessage"></div>-->
+          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
         </form>
       </div>
     </div>
