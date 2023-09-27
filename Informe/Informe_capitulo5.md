@@ -157,11 +157,6 @@ Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente
 |                                                     | main       | f0e3e5ca74f48dd4289f57f836c774ea0caa357f  | Add files via upload (reg-empresa.html    |           -             |        02/09/2023      |
 |                                                     | main       | 51e1be5e36f6677bd62e7544d1e18a84e83462d7  | Add files via upload (reg-cliente.html)   |           -             |        03/09/2023      |
 
-#### 5.2.2.3. Development Evidence for Sprint Review.
-
-Para este Sprint se desarrolló el Frontend de la plataforma.  
-
-![Development Evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
 
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
