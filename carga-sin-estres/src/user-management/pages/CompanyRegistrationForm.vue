@@ -2,7 +2,7 @@
   <div>
     <toolbar-home></toolbar-home>
   </div>
-  
+  <br><br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -218,7 +218,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 5rem auto auto auto;
+  margin: auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;

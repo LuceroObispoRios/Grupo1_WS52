@@ -26,11 +26,11 @@ export default {
         <template #end>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><router-link to="/" class="nav-link">Inicio</router-link></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Servicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#aboutus">Sobre Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
-              <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+              <li class="nav-item"><router-link to="/home" class="nav-link">Inicio</router-link></li>
+              <li class="nav-item"><a class="nav-link" href="/home#services">Servicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/home#aboutus">Sobre Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="/home#plans">Planes</a></li>
+              <li class="nav-item"><a class="nav-link" href="/home#testimonials">Testimonios</a></li>
               <li class="nav-item"><router-link to="/login" class="btn btn-outline-dark">Iniciar Sesión</router-link></li>
               <li class="nav-item"><router-link to="/register-client" class="btn btn-outline-orange">Registrar Cliente</router-link></li>
               <li class="nav-item"><router-link to="/register-company" class="btn btn-outline-orange">Registrar Empresa</router-link></li>
