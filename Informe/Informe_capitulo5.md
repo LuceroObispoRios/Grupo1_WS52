@@ -271,6 +271,8 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
 #### 5.2.2.2. Sprint Backlog 2.  
   
 #### 5.2.2.3. Development Evidence for Sprint Review.  
+
+![development evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
   
 #### 5.2.2.4. Testing Suite Evidence for Sprint Review.  
   
@@ -285,6 +287,7 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
 ![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
 ![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)   
+
   
 #### 5.2.2.5. Execution Evidence for Sprint Review. 
 ***Segundo Sprint***  
