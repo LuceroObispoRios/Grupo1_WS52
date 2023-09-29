@@ -409,7 +409,12 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
   
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
-  
+
+--
+# Conclusiones
+
+- Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
+
 --
 # Bibliografia  
 --
