@@ -6,6 +6,7 @@ export default {
     return {
       drawer: false,
       items: [
+        { label: 'Membresia', to: '/formulario'},
         { label: 'Editar Perfil', to: '/company-settings/:id' },
         { label: 'Cerrar Sesion', to: '/home' }
       ],
