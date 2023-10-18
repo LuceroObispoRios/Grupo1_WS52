@@ -1,13 +1,4 @@
-<script>
-export default {
-  name: "booking-card",
-  props: {
-    bookingHistory: null
-  },
-  data() {
-    return {
-      dialogVisible: false,
-      message: {},
+
       submitted: false,
       chatHeader: '',
     }

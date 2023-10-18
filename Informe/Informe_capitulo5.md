@@ -62,7 +62,7 @@ Convenciones: De acuerdo a Cucumber (s.f.), Gherkin utiliza palabras clave espec
 ***HTML:***    
 (file).html  
 Descripción: Hypertext Makeup Language es el lenguaje estándar que se utiliza para crear y estructurar el contenido de páginas web. Consiste en una serie de etiquetas y elementos que definen diferentes partes del contenido para que se vean o comporten de una determinada manera. 
-Convenciones: De acuerdo a W3Schools (s.f.), para facilitar la lectura y la coherencia en el código, es necesario usar espacios o tabulaciones de manera consistente, escribir los nombres de las etiquetas y de los archivos en minúsculas, usar comillas dobles para definir atributos en las etiquetas, usar el elemento <link> y <script> para relacion el archivo html con los archivos css y javascript respectivamente. Asimismo, es importante que cada elemento esté cerrado y que se agreguen solo comentarios significativos (“<!--” para iniciar un comentario y “-->” para cerrarlo).  
+Convenciones: De acuerdo a W3Schools (s.f.), para facilitar la lectura y la coherencia en el código, es necesario usar espacios o tabulaciones de manera consistente, escribir los nombres de las etiquetas y de los archivos en minúsculas, usar comillas dobles para definir atributos en las etiquetas, usar el elemento <"link"> y <"script"> para relacion el archivo html con los archivos css y javascript respectivamente. Asimismo, es importante que cada elemento esté cerrado y que se agreguen solo comentarios significativos (“<!--” para iniciar un comentario y “-->” para cerrarlo).  
 
 ***CSS:***  
 (file).css  
@@ -74,7 +74,7 @@ Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la legibilidad, se 
 Descripción: Lenguaje de programación que se usa para poder darle funcionalidades a las páginas web y que permita manipular su contenido y responder a acciones del usuario.  
 Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la comprensión del código, se utilizaran nombre de variables y funciones en minúscula, no abreviados y que describan su propósito. Asimismo, se dividirán funciones largas en funciones más pequeñas para facilitar la lectura. 
 
-***Vue***
+***Vue***  
 Descripción: Framework de Javascript que se usa para construir interfaces de usuario interactivas y dinamicas en aplicaciones web.
 Convenciones: De acuerdo a Vue (s.f.), la nomenclatura debe estar en formato camelCase. Tambien, se utilizara el prefijo "v" en plantillas HTML como 'v-if', 'v-for', 'v-bind', etc.
 
@@ -161,17 +161,10 @@ Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente
 |                                                     | main       | f0e3e5ca74f48dd4289f57f836c774ea0caa357f  | Add files via upload (reg-empresa.html    |           -             |        02/09/2023      |
 |                                                     | main       | 51e1be5e36f6677bd62e7544d1e18a84e83462d7  | Add files via upload (reg-cliente.html)   |           -             |        03/09/2023      |
 
-#### 5.2.2.3. Development Evidence for Sprint Review.
-
-Para este Sprint se desarrolló el Frontend de la plataforma.  
-
-![Development Evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
 
 #### 5.2.1.4. Testing Suite Evidence for Sprint Review.
 
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
-
-![Testing Suite Evidence]()
 
 ![feature 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)    
 
@@ -191,23 +184,29 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 
 ![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)
 
-![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US10.jpg)
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)
 
-![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US11.jpg)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)
 
-![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US12.jpg)  
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US012.jpg?raw=true)  
 
-![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US13.jpg)  
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US013.jpg?raw=true)  
  
-![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US14.jpg)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US014.jpg?raw=true)  
 
-![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US015.jpg?raw=true)  
 
-![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US16.jpg)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US016.jpg?raw=true)  
 
-![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US17.jpg)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US017.jpg?raw=true)  
 
-![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US18.jpg) 
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US018.jpg?raw=true)  
+ 
+![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true) 
+
+![feature 20](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US020.jpg?raw=true)  
+
+![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
@@ -273,8 +272,34 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es 50 |  
   
 #### 5.2.2.2. Sprint Backlog 2.  
+
+|     Sprint #         |     Sprint 2             |                           |                                                        |                                                                                    |                   |                         |                      |
+|----------------------|--------------------------|---------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
+|     User   Story     |                          |     Work –   Item/Task    |                                                        |                                                                                    |                   |                         |                      |
+|     Id               |     Título               |     Id                    |     Título                                             |     Descripción                                                                    |     Estimación    |     Asignado   a        |     Estado           |
+|     HU001 – HU006    |     Manejo de Usuario    |     WI01                  |     Registro de Empresa de Mudanzas                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI02                  |     Registro de Cliente                                |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI03                  |     Iniciar Sesión en la plataforma                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI04                  |     Ajustes de cuenta de cliente                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI05                  |     Ajustes de cuenta de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     1h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI06                  |     Cerrar Sesión                                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
+| HU007-HU010          | Métodos de pago          |     WI07                  |     Elección de membresía de empresa                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI08                  |     Pago de membresía                                  |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI09                  |     Pago para reserva de servicio                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Damaris Tasayco     |     Por completar    |
+|                      |                          |     WI10                  |     Detalles de pago                                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
+| HU011-HU014          | Búsqueda de empresas     |     WI11                  |     Búsqueda de empresas cercanas                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI12                  |     Filtrar por servicios ofrecidos                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI13                  |     Filtrar por calificación                           |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
+| HU014-HU016          | Reserva de Servicios     |     WI14                  |     Visualizar perfil de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI15                  |     Envío de información sobre la   posible reserva    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Por completar    |
+|                      |                          |     WI16                  |     Acordar un precio por servicio   reservado         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU017                | Historial de reservas    |     WI17                  |     Visualizar historial de reservas                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU018                | Chat de reservas         |     WI18                  |     Comunicación mediante chat con la empresa          |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
   
 #### 5.2.2.3. Development Evidence for Sprint Review.  
+
+Para este Sprint se desarrolló el Frontend de la plataforma.
+![development evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
   
 #### 5.2.2.4. Testing Suite Evidence for Sprint Review.  
   
@@ -289,6 +314,16 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 ![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
 ![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
 ![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)   
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US10.jpg?raw=true)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US11.jpg?raw=true)
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US12.jpg?raw=true)  
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US13.jpg?raw=true)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US14.jpg?raw=true)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg?raw=true)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US16.jpg?raw=true)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US17.jpg?raw=true)  
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US18.jpg?raw=true) 
+
   
 #### 5.2.2.5. Execution Evidence for Sprint Review. 
 ***Segundo Sprint***  
@@ -374,8 +409,16 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
   
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
-  
+
 --
+# Conclusiones
+
+- Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
+
+- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+
 # Bibliografia  
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
@@ -404,7 +447,7 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 ## Anexo Videos de Exposiciones  
 
 - TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-- TP: 
+- TP: https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing
 
 
 

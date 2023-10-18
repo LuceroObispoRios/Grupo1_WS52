@@ -325,17 +325,4 @@ export default {
   margin-top:12px;
 }
 
-/* Estilos para el botón de scroll 
-.scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 24px;
-  background-color: #ff8800;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 40%;
-  cursor: pointer;
-  z-index: 999;
-}*/
 </style>
