@@ -56,6 +56,7 @@ export default {
             console.log("Reservation:");
             console.log(response.data);
             this.$data.reservation = response.data;
+            this.$router.push('/bookingHistory')
       });
     }
   }
@@ -66,6 +67,9 @@ export default {
   <div>
     <toolbar-client></toolbar-client>
   </div>
+
+  <div><h1 class="title flex justify-content-center">Información de empresa</h1></div>
+
   <!-- INFORMACION DE LA EMPRESA -->
   <pv-card class="custom-card">
     <template #title>
@@ -79,7 +83,7 @@ export default {
       </div>
 
       <div class="company-services">
-        <p class="label">Descripcion: </p>
+        <p class="label">Descripción: </p>
         <p class="value">{{ company.description }}</p>
       </div>
 
@@ -97,35 +101,45 @@ export default {
       </div>
 
       <div class="company-services">
-        <p class="label">Direccion: </p>
+        <p class="label">Dirección: </p>
         <p class="value">{{ company.direccion }}</p>
       </div>
 
       <div class="company-services">
-        <p class="label">Numero de contacto: </p>
+        <p class="label">Número de contacto: </p>
         <p class="value">{{ company.numeroContacto }}</p>
       </div>
 
     </template>
   </pv-card>
-
+  
   <!-- FORMULARIO PARA AGREGAR RESERVA -->
   <br>
   <div class="custom-addReservation">
     <pv-panel header="Reservar" toggleable>
       <form @submit.prevent="submitForm" id="add-reservation" class="reservation-info">
+
+        <!-- reserva info -->
         <label for="bookingDate">Fecha de hoy:</label><br>
-        <input type="text" v-model="reservation.bookingDate" id="bookingDate"  required><br>
+        <input type="text" v-model="reservation.bookingDate" id="bookingDate"  required placeholder="Ex. 2023-10-17"><br>
         <label for="services">Servicios:</label><br>
-        <input type="text" v-model="reservation.services" id="services"  required><br>
+        <input type="text" v-model="reservation.services" id="services"  required placeholder="Ex. Carga"><br>
         <label for="pickupAddress">Direccion de entrega:</label><br>
-        <input type="text" v-model="reservation.pickupAddress" id="pickupAddress"  required><br>
+        <input type="text" v-model="reservation.pickupAddress" id="pickupAddress" required placeholder="Ex. Monterrico"><br>
         <label for="destinationAddress">Direccion de destino:</label><br>
-        <input type="text" v-model="reservation.destinationAddress" id="destinationAddress"  required><br>
+        <input type="text" v-model="reservation.destinationAddress" id="destinationAddress"  required placeholder="Ex. Monterrico"><br>
         <label for="movingDate">Fecha cuando el servicio se lleva a cabo:</label><br>
-        <input type="text" v-model="reservation.movingDate" id="movingDate"  required><br>
+        <input type="text" v-model="reservation.movingDate" id="movingDate"  required placeholder="Ex. 2023-10-19"><br>
         <label for="movingTime">Hora cuando el servicio se lleva a cabo:</label><br>
-        <input type="text" v-model="reservation.movingTime" id="movingTime"  required><br>
+        <input type="text" v-model="reservation.movingTime" id="movingTime"  required placeholder="Ex. 14:00"><br>
+
+        <!-- metodo de pago info -->
+        <label for="cardNumber">Numero de tarjeta de pago:</label><br>
+        <input type="text" id="cardNumber"  required placeholder="Ex. 1234 5678 9012 3456"><br>
+        <label for="cvvCard">CVV de la tarjeta de pago:</label><br>
+        <input type="text" id="cvvCard"  required placeholder="Ex. 123"><br>
+        <label for="dateCard">Fecha de vencimiento de la tarjeta:</label><br>
+        <input type="text" id="dateCard"  required  placeholder="Ex. 10/25"><br>
 
         <button type="submit">Realizar reserva</button>
 
@@ -139,17 +153,19 @@ export default {
 
 
 <style scoped>
-
 /* CARD */
-
 .custom-card {
-  width: 400px;
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  max-width: 600px; /* Establece un ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
   margin: 50px auto;
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 20px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .custom-card .company-name {
@@ -159,14 +175,10 @@ export default {
 }
 
 .custom-card img {
-  width: 300px;
+  width: 80%; 
   height: auto;
-  margin: 0 auto;
   border-radius: 15px;
-}
-
-.custom-card mat-card-content{
-  margin-top: 30px;
+  align-self: center;
 }
 
 .company-type {
@@ -174,17 +186,16 @@ export default {
   color: #666;
 }
 
-.label{
+.label {
   font-weight: bold;
   font-size: 16px;
 }
 
-.value{
+.value {
   font-size: 16px;
 }
 
 /* FORM RESERVATION */
-
 .custom-addReservation {
   display: flex;
   flex-direction: column;
@@ -194,6 +205,7 @@ export default {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
+  width: 100%;
 
 }
 
@@ -201,7 +213,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  width: 350px;
+  max-width: 100%;
 }
 
 .reservation-info input[type="text"] {
@@ -221,11 +233,17 @@ button {
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* Agrega margen superior para separar el botón */
+  margin-top: 20px;
 }
 
 button:hover {
   background-color: #ee8f00;
+}
+
+/*Titulo*/
+.title {
+  color: #FDAE39;
+  font-family: sans-serif;
 }
 
 </style>
