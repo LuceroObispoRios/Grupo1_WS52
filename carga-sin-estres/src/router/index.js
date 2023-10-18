@@ -1,3 +1,8 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import CompanyList from '../company-search/pages/company-list.component.vue'
+import CompanyDetail from '../company-search/pages/detail-company.component.vue'
+import LoginForm from '../user-management/pages/LoginForm.vue'
+import ClientRegistrationForm from '../user-management/pages/ClientRegistrationForm.vue'
 import CompanyRegistrationForm from '../user-management/pages/CompanyRegistrationForm.vue'
 import CompanySettingsForm from '../user-management/pages/CompanySettingsForm.vue'
 import ClientSettingsForm from '../user-management/pages/ClientSettingsForm.vue'
