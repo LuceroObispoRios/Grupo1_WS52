@@ -1,160 +1,179 @@
-
 <template>
   <div>
-    <toolbar-client></toolbar-client>
+    <toolbar-home></toolbar-home>
   </div>
-
+  
   <div class="container">
     <div class="container-back">
       <div class="user-info">
-        <form @submit.prevent="onSubmit" id="settings">
-          <h2>Editar datos de Perfil de Cliente</h2>
+        <div class="left-section">
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Avatar" />
+          <h5>Carga sin Estres</h5>
+        </div>
+        <form @submit.prevent="onSubmit" id="myForm">
           <div class="right-section">
-            <input type="text" placeholder="name" v-model="formData.name" /> <!--falta id?-->
-            <input type="text" placeholder="Apellido Materno" v-model="formData.apellidoMaterno" />
-            <input type="text" placeholder="Apellido Paterno" v-model="formData.apellidoPaterno"  />
-            <input type="text" placeholder="Celular" v-model="formData.celular"  />
-            <input type="text" placeholder="Dirección" v-model="formData.direccion" />
+            <input
+                type="text"
+                placeholder="nombre"
+                v-model="name"
+            />
+            <input
+                type="text"
+                placeholder="Apellido Materno"
+                v-model="apellidoMaterno"
+            />
+            <input
+                type="text"
+                placeholder="Apellido Paterno"
+                v-model="apellidoPaterno"
+            />
+            <input
+                type="text"
+                placeholder="Celular"
+                v-model="celular"
+            />
+            <input
+                type="text"
+                placeholder="Dirección"
+                v-model="direccion"
+            />
           </div>
           <div class="right-section">
-            <input type="email" placeholder="email electrónico" v-model="formData.email" />
-            <input type="password" placeholder="Contraseña" v-model="formData.password"  />
-            <input type="password" placeholder="Repetir contraseña" v-model="formData.confirmarpassword"  />
+            <input
+                type="email"
+                placeholder="email electrónico"
+                v-model="email"
+            />
+            <input
+                type="password"
+                placeholder="Contraseña"
+                v-model="password"
+            />
+            <input
+                type="password"
+                placeholder="Repetir contraseña"
+                v-model="confirmarpassword"
+            />
           </div>
-          <button id="submitButton" type="submit">Guardar cambios</button>
-          <router-link to="/company-search" class="btn btn-outline-orange">Cancelar</router-link>
+          <button id="registrarButton" type="submit">Registrar ➜</button>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <!--<div id="errorMessages" class="error-messages" v-html="errorMessage"></div>-->
+          <div
+              id="errorMessages"
+              class="error-messages"
+              v-html="errorMessage"
+          ></div>
         </form>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
-import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  
+import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
 export default {
-  name: "ClientSettingsForm",
-  components:{
-    toolbarClient,
-  },
+  name: "ClientRegistrationForm",
+  components: {ToolbarHome},
   data() {
     return {
-      client: {
-        name: '',
-        apellidoMaterno: '',
-        apellidoPaterno: '',
-        celular: '',
-        direccion: '',
-        email: '',
-        password: '',
-        id: '',
-      },
+      name: '',
+      apellidoMaterno: '',
+      apellidoPaterno: '',
+      celular: '',
+      direccion: '',
+      email: '',
+      password: '',
       confirmarpassword: '',
       errorMessage: '',
-      id: null,
-      formData: {
-        name: '',
-        apellidoMaterno: '',
-        apellidoPaterno: '',
-        celular: '',
-        direccion: '',
-        email: '',
-        password: '',
-        confirmarpassword: '',
-      },
       apiService: new cargaSinEstresApiService(),
     };
   },
-  created() {
-    this.id = this.$route.params.id;
-    console.log("id cliente settings:", this.id);
-  },
-
   methods: {
-    onSubmit() {
+    async onSubmit() {
       this.errorMessage = '';
       const formData = {
-        name: this.formData.name,
-        apellidoMaterno: this.formData.apellidoMaterno,
-        apellidoPaterno: this.formData.apellidoPaterno,
-        celular: this.formData.celular,
-        direccion: this.formData.direccion,
-        email: this.formData.email,
-        password: this.formData.password,
-        confirmarpassword: this.formData.confirmarpassword,
+        name: this.name,
+        apellidoMaterno: this.apellidoMaterno,
+        apellidoPaterno: this.apellidoPaterno,
+        celular: this.celular,
+        direccion: this.direccion,
+        email: this.email,
+        password: this.password,
+        confirmarpassword: this.confirmarpassword,
       };
 
       let warnings = '';
 
       if (
+          !formData.name ||
+          !formData.apellidoMaterno ||
+          !formData.apellidoPaterno ||
           !formData.celular ||
-          !/^\d+$/.test(formData.celular)
+          !formData.direccion ||
+          !formData.email ||
+          !formData.password ||
+          !formData.confirmarpassword
       ) {
-        warnings += 'El nuevo celular debe contener solo dígitos enteros.<br>';
+        warnings += 'Todos los campos son obligatorios. <br>';
+      }
+
+      if (!formData.celular || !/^\d+$/.test(formData.celular)) {
+        warnings += 'El celular debe contener solo dígitos enteros.<br>';
       }
 
       if (
           !formData.email ||
           !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
       ) {
-        warnings += 'La nueva dirección de email electrónico no es válida.<br>';
+        warnings += 'El email electrónico no es válido.<br>';
       }
 
       if (formData.password.length < 6) {
-        warnings += `La nueva contraseña no es válida <br>`;
+        warnings += 'La contraseña debe tener al menos 6 caracteres <br>';
       }
 
-      if (this.formData.password !== this.formData.confirmarpassword) {
-        warnings += 'La confirmación de la nueva contraseña no coincide.<br>';
+      if (formData.password !== formData.confirmarpassword) {
+        warnings += 'Las contraseñcas no coinciden.<br>';
       }
-
 
       this.errorMessage = warnings;
 
+
+      /*if (!this.errorMessage) { //pasar info del nuevo usuario a JSON*/
+
       if (!this.errorMessage) {
-        console.log('Nuevos ajustes de usuario: ', formData);
-        this.updateClient(); // Actualizar con los datos del formulario
-      }
-    },
+        // Datos del nuevo cliente a registrar
+        const clientData = {
+          name: this.name,
+          apellidoMaterno: this.apellidoMaterno,
+          apellidoPaterno: this.apellidoPaterno,
+          celular: this.celular,
+          direccion: this.direccion,
+          email: this.email,
+          password: this.password,
+        };
 
-    updateClient() {
-      // Actualizar con los datos del formulario
-      this.client.name = this.formData.name;
-      this.client.apellidoMaterno = this.formData.apellidoMaterno;
-      this.client.apellidoPaterno = this.formData.apellidoPaterno;
-      this.client.celular = this.formData.celular;
-      this.client.direccion = this.formData.direccion;
-      this.client.email = this.formData.email;
-      this.client.password = this.formData.password;
-      this.client.id = this.id;
+        try {
+          // Envía la solicitud para registrar al cliente
+          const response = await this.apiService.createClient(clientData);
 
-      this.saveUpdatedClientDataToServer();
-
-    },
-
-    async saveUpdatedClientDataToServer() {
-      try {
-        const response = await this.apiService.updateClient(this.client.id , this.client);
-
-        if (response.status === 200) {
-          console.log('Datos del cliente actualizados con éxito:', response.data);
-
-        } else {
-          console.error('Error al actualizar los datos del cliente:', response.data);
+          // Verifica si el registro fue exitoso (puedes ajustar la lógica según tu API)
+          if (response.status === 201) {
+            this.$router.push('/login');
+          } else {
+            this.errorMessage = 'Error al registrar al cliente. Intente nuevamente.';
+          }
+        } catch (error) {
+          console.error(error);
+          this.errorMessage = 'Ocurrió un error al registrar al cliente. Intente nuevamente.';
         }
-      } catch (error) {
-        console.error('Error al actualizar los datos del cliente:', error);
       }
+
     },
 
-    cancel(){
-      this.$router.push('/company-search');
-    }
-
+    cancel() {
+      this.$router.push('/home')
+    },
   },
 };
 </script>
@@ -190,19 +209,37 @@ body {
   align-items: center;
 }
 
+
+.options h3 {
+  margin-right: 30px;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 5px;
+}
+
 .user-info {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   margin-top: 10px;
   margin-bottom: 10px;
-  /*align-items: flex-start;*/
+  align-items: flex-start;
+}
+
+.left-section img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.left-section h5 {
+  text-align: center;
+  margin-top: 2px;
 }
 
 .right-section {
   flex: 1;
   padding-left: 40px;
 }
-
 
 input[type="text"],
 input[type="password"],
@@ -216,18 +253,19 @@ select {
   border-radius: 5px;
 }
 
-button {
-  width: 180px;
+button{
+  position: relative;
+  width: 150px;
   background-color: #000000;
   color: #fff;
   font-size: 18px;
   padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
   align-self: flex-start;
   margin-top: 10px;
   margin-right: 10px;
+  border: 1px solid #FDAE39;
+  border-radius: 4px;
 }
 
 button:hover {
