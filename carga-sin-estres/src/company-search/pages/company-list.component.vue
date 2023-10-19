@@ -10,6 +10,7 @@
     data(){
       return{
         companies: [],
+        company: {},
         companyService: null,
 
         originalData: [],
@@ -33,6 +34,28 @@
         ],
         manualLocation: '',
         userLocation: '', // Ubicación del usuario
+
+        CargaRapidaDialog: false,
+        reservation: {
+          id: null,
+          idCompany: null,
+          services: null,
+          bookingDate: null,
+          pickupAddress: null,
+          destinationAddress: null,
+          movingDate: null,
+          movingTime: null,
+          status: null,
+          payment: {
+            totalAmount: null,
+            paymentMethod: null,
+          },
+          hiredCompany: {
+            name: null,
+            logo: null,
+          }
+        }
+        
       };
     },
     created() {
@@ -113,6 +136,47 @@
         }
       },
 
+      CargaRapida(){
+        let now = new Date();//obtener tiempo exacto
+        let currentHour = now.getHours();
+        let currentMinute = now.getMinutes();
+
+        //obtener empresa random
+        let randCompanyIndex = Math.floor(Math.random() * this.companies.length); //obtiene un index al azar existente
+        let randomCompany = this.companies[randCompanyIndex]; //obtiene un company a partir de un index al azar
+
+        //generar nueva reserva
+        this.reservation.idCompany = randomCompany.id;
+        this.reservation.hiredCompany.name = randomCompany.name;
+        this.reservation.hiredCompany.logo = randomCompany.photo;
+        this.reservation.status = "En curso";
+        this.reservation.payment.totalAmount = 0;
+        this.reservation.payment.paymentMethod = "Por definir";
+        this.reservation.movingDate = now;
+        this.reservation.movingTime = currentHour + ":" + currentMinute;
+
+        this.addReservation();
+      },
+
+      addReservation(){
+        this.cargaSinEstres_service = new cargaSinEstresApiService();
+        this.cargaSinEstres_service.createReservation(this.reservation)
+            .then((response) => {
+              console.log("Reservation:");
+              console.log(response.data);
+              this.$data.reservation = response.data;
+            });
+      },
+
+      OpenDialog(){
+        this.CargaRapidaDialog = true;
+      },
+
+      hideDialog(){
+        this.CargaRapidaDialog = false;
+        console.log(this.CargaRapidaDialog);
+      },
+
     }
   }
 </script>
@@ -178,6 +242,8 @@
               </div>
             </div>
 
+            <pv-button icon="pi pi-plus" label="Carga Rapida" class="p-button-success p-mr-2" @click="OpenDialog"></pv-button>
+
           </div>
         </template>
 
@@ -204,6 +270,26 @@
       </pv-data-table>
     </div>
   </div>
+
+  <pv-dialog :visible="CargaRapidaDialog" :modal="true" :closable="false" :style="{width: '600px'}">
+    <div class="dialog-container">
+      <div class ="dialog-section">
+        <h2 class="dialog-title">Carga Rapida</h2>
+        <pv-button aria-label="Cancelar Carga Rapida" icon="pi pi-times" class="btn-cerrar p-button-text" @click="hideDialog">Cancelar</pv-button>
+      </div>
+
+      <div class ="dialog-section">
+        <p> Servicios de carga rapidamente en tu puerta,<br>
+          pulsa el boton para buscar <br>
+          y nuestras empresas afiliadas podran responder a tu llamado</p>
+      </div>
+
+      <div class ="dialog-section">
+        <pv-button aria-label="Buscar Carga Rapida" icon="pi pi-search" class="btn-CargaRapida p-button-text" @click="CargaRapida">Carga Rapida</pv-button>
+      </div>
+    </div>
+  </pv-dialog>
+  
 </template>
 
 
@@ -286,5 +372,51 @@
 .card {
   margin: 0 auto;
   width: 80%;
+}
+  
+/* Estilos para el dialogo */
+.dialog-container {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.dialog-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  width: 90%;
+}
+
+.btn-cerrar{
+  position: relative;
+  padding: 5px;
+  margin: 20px;
+  width: 20%;
+  color: grey;
+  background-color: white;
+  border: 1px solid #FDAE39;
+}
+
+.btn-CargaRapida {
+  position: relative;
+  padding: 5px;
+  margin: 20px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: 1px solid #FDAE39;
+  border-radius: 4px;
+}
+
+.dialog-title{
+  margin-right: 1rem;
 }
 </style>
