@@ -25,6 +25,8 @@ import Tag from "primevue/tag";
 import Card from "primevue/card";
 import Panel from 'primevue/panel';
 import Menubar from "primevue/menubar";
+import Checkbox from 'primevue/checkbox';
+import MultiSelect from 'primevue/multiselect';
 
 createApp(App)
     .use(router)
@@ -46,4 +48,6 @@ createApp(App)
     .component('pv-card', Card)
     .component('pv-panel', Panel)
     .component('pv-menubar', Menubar)
+    .component('pv-checkbox', Checkbox)
+    .component('pv-multiselect', MultiSelect)
     .mount('#app')
