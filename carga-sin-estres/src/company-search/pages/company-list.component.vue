@@ -138,6 +138,10 @@
 
       CargaRapida(){
         let now = new Date();//obtener tiempo exacto
+        let Year = now.getFullYear();
+        let Month = now.getMonth() + 1;
+        let Day = now.getDate();
+        let formattedDate = `${Year}-${Month.toString().padStart(2, '0')}-${Day.toString().padStart(2, '0')}`;
         let currentHour = now.getHours();
         let currentMinute = now.getMinutes();
 
@@ -152,7 +156,7 @@
         this.reservation.status = "En curso";
         this.reservation.payment.totalAmount = 0;
         this.reservation.payment.paymentMethod = "Por definir";
-        this.reservation.movingDate = now;
+        this.reservation.movingDate = formattedDate;
         this.reservation.movingTime = currentHour + ":" + currentMinute;
 
         this.addReservation();
