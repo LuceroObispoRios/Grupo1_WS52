@@ -48,7 +48,7 @@ export class cargaSinEstresApiService{
     }
 
     updateCompany(id, data) {
-        return http.patch(`/companies/${id}`, data); // no lo lee
+        return http.patch(`/companies/${id}`, data);
     }
 
     delete(id) {
@@ -56,5 +56,8 @@ export class cargaSinEstresApiService{
     }
     findByTitle(title) {
         return http.get(`/companies?title=${title}`);
+    }
+    getClientById(id) {
+        return http.get(`/clients/${id}`);
     }
 }
