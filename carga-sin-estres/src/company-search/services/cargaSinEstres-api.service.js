@@ -31,11 +31,11 @@ export class cargaSinEstresApiService{
     }
 
     updateClient(id, data) {
-        return http.put(`/clients/${id}`, data);
+        return http.patch(`/clients/${id}`, data);
     }
 
     updateCompany(id, data) {
-        return http.put(`/companies/${id}`, data); // no lo lee
+        return http.patch(`/companies/${id}`, data); // no lo lee
     }
 
     delete(id) {
