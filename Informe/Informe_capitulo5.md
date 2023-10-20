@@ -409,7 +409,26 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
   
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
+  
+### 5.2.1. Sprint 3
+  
+#### 5.2.1.1. Sprint Planning 3.  
+| **Sprint 1** | |
+|:---: | :---| 
+| | **Sprint planning background** |   
+| Date | 2/10/23 |
+| Time | 08:00 PM |
+| Location | Google Meet - Virtual Meeting |
+| Prepared by | Obispo, Lucero |
+| Attendees to meeting | Cuevas, Eric / O´Higgins, Andrea / Vilcamiza, Damaris / ... ,Leonardo |
+| Sprint 2 Review Summary | Se realizo el sprint 2, se mejoro el codigo y se trato de terminar el aspecto front-end de la aplicación |
+| Sprint 2 Retrospective Summary | Se trabajo fluidamente, participando todos por igual en la realización del proyecto, más en la aopinión del grupo creemos que pudimos haber terminado más partes del front-end. |
+| | **Sprint Goal & User Stories** |
+| Sprint & Goal | El objetivo del Sprint 3 sera terminar Frontend de la applicación, asi como avanzar el back-end hasta un punto funcional que podamos completar el siguiente sprint. |
+| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es XX. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
 
+#### 5.2.1.2. Sprint Backlog 3.
 --
 # Conclusiones
 
