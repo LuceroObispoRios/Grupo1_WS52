@@ -10,6 +10,7 @@ Integrantes:
 - Cuevas Rios, Eric Fernando
 - Tasayco Vilcamiza, Damaris
 - O'Higgins Rosales, Andrea Namie
+- Patrocinio Escalante, Leonardo Walt
 
 Ciclo 2023-02
 ---  
@@ -138,6 +139,14 @@ Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma
 **Acerca De:** Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
 **Fotografia de Perfil:**  
 <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true" width="160" height="190">
+
+* **Nombres y Apellidos:** Leonardo Walt Patrocinio Escalante  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Me considero una persona creativa, responsable y ordenada. Tengo experiencia trabajando en equipo, escucho las ideas de mis compañeros y me desempeño bien para el avance de los trabajos.  
+**Fotografia de Perfil:**  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante5.png?raw=true" width="160" height="190">
+
+## 1.2 Solution profile  
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problemática  
