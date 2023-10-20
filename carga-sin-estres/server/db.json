@@ -155,6 +155,12 @@
       "comment": "Probando nueva reseña ",
       "companyId": 7,
       "id": 4
+    },
+    {
+      "rating": 4,
+      "comment": "Buen servicio",
+      "companyId": 8,
+      "id": 5
     }
   ],
   "clients": [
