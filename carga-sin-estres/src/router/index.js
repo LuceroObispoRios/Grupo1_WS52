@@ -27,7 +27,7 @@ const router = createRouter({
             children: [
                 { path: 'client-settings', name: 'client-settings', component: ClientSettingsForm},
                 { path: 'company-search', name: 'company-search', component: CompanyList},
-                { path: 'bookingHistory', name: 'bookingHistory', component: bookingList},
+                { path: 'client-booking-history', name: 'client-booking-history', component: bookingList},
                 { path: 'company', name: 'company-detail', component: CompanyDetail, props: true},
             ]
         },
@@ -37,16 +37,13 @@ const router = createRouter({
             path: '/company/:id', component: ToolbarCompanyComponent,
             children: [
                 { path: 'company-settings', name: 'company-settings', component: CompanySettingsForm},
+                { path: 'company-booking-history', name: 'company-booking-history', component: bookingList},
                 { path: 'formulario', name: 'FormularioPage', component: FormularioPage },
                 { path: 'boleta', name: 'BoletaModal',
                     component: BoletaModal,
                     props: (route) => ({
-                        tipoUsuario: route.query.tipoUsuario,
-                        nombre: route.query.tipoUsuario === 'cliente' ? route.query.nombre : '',
-                        apellido: route.query.tipoUsuario === 'cliente' ? route.query.apellido : '',
-                        dni: route.query.tipoUsuario === 'cliente' ? route.query.dni : '',
-                        nombreEmpresa: route.query.tipoUsuario === 'empresa' ? route.query.nombreEmpresa : '',
-                        ruc: route.query.tipoUsuario === 'empresa' ? route.query.ruc : '',
+                        nombreEmpresa: route.query.nombreEmpresa,
+                        ruc: route.query.ruc,
                         direccion: route.query.direccion,
                         tipoMembresia: route.query.tipoMembresia,
                         tipoTarjeta: route.query.tipoTarjeta,

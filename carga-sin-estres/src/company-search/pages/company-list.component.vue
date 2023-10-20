@@ -10,7 +10,9 @@
     data(){
       return{
         companies: [],
+        company: {},
         companyService: null,
+        userId: null,
 
         originalData: [],
 
@@ -33,9 +35,32 @@
         ],
         manualLocation: '',
         userLocation: '', // Ubicación del usuario
+
+        CargaRapidaDialog: false,
+        reservation: {
+          id: null,
+          idCompany: null,
+          services: null,
+          bookingDate: null,
+          pickupAddress: null,
+          destinationAddress: null,
+          movingDate: null,
+          movingTime: null,
+          status: null,
+          payment: {
+            totalAmount: null,
+            paymentMethod: null,
+          },
+          hiredCompany: {
+            name: null,
+            logo: null,
+          }
+        }
+        
       };
     },
     created() {
+      this.userId = this.$route.params.id;
       this.companyService = new cargaSinEstresApiService();
       this.companyService.getAll()
           .then((response) => {
@@ -56,9 +81,12 @@
 
     methods:{
       getUserDistrict() {
-        //valor de ejemplo (editar cuando se tenga el id de usuario)
-        this.userLocation = 'Miraflores';
-        console.log('Distrito del usuario:', this.userLocation);
+        this.companyService.getClientById(this.userId)
+        .then((response) => {
+          const responseData = response.data;
+          this.userLocation = responseData.direccion;
+          console.log('Distrito del usuario:', this.userLocation);
+        });
       },
 
       handleRowClick(event) {
@@ -111,6 +139,51 @@
           this.companies = this.originalData;
           this.searchMethod = '';
         }
+      },
+
+      CargaRapida(){
+        let now = new Date();//obtener tiempo exacto
+        let Year = now.getFullYear();
+        let Month = now.getMonth() + 1;
+        let Day = now.getDate();
+        let formattedDate = `${Year}-${Month.toString().padStart(2, '0')}-${Day.toString().padStart(2, '0')}`;
+        let currentHour = now.getHours();
+        let currentMinute = now.getMinutes();
+
+        //obtener empresa random
+        let randCompanyIndex = Math.floor(Math.random() * this.companies.length); //obtiene un index al azar existente
+        let randomCompany = this.companies[randCompanyIndex]; //obtiene un company a partir de un index al azar
+
+        //generar nueva reserva
+        this.reservation.idCompany = randomCompany.id;
+        this.reservation.hiredCompany.name = randomCompany.name;
+        this.reservation.hiredCompany.logo = randomCompany.photo;
+        this.reservation.status = "En curso";
+        this.reservation.payment.totalAmount = 0;
+        this.reservation.payment.paymentMethod = "Por definir";
+        this.reservation.movingDate = formattedDate;
+        this.reservation.movingTime = currentHour + ":" + currentMinute;
+
+        this.addReservation();
+      },
+
+      addReservation(){
+        this.cargaSinEstres_service = new cargaSinEstresApiService();
+        this.cargaSinEstres_service.createReservation(this.reservation)
+            .then((response) => {
+              console.log("Reservation:");
+              console.log(response.data);
+              this.$data.reservation = response.data;
+            });
+      },
+
+      OpenDialog(){
+        this.CargaRapidaDialog = true;
+      },
+
+      hideDialog(){
+        this.CargaRapidaDialog = false;
+        console.log(this.CargaRapidaDialog);
       },
 
     }
@@ -174,6 +247,8 @@
               </div>
             </div>
 
+            <pv-button icon="pi pi-plus" label="Carga Rapida" class="p-button-success p-mr-2" @click="OpenDialog"></pv-button>
+
           </div>
         </template>
 
@@ -200,6 +275,26 @@
       </pv-data-table>
     </div>
   </div>
+
+  <pv-dialog :visible="CargaRapidaDialog" :modal="true" :closable="false" :style="{width: '600px'}">
+    <div class="dialog-container">
+      <div class ="dialog-section">
+        <h2 class="dialog-title">Carga Rapida</h2>
+        <button aria-label="Cancelar Carga Rapida" icon="pi pi-times" class="btn-cerrar p-button-text" @click="hideDialog">Cancelar</button>
+      </div>
+
+      <div class ="dialog-section">
+        <p> Servicios de carga rapidamente en tu puerta,<br>
+          pulsa el boton para buscar <br>
+          y nuestras empresas afiliadas podran responder a tu llamado</p>
+      </div>
+
+      <div class ="dialog-section">
+        <button aria-label="Buscar Carga Rapida" icon="pi pi-search" class="btn-CargaRapida p-button-text" @click="CargaRapida">Carga Rapida</button>
+      </div>
+    </div>
+  </pv-dialog>
+  
 </template>
 
 
@@ -282,5 +377,51 @@
 .card {
   margin: 0 auto;
   width: 80%;
+}
+  
+/* Estilos para el dialogo */
+.dialog-container {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.dialog-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  width: 90%;
+}
+
+.btn-cerrar{
+  position: relative;
+  padding: 5px;
+  margin: 20px;
+  width: 20%;
+  color: grey;
+  background-color: white;
+  border: 1px solid #FDAE39;
+}
+
+.btn-CargaRapida {
+  position: relative;
+  padding: 5px;
+  margin: 20px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: 1px solid #FDAE39;
+  border-radius: 4px;
+}
+
+.dialog-title{
+  margin-right: 1rem;
 }
 </style>

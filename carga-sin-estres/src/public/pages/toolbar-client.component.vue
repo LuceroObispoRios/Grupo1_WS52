@@ -7,7 +7,7 @@ export default {
       items: [
         { label: 'Editar Perfil', to: '/client/:id/client-settings/' },
         { label: 'Busqueda de empresas', to: '/client/:id/company-search' },
-        { label: 'Historial de reserva', to: '/client/:id/bookingHistory' },
+        { label: 'Historial de reserva', to: '/client/:id/client-booking-history' },
         { label: 'Cerrar Sesion', to: '/home' },
       ],
       userId: '',
@@ -46,7 +46,7 @@ export default {
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><router-link :to="'/client/'+ this.userId + '/client-settings'" class="nav-link">Editar Perfil</router-link></li>
               <li class="nav-item"><router-link :to="'/client/' + this.userId + '/company-search'" class="nav-link">Búsqueda de Empresas</router-link></li>
-              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/bookingHistory'" class="nav-link">Historial de reserva</router-link></li>
+              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/client-booking-history'" class="nav-link">Historial de reserva</router-link></li>
               <li class="nav-item"><router-link to="/home" class="btn btn-outline-dark">Cerrar Sesión</router-link></li>
             </ul>
           </div>

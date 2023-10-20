@@ -17,9 +17,6 @@ export class cargaSinEstresApiService{
     getBookingsByCompany(id) {
         return http.get(`/bookingHistory?idCompany=${id}`);
     }
-    getMessages() {
-        return http.get('/chat');
-    }
     updateBooking(id, data) {
         return http.put(`/bookingHistory/${id}`, data);
     }
@@ -44,11 +41,11 @@ export class cargaSinEstresApiService{
     }
 
     updateClient(id, data) {
-        return http.put(`/clients/${id}`, data);
+        return http.patch(`/clients/${id}`, data);
     }
 
     updateCompany(id, data) {
-        return http.put(`/companies/${id}`, data); // no lo lee
+        return http.patch(`/companies/${id}`, data);
     }
 
     delete(id) {
@@ -56,5 +53,8 @@ export class cargaSinEstresApiService{
     }
     findByTitle(title) {
         return http.get(`/companies?title=${title}`);
+    }
+    getClientById(id) {
+        return http.get(`/clients/${id}`);
     }
 }

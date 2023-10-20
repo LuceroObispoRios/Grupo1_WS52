@@ -13,8 +13,7 @@ export default {
     console.log('this route is: ',this.$route);
 
     // Obtiene el id del usuario
-    const userId = this.$route.params.id;
-    this.userId = userId;
+    this.userId = this.$route.params.id;
     console.log('User id:', this.userId);
 
     // Obtiene el tipo de usuario
@@ -36,6 +35,15 @@ export default {
       this.$router.push({
         path: `/company/${this.userId}/company-settings`,
         name: 'company-settings',
+        params: {
+          id: this.userId,
+        },
+      });
+    },
+    goToBookingHistory() {
+      this.$router.push({
+        path: `/company/${this.userId}/company-booking-history`,
+        name: 'company-booking-history',
         params: {
           id: this.userId,
         },
@@ -64,6 +72,7 @@ export default {
           <div class="flex-column">
             <pv-button @click="goToMembershipForm" class="p-button-text text-white">Membresia</pv-button>
             <pv-button @click="goToCompanySettings" class="p-button-text text-white">Editar Perfil</pv-button>
+            <pv-button @click="goToBookingHistory" class="p-button-text text-white">Historial de Reserva</pv-button>
             <pv-button @click="logOut" class="p-button-text text-white">Cerrar Sesion</pv-button>
           </div>
         </template>
