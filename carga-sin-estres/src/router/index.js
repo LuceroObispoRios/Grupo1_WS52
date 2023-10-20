@@ -10,33 +10,49 @@ import HomeView from "../public/pages/HomeView.component.vue";
 import FormularioPage from "../membership/pages/FormularioPage.vue";
 import BoletaModal from "../membership/pages/BoletaModal.vue";
 import bookingList from "../bookingHistory/pages/booking-list.component.vue";
+import ToolbarClientComponent from "@/public/pages/toolbar-client.component.vue";
+import ToolbarCompanyComponent from "@/public/pages/toolbar-company.component.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         { path: '/', redirect: 'home'},
-        { path: '/**', redirect: 'home'},
         { path: '/home', name: 'home', component: HomeView},
-        { path: '/company-search', name: 'company-search', component: CompanyList},
-        { path: '/company/:id', name: 'company-detail', component: CompanyDetail, props: true},
         { path: '/login', name: 'login', component: LoginForm},
         { path: '/register-client', name: 'register-client', component: ClientRegistrationForm},
         { path: '/register-company', name: 'register-company', component: CompanyRegistrationForm},
-        { path: '/company-settings/:id', name: 'company-settings', component: CompanySettingsForm, props:true},
-        { path: '/client-settings/:id', name: 'client-settings', component: ClientSettingsForm, props: true},
-        { path: '/bookingHistory', name: 'bookingHistory', component: bookingList},
-        { path: '/formulario', component: FormularioPage },
-        { path: '/boleta',
-            component: BoletaModal,
-            props: (route) => ({
-                nombreEmpresa: route.query.nombreEmpresa,
-                ruc: route.query.ruc,
-                direccion: route.query.direccion,
-                tipoMembresia: route.query.tipoMembresia,
-                tipoTarjeta: route.query.tipoTarjeta,
-                numeroBoleta: route.query.numeroBoleta,
-            })
-        }
+        // Rutas para el cliente
+        {
+            path: '/client/:id', component: ToolbarClientComponent,
+            children: [
+                { path: 'client-settings', name: 'client-settings', component: ClientSettingsForm},
+                { path: 'company-search', name: 'company-search', component: CompanyList},
+                { path: 'client-booking-history', name: 'client-booking-history', component: bookingList},
+                { path: 'company', name: 'company-detail', component: CompanyDetail, props: true},
+            ]
+        },
+
+        // Rutas para la empresa
+        {
+            path: '/company/:id', component: ToolbarCompanyComponent,
+            children: [
+                { path: 'company-settings', name: 'company-settings', component: CompanySettingsForm},
+                { path: 'company-booking-history', name: 'company-booking-history', component: bookingList},
+                { path: 'formulario', name: 'FormularioPage', component: FormularioPage },
+                { path: 'boleta', name: 'BoletaModal',
+                    component: BoletaModal,
+                    props: (route) => ({
+                        nombreEmpresa: route.query.nombreEmpresa,
+                        ruc: route.query.ruc,
+                        direccion: route.query.direccion,
+                        tipoMembresia: route.query.tipoMembresia,
+                        tipoTarjeta: route.query.tipoTarjeta,
+                        numeroBoleta: route.query.numeroBoleta,
+                    })
+                }
+            ]
+        },
+        { path: '/**', redirect: 'home'}
     ]
 })
 export default router
