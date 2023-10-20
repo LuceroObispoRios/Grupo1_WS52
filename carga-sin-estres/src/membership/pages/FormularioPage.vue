@@ -8,21 +8,10 @@
     <div class="container1">
       <form @submit.prevent="submitForm" id="customer-info" class="left-container">
         <label for="tipoUsuario">Seleccione el tipo de usuario:</label><br>
-        <input type="radio" id="cliente" value="cliente" v-model="tipoUsuario" required>
-        <label for="cliente">Cliente</label>
+        <!--for cliente?-->
         <input type="radio" id="empresa" value="empresa" v-model="tipoUsuario" required>
         <label for="empresa">Empresa</label>
         <br><br>
-
-        <!-- Campos para cliente -->
-        <div v-if="tipoUsuario === 'cliente' ">
-          <label for="nombre">Nombres:</label><br>
-          <input type="text" v-model="nombre" required><br>
-          <label for="apellido">Apellidos:</label><br>
-          <input type="text" v-model="apellido" required><br>
-          <label for="dni">DNI:</label><br>
-          <input type="text" v-model="dni" required><br>
-        </div>
 
         <!-- Campos para empresa -->
         <div v-if="tipoUsuario === 'empresa'">
@@ -49,7 +38,7 @@
         <button type="submit">Continuar</button>
       </form>
       <div class="right-container">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
       </div>
     </div>
   </div>

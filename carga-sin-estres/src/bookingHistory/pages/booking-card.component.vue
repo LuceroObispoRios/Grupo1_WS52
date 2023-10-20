@@ -56,6 +56,8 @@ export default {
           <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name"
                class="lg:border-round" width="150" height="150">
         </div>
+
+        
       </div>
     </pv-panel>
     <div>
