@@ -112,6 +112,7 @@ export default {
   <!-- FORMULARIO PARA AGREGAR RESERVA -->
   <br>
   <div class="custom-addReservation">
+    <div class="reservation-panel">
     <pv-panel header="Reservar" toggleable>
       <form @submit.prevent="submitForm" id="add-reservation" class="reservation-info">
 
@@ -142,7 +143,14 @@ export default {
       </form>
     </pv-panel>
   </div>
+  <div class="reviews-panel">
+    <pv-panel header="Reseñas" toggleable :collapsed="true">
 
+    </pv-panel>
+
+  </div>
+
+  </div>
 
 </template>
 
@@ -194,7 +202,7 @@ export default {
 /* FORM RESERVATION */
 .custom-addReservation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -203,6 +211,13 @@ export default {
   border-radius: 15px;
   width: 100%;
 
+}
+
+.reservation-panel,
+.reviews-panel {
+  width: 40%; /* Divide el espacio horizontal en dos columnas con un 2% de margen entre ellas */
+  max-height: 500px; /* Establece una altura máxima para los paneles */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es demasiado grande */
 }
 
 .reservation-info {
