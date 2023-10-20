@@ -7,11 +7,11 @@
           <h2>Editar Datos de Perfil de Empresa</h2>
           <div class="right-section">
             <input type="text" placeholder="Nombre de la empresa" v-model="formData.name" id="name"/>
-            <input type="text" placeholder="email" v-model="formData.email" id="email"/>
+            <input type="text" placeholder="Email" v-model="formData.email" id="email"/>
             <input type="text" placeholder="Dirección" v-model="formData.direccion" id="direccion"/>
             <input type="text" placeholder="Teléfono" v-model="formData.numeroContacto" pattern="[0-9]+" id="numeroContacto"/>
-            <input type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
-            <input type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
+            <input class="text-xs" type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
+            <input class="text-xs" type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
             <input type="text" placeholder="Link a la imagen" v-model="formData.photo" id="photo"/>
           </div>
 
@@ -19,27 +19,27 @@
             <p>Marque los servicios que ofrece su empresa:</p>
             <div class="checkboxes col">
               <div class="check row-1">
-                <input type="checkbox" name="transporte" v-model="formData.transporte" value="transporte"/>
+                <input type="checkbox" name="transporte" v-model="formData.transporte" value="transporte"/>&nbsp;
                 <label for="transporte">Transporte</label>
               </div>
 
               <div class="check row-1">
-                <input type="checkbox" name="carga" v-model="formData.carga" value="carga"/>
+                <input type="checkbox" name="carga" v-model="formData.carga" value="carga"/>&nbsp;
                 <label for="carga">Carga</label>
               </div>
 
               <div class="check row-1">
-                <input type="checkbox" name="embalaje" v-model="formData.embalaje" value="embalaje"/>
+                <input type="checkbox" name="embalaje" v-model="formData.embalaje" value="embalaje"/>&nbsp;
                 <label for="embalaje">Embalaje</label>
               </div>
 
               <div class="check row-1">
-                <input type="checkbox" name="montaje" v-model="formData.montaje" value="montaje"/>
+                <input type="checkbox" name="montaje" v-model="formData.montaje" value="montaje"/>&nbsp;
                 <label for="montaje">Montaje</label>
               </div>
 
               <div class="check row-1">
-                <input type="checkbox" name="desmontaje" v-model="formData.desmontaje" value="desmontaje"/>
+                <input type="checkbox" name="desmontaje" v-model="formData.desmontaje" value="desmontaje"/>&nbsp;
                 <label for="desmontaje">Desmontaje</label>
               </div>
             </div>
