@@ -1,9 +1,4 @@
-
 <template>
-  <div>
-    <toolbar-client></toolbar-client>
-  </div>
-
   <div class="container">
     <div class="container-back">
       <div class="user-info">

@@ -71,6 +71,18 @@ export default {
       tipoTarjeta: '',
     };
   },
+  created() {
+    console.log('this route is: ',this.$route);
+
+    // Obtiene el id del usuario
+    this.userId = this.$route.params.id;
+    console.log('User id:', this.userId);
+
+    // Obtiene el tipo de usuario
+    const routeParts = this.$route.path.split('/');
+    this.userType = routeParts[1];
+    console.log('User type:', this.userType);
+  },
   methods: {
     submitForm() {
       // Crear un objeto para almacenar los datos del formulario
@@ -96,7 +108,7 @@ export default {
 
       // Redirigir al usuario a la página de la boleta con los datos del formulario
       this.$router.push({
-        path: '/boleta',
+        path: `/company/${this.userId}/boleta`,
         query: formData,
       });
     }

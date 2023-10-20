@@ -1,8 +1,4 @@
 <template>
-  <div>
-    <toolbar-company></toolbar-company>
-  </div>
-
   <br><br><br>
   <div class="container">
     <div class="container-back">
