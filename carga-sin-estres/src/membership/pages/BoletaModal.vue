@@ -2,25 +2,17 @@
   <div>
     <toolbar-boleta></toolbar-boleta>
   </div>
-
+  
   <div>
     <h2>Boleta de Compra</h2>
     <div class="boleta">
       <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 200px"><br><br>
       <table class="info">
         <tr>
-          <td><strong>Nombres:</strong></td>
-          <td>{{ tipoUsuario === 'cliente' ? nombre : nombreEmpresa }}</td>
+          <td><strong>Nombre de la Empresa:</strong></td>
+          <td>{{ nombreEmpresa }}</td>
         </tr>
-        <tr v-if="tipoUsuario === 'cliente'">
-          <td><strong>Apellidos:</strong></td>
-          <td>{{ apellido }}</td>
-        </tr>
-        <tr v-if="tipoUsuario === 'cliente'">
-          <td><strong>DNI:</strong></td>
-          <td>{{dni}}</td>
-        </tr>
-        <tr v-if="tipoUsuario === 'empresa'">
+        <tr>
           <td><strong>RUC:</strong></td>
           <td>{{ ruc }}</td>
         </tr>
@@ -40,6 +32,7 @@
       <button @click="descargarBoleta">Descargar Boleta</button>
     </div>
   </div>
+  <br>
 </template>
 
 <script>
@@ -52,14 +45,10 @@ export default {
   name: 'BoletaModal',
   components: { ToolbarClient, toolbarCompany, toolbarBoleta },
   props: {
-    tipoUsuario: String,
-    nombre: String,
-    apellido: String,
     nombreEmpresa: String,
-    dni: Number,
     ruc: Number,
     direccion: String,
-    tipoMembresia: String,
+    tipoMembresia: Number,
     tipoTarjeta: String,
   },
   methods: {
@@ -72,21 +61,16 @@ export default {
       const estiloContenido = { fontSize: 14, marginBottom: 5 };
       // Agregar el título y el contenido a la boleta
       doc.text('Boleta de Compra', 20, 20);
-      doc.text('Nombre:', 20, 40);
-      doc.text(this.tipoUsuario === 'cliente' ? this.nombre : this.nombreEmpresa, 70, 40, estiloContenido);
-      if (this.tipoUsuario === 'cliente') {
-        doc.text('Apellido:', 20, 55);
-        doc.text(this.apellido, 70, 55, estiloContenido);
-      } else {
-        doc.text('RUC:', 20, 55);
-        doc.text(this.ruc, 70, 55, estiloContenido);
-      }
-      doc.text('Dirección:', 20, 70);
-      doc.text(this.direccion, 70, 70, estiloContenido);
-      doc.text('Tipo de Tarjeta:', 20, 85);
-      doc.text(this.tipoTarjeta, 70, 85, estiloContenido);
-      doc.text('Precio de Membresía:', 20, 100);
-      doc.text(this.tipoMembresia, 70, 100, estiloContenido);
+      doc.text('Nombre de Empresa:', 20, 40);
+      doc.text(this.nombreEmpresa, 80, 40, estiloContenido);
+      doc.text('RUC:', 20, 60);
+      doc.text(this.ruc.toString(), 70, 60, estiloContenido);
+      doc.text('Dirección:', 20, 80);
+      doc.text(this.direccion, 70, 80, estiloContenido);
+      doc.text('Tipo de Tarjeta:', 20, 100);
+      doc.text(this.tipoTarjeta, 70, 100, estiloContenido);
+      doc.text('Precio de Membresía:', 20, 120);
+      doc.text(this.tipoMembresia, 80, 120, estiloContenido);
 
       // Descargar la boleta como un archivo PDF.
       doc.save('boleta_compra.pdf');
