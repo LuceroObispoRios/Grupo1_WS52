@@ -1,128 +1,213 @@
 <template>
   <div>
-    <toolbar-boleta></toolbar-boleta>
+    <toolbar-company></toolbar-company>
+    <br><br><br>
   </div>
-  
+
   <div>
-    <h2>Boleta de Compra</h2>
-    <div class="boleta">
-      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 200px"><br><br>
-      <table class="info">
-        <tr>
-          <td><strong>Nombre de la Empresa:</strong></td>
-          <td>{{ nombreEmpresa }}</td>
-        </tr>
-        <tr>
-          <td><strong>RUC:</strong></td>
-          <td>{{ ruc }}</td>
-        </tr>
-        <tr>
-          <td><strong>Dirección:</strong></td>
-          <td>{{ direccion }}</td>
-        </tr>
-        <tr>
-          <td><strong>Tipo de Tarjeta:</strong></td>
-          <td>{{ tipoTarjeta }}</td>
-        </tr>
-        <tr>
-          <td><strong>Precio de Membresía:</strong></td>
-          <td>{{ tipoMembresia }}</td>
-        </tr>
-      </table>
-      <button @click="descargarBoleta">Descargar Boleta</button>
+    <div class="container1">
+      <form @submit.prevent="submitForm" id="customer-info" class="left-container">
+        <label for="nombre">Nombre de la Empresa:</label><br>
+        <input type="text" v-model="nombreEmpresa" required><br>
+        <label for="ruc">RUC:</label><br>
+        <input type="number" v-model="ruc" required><br>
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" v-model="direccion" required><br>
+        <label for="tipoMembresia">Tipo de membresía:</label>
+        <select v-model="tipoMembresia" required>
+          <option value="35">1 Mes</option>
+          <option value="95">3 Meses</option>
+          <option value="365">1 Año</option>
+        </select><br>
+        <label for="tipoTarjeta">Tipo de tarjeta:</label>
+        <select v-model="tipoTarjeta" required @change="resetCardFields">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">MasterCard</option>
+        </select><br><br>
+        <!-- Campos de tarjeta Visa -->
+        <div v-if="tipoTarjeta === 'Visa'">
+          <label for="nombreTarjeta">Nombre en la tarjeta:</label><br>
+          <input type="text" v-model="tarjetaVisa.nombre" required><br>
+          <label for="numeroTarjeta">Número de tarjeta:</label><br>
+          <input type="number" v-model="tarjetaVisa.numero" required><br>
+          <label for="fechaVencimiento">Fecha de vencimiento:</label><br>
+          <input type="date" v-model="tarjetaVisa.fechaVencimiento" required><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="number" v-model="tarjetaVisa.cvv" required><br>
+          <label for="pais">País:</label><br>
+          <input type="text" v-model="tarjetaVisa.pais" required><br>
+        </div>
+
+        <!-- Campos de tarjeta MasterCard -->
+        <div v-else-if="tipoTarjeta === 'Mastercard'">
+          <label for="nombreTarjeta">Nombre en la tarjeta:</label><br>
+          <input type="text" v-model="tarjetaMasterCard.nombre" required><br>
+          <label for="numeroTarjeta">Número de tarjeta:</label><br>
+          <input type="number" v-model="tarjetaMasterCard.numero" required><br>
+          <label for="fechaVencimiento">Fecha de vencimiento:</label><br>
+          <input type="date" v-model="tarjetaMasterCard.fechaVencimiento" required><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="number" v-model="tarjetaMasterCard.cvv" required><br>
+          <label for="pais">País:</label><br>
+          <input type="text" v-model="tarjetaMasterCard.pais" required><br>
+        </div>
+
+        <button type="submit">Pagar Ahora</button>
+      </form>
+      <div class="right-container">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
+      </div>
     </div>
   </div>
   <br>
 </template>
 
 <script>
-import JsPDF from 'jspdf';
-import toolbarBoleta from "@/public/pages/toolbar-boleta.component.vue";
+import boletaModal from "@/membership/pages/BoletaModal.vue";
+import toolbarCompanyComponent from "@/public/pages/toolbar-company.component.vue";
 import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
-import ToolbarClient from "@/public/pages/toolbar-client.component.vue";
 
 export default {
-  name: 'BoletaModal',
-  components: { ToolbarClient, toolbarCompany, toolbarBoleta },
-  props: {
-    nombreEmpresa: String,
-    ruc: Number,
-    direccion: String,
-    tipoMembresia: Number,
-    tipoTarjeta: String,
+  name: 'FormularioPage',
+  components: {toolbarCompany, toolbarCompanyComponent },
+  computed: {
+    boletaModal() {
+      return boletaModal
+    }
+  },
+  data() {
+    return {
+      dni: '',
+      nombreEmpresa: '',
+      ruc: '',
+      direccion: '',
+      tipoMembresia: '',
+      tipoTarjeta: '',
+      tarjetaVisa: {
+        nombre: '',
+        numero: '',
+        fechaVencimiento: '',
+        cvv: '',
+        pais: '',
+      },
+      tarjetaMasterCard: {
+        nombre: '',
+        numero: '',
+        fechaVencimiento: '',
+        cvv: '',
+        pais: '',
+      },
+    };
   },
   methods: {
-    descargarBoleta() {
-      // Aquí implementamos la lógica para generar y descargar la boleta en PDF con JsPDF
-      const doc = new JsPDF();
-
-      // Definir los estilos para el título y el contenido
-      const estiloTitulo = { fontSize: 18, fontStyle: 'bold', marginBottom: 10 };
-      const estiloContenido = { fontSize: 14, marginBottom: 5 };
-      // Agregar el título y el contenido a la boleta
-      doc.text('Boleta de Compra', 20, 20);
-      doc.text('Nombre de Empresa:', 20, 40);
-      doc.text(this.nombreEmpresa, 80, 40, estiloContenido);
-      doc.text('RUC:', 20, 60);
-      doc.text(this.ruc.toString(), 70, 60, estiloContenido);
-      doc.text('Dirección:', 20, 80);
-      doc.text(this.direccion, 70, 80, estiloContenido);
-      doc.text('Tipo de Tarjeta:', 20, 100);
-      doc.text(this.tipoTarjeta, 70, 100, estiloContenido);
-      doc.text('Precio de Membresía:', 20, 120);
-      doc.text(this.tipoMembresia, 80, 120, estiloContenido);
-
-      // Descargar la boleta como un archivo PDF.
-      doc.save('boleta_compra.pdf');
+    submitForm() {
+      {
+        setTimeout(() => {
+          // Redirigir al usuario a la página de la boleta con el número de boleta obtenido
+          this.$router.push({
+            path: '/boleta',
+            query: {
+              nombreEmpresa: this.nombreEmpresa,
+              ruc: this.ruc,
+              direccion: this.direccion,
+              tipoMembresia: this.tipoMembresia,
+              tipoTarjeta: this.tipoTarjeta,
+            },
+          });
+        },);
+      }
     },
+    resetCardFields() {
+      if (this.tipoTarjeta === 'Visa') {
+        this.tarjetaVisa = {
+          nombre: '',
+          numero: '',
+          fechaVencimiento: '',
+          cvv: '',
+          pais: '',
+        };
+      } else if (this.tipoTarjeta === 'Mastercard') {
+        this.tarjetaMasterCard = {
+          nombre: '',
+          numero: '',
+          fechaVencimiento: '',
+          cvv: '',
+          pais: '',
+        };
+      }
+    }
   },
 };
 </script>
 
-<style scoped>
-h2 {
+<style>
+h2{
   color: #181818;
-  font-size: 24px;
-  text-align: center;
+  font-size: 50px;
 }
 
-.boleta {
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+/* Estilos para el contenedor principal */
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 400px;
 }
 
-.info {
-  width: 100%;
-}
-
-.info td {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
-button {
-  background-color: #ee8f00;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Estilos para el formulario en la mitad izquierda */
+.left-container {
+  flex: 3;
+  background-color: #e8a300;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  margin-right: 20px;
   margin-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
 }
 
-button:hover {
-  background-color: #ee8f00;
+/* Estilos para las etiquetas dentro del formulario */
+.left-container label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+  width: 90px;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Estilos para la imagen a la derecha */
+.right-container {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para la imagen */
+.floating-image {
+  width: 150px;
+  margin-top: 120px;
+  height: 400px;
 }
 </style>
