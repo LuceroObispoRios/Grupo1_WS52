@@ -148,6 +148,17 @@
       "password": "123456",
       "userType": "client",
       "id": 1
+    },
+    {
+      "name": "andrea",
+      "apellidoMaterno": "rosales",
+      "apellidoPaterno": "ohiggins",
+      "celular": "911222333",
+      "direccion": "lince",
+      "email": "a@gmail.com",
+      "password": "0123456",
+      "userType": "client",
+      "id": 2
     }
   ],
   "bookingHistory": [
