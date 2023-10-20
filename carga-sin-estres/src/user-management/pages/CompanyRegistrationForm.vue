@@ -114,6 +114,7 @@ export default {
         numeroContacto: this.numeroContacto,
         password: this.password,
         confirmarpassword: this.confirmarpassword,
+        userType: 'company',
         photo: this.photo,
         transporte: this.transporte,
         carga: this.carga,
@@ -178,7 +179,8 @@ export default {
           embalaje: this.embalaje,
           montaje: this.montaje,
           desmontaje: this.desmontaje,
-          description: this.description
+          description: this.description,
+          userType: this.userType
         };
 
         try {
