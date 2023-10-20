@@ -17,9 +17,6 @@ export class cargaSinEstresApiService{
     getBookingsByCompany(id) {
         return http.get(`/bookingHistory?idCompany=${id}`);
     }
-    getMessages() {
-        return http.get('/chat');
-    }
     updateBooking(id, data) {
         return http.put(`/bookingHistory/${id}`, data);
     }

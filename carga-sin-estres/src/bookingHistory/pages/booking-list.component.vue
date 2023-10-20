@@ -27,7 +27,6 @@ export default {
     console.log('User type:', this.userType);
 
     this.getAllBookingHistory(this.userId);
-    this.getAllMessages();
   },
   methods: {
     getAllBookingHistory(id){
@@ -40,10 +39,10 @@ export default {
                 booking.counter = index + 1;
               });
               this.bookingList.reverse();
-              console.log('data client reverse with counter: ', this.bookingList);
               this.bookingList.forEach((booking, index) => {
                 booking.chat = booking.chat.reverse();
               });
+              console.log('data client reverse with counter: ', this.bookingList);
             })
             .catch((error) => {
               this.errors.push(error);
@@ -57,32 +56,15 @@ export default {
                 booking.counter = index + 1;
               });
               this.bookingList.reverse();
+              this.bookingList.forEach((booking, index) => {
+                booking.chat = booking.chat.reverse();
+              });
               console.log('data company reverse with counter: ', this.bookingList);
-
-              // this.bookingApiService.getMessagesByBooking(booking.id)
-              //     .then((response) => {
-              //       this.messages = response.data;
-              //       console.log('messages: ', this.messages);
-              //     })
-              //     .catch((error) => {
-              //       this.errors.push(error);
-              //     });
-
             })
             .catch((error) => {
               this.errors.push(error);
             });
       }
-    },
-    getAllMessages(){
-      this.bookingApiService.getMessages()
-          .then((response) => {
-            this.messages = response.data;
-            console.log('All messages: ',this.messages);
-          })
-          .catch((error) => {
-            this.errors.push(error);
-          });
     }
   }
 };
@@ -90,12 +72,6 @@ export default {
 
 <template>
 
-  <!-- <div>
-    <router-link to="/home" custom v-slot="{ navigate, href }" key="Home">
-      <div><pv-button class="pi pi-arrow-left text-black-alpha-90 mt-3 hover:bg-yellow-200"
-                      rounded outlined aria-label="Favorite" :href="href" @click="navigate" /></div>
-    </router-link>
-  </div> -->
   <div><h1 class="title flex justify-content-center">Historial de Reservas</h1></div>
   <div v-for="bookingHistory in bookingList" :key="bookingHistory.id">
     <booking-card :bookingHistory="bookingHistory"></booking-card>
