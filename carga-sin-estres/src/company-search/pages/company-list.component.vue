@@ -275,7 +275,7 @@
     <div class="dialog-container">
       <div class ="dialog-section">
         <h2 class="dialog-title">Carga Rapida</h2>
-        <pv-button aria-label="Cancelar Carga Rapida" icon="pi pi-times" class="btn-cerrar p-button-text" @click="hideDialog">Cancelar</pv-button>
+        <button aria-label="Cancelar Carga Rapida" icon="pi pi-times" class="btn-cerrar p-button-text" @click="hideDialog">Cancelar</button>
       </div>
 
       <div class ="dialog-section">
@@ -285,7 +285,7 @@
       </div>
 
       <div class ="dialog-section">
-        <pv-button aria-label="Buscar Carga Rapida" icon="pi pi-search" class="btn-CargaRapida p-button-text" @click="CargaRapida">Carga Rapida</pv-button>
+        <button aria-label="Buscar Carga Rapida" icon="pi pi-search" class="btn-CargaRapida p-button-text" @click="CargaRapida">Carga Rapida</button>
       </div>
     </div>
   </pv-dialog>
