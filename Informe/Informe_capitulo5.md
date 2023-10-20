@@ -62,7 +62,7 @@ Convenciones: De acuerdo a Cucumber (s.f.), Gherkin utiliza palabras clave espec
 ***HTML:***    
 (file).html  
 Descripción: Hypertext Makeup Language es el lenguaje estándar que se utiliza para crear y estructurar el contenido de páginas web. Consiste en una serie de etiquetas y elementos que definen diferentes partes del contenido para que se vean o comporten de una determinada manera. 
-Convenciones: De acuerdo a W3Schools (s.f.), para facilitar la lectura y la coherencia en el código, es necesario usar espacios o tabulaciones de manera consistente, escribir los nombres de las etiquetas y de los archivos en minúsculas, usar comillas dobles para definir atributos en las etiquetas, usar el elemento <link> y <script> para relacion el archivo html con los archivos css y javascript respectivamente. Asimismo, es importante que cada elemento esté cerrado y que se agreguen solo comentarios significativos (“<!--” para iniciar un comentario y “-->” para cerrarlo).  
+Convenciones: De acuerdo a W3Schools (s.f.), para facilitar la lectura y la coherencia en el código, es necesario usar espacios o tabulaciones de manera consistente, escribir los nombres de las etiquetas y de los archivos en minúsculas, usar comillas dobles para definir atributos en las etiquetas, usar el elemento <"link"> y <"script"> para relacion el archivo html con los archivos css y javascript respectivamente. Asimismo, es importante que cada elemento esté cerrado y que se agreguen solo comentarios significativos (“<!--” para iniciar un comentario y “-->” para cerrarlo).  
 
 ***CSS:***  
 (file).css  
@@ -72,19 +72,36 @@ Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la legibilidad, se 
 ***JavaScript:***  
 (file).js  
 Descripción: Lenguaje de programación que se usa para poder darle funcionalidades a las páginas web y que permita manipular su contenido y responder a acciones del usuario.  
-Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la comprensión del código, se utilizaran nombre de variables y funciones en minúscula, no abreviados y que describan su propósito. Asimismo, se dividirán funciones largas en funciones más pequeñas para facilitar la lectura.  
+Convenciones: De acuerdo a MDN Web Docs (s.f.), para mejorar la comprensión del código, se utilizaran nombre de variables y funciones en minúscula, no abreviados y que describan su propósito. Asimismo, se dividirán funciones largas en funciones más pequeñas para facilitar la lectura. 
+
+***Vue***  
+Descripción: Framework de Javascript que se usa para construir interfaces de usuario interactivas y dinamicas en aplicaciones web.
+Convenciones: De acuerdo a Vue (s.f.), la nomenclatura debe estar en formato camelCase. Tambien, se utilizara el prefijo "v" en plantillas HTML como 'v-if', 'v-for', 'v-bind', etc.
 
 ### 5.1.4. Software Deployment Configuration.
-Para almacenar y manejar el flujo de trabajo del equipo, hemos creado un repositorio en GitHub. Utilizaremos "main" como la rama principal para el desarrollo.
-Para su configuración es necesario clonar el repositorio desde GitHub con el URL: https://github.com/LuceroObispoRios/Grupo1_WS52.git.  Este proceso descargará todo el contenido del repositorio en la máquina local.
-Para el entorno de desarrollo se utilizará el Visual Studio Code.
+Para el desplegue de nuestra aplicación decidimos usar firebase.  
 
-Primero se eligió la rama en donde se alojará y desplegará el landing page. Este será la rama deployment con la carpeta origen en el /root.
-Guardamos la configuración y github nos proporcionó el link de la página. Luego de unos minutos la página pudo visualizarse correctamente.
+El despliegue de la aplicación se realiza primero creando una cuenta en [https://firebase.google.com](https://firebase.google.com), a partir de eso, se debe crear un proyecto vacio en el cual guardar el despliegue del proyecto.  
+![Proyecto en Firebase](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/firebase.JPG?raw=true)
 
-![landing page deployment configuration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-page-deployment.jpeg?raw=true)
+Para realizar el despliegue en si, se tiene que ejecutar los siguientes comandos en orden :  
+![Paso1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso1.JPG?raw=true)   
+![Paso2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso2.JPG?raw=true)   
+![Paso4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso4.JPG?raw=true)   
+  
+En este punto se generara la carpeta dist  
+  
+![CarpetaDist](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/dist.JPG?raw=true)    
+  
+Ahora, para inicializar el despliegue:  
+![Paso3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso3.JPG?raw=true)  
+![Paso5](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso5.JPG?raw=true) 
+![Paso6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso6.JPG?raw=true)  
+  
+Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente link:  
+[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app)
 
-A medida que el proyecto avance, se agregarán más elementos de configuración, incluyendo configuración para la base de datos relacional, configuración de pruebas y configuración de gestión de paquetes y dependencias.
+*Para que funcione correctamente se tiene que hacer $json-server --watch db.json --routes routes.json , a nuestra db en json 
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 
@@ -107,28 +124,32 @@ A medida que el proyecto avance, se agregarán más elementos de configuración,
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es 30 |
 
 #### 5.2.1.2. Sprint Backlog 1.
-|     Sprint #         |     Sprint 2             |                           |                                                        |                                                                                    |                   |                         |                      |
-|----------------------|--------------------------|---------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
-|     User   Story     |                          |     Work –   Item/Task    |                                                        |                                                                                    |                   |                         |                      |
-|     Id               |     Título               |     Id                    |     Título                                             |     Descripción                                                                    |     Estimación    |     Asignado   a        |     Estado           |
-|     HU001 – HU006    |     Manejo de Usuario    |     WI01                  |     Registro de Empresa de Mudanzas                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
-|                      |                          |     WI02                  |     Registro de Cliente                                |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
-|                      |                          |     WI03                  |     Iniciar Sesión en la plataforma                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Eric Cuevas         |     Completado       |
-|                      |                          |     WI04                  |     Ajustes de cuenta de cliente                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
-|                      |                          |     WI05                  |     Ajustes de cuenta de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     1h            |     Eric Cuevas         |     Completado       |
-|                      |                          |     WI06                  |     Cerrar Sesión                                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
-| HU007-HU010          | Métodos de pago          |     WI07                  |     Elección de membresía de empresa                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Damaris Tasayco     |     Completado       |
-|                      |                          |     WI08                  |     Pago de membresía                                  |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
-|                      |                          |     WI09                  |     Pago para reserva de servicio                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Damaris Tasayco     |     Por completar    |
-|                      |                          |     WI10                  |     Detalles de pago                                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
-| HU011-HU014          | Búsqueda de empresas     |     WI11                  |     Búsqueda de empresas cercanas                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Lucero Obispo       |     Completado       |
-|                      |                          |     WI12                  |     Filtrar por servicios ofrecidos                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Lucero Obispo       |     Completado       |
-|                      |                          |     WI13                  |     Filtrar por calificación                           |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
-| HU014-HU016          | Reserva de Servicios     |     WI14                  |     Visualizar perfil de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
-|                      |                          |     WI15                  |     Envío de información sobre la   posible reserva    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Por completar    |
-|                      |                          |     WI16                  |     Acordar un precio por servicio   reservado         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
-| HU017                | Historial de reservas    |     WI17                  |     Visualizar historial de reservas                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
-| HU018                | Chat de reservas         |     WI18                  |     Comunicación mediante chat con la empresa          |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+
+|     Sprint #         |     Sprint 1                |                           |                                                        |                                                                                             |                   |                         |                      |
+|----------------------|-----------------------------|---------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
+|     User   Story     |                             |     Work –   Item/Task    |                                                        |                                                                                             |                   |                         |                      |
+|     Id               |     Título                  |     Id                    |     Título                                             |     Descripción                                                                             |     Estimación    |     Asignado   a        |     Estado           |
+|     HU001 – HU007    |     Manejo de Usuario       |     WI01                  |     Registro   de empresas de mudanza                  |     Hacer uso de HTML, CSS y JavaScript para implementar el registro de empresas            |     2h            |     Andrea O’Higgins    |     Completado       |
+|                      |                             |     WI02                  |     Registro   de cliente                              |     Hacer uso de HTML, CSS y JavaScript para implementar el registro de cliente             |     2h            |     Andrea O’Higgins    |     Completado       |
+|                      |                             |     WI03                  |     Iniciar   Sesión la plataforma                     |     Hacer uso de HTML, CSS y JavaScript para implementar la estructura   del login          |     4h            |     Andrea O’Higgins    |     Completado       |
+|                      |                             |     WI04                  |     Solicitud   de servicio de mudanza                 |     Hacer uso de HTML, CSS y JavaScript para implementar la solicitud de   servicio         |     2h            |     Lucero Obispo       |     Por completar    |
+|                      |                             |     WI05                  |     Visualizar   empresas de mudanza                   |     Hacer uso de HTML y CSS para visualizar las empresas de mudanza                         |     1h            |     Lucero Obispo       |     Completado       |
+|                      |                             |     WI06                  |     Seleccionar   empresa de mudanza                   |     Hacer uso de HTML, CSS y JavaScript para seleccionar la empresa de   mudanza            |     2h            |     Lucero Obispo       |     Completado       |
+|                      |                             |     WI07                  |     Cerrar   Sesión                                    |     Hacer uso de HTML, CSS y JavaScript para implementar el cierre de   sesión.             |     2h            |     Andrea O’Higgins    |     Por completar    |
+|     HU008-HU011      |     Métodos de pago         |     WI08                  |     Elección   de membresía de empresa                 |     Hacer uso de HTML y JavaScript para implementar la elección de   membresía              |     2h            |     Lucero Obispo       |     Por completar    |
+|                      |                             |     WI09                  |     Pago   de membresía                                |     Hacer uso de HTML y JavaScript para implementar el pago de membresía                    |     2h            |     Eric Cuevas         |     Por completar    |
+|                      |                             |     WI10                  |     Selección   de método de pago                      |     Hacer uso de HTML y JavaScript para implementar la selección de método   de pago        |     3h            |     Eric Cuevas         |     Por completar    |
+|                      |                             |     WI11                  |     Detalles   de pago                                 |     Hacer uso de HTML para implementar los detalles de pago                                 |     1h            |     Eric Cuevas         |     Por completar    |
+|     HU012-HU016      |     Búsqueda de empresas    |     WI12                  |     Búsqueda de empresas cercanas                      |     Hacer uso de HTML y JavaScript para implementar la búsqueda de   empresa                |     1h            |     Damaris Tasayco     |     Completado       |
+|                      |                             |     WI13                  |     Filtrar por servicios ofrecidos                    |     Hacer uso de HTML y JavaScript para implementar el filtrado por servicios               |     2h            |     Damaris Tasayco     |     Por completar    |
+|                      |                             |     WI14                  |     Filtrar por calificación                           |     Hacer uso de HTML y JavaScript para implementar el filtrado por calificación            |     2h            |     Damaris Tasayco     |     Por completar    |
+|                      |                             |     WI15                  |     Visualización de disponibilidad                    |     Hacer uso de HTML y JavaScript para implementar la visualización de   disponibilidad    |     1h            |     Lucero Obispo       |     Por completar    |
+|                      |                             |     WI16                  |     Visualizar perfil de empresa                       |     Hacer uso de HTML, CSS y JavaScript para implementar el perfil de empresa               |     1h            |     Lucero Obispo       |     Completado       |
+|     HU017-HU021      |     Reserva de servicios    |     WI17                  |     Ingresar   a la reserva del servicio               |     Hacer uso de HTML y JavaScript para ingresar a la reserva del   servicio                |     2h            |     Eric Cuevas         |     Por completar    |
+|                      |                             |     WI18                  |     Seleccionar   servicios a reservar                 |     Hacer uso de HTML y JavaScript para implementar la selección de   servicios             |     2h            |     Eric Cuevas         |     Completado       |
+|                      |                             |     WI19                  |     Envío   de información sobre la posible reserva    |     Hacer uso de JavaScript para implementar el envío de información                        |     1h            |     Damaris Tasayco     |     Por completar    |
+|                      |                             |     WI20                  |     Contactar   con el trabajador de la empresa        |     Hacer uso de HTML para implementar el contacto con el trabajador                        |     1h            |     Damaris Tasayco     |     Por completar    |
+|                      |                             |     WI21                  |     Acordar   un precio por servicio reservado         |     Hacer uso de HTML y JavaScript para aceptar la reserva.                                 |     1h            |     Damaris Tasayco     |     Por completar    |
 
 #### 5.2.1.3. Development Evidence for Sprint Review.
 
@@ -163,23 +184,29 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 
 ![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)
 
-![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US10.jpg)
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)
 
-![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US11.jpg)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)
 
-![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US12.jpg)  
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US012.jpg?raw=true)  
 
-![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US13.jpg)  
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US013.jpg?raw=true)  
  
-![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US14.jpg)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US014.jpg?raw=true)  
 
-![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US015.jpg?raw=true)  
 
-![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US16.jpg)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US016.jpg?raw=true)  
 
-![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US17.jpg)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US017.jpg?raw=true)  
 
-![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US18.jpg) 
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US018.jpg?raw=true)  
+ 
+![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true) 
+
+![feature 20](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US020.jpg?raw=true)  
+
+![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
@@ -226,8 +253,173 @@ A continuación, se presentan screenshots que reflejan el trabajo realizado dura
 
 ![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration3_sprint1.png?raw=true)  
 
+### 5.2.2. Sprint 2
+#### 5.2.2.1. Sprint Planning 2.  
+  
+| **Sprint 2** | |
+|:---: | :---| 
+| | **Sprint planning background** |   
+| Date | 12/09/23 |
+| Time | 08:00 PM |
+| Location | Google Meet - Virtual Meeting |
+| Prepared by | Obispo, Lucero |
+| Attendees to meeting | Cuevas, Eric / O´Higgins, Andrea / Vilcamiza, Damaris  |
+| Sprint n - 1 Review Summary | Se Inicio con el desarrollo de la aplicación web, implementandose la landing page y los principios de otras partes de la aplicación, asi como se termino una primera versión del informe |
+| Sprint n - 1 Retrospective Summary | Junto con el feedback recibido, podemos acordar que varias partes del desarrollo en ambos el informe y aplicación necesitan mejoras para cumplir los estandares requeridos, aspiramos a que este sprint 2 sea mejor. |
+| | **Sprint Goal & User Stories** |
+| Sprint & Goal | El objetivo del Sprint 2 sera terminar con la sección de manejo de usuario, lo cual engloba el registro y ajuste de datos de ambos tipos de usuario, asi como el inicio de sesión de la app, y tambien se terminara con la busqueda de empresas, vista principal del cliente. A su vez se avanzaran la vista de membresias para empresas, del historial de reservas del cliente, asi como los servicios y componentes del dominio Public.|
+| Sprint & Velocity | El Sprint Velocity establecido para este sprint es 60 |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es 50 |  
+  
+#### 5.2.2.2. Sprint Backlog 2.  
 
-# Bibliografia
+|     Sprint #         |     Sprint 2             |                           |                                                        |                                                                                    |                   |                         |                      |
+|----------------------|--------------------------|---------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
+|     User   Story     |                          |     Work –   Item/Task    |                                                        |                                                                                    |                   |                         |                      |
+|     Id               |     Título               |     Id                    |     Título                                             |     Descripción                                                                    |     Estimación    |     Asignado   a        |     Estado           |
+|     HU001 – HU006    |     Manejo de Usuario    |     WI01                  |     Registro de Empresa de Mudanzas                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI02                  |     Registro de Cliente                                |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI03                  |     Iniciar Sesión en la plataforma                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI04                  |     Ajustes de cuenta de cliente                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI05                  |     Ajustes de cuenta de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     1h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI06                  |     Cerrar Sesión                                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
+| HU007-HU010          | Métodos de pago          |     WI07                  |     Elección de membresía de empresa                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI08                  |     Pago de membresía                                  |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI09                  |     Pago para reserva de servicio                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Damaris Tasayco     |     Por completar    |
+|                      |                          |     WI10                  |     Detalles de pago                                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
+| HU011-HU014          | Búsqueda de empresas     |     WI11                  |     Búsqueda de empresas cercanas                      |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI12                  |     Filtrar por servicios ofrecidos                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI13                  |     Filtrar por calificación                           |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
+| HU014-HU016          | Reserva de Servicios     |     WI14                  |     Visualizar perfil de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI15                  |     Envío de información sobre la   posible reserva    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Por completar    |
+|                      |                          |     WI16                  |     Acordar un precio por servicio   reservado         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU017                | Historial de reservas    |     WI17                  |     Visualizar historial de reservas                   |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU018                | Chat de reservas         |     WI18                  |     Comunicación mediante chat con la empresa          |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+  
+#### 5.2.2.3. Development Evidence for Sprint Review.  
+
+Para este Sprint se desarrolló el Frontend de la plataforma.
+![development evidence](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/development-evidence-sprint2.png?raw=true)
+  
+#### 5.2.2.4. Testing Suite Evidence for Sprint Review.  
+  
+Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
+  
+![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
+![feature 02](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature02-sprint2.png?raw=true)  
+![feature 03](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature03-sprint2.png?raw=true)  
+![feature 04](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature04-sprint2.png?raw=true)  
+![feature 05](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature05-sprint2.png?raw=true)  
+![feature 06](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature06-sprint2.png?raw=true)  
+![feature 07](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature07-sprint2.png?raw=true)  
+![feature 08](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature08-sprint2.png?raw=true)  
+![feature 09](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature09-sprint2.png?raw=true)   
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US10.jpg?raw=true)
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US11.jpg?raw=true)
+![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US12.jpg?raw=true)  
+![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US13.jpg?raw=true)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US14.jpg?raw=true)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg?raw=true)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US16.jpg?raw=true)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US17.jpg?raw=true)  
+![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US18.jpg?raw=true) 
+
+  
+#### 5.2.2.5. Execution Evidence for Sprint Review. 
+***Segundo Sprint***  
+Durante este sprint, nos enfocamos en terminar con la sección de manejo de usuario, lo cual engloba el registro y ajuste de datos de ambos tipos de usuario, asi como el inicio de sesión de la app, y tambien con la busqueda de empresas, vista principal del cliente. A su vez se avanzaran la vista de membresias para empresas, del historial de reservas del cliente, asi como los servicios y componentes del dominio Public.   
+  
+![Login-sprint2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution1.JPG?raw=true)  
+![Registrar-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution2.JPG?raw=true)
+![registrar-empresa1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution3.JPG?raw=true)
+![registrar-empresa2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution4.JPG?raw=true)
+![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution5.JPG?raw=true)
+![busqueda de empresas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution6.JPG?raw=true)
+![Carta de información de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution7.JPG?raw=true)
+![historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution8.JPG?raw=true)
+![ajustes de empresa 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution9.JPG?raw=true)
+![ajustes de empresa 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution10.JPG?raw=true)
+![membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution11.JPG?raw=true)
+![membresias2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution12.JPG?raw=true)
+  
+Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
+Link a la plataforma: [https://cargasinestres-vue.web.app/home](https://cargasinestres-vue.web.app/home)  
+  
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
+  
+**Introducion:**  
+Para este segundo sprint se ha logrado implementar 12 endpoints, los cuales han sido exitosamente logrados y documentados.  
+Los metodos GET clients y companies con parametro de id estan relacionados a la pantalla de Login, para verificar que el usuario existe en la base de datos json.  
+Asmismo, los metodos POST companies y clientes estan relacionados a las pantallas de Register Client y Register Company para registrar la informacion tanto del cliente como de la empresa.  
+Los metodos PUT clients y companies estan relacionados a las pantallas Client Settings y Company Settings, para editar los datos de estos.  
+Los metodos GET companies y GET companies con parametro de id, estan relacionados a la pantalla de Busqueda de Empresas, donde el usuario puede ver la lista completa de empresa, y cuando le da click a una fila puede acceder a la informacion de una empresa en especifica.  
+Por ultimo, los metodos POST bookingHistory, GET booking History, asi como los metodos GET chat y POST chat permiten al usuario crear una reserva como visualizar en el historia de reservas, teniendo en cuenta que desde este historial se puede crear mensajes.
+  
+**Tabla:**  
+
+|     **Endpoint**    | **Metodo HTTP** |           **Acciones (Explicacion del response)**                                                           | **Enlace** | 
+|--------|----------|--------|-------|
+|  /companies         |       GET       | 200 OK: Retorna la lista de todas las empresas registradas                                                  |    [https://cargasinestres-vue.web.app/company-search](https://cargasinestres-vue.web.app/company-search)     |
+|  /companies/{id}    |       GET       | 200 OK: Retorna información de la compañía correspondiente al ID especificado (parametro: id, ejemplo: '1') |    [https://cargasinestres-vue.web.app/company/1](https://cargasinestres-vue.web.app/company/1)        |
+|  /bookingHistory    |       POST      | 201 Created: Indica que la reserva ha sido creada exitosamente                                              |    [https://cargasinestres-vue.web.app/company/1](https://cargasinestres-vue.web.app/company/1)        |
+|  /bookingHistory    |       GET       | 200 OK: Retorna la lista de todas las reservas de historial registradas                                     |    [https://cargasinestres-vue.web.app/bookingHistory](https://cargasinestres-vue.web.app/bookingHistory)       |
+|  /clients           |       GET       | 200 OK: Retorna la información del cliente si el email y contrasena son válidas                             |    [https://cargasinestres-vue.web.app/login](https://cargasinestres-vue.web.app/login)   |
+|  /companies         |       GET       | 200 OK: Retorna la información de la empresa si el email y contrasena son válida                            |    [https://cargasinestres-vue.web.app/login](https://cargasinestres-vue.web.app/login)       |
+|  /clients           |       POST      | 201 Created: Indica que el cliente ha sido creado exitosamente                                              |    [https://cargasinestres-vue.web.app/register-client](https://cargasinestres-vue.web.app/register-client)     |
+|  /companies         |       POST      | 201 Created: Indica que la compañía ha sido creada exitosamente                                             |    [https://cargasinestres-vue.web.app/register-company](https://cargasinestres-vue.web.app/register-company)        |
+|  /clients/{id}      |       PUT       | 200 OK: Indica que los datos del cliente han sido actualizados exitosamente (parametro: id, ejemplo: '31')      |    [https://cargasinestres-vue.web.app/client-settings/1](https://cargasinestres-vue.web.app/client-settings/1)     |
+|  /companies/{id}    |       PUT       | 200 OK: Indica que los datos de la compañía han sido actualizados exitosamente (paranetro: id, ejemplo: '2')    |   [https://cargasinestres-vue.web.app/company-settings/8](https://cargasinestres-vue.web.app/company-settings/8)    |  
+  
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/src/company-search/services/cargaSinEstres-api.service.js)
+  
+**Captura de interaccion con datos de prueba**   
+*Registrar Cliente*  
+- Antes de registrar cliente Lucero. Como se puede ver, el unico cliente es Eric  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services1.JPG?raw=true)
+  
+- Despues de registrar el cliente Lucero. Como se puede ver, el db.json cambio, pues se ha agregado un nuevo registro que guarda la informacion del cliente lucero. Mediante la sintaxis POST /clients  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services2.JPG?raw=true)
+  
+*Obtener la informacion de una empresa por su id*   
+- Mediante la sintaxis GET /companies/{id}. En la consola se puede visualizar la informacion obtenida de esa empresa en especifico  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services3.JPG?raw=true)  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services4.JPG?raw=true)
+  
+*Realizar una reserva*   
+- Mediante la sintaxis POST /bookingHistory. Se crea una reserva y se almacena el db.json, se puede ver en la consola la informacion de la nueva reserva.  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services5.JPG?raw=true)
+  
+**Editar datos de una empresa**   
+- Antes de presionar el boton de guardar cambios, se puede ver en la consola que la informacion de la direccion de la empresa Mudanzas Plata es en Monterrico  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services6.JPG?raw=true)
+  
+- Mediante la sintaxis PUT /clients/{id}. Se edita los datos de la empresa de mudanzas plata, y son reemplazados por la nueva informacion ingresada en el formulario. Por ejemplo la direccion cambio a San Isidro  
+![servicios-ejemplos](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/services7.JPG?raw=true)
+  
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.  
+  
+La aplicación desplegada se encuentra en el siguiente enlace  
+[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app),   
+más para su correcto funcionamiento, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)     
+  
+#### 5.2.2.8. Team Collaboration Insights during Sprint.  
+**GitFlow**     
+![gitflow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2.JPG?raw=true)  
+![gitflow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2_1.JPG?raw=true)  
+  
+**Contribuitors**    
+![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
+
+--
+# Conclusiones
+
+- Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
+
+- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+
+# Bibliografia  
 --
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
 
@@ -249,11 +441,13 @@ MDN Web Docs. (s.f.). Code Style Guide. Recuperado de: https://developer.mozilla
 
 W3Schools. (s.f.). HTML5 Syntax. Recuperado de: https://www.w3schools.com/html/html5_syntax.asp [Fecha de consulta: 04 de septiembre de 2023]  
 
+Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?redirect=true [Fecha de consulta: 26 de septiembre de 2023]  
+
 # Anexos  
 ## Anexo Videos de Exposiciones  
 
 - TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-
+- TP: https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing
 
 
 

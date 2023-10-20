@@ -4,12 +4,24 @@ export class cargaSinEstresApiService{
     getAll() {
         return http.get('/companies');
     }
-
+    getById(id) {
+        return http.get(`/companies/${id}`);
+    }
+    // booking history
     getAllBookings() {
         return http.get('/bookingHistory');
     }
-    getById(id) {
-        return http.get(`/companies/${id}`);
+    getBookingsByClient(id) {
+        return http.get(`/bookingHistory?idClient=${id}`);
+    }
+    getBookingsByCompany(id) {
+        return http.get(`/bookingHistory?idCompany=${id}`);
+    }
+    getMessages() {
+        return http.get('/chat');
+    }
+    updateBooking(id, data) {
+        return http.put(`/bookingHistory/${id}`, data);
     }
 
     getClientsForLogin(email, password){
@@ -33,6 +45,10 @@ export class cargaSinEstresApiService{
 
     updateClient(id, data) {
         return http.put(`/clients/${id}`, data);
+    }
+
+    updateCompany(id, data) {
+        return http.put(`/companies/${id}`, data); // no lo lee
     }
 
     delete(id) {

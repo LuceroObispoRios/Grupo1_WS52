@@ -1,8 +1,9 @@
 <script>
+import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service";
 export default {
   name: "booking-card",
   props: {
-    bookingHistory: null
+    bookingHistory: null,
   },
   data() {
     return {
@@ -10,17 +11,98 @@ export default {
       message: {},
       submitted: false,
       chatHeader: '',
+      bookingMessages: [],
+      apiService: new cargaSinEstresApiService(),
+      userId: '',
+      userType: '',
+      bookingToUpdate:[],
+      chat: [
+        {
+          id: null,
+          user: null,
+          message: null,
+          dateTime: null
+        }
+      ]
+
     }
+  },
+  created() {
+    console.log('this route is: ',this.$route);
+
+    // Obtiene el id del usuario
+    this.userId = this.$route.params.id;
+    console.log('User id:', this.userId);
+
+    // Obtiene el tipo de usuario
+    const routeParts = this.$route.path.split('/');
+    this.userType = routeParts[1];
+    console.log('User type:', this.userType);
   },
   methods: {
     openChat() {
+      this.bookingMessages = this.bookingHistory.chat;
       this.dialogVisible = true;
       this.chatHeader = `Chat con ${this.bookingHistory.hiredCompany.name}`;
-      console.log(`this.dialogVisible: ${this.dialogVisible}`)
+      console.log(`this.dialogVisible: ${this.dialogVisible}`);
+      console.log('bookingMessages: ', this.bookingMessages);
     },
     hideDialog() {
       this.dialogVisible = false;
       this.submitted = false;
+    },
+    sendMessage(){
+      if (this.message.content.trim() !== '') {
+        console.log('new message: ', this.message);
+
+        const newMessage = {
+          user: this.userType,
+          message: this.message.content,
+          dateTime: new Date().toLocaleString(),
+        };
+
+        this.bookingMessages.unshift(newMessage);
+        console.log('messages saved: ', this.bookingMessages);
+        this.message = {};
+        this.bookingHistory.chat = this.bookingMessages;
+        console.log('bookingHistory: ', this.bookingHistory);
+        this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
+        this.bookingToUpdate.chat.reverse();
+        console.log('bookingToUpdate: ', this.bookingToUpdate);
+        // console.log('bookingToUpdate nuevo: ', this.bookingToUpdate);
+        // console.log('verificar si se cambia:', this.bookingHistory.chat);
+
+        this.apiService.updateBooking(this.bookingToUpdate.id, this.bookingToUpdate)
+            .then(response => {
+              // Manejar la respuesta en consecuencia si es necesario
+              console.log('Booking actualizado con éxito:', response);
+            }).catch(error => {
+          // Manejar el error si ocurre
+          console.error('Error al actualizar el booking:', error);
+        });
+
+        // console.log('messages saved: ', this.bookingMessages);
+        // this.bookingHistory.chat.id ='';
+        // this.bookingHistory.chat.user = this.userType;
+        // this.bookingHistory.chat.message = this.bookingMessages.reverse();
+        // this.bookingHistory.chat.dateTime = new Date().toLocaleString();
+        // console.log('bookingHistory: ', this.bookingHistory);
+
+      }
+    },
+    cancelBooking(){
+      this.bookingHistory.status = 'Cancelado';
+      this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
+      this.bookingToUpdate.chat.reverse();
+      console.log('bookingToUpdate: ', this.bookingToUpdate);
+      this.apiService.updateBooking(this.bookingToUpdate.id, this.bookingToUpdate)
+          .then(response => {
+            // Manejar la respuesta en consecuencia si es necesario
+            console.log('Booking actualizado con éxito:', response);
+          }).catch(error => {
+        // Manejar el error si ocurre
+        console.error('Error al actualizar el booking:', error);
+      });
     }
   }
 }
@@ -31,30 +113,43 @@ export default {
   <div class="card">
     <pv-panel unstyled class="mr-3 ml-3">
       <template #header>
-        <div class="header">{{bookingHistory.id}}. Reserva {{bookingHistory.bookingDate}}</div>
+        <div class="header">{{bookingHistory.counter}}. Reserva {{bookingHistory.bookingDate}}</div>
+
       </template>
-      <div class="panel-content p-3">
-        <div class="panel-left flex flex-wrap">
-          <div class="col">
-            <div class="mt-2"><span class="font-bold">Fecha de mudanza: </span>{{bookingHistory.movingDate}}</div>
-            <div class="mt-2"><span class="font-bold">Estado de reserva: </span>{{bookingHistory.status}}</div>
-            <div class="mt-3"><span class="font-bold">Dirección de recojo: </span>{{bookingHistory.pickupAddress}}</div>
-            <div class="mt-1"><span class="mt-3 pt-7 font-bold">Dirección de entrega: </span>{{bookingHistory.destinationAddress}}</div>
-            <div class="flex ml-6 mt-3">
-              <pv-button v-if="bookingHistory.status ==='En curso'" class="btn-chat hover:bg-gray-300" @click="openChat">
-                <div class="pi pi-comment font-bold"></div>&nbsp;<p>chat</p>
-              </pv-button>
+      <div class="panel-content">
+        <div class="responsive p-3 flex flex-wrap">
+          <div class="panel-left flex flex-wrap">
+            <div class="col w-20rem">
+              <div class="mt-2"><span class="font-bold">Fecha de mudanza: </span>{{bookingHistory.movingDate}}</div>
+              <div class="mt-2"><span class="font-bold">Estado de reserva: </span>{{bookingHistory.status}}</div>
+              <div class="mt-3"><span class="font-bold">Dirección de recojo: </span>{{bookingHistory.pickupAddress}}</div>
+              <div class="mt-1"><span class="mt-3 pt-7 font-bold">Dirección de entrega: </span>{{bookingHistory.destinationAddress}}</div>
+              <div class="flex ml-2 mt-3">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
+              <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
             </div>
           </div>
-          <div class="col">
-            <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
-            <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
+          <div class="panel-right bg-white ml-8">
+            <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name"
+                 class="lg:border-round" width="150" height="150">
           </div>
-
         </div>
-        <div class="panel-right bg-white">
-          <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name"
-               class="lg:border-round" width="150" height="150">
+        <div class="flex flex-wrap ml-3">
+          <div class="mr-2 mb-2">
+            <pv-button v-if="bookingHistory.status ==='En curso'" class="btn-chat font-bold hover:bg-gray-300 p-2 pl-3 pr-5" @click="openChat">
+              <div class="pi pi-comment font-bold mr-2"></div><p class="m-0">Chat</p>
+            </pv-button>
+          </div>
+          <div class="m-3"></div>
+          <div class="mb-2">
+            <pv-button v-if="bookingHistory.status ==='En curso'" class="bg-red-500 font-bold hover:bg-gray-300 p-2 pl-3 pr-3"  @click="cancelBooking">
+              <div class="pi pi-times font-bold mr-2"></div><p class="m-0">Cancelar reserva</p>
+            </pv-button>
+          </div>
         </div>
       </div>
     </pv-panel>
@@ -68,6 +163,25 @@ export default {
         <div class="flex align-content-center justify-content-center bg-white">
           <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name"
                class="lg:border-round" width="150" height="150">
+        </div>
+        <div ref="scrollPanel"
+             style="overflow-y: scroll; height: 200px; display: flex; flex-direction: column-reverse; margin-bottom: 5px;">
+          <div v-for="(message, index) in bookingMessages" :key="index">
+            <div class="message-card bg-gray-200 mt-0 pt-1 pb-1 pl-2 pr-2 mb-1 pb-0 border-round-sm">
+              <div>
+                <div v-if="message.user === 'client'">
+                  <p class="p-0 m-0 font-bold">Cliente</p>
+                </div>
+                <div v-else-if="message.user === 'company'">
+                  <!--                    Se muestra el nombre de la empresa-->
+                  <!--                    <p class="p-0 m-0 font-bold">Empresa {{bookingHistory.hiredCompany.name}}</p>-->
+                  <p class="p-0 m-0 font-bold">Empresa</p>
+                </div>
+                <p class="p-0 m-0 text-gray-500 dateTime">{{message.dateTime}}</p>
+                <p class="p-0 m-0">{{message.message}}</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="field">
@@ -93,7 +207,7 @@ export default {
           <pv-button
               :label="'Enviar'.toUpperCase()"
               icon="pi pi-check"
-              class="p-button-text"/>
+              class="p-button-text" @click="sendMessage"/>
         </template>
 
       </pv-dialog>
@@ -104,6 +218,10 @@ export default {
 </template>
 
 <style scoped>
+
+.dateTime {
+  font-size: 12px;
+}
 .card {
   margin-top: 20px;
   font-family: sans-serif;
@@ -118,11 +236,20 @@ export default {
 }
 
 .panel-content {
+  padding-bottom: 20px;
+  background-color: #FFF9F9;
+  border-radius: 0 0 5px 5px;
+}
+
+.responsive {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFF9F9;
-  border-radius: 0 0 5px 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .panel-left {
@@ -138,4 +265,8 @@ export default {
   background-color: #FDAE39;
   padding: 0 25px;
 }
+.btn-chat:hover {
+  background-color: #FDBE59;
+}
+
 </style>

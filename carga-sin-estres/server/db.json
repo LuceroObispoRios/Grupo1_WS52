@@ -145,6 +145,7 @@
     {
       "id": 1,
       "idCompany": 2,
+      "idClient": 1,
       "bookingDate": "2023-07-15",
       "pickupAddress": "Ate",
       "destinationAddress": "Barranco",
@@ -157,12 +158,27 @@
       },
       "hiredCompany": {
         "name": "Transporte y mudanzas Rapi2",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo1.jpg"
-      }
+        "logo": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/logotipo-transporte-y-mudanzas-design-template-8ee4abec6c3d27c285e676c71f18c550_screen.jpg?ts=1626998647"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 2,
       "idCompany": 3,
+      "idClient": 1,
       "bookingDate": "2023-08-16",
       "pickupAddress": "Lince",
       "destinationAddress": "Barranco",
@@ -175,12 +191,27 @@
       },
       "hiredCompany": {
         "name": "Romabe transporte",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo2.jpg"
-      }
+        "logo": "https://transporteromabe.com/wp-content/uploads/2021/07/Mudanzas-de-Arequipa-a-Lima-2.jpg"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 3,
       "idCompany": 4,
+      "idClient": 1,
       "bookingDate": "2023-09-10",
       "pickupAddress": "Barranco",
       "destinationAddress": "Barranco",
@@ -193,12 +224,27 @@
       },
       "hiredCompany": {
         "name": "Mudate Facil",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo3.png"
-      }
+        "logo": "https://www.zarla.com/images/zarla-mdate-fcil-1x1-2400x2400-20220329-q9j6rjmbw347xwbwmy3g.png?crop=1:1,smart&width=250&dpr=2"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 4,
       "idCompany": 5,
+      "idClient": 2,
       "bookingDate": "2023-09-10",
       "pickupAddress": "Barranco",
       "destinationAddress": "Barranco",
@@ -211,12 +257,13 @@
       },
       "hiredCompany": {
         "name": "Bodegas y mudanzas Santana",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo4.png"
+        "logo": "https://www.santanamudanzasybodegas.com/wp-content/uploads/2021/07/SANTANA-BODEGAS-Y-MUDANZAS-MUDANZAS-EN-CALI-MUDANZAS-NACIONALES-01.jpg"
       }
     },
     {
       "id": 5,
       "idCompany": 6,
+      "idClient": 2,
       "bookingDate": "2023-09-10",
       "pickupAddress": "Barranco",
       "destinationAddress": "Barranco",
@@ -229,12 +276,28 @@
       },
       "hiredCompany": {
         "name": "Practi Mudanza",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo5.png"
-      }
+        "logo": "https://practimudanza.com/wp-content/uploads/2020/11/LOGO-RECTANGULAR-PRACTIMUDANZA-RGB-LOGO-MUDANZAS-MUDANZAS-EN-CALI-EMPRESAS-DE-MUDANZAS-EN-CALI-01.png"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
+
     },
     {
       "id": 6,
       "idCompany": 7,
+      "idClient": 1,
       "bookingDate": "2023-09-10",
       "pickupAddress": "Barranco",
       "destinationAddress": "Barranco",
@@ -247,12 +310,27 @@
       },
       "hiredCompany": {
         "name": "Mudanzas Jurado",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo6.png"
-      }
+        "logo": "https://www.mudanzasjurado.com/uploads/UFOLSqyA/353x0_387x0/logo.jpg"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 7,
       "idCompany": 8,
+      "idClient": 1,
       "bookingDate": "2023-09-10",
       "pickupAddress": "Barranco",
       "destinationAddress": "Barranco",
@@ -265,8 +343,56 @@
       },
       "hiredCompany": {
         "name": "Mudanzas Plata",
-        "logo": "https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_SW53/main/Proyecto/image/empresaLogo7.png"
-      }
+        "logo": "https://mudanzasplata.com/wp-content/uploads/2021/07/cropped-logo-mudannzas-plata-transparente.png"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "idCompany": 1,
+      "idClient": 2,
+      "services": "Transporte",
+      "bookingDate": "26-09-23",
+      "pickupAddress": "SMP",
+      "destinationAddress": "Surco",
+      "movingDate": "30-09-23",
+      "movingTime": "16:00",
+      "status": "En curso",
+      "payment": {
+        "totalAmount": 0,
+        "paymentMethod": "Por definir"
+      },
+      "hiredCompany": {
+        "name": "Transporte y mudanzas Rapi2",
+        "logo": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/logotipo-transporte-y-mudanzas-design-template-8ee4abec6c3d27c285e676c71f18c550_screen.jpg?ts=1626998647"
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     }
   ]
 }

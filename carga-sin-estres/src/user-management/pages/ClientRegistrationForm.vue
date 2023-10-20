@@ -7,7 +7,7 @@
     <div class="container-back">
       <div class="user-info">
         <div class="left-section">
-          <img src="image/logo2.png" alt="Avatar" />
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Avatar" />
           <h5>Carga sin Estres</h5>
         </div>
         <form @submit.prevent="onSubmit" id="myForm">
@@ -172,7 +172,7 @@ export default {
     },
 
     cancel() {
-      // Lógica para cancelar el registro
+      this.$router.push('/home')
     },
   },
 };
@@ -188,7 +188,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 5rem auto auto auto;
+  margin: auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;

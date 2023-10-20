@@ -2,26 +2,40 @@
   <div>
     <toolbar-home></toolbar-home>
   </div>
-  
+  <br><br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">
         <form @submit.prevent="onSubmit" id="registro">
           <h2>Registrar Cuenta de Empresa</h2>
-          <img src="image/Cargalogo.png" alt="Logo de Carga sin estres" class="logo" />
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Logo de Carga sin estres" class="logo" />
 
           <div class="right-section">
+            <label for="nombre">Nombre de la empresa:</label><br>
             <input type="text" placeholder="Nombre de la empresa" v-model="name" id="nombre" />
+
+            <label for="email">Email de la empresa:</label><br>
             <input type="text" placeholder="Email" v-model="email" id="email" />
+
+            <label for="direccion">Dirección del local de empresa:</label><br>
             <input type="text" placeholder="Dirección" v-model="direccion" id="direccion" />
+
+            <label for="numeroContacto">Telefono de contacto de la empresa:</label><br>
             <input type="text" placeholder="Teléfono" v-model="numeroContacto" id="numeroContacto" />
+
+            <label for="password">Crear contraseña:</label><br>
             <input type="password" placeholder="Contraseña" v-model="password" id="password" />
+
+            <label for="confirmarpassword">Confirmar contraseña:</label><br>
             <input type="password" placeholder="Confirmar contraseña" v-model="confirmarpassword" id="confirmarpassword" />
+
+            <label for="photo">Link al logo de la empresa como imagen:</label><br>
+            <input type="text" placeholder="Link a la imagen" v-model="photo" id="photo" /><!--campo imagen logo de empresa--y pasarla a lo demás-->
           </div>
 
           <div class="service-boxes">
-            <p>Marque los servicios que ofrece su empresa:</p>
-            <div class="checkboxes col">
+            <label for="checkboxes">Marque los servicios que ofrece su empresa:</label>
+            <div class="checkboxes col" id="checkboxes">
               <div class="check row-1">
                 <input type="checkbox" v-model="transporte" value="transporte" id="transporte" />
                 <label for="transporte">Transporte</label>
@@ -61,6 +75,7 @@
       </div>
     </div>
   </div>
+  <br><br><br>
 </template>
 
 <script>
@@ -78,6 +93,7 @@ export default {
       numeroContacto: '',
       password: '',
       confirmarpassword: '',
+      photo: '', //link como enlace en texto
       transporte: false,
       carga: false,
       embalaje: false,
@@ -98,6 +114,7 @@ export default {
         numeroContacto: this.numeroContacto,
         password: this.password,
         confirmarpassword: this.confirmarpassword,
+        photo: this.photo,
         transporte: this.transporte,
         carga: this.carga,
         embalaje: this.embalaje,
@@ -132,6 +149,10 @@ export default {
         warnings += 'Las contraseñas no coinciden <br>';
       }
 
+      if (formData.photo.length < 1) {
+        warnings += 'Debe ingresar el link de su logo <br>';
+      }
+
       if (!formData.transporte && !formData.carga && !formData.embalaje && !formData.montaje && !formData.desmontaje) {
         warnings += 'Debe seleccionar al menos un servicio <br>';
       }
@@ -151,6 +172,7 @@ export default {
           numeroContacto: this.numeroContacto,
           password: this.password,
           confirmarpassword: this.confirmarpassword,
+          photo: this.photo,
           transporte: this.transporte,
           carga: this.carga,
           embalaje: this.embalaje,
@@ -163,11 +185,10 @@ export default {
           // Envía la solicitud para registrar la empresa
           const response = await this.apiService.createCompany(companyData);
 
-          // Verifica si el registro fue exitoso (puedes ajustar la lógica según tu API)
+          // Verifica si el registro fue exitoso
           if (response.status === 201) {
-            // Registro exitoso, puedes redirigir al usuario a donde desees
-            // Por ejemplo, una página de inicio de sesión
-            this.$router.push('/login'); // Ajusta la ruta de acuerdo a tu aplicación
+            // Registro exitoso, puedes redirigir al usuario a inicio de sesión
+            this.$router.push('/login');
           } else {
             this.errorMessage = 'Error al registrar la empresa. Intente nuevamente.';
           }
@@ -181,17 +202,13 @@ export default {
     },
 
     cancel() {
-      // Lógica para cancelar el registro y volver a LandingPage
+      this.$router.push('/home');
     }
   }
 };
 </script>
 
 <style scoped>
-html {
-  overflow-y: scroll;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -201,7 +218,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 3rem 3rem 3rem 3rem;
+  margin: auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;

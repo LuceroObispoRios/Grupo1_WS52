@@ -1,9 +1,9 @@
-Universidad Peruana de ciencias aplicadas  
-Ingenieria de Sistemas y Comunicaciones | Ingenieria de Software  
+ <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/logoUPC.png?raw=true" width="400" height="132">       
+Ingeniería de Sistemas y Comunicaciones | Ingenieria de Software  
 
 Para el curso de Aplicaciones Web  
 WS52 - Juan Carlos Tinoco Licas  
-# Course Project - Final Report TB1  
+# Course Project - Final Report TP  
 
 Integrantes:
 - Obispo Rios, Lucero Abigail
@@ -19,7 +19,10 @@ Ciclo 2023-02
  TB1 | 23/08/23 - 03/09/23  | Lucero Obispo|Se añadió los lean ux problem statements, assumptions y hypothesis statements. Se añadió diagrama de clases, organization systems, labeling systems, seo tags y meta tags. Se realizo 1 entrevista a trabajador de empresa, su registro y analisis. Para el sprint 1, se realizo el source code style guide of conventions y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas.
  TB1 | 23/08/23 - 03/09/23  | Andrea O'Higgins| Se añadió los as-is y to-be scenario mapping, empathy maps y c4 diagrams. Se realizó 2 entrevistas a ciudadanos, diseño, registro y analisis de la entrevista. Se avanzó con los wireframes, mockups y código del inicio de sesion. Se añadió searching systems, el software deployment configuration y los testing suite evidence.
  TB1 | 23/08/23 - 03/09/23  | Damaris Tasayco| Se añadió los puntos de Análisis Competitivo, Estrategias y tácticas frente a competidores. Asimismo, se codifico el landing page de "Carga sin Estrés", user stories, el testing Suite Evidence, el sprint backlog. Finalmente también se realizó 1 entrevista a un ciudadano, asi como su registro y analisis.
- 
+  TP | 05/09/23 - 27/09/23  | Eric Cuevas|  Se desarrollo las partes de registro, login y ajustes de usuario de la app, se añadieron wireframes y mockups, se corrigio partes del sprint 1 asi como historias de Usuario, realize el deployment de la app y los puntos relazcionados a este.
+  TP | 05/09/23 - 27/09/23  | Lucero Obispo| Se actualizo el diagrama de clases, labeling systems, descripcion de startup. Para el sprint 2, se realizo el services documentation y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas e informacion de empresa.
+  TP | 05/09/23 - 27/09/23  | Andrea O'Higgins| Se añadió el historial de reserva y el chat en la app, se diseñaron los wireframes y mockups. Se actualizó los user stories y features, y se agregó para el sprint2 el development evidence.
+  TP | 05/09/23 - 27/09/23  | Damaris Tasayco| Se actualizo el impact mapping, product backlog. Se añadio el sprint backlog, testing suite evidence. En el codigo, se hizo la pagina del landing page, el formulario de membresia y la pagina de boleta
 ---
 1. Capitulo 1: Introducción  
    1.1 Startup Profile     
@@ -99,46 +102,46 @@ Ciclo 2023-02
 ---
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se realizó una entrevista a un ciudadano. Además, se realizaron meetings con el equipo<br><br> *Eric Cuevas Rios* <br>- Se realizó dos entrevistas al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica los resultados del informe. <br>  <br> *Lucero Obispo Rios* <br> - Se realizó una entrevista al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica la ejecucion del pagina web. <br><br> *Andrea O´Higgins Rosales* <br> - Se realizó dos entrevistas a ciudadanos. Además, se realizaron meetings con el equipo | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transferir y receptar ideas a fin de construir una solución hacia un problema identificado. Por ejemplo, al realizar entrevistas. Por otro lado, también es relevante comunicarse con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. Además, concluimos que dado un análisis y especificaciones de requisitos como también el diseño, la implementación, validación y despliegue del producto logramos definir una estructura robusta para el desarrollo del aplicativo web "Carga sin Estrés". |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br>  - Se desarrollo el analisis competitivo, el product backlog, historias de usuario, entre otros <br><br> *Eric Cuevas Rios* <br> - Se desarrollo los procesos de Lean UX, historias de Usuario, diagramas de modelado, entre otros <br>  <br> *Lucero Obispo Rios* <br> - Se desarrollo los procesos de Lean UX, historias de usuario, digrama de clases, entre otros <br><br> *Andrea O´Higgins Rosales* <br> - Se desarrollo los as-is y to-be scenario mapping, diagramas c4, historias de usuario, entre otros  | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transmitir mensajes legibles, limpios e intuitivos. Por ejemplo, al documentar una descripción de "Carga sin Estrés". Por otro lado, también es relevante transmitir mensajes en los medios remotos con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se realizó una entrevista a un ciudadano. Además, se realizaron meetings con el equipo<br><br> *Eric Cuevas Rios* <br>- Se realizó dos entrevistas al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica los resultados del informe. <br>  <br> *Lucero Obispo Rios* <br> - Se realizó una entrevista al segmento de trabajadores de empresa. Se desarrollo una presentación en video que explica la ejecucion del pagina web. <br><br> *Andrea O´Higgins Rosales* <br> - Se realizó dos entrevistas a ciudadanos. Además, se realizaron meetings con el equipo <br> **TP** <br> *Damaris Tasayco Vilcamiza* <br>  - Se realizaron meetings con el equipo. <br><br> *Eric Cuevas Rios* <br> - Se realizaron meetings con el equipo. <br>  <br> *Lucero Obispo Rios* <br> - Se realizaron meetings con el equipo. <br><br> *Andrea O'Higgins Rosales* <br> - Se realizaron meetings con el equipo. <br>| Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transferir y receptar ideas a fin de construir una solución hacia un problema identificado. Por ejemplo, al realizar entrevistas. Por otro lado, también es relevante comunicarse con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. Además, concluimos que dado un análisis y especificaciones de requisitos como también el diseño, la implementación, validación y despliegue del producto logramos definir una estructura robusta para el desarrollo del aplicativo web "Carga sin Estrés". <br> |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **TB1** <br> *Damaris Tasayco Vilcamiza* <br> - Se desarrollo el analisis competitivo, el product backlog, historias de usuario, entre otros <br><br> *Eric Fernando Cuevas* <br> - Se desarrollo los procesos de Lean UX , historias de Usuario, diagramas de modelado, entre otras cosas. <br>  <br> *Lucero Abigail Obispo* <br> - Se desarrollo los procesos de Lean UX, historias de usuario, digrama de clases, entre otros <br><br> *Andrea Namie O´Higgins* <br> - Se desarrollo los as-is y to-be scenario mapping, diagramas c4, historias de usuario, entre otros <br><br> **TP** <br>*Damaris Tasayco Vilcamiza* <br> - Se desarrollo el impact mapping, product backlog, sprint backlog, entre otros <br><br> *Eric Fernando Cuevas* <br> - Se desarrollo el modelo de la base de datos, sprint planning, deployment, entre otras cosas. <br><br> *Lucero Abigail Obispo* <br> - Se desarrollo historias de usuario, digrama de clases, services documentation, entre otros <br><br> *Andrea Namie O´Higgins* <br> - Se desarrollo diagramas c4, development evidence, testing envidence, entre otros | Por un lado, concluimos que es importante manejar un lenguaje en común con los clientes. Necesitamos transmitir mensajes legibles, limpios e intuitivos. Por ejemplo, al documentar una descripción de "Carga sin Estrés". Por otro lado, también es relevante transmitir mensajes en los medios remotos con el equipo de manera que se tiene un proceso de trabajo estratégico y coordinado. |
 
 # Capitulo 1 : Introducción  
 ## 1.1 Startup profile  
 ### 1.1.1 Descripción de la startup  
-Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma que conecta a los clientes con empresas de mudanzas, ofreciendo un servicio integral. Por un lado, permite a los usuarios interactuar de manera eficiente con las empresas de mudanza, optimizando el proceso completo. A través de la plataforma, los clientes pueden describir sus necesidades de mudanza y recibir propuestas detalladas de empresas de mudanzas asociadas. Por otro lado, las empresas de mudanzas obtienen visibilidad y prestigio por un servicio satisfactorio, lo que ayudara en el funcionamiento de estas.
+Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma que conecta a los clientes con empresas de mudanzas, ofreciendo un servicio integral. En la actualidad, aproximadamente 200,000 individuos migran internamente en Lima, con un 58% eligiendo ubicaciones nuevas y un 42% mudándose cerca de sus lugares anteriores (IPSOS, 2019). Además, el aumento de inmigrantes en Perú en 2020 fue de 1.069.745 personas (Expansion, 2020). Sin embargo, el sector de mudanzas enfrenta desafíos debido a la competencia informal; mientras que, los usuarios a menudo enfrentan dificultades para identificar empresas de mudanza confiables y, en consecuencia, a veces toman decisiones apresuradas. "Carga sin estres" busca resolver estos problemas, brindando información y conexiones eficientes entre usuarios y empresas de mudanzas. Por un lado, permite a los usuarios interactuar de manera eficiente con las empresas de mudanza, optimizando el proceso completo. A través de la plataforma, los clientes pueden describir sus necesidades de mudanza y recibir propuestas detalladas de empresas de mudanzas asociadas. Por otro lado, las empresas de mudanzas obtienen visibilidad y prestigio por un servicio satisfactorio, lo que ayudara en el funcionamiento de estas.
+  
+**Misión:** Nuestra misión es simplificar y mejorar el proceso de mudanza para los usuarios, al mismo tiempo que brindamos nuevas oportunidades de negocio para las empresas de mudanzas, todo esto a través de una plataforma accesible y fácil de usar.
 
-Misión: Nuestra misión es simplificar y mejorar el proceso de mudanza para los usuarios, al mismo tiempo que brindamos nuevas oportunidades de negocio para las empresas de mudanzas, todo esto a través de una plataforma accesible y fácil de usar.
-
-Visión: Buscamos convertirnos en la principal plataforma en la industria de mudanzas y transporte de bienes grandes como muebles, siendo reconocidos por nuestra capacidad para conectar de manera eficaz a los clientes con las empresas de mudanzas, proporcionando una experiencia sin problemas y confiable para todos los involucrados.   
+**Visión:** Buscamos convertirnos en la principal plataforma en la industria de mudanzas y transporte de bienes grandes como muebles, siendo reconocidos por nuestra capacidad para conectar de manera eficaz a los clientes con las empresas de mudanzas, proporcionando una experiencia sin problemas y confiable para todos los involucrados.   
 
 ### 1.1.2 Perfiles de los integrantes del equipo  
-* Nombres y Apellidos: Eric Fernando Cuevas Rios  
-Carrera: Ingenieria de Software  
-Acerca De: Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
-Fotografia de Perfil:  
-![profile2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true)   
+* **Nombres y Apellidos:** Eric Fernando Cuevas Rios  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Estudiante de UPC. Al equipo puedo aportar organización y experiencia en proyectos similares. Tengo conocimiento en C++, Java, SQL y el desarrollo en HTML/CSS  
+**Fotografia de Perfil:**  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante2.JPG?raw=true" width="160" height="245">   
 
-* Nombres y Apellidos: Lucero Abigail Obispo Rios  
-Carrera: Ingenieria de Software  
-Acerca De: Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
-Fotografia de Perfil:  
-![profile1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true)
+* **Nombres y Apellidos:** Lucero Abigail Obispo Rios  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Para este proyecto, puedo aportar con mis conocimientos en programación, diseño y redacción. Asimismo, me considero una persona responsable, organizada y que le gusta trabajar en equipo.  
+**Fotografia de Perfil:**  
+ <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante1.jpg?raw=true" width="160" height="255">
 
-* Nombres y Apellidos: Damaris Tasayco Vilcamiza  
-Carrera: Ingenieria de Software  
-Acerca De: Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
-Fotografia de Perfil:  
- ![profile3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true)
+* **Nombres y Apellidos:** Damaris Tasayco Vilcamiza  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Respecto a este proyecto, puedo aportar una combinación de habilidades técnicas en programación y desarrollo web, junto con mi capacidad de poder gestionar proyectos y trabajar de manera colaborativa.  
+**Fotografia de Perfil:**  
+ <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/foto2.png?raw=true" width="158" height="251">
 
-* Nombres y Apellidos: Andrea Namie O'Higgins Rosales  
-Carrera: Ingenieria de Software  
-Acerca De: Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
-Fotografia de Perfil:  
-![profile4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true)
+* **Nombres y Apellidos:** Andrea Namie O'Higgins Rosales  
+**Carrera:** Ingenieria de Software  
+**Acerca De:** Las habilidades que puedo aportar al equipo incluyen organización y responsabilidad. Dispuesta a trabajar en equipo para llevar a cabo el proyecto. Tengo conocimiento de los lenguajes de programación c + + y SQL.  
+**Fotografia de Perfil:**  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante4.jpg?raw=true" width="160" height="190">
 
 ## 1.2 Solution profile  
-### 1.2.1 Antecendentes y problematica  
-En la actualidad, una de las actividades presentes en la vida de las personas es el cambio de lugar de residencia. Sea por diferentes motivos, como acercarse al centro de estudios o de trabajo, como resultado de sus metas a corto o largo plazo, e inclusive para mejorar su propia calidad de vida. Esto se refleja, como ejemplo, en el hecho de que aproximadamente 200,000 indiviudos migran internamente en Lima. Entre esta cantidad, un 58% se muda a una ubicación relativamente nueva, mientras que un 42% prefiere mudarse a una zona cercana a su ubicación anterior (IPSOS, 2019), asi como en la realidad que, aparte de la migración interna, el numero de inmigrantes que vienen a residir en Perú aumenta cada año, siendo el aumento en 2020 de 1.069.745 personas (Expansion, 2020).  
+### 1.2.1 Antecendentes y problemática  
+En la actualidad, una de las actividades presentes en la vida de las personas es el cambio de lugar de residencia. Sea por diferentes motivos, como acercarse al centro de estudios o de trabajo, como resultado de sus metas a corto o largo plazo, e inclusive para mejorar su propia calidad de vida. Esto se refleja, como ejemplo, en el hecho de que aproximadamente 200,000 individuos migran internamente en Lima. Entre esta cantidad, un 58% se muda a una ubicación relativamente nueva, mientras que un 42% prefiere mudarse a una zona cercana a su ubicación anterior (IPSOS, 2019), asi como en la realidad que, aparte de la migración interna, el numero de inmigrantes que vienen a residir en Perú aumenta cada año, siendo el aumento en 2020 de 1.069.745 personas (Expansion, 2020).  
 Aun asi, dentro del propio sector de mudanza y transpote de carga como serian muebles o electrodomesticos, se presentan problemas para ambos las empresas de mudanza y transporte de bienes asi como para los propiops usuarios de estos servicios.
   
 En cuanto a las empresas, estas tienen que esforzarse para ganar su lugar en el mercado para sus marcas, más la mayor parte de la competencia que se encuentra en el país es informal, como indica el diario Gestion (2020), negocios que al tener un camión disponible se dedican a la mudanza unos días, pero en otro momento cargan otras cosas. Estando estos ultimos sin seguros ni garantias, estos en si tambien pueden traer perjuicio a los usuarios. Esto junto a los perjucios de otros eventos como lo fueron la pandemia del Covid-19 y otros factores economicos o politicos, hieren el negocio de las mudanzas, dejandoles con la necesidad de buscar nuevas maneras de expandir servicios. 

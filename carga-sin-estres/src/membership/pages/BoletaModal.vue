@@ -3,7 +3,7 @@
     <toolbar-company></toolbar-company>
     <br><br><br>
   </div>
-
+  
   <div>
     <div class="container1">
       <form @submit.prevent="submitForm" id="customer-info" class="left-container">
