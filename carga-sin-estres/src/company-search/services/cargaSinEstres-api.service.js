@@ -7,8 +7,21 @@ export class cargaSinEstresApiService{
     getById(id) {
         return http.get(`/companies/${id}`);
     }
+    // booking history
     getAllBookings() {
         return http.get('/bookingHistory');
+    }
+    getBookingsByClient(id) {
+        return http.get(`/bookingHistory?idClient=${id}`);
+    }
+    getBookingsByCompany(id) {
+        return http.get(`/bookingHistory?idCompany=${id}`);
+    }
+    getMessages() {
+        return http.get('/chat');
+    }
+    updateBooking(id, data) {
+        return http.put(`/bookingHistory/${id}`, data);
     }
 
     getClientsForLogin(email, password){
