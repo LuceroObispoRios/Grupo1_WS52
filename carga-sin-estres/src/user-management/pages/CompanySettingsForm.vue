@@ -85,7 +85,7 @@ export default {
         desmontaje: false,
         description: '',
         id: '',
-        },
+      },
       confirmarpassword: '',
       errorMessage: '',
       id: null,
