@@ -64,7 +64,7 @@
 <script>
 import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
 import {cargaSinEstresApiService} from "@/company-search/services/cargaSinEstres-api.service";
-  
+
 export default {
   name: 'CompanySettingsForm',
   components: {toolbarCompany},
@@ -207,7 +207,13 @@ export default {
     },
 
     cancel() {
-      this.$router.push('/bookingHistory');
+      this.$router.push({
+        path: `/company/${this.id}/company-booking-history`,
+        name: 'company-booking-history',
+        params: {
+          id: this.id,
+        },
+      });
     },
 
   },

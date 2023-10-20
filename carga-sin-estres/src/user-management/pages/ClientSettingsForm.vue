@@ -29,7 +29,7 @@
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
 import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  
+
 export default {
   name: "ClientSettingsForm",
   components:{
@@ -146,7 +146,13 @@ export default {
     },
 
     cancel(){
-      this.$router.push('/company-search');
+      this.$router.push({
+        path: `/company/${this.id}/company-search`,
+        name: 'company-search',
+        params: {
+          id: this.id,
+        },
+      });
     }
 
   },
