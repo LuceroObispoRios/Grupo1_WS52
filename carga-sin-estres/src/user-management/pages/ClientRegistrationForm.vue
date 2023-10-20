@@ -84,6 +84,7 @@ export default {
       email: '',
       password: '',
       confirmarpassword: '',
+      userType: 'client',
       errorMessage: '',
       apiService: new cargaSinEstresApiService(),
     };
@@ -151,6 +152,7 @@ export default {
           direccion: this.direccion,
           email: this.email,
           password: this.password,
+          userType: this.userType
         };
 
         try {
