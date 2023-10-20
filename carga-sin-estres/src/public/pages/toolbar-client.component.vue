@@ -5,13 +5,27 @@ export default {
     return {
       drawer: false,
       items: [
-        { label: 'Editar Perfil', to: '/client-settings/:id' },
-        { label: 'Busqueda de empresas', to: '/company-search' },
-        { label: 'Historial de reserva', to: '/bookingHistory' },
+        { label: 'Editar Perfil', to: '/client/:id/client-settings/' },
+        { label: 'Busqueda de empresas', to: '/client/:id/company-search' },
+        { label: 'Historial de reserva', to: '/client/:id/bookingHistory' },
         { label: 'Cerrar Sesion', to: '/home' },
       ],
+      userId: '',
+      userType: '',
     };
   },
+  created() {
+    console.log('this route is: ',this.$route);
+
+    // Obtiene el id del usuario
+    this.userId = this.$route.params.id;
+    console.log('User id:', this.userId);
+
+    // Obtiene el tipo de usuario
+    const routeParts = this.$route.path.split('/');
+    this.userType = routeParts[1];
+    console.log('User type:', this.userType);
+  }
 }
 
 </script>
@@ -22,7 +36,7 @@ export default {
     <header>
       <pv-toolbar class="navbar navbar-expand-md navbar-light fixed-top">
         <template #start>
-          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 40px">
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" style="height: 40px">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,19 +44,19 @@ export default {
         <template #end>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><router-link to="/client-settings/:id" class="nav-link">Editar Perfil</router-link></li>
-              <li class="nav-item"><router-link to="/company-search" class="nav-link">Búsqueda de Empresas</router-link></li>
-              <li class="nav-item"><router-link to="/bookingHistory" class="nav-link">Historial de reserva</router-link></li>
+              <li class="nav-item"><router-link :to="'/client/'+ this.userId + '/client-settings'" class="nav-link">Editar Perfil</router-link></li>
+              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/company-search'" class="nav-link">Búsqueda de Empresas</router-link></li>
+              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/bookingHistory'" class="nav-link">Historial de reserva</router-link></li>
               <li class="nav-item"><router-link to="/home" class="btn btn-outline-dark">Cerrar Sesión</router-link></li>
-              </ul>
+            </ul>
           </div>
-              </template>
+        </template>
       </pv-toolbar>
     </header>
-
+    <br><br><br>
     <RouterView />
   </div>
-<br><br><br><br><br>
+  <br><br><br><br><br>
 </template>
 
 <style scoped>

@@ -64,10 +64,6 @@ export default {
 </script>
 
 <template>
-  <div>
-    <toolbar-client></toolbar-client>
-  </div>
-
   <div><h1 class="title flex justify-content-center">Información de empresa</h1></div>
 
   <!-- INFORMACION DE LA EMPRESA -->
