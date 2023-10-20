@@ -93,7 +93,8 @@ export default {
       numeroContacto: '',
       password: '',
       confirmarpassword: '',
-      photo: '', //link como enlace en texto
+      userType: 'company',
+      photo: '',
       transporte: false,
       carga: false,
       embalaje: false,
@@ -114,7 +115,6 @@ export default {
         numeroContacto: this.numeroContacto,
         password: this.password,
         confirmarpassword: this.confirmarpassword,
-        userType: 'company',
         photo: this.photo,
         transporte: this.transporte,
         carga: this.carga,
