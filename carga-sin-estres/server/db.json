@@ -278,7 +278,21 @@
       "hiredCompany": {
         "name": "Bodegas y mudanzas Santana",
         "logo": "https://www.santanamudanzasybodegas.com/wp-content/uploads/2021/07/SANTANA-BODEGAS-Y-MUDANZAS-MUDANZAS-EN-CALI-MUDANZAS-NACIONALES-01.jpg"
-      }
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 5,
