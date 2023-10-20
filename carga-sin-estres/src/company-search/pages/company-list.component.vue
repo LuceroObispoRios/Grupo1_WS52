@@ -12,6 +12,7 @@
         companies: [],
         company: {},
         companyService: null,
+        userId: null,
 
         originalData: [],
 
@@ -59,6 +60,7 @@
       };
     },
     created() {
+      this.userId = this.$route.params.id;
       this.companyService = new cargaSinEstresApiService();
       this.companyService.getAll()
           .then((response) => {
@@ -79,9 +81,12 @@
 
     methods:{
       getUserDistrict() {
-        //valor de ejemplo (editar cuando se tenga el id de usuario)
-        this.userLocation = 'Miraflores';
-        console.log('Distrito del usuario:', this.userLocation);
+        this.companyService.getClientById(this.userId)
+        .then((response) => {
+          const responseData = response.data;
+          this.userLocation = responseData.direccion;
+          console.log('Distrito del usuario:', this.userLocation);
+        });
       },
 
       handleRowClick(event) {
