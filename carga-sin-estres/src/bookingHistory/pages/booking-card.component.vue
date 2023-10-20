@@ -120,6 +120,17 @@ export default {
     },
 
     submitReview() {
+      // Comprueba si se ha seleccionado una calificación
+      if (!this.rating) {
+        this.$toast.add({severity:'error', summary: 'Error', detail:'Por favor, selecciona una calificación antes de enviar tu reseña.', life: 3000});
+        return;
+      }
+
+      // Comprueba si el comentario es demasiado corto
+      if (this.comment.length < 10) { // Ajusta este número al mínimo de caracteres que desees
+        this.$toast.add({severity:'error', summary: 'Error', detail:'Tu comentario es demasiado corto. Por favor, escribe un comentario más detallado.', life: 3000});
+        return;
+      }
       // Crea un objeto de reseña
       const review = {
         rating: this.rating,
