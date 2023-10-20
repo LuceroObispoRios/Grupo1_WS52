@@ -113,14 +113,14 @@ export default {
         if (clientResponse.data.length > 0) {
           // Las credenciales son válidas para un cliente, redirigir a la página correspondiente
           this.$router.push({
-            path: '/client-settings/:id',
+            path: '/client/:id/client-settings',
             name: 'client-settings',
             params: { id: clientResponse.data[0].id },
           });
         } else if (companyResponse.data.length > 0) {
           // Las credenciales son válidas para una empresa, redirigir a la página correspondiente
           this.$router.push({
-            path: '/company-settings/:id',
+            path: '/company/:id/company-settings',
             name: 'company-settings',
             params: { id: companyResponse.data[0].id },
           });
