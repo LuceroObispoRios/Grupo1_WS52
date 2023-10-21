@@ -30,7 +30,9 @@
       "embalaje": false,
       "montaje": false,
       "desmontaje": false,
-      "description": "empresa"
+      "description": "empresa",
+      "tipoMembresia": "3 Meses",
+      "userType": "company"
     },
     {
       "id": 3,
@@ -46,7 +48,9 @@
       "embalaje": true,
       "montaje": false,
       "desmontaje": false,
-      "description": "empresa"
+      "description": "empresa",
+      "tipoMembresia": "1 Año",
+      "userType": "company"
     },
     {
       "id": 4,
@@ -62,7 +66,9 @@
       "embalaje": true,
       "montaje": true,
       "desmontaje": true,
-      "description": "empresa"
+      "description": "empresa",
+      "tipoMembresia": "1 Mes",
+      "userType": "company"
     },
     {
       "id": 5,
@@ -78,7 +84,8 @@
       "embalaje": false,
       "montaje": false,
       "desmontaje": false,
-      "description": "empresa"
+      "description": "empresa",
+      "userType": "company"
     },
     {
       "id": 6,
