@@ -1,7 +1,6 @@
 <script>
 import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
 import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-
 export default {
   name: 'company-detail',
   components: {toolbarClient},
@@ -9,6 +8,9 @@ export default {
     return {
       id: null,
       companyData: null,
+      reviews: [],
+      averageRating: null,
+      reviewFilter: 'all',
       reservation:{
         id: null,
         idCompany: null,
@@ -29,6 +31,7 @@ export default {
         },
       },
       cargaSinEstres_service: null,
+      ReviewService: null,
     };
   },
   created() {
@@ -37,6 +40,7 @@ export default {
     if (companyData) {
       this.company = JSON.parse(companyData);
     }
+    this.fetchReviews(); // Llama al método fetchReviews cuando se crea el componente
   },
   methods:{
     submitForm(){
@@ -58,7 +62,19 @@ export default {
             this.$data.reservation = response.data;
             this.$router.push('/bookingHistory')
       });
-    }
+    },
+    async fetchReviews() { // Crea un nuevo método para obtener las reseñas
+      try {
+        this.ReviewService = new cargaSinEstresApiService();
+        const response = await this.ReviewService.getReviews();
+        this.reviews = response.data.filter(review => review.companyId === this.company.id);
+        // Calcula la calificación promedio
+        const totalRating = this.reviews.reduce((total, review) => total + review.rating, 0);
+        this.averageRating = Math.round(totalRating / this.reviews.length);
+      } catch (error) {
+        console.error(error);
+      }
+    },
   }
 };
 </script>
@@ -112,8 +128,9 @@ export default {
   <!-- FORMULARIO PARA AGREGAR RESERVA -->
   <br>
   <div class="custom-addReservation">
+    <div class="panels-container">
     <div class="reservation-panel">
-    <pv-panel header="Reservar" toggleable>
+    <pv-panel header="Reservar" toggleable :collapsed="true">
       <form @submit.prevent="submitForm" id="add-reservation" class="reservation-info">
 
         <!-- reserva info -->
@@ -143,13 +160,30 @@ export default {
       </form>
     </pv-panel>
   </div>
-  <div class="reviews-panel">
-    <pv-panel header="Reseñas" toggleable :collapsed="true">
+    <div class="reviews-panel">
+      <pv-panel header="Reseñas" toggleable :collapsed="true">
 
-    </pv-panel>
+        <div class="average-rating">
+          <h2>Calificación general</h2>
+          <div class="rating-container"> <!-- Agrega este div -->
+            <Rating v-model="averageRating" :cancel="false" readonly />
+          </div>
+          <div class="company-logo-container">
+            <img :src="company.photo" alt="logo de empresa" class="company-logo">
+          </div>
+        </div>
 
-  </div>
+        <div v-for="review in reviews" :key="review.id" class="review">
 
+          <Rating v-model="review.rating" :cancel="false" readonly />
+          <p>{{ review.comment }}</p>
+        </div>
+        <div  v-if="reviews.length === 0" class="review">
+          <p>Actualmente, no hay reseñas disponibles para esta empresa. Sé el primero en compartir tu experiencia.</p>
+        </div>
+      </pv-panel>
+    </div>
+    </div>
   </div>
 
 </template>
@@ -157,6 +191,41 @@ export default {
 
 
 <style scoped>
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #e8eaf6;
+}
+.review p {
+  margin-top: 10px;
+}
+.average-rating {
+  text-align: center;
+}
+.rating-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.company-logo-container img {
+  width: 200px; /* Ajusta esto al tamaño que desees */
+  height: auto;
+  margin-bottom: 30px;
+}
+.panels-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.reservation-panel,
+.reviews-panel {
+  width: 60%; /* Divide el espacio horizontal en dos columnas  */
+  max-height: 800px; /* Establece una altura máxima para los paneles */
+  overflow-y: auto;
+}
 /* CARD */
 .custom-card {
   width: 80%; /* Ajusta el ancho según tus necesidades */
@@ -213,12 +282,7 @@ export default {
 
 }
 
-.reservation-panel,
-.reviews-panel {
-  width: 40%; /* Divide el espacio horizontal en dos columnas con un 2% de margen entre ellas */
-  max-height: 500px; /* Establece una altura máxima para los paneles */
-  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es demasiado grande */
-}
+
 
 .reservation-info {
   display: flex;
