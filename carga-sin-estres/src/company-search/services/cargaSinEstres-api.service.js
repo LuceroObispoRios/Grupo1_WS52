@@ -17,9 +17,6 @@ export class cargaSinEstresApiService{
     getBookingsByCompany(id) {
         return http.get(`/bookingHistory?idCompany=${id}`);
     }
-    getMessages() {
-        return http.get('/chat');
-    }
     updateBooking(id, data) {
         return http.put(`/bookingHistory/${id}`, data);
     }
@@ -60,4 +57,13 @@ export class cargaSinEstresApiService{
     getClientById(id) {
         return http.get(`/clients/${id}`);
     }
+    addReview(companyId, review) {
+
+        review.companyId = companyId;
+        return http.post(`/reviews`, review);
+    }
+    getReviews() {
+        return http.get('/reviews')
+    }
+
 }

@@ -5,16 +5,16 @@
         <form @submit.prevent="onSubmit" id="settings">
           <h2>Editar datos de Perfil de Cliente</h2>
           <div class="right-section">
-            <input type="text" placeholder="name" v-model="formData.name" /> <!--falta id?-->
+            <input type="text" placeholder="Name" v-model="formData.name" /> <!--falta id?-->
             <input type="text" placeholder="Apellido Materno" v-model="formData.apellidoMaterno" />
             <input type="text" placeholder="Apellido Paterno" v-model="formData.apellidoPaterno"  />
             <input type="text" placeholder="Celular" v-model="formData.celular"  />
             <input type="text" placeholder="Dirección" v-model="formData.direccion" />
           </div>
           <div class="right-section">
-            <input type="email" placeholder="email electrónico" v-model="formData.email" />
-            <input type="password" placeholder="Contraseña" v-model="formData.password"  />
-            <input type="password" placeholder="Repetir contraseña" v-model="formData.confirmarpassword"  />
+            <input class="text-xs" type="email" placeholder="Email" v-model="formData.email" />
+            <input class="text-xs" type="password" placeholder="Contraseña" v-model="formData.password"  />
+            <input class="text-xs" type="password" placeholder="Repetir contraseña" v-model="formData.confirmarpassword"  />
           </div>
           <button id="submitButton" type="submit">Guardar cambios</button>
           <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
@@ -29,7 +29,7 @@
 <script>
 import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
 import toolbarClient from "@/public/pages/toolbar-client.component.vue";
-  
+
 export default {
   name: "ClientSettingsForm",
   components:{
@@ -146,7 +146,13 @@ export default {
     },
 
     cancel(){
-      this.$router.push('/company-search');
+      this.$router.push({
+        path: `/company/${this.id}/company-search`,
+        name: 'company-search',
+        params: {
+          id: this.id,
+        },
+      });
     }
 
   },

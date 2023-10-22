@@ -137,6 +137,50 @@
       "userType": "company"
     }
   ],
+  "reviews": [
+    {
+      "rating": 5,
+      "comment": "¡Una experiencia excepcional! Entrega puntual y atención al cliente sobresaliente.",
+      "companyId": 2,
+      "id": 3
+    },
+    {
+      "rating": 3,
+      "comment": "El servicio cumplió con lo esperado, sin destacar positiva ni negativamente.",
+      "companyId": 3,
+      "id": 3
+    },
+    {
+      "rating": 5,
+      "comment": "Muy satisfecho con el servicio, superó mis expectativas.",
+      "companyId": 7,
+      "id": 4
+    },
+    {
+      "rating": 4,
+      "comment": "Buen servicio",
+      "companyId": 8,
+      "id": 5
+    },
+    {
+      "rating": 3,
+      "comment": "El servicio fue promedio, nada espectacular pero tampoco terrible.",
+      "companyId": 7,
+      "id": 6
+    },
+    {
+      "rating": 4,
+      "comment": "Buen servicio en general, pero hubo un pequeño retraso en la entrega.",
+      "companyId": 6,
+      "id": 7
+    },
+    {
+      "rating": 5,
+      "comment": "Excelente servicio, puntual y eficiente. ¡Muy recomendable!",
+      "companyId": 6,
+      "id": 8
+    }
+  ],
   "clients": [
     {
       "name": "eric",
@@ -278,7 +322,21 @@
       "hiredCompany": {
         "name": "Bodegas y mudanzas Santana",
         "logo": "https://www.santanamudanzasybodegas.com/wp-content/uploads/2021/07/SANTANA-BODEGAS-Y-MUDANZAS-MUDANZAS-EN-CALI-MUDANZAS-NACIONALES-01.jpg"
-      }
+      },
+      "chat": [
+        {
+          "id": 1,
+          "user": "client",
+          "message": "Primer mensaje",
+          "dateTime": "2023-08-10 10:02:30"
+        },
+        {
+          "id": 2,
+          "user": "company",
+          "message": "Segundo mensaje",
+          "dateTime": "2023-08-10 10:07:50"
+        }
+      ]
     },
     {
       "id": 5,
@@ -312,7 +370,6 @@
           "dateTime": "2023-08-10 10:07:50"
         }
       ]
-
     },
     {
       "id": 6,
