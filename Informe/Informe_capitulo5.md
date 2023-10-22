@@ -245,6 +245,9 @@ Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
 Durante el primer sprint, el equipo optó por dividir los puntos entre todos los integrantes por cada capítulo para completar el informe. También, se optó por dividir las páginas por integrante teniendo en cuenta que estas deberán ser responsive y funcionales. Para asegurar que todo esté realizado correctamente, se organizaron reuniones constantes que se llevaron a cabo a través de Google Meet, donde se logró completar el informe y el código de las páginas landing page, registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
+
+Asimismo, nuestra estructura en nuestro repositorio de GitHub se basa de la rama rama main, en el cual colocabamos todo los cambios de todos los integrantes, ya sea del proyecto o informe. 
+
 A continuación, se presentan screenshots que reflejan el trabajo realizado durante este sprint.  
 
 ![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration_sprint1.png?raw=true)     
@@ -403,6 +406,9 @@ La aplicación desplegada se encuentra en el siguiente enlace
 más para su correcto funcionamiento, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)     
   
 #### 5.2.2.8. Team Collaboration Insights during Sprint.  
+
+Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Establecimos dos ramas principales: "main" para el informe final y "develop" para consolidar las contribuciones de todos. Cada uno de nosotros tenía su propia rama personalizada, lo que nos permitió trabajar de manera eficiente y llevar un registro claro de nuestras contribuciones al proyecto. Realizamos reuniones regulares y actualizaciones periódicas para asegurarnos de que todos contribuyeran de manera equitativa. Esta estructura organizativa y enfoque de colaboración eficiente fueron esenciales para nuestro éxito en este sprint.
+
 **GitFlow**     
 ![gitflow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2.JPG?raw=true)  
 ![gitflow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2_1.JPG?raw=true)  
@@ -441,35 +447,32 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
-
+Durante este sprint, nuestra colaboración como equipo se destacó por una organización eficiente en nuestro repositorio de GitHub. Decidimos establecer un proceso sólido para gestionar nuestros commits y ramas, lo que contribuyó significativamente al flujo de trabajo. En primer lugar, designamos dos ramas fundamentales: "main" y "develop". La rama "main" se reservó para el informe final y el proyecto completo, listo para su presentación en esta entrega. La rama "develop" desempeñó un papel central, ya que la actualizamos constantemente. Fue en esta rama donde reunimos y fusionamos todas las contribuciones individuales de los miembros del equipo. Además, cada integrante tuvo su propia rama personalizada cuyo formato de nombre es "nombre de integrante/feature", esta organización garantizó que cada integrante tuviera su propio espacio para trabajar de manera efectiva y mantener un registro claro de sus aportaciones al proyecto en un entorno de colaboración sin problemas. Durante el proceso, establecimos una rutina de reuniones periódicas y commits en días específicos, asegurándonos de que cada miembro aportara de manera equitativa. Este enfoque en la organización y la colaboración efectiva fue fundamental para el éxito de nuestro proyecto en este sprint.
 
 ## 5.3. Validation Interviews.
-### 5.3.1. Diseño de Entrevistas.
-Segmento de individuos de 18 a 50 años, peruanos:
-presentación de los participantes e introducción rápida por la página, se les pasa el link para que puedan interactuar con el despliegue
-¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?
-¿Qué características de la aplicación encontraste más útiles para tu proceso de mudanza?
-¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”?
-¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?
-.¿Tuvo alguna experiencia negativa o desafío al buscar una herramienta/funcionalidad?. Descríbala.
-¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
-¿Cree que es adecuado que la comunicación con las empresas de mudanza sea mediante chat?
-¿Qué recomendaciones nos brindarías para mejorar la experiencia de usuario, de modo que la aplicación sea más fácil de usar? 
-¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?
+### 5.3.1. Diseño de Entrevistas. 
+** Segmento de individuos de 18 a 50 años, peruanos: **  
+1. ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
+2. ¿Qué características de la aplicación encontraste más útiles para tu proceso de mudanza? 
+3. ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”?   
+4. ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?  
+5. ¿Tuvo alguna experiencia negativa o desafío al buscar una herramienta/funcionalidad?. Descríbala.  
+6. ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?  
+7. ¿Cree que es adecuado que la comunicación con las empresas de mudanza sea mediante chat?   
+8. ¿Qué recomendaciones nos brindarías para mejorar la experiencia de usuario, de modo que la aplicación sea más fácil de usar?   
+9. ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?   
 
 
-Segmento de empresas de mudanza/transporte:
-
-presentación de los participantes e introducción rápida por la página, se les pasa el link para que puedan interactuar con el despliegue
-¿Qué piensa sobre la experiencia de navegación brindada por Carga sin estrés? 
-¿Considera que brindamos suficiente información para que las empresas puedan guiarse y entender las funciones de la app?
-¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?
-¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
-¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
-¿Piensa que la característica de mensajería, así como la ve, mejoraría la interacción entre su empresa y sus clientes?
-¿Qué característica de la página encuentra usted más útil en cuanto a contribuir con el crecimiento de su empresa?
-¿Qué otras funcionalidades le gustaría ver o cree podrían mejorar en la aplicación web a futuro?
-¿Recomendarían nuestra aplicación web “Carga Sin Estrés” a otras empresas de mudanza? ¿Por qué?
+** Segmento de empresas de mudanza/transporte: **   
+1. ¿Qué piensa sobre la experiencia de navegación brindada por Carga sin estrés?   
+2. ¿Considera que brindamos suficiente información para que las empresas puedan guiarse y entender las funciones de la app?  
+3. ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
+4. ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?   
+5. ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?   
+6. ¿Piensa que la característica de mensajería, así como la ve, mejoraría la interacción entre su empresa y sus clientes?  
+7. ¿Qué característica de la página encuentra usted más útil en cuanto a contribuir con el crecimiento de su empresa?   
+8. ¿Qué otras funcionalidades le gustaría ver o cree podrían mejorar en la aplicación web a futuro?   
+9. ¿Recomendarían nuestra aplicación web “Carga Sin Estrés” a otras empresas de mudanza? ¿Por qué?   
 
 ### 5.3.2. Registro de Entrevistas.
 
