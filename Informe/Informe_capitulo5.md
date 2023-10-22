@@ -410,9 +410,9 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
   
-### 5.2.1. Sprint 3
+### 5.2.2. Sprint 3
   
-#### 5.2.1.1. Sprint Planning 3.  
+#### 5.2.3.1. Sprint Planning 3.  
 | **Sprint 1** | |
 |:---: | :---| 
 | | **Sprint planning background** |   
@@ -428,8 +428,57 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
 | Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es XX. |
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
 
-#### 5.2.1.2. Sprint Backlog 3.
---
+#### 5.2.3.2. Sprint Backlog 3.
+
+#### 5.2.3.3. Development Evidence for Sprint Review.
+
+#### 5.2.3.4. Testing Suite Evidence for Sprint Review.
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+
+## 5.3. Validation Interviews.
+### 5.3.1. Diseño de Entrevistas.
+Segmento de individuos de 18 a 50 años, peruanos:
+presentación de los participantes e introducción rápida por la página, se les pasa el link para que puedan interactuar con el despliegue
+¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?
+¿Qué características de la aplicación encontraste más útiles para tu proceso de mudanza?
+¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”?
+¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?
+.¿Tuvo alguna experiencia negativa o desafío al buscar una herramienta/funcionalidad?. Descríbala.
+¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
+¿Cree que es adecuado que la comunicación con las empresas de mudanza sea mediante chat?
+¿Qué recomendaciones nos brindarías para mejorar la experiencia de usuario, de modo que la aplicación sea más fácil de usar? 
+¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?
+
+
+Segmento de empresas de mudanza/transporte:
+
+presentación de los participantes e introducción rápida por la página, se les pasa el link para que puedan interactuar con el despliegue
+¿Qué piensa sobre la experiencia de navegación brindada por Carga sin estrés? 
+¿Considera que brindamos suficiente información para que las empresas puedan guiarse y entender las funciones de la app?
+¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?
+¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
+¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
+¿Piensa que la característica de mensajería, así como la ve, mejoraría la interacción entre su empresa y sus clientes?
+¿Qué característica de la página encuentra usted más útil en cuanto a contribuir con el crecimiento de su empresa?
+¿Qué otras funcionalidades le gustaría ver o cree podrían mejorar en la aplicación web a futuro?
+¿Recomendarían nuestra aplicación web “Carga Sin Estrés” a otras empresas de mudanza? ¿Por qué?
+
+### 5.3.2. Registro de Entrevistas.
+
+### 5.3.3. Evaluaciones según heurísticas.
+
+## 5.4. Video About-the-Product.
+
+
+---
 # Conclusiones
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
