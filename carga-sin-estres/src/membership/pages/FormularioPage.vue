@@ -7,21 +7,10 @@
   <div>
     <div class="container1">
       <form @submit.prevent="submitForm" id="customer-info" class="left-container">
-        <label for="tipoUsuario">Seleccione el tipo de usuario:</label><br>
-        <!--for cliente?-->
-        <input type="radio" id="empresa" value="empresa" v-model="tipoUsuario" required>
-        <label for="empresa">Empresa</label>
-        <br><br>
-
-        <!-- Campos para empresa -->
-        <div v-if="tipoUsuario === 'empresa'">
-          <label for="nombreEmpresa">Nombre de Empresa:</label><br>
-          <input type="text" v-model="nombreEmpresa" required><br>
-          <label for="ruc">RUC:</label><br>
-          <input type="text" v-model="ruc" required><br>
-        </div>
-
-        <!-- Campos comunes -->
+        <label for="nombre">Nombre de la Empresa:</label><br>
+        <input type="text" v-model="nombreEmpresa" required><br>
+        <label for="ruc">RUC:</label><br>
+        <input type="number" v-model="ruc" required><br>
         <label for="direccion">Dirección:</label><br>
         <input type="text" v-model="direccion" required><br>
         <label for="tipoMembresia">Tipo de membresía:</label>
@@ -31,11 +20,35 @@
           <option value="365">1 Año</option>
         </select><br>
         <label for="tipoTarjeta">Tipo de tarjeta:</label>
-        <select v-model="tipoTarjeta" required>
-          <option value="visa">Visa</option>
-          <option value="mastercard">MasterCard</option>
+        <select v-model="tipoTarjeta" required @change="resetCardFields">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">MasterCard</option>
         </select><br><br>
-        <button type="submit">Continuar</button>
+        <!-- Campos de tarjeta Visa -->
+        <div v-if="tipoTarjeta === 'Visa'">
+          <label for="numeroTarjeta">Número de tarjeta:</label><br>
+          <input type="number" v-model="tarjetaVisa.numero" required><br>
+          <label for="fechaVencimiento">Fecha de vencimiento:</label><br>
+          <input type="date" v-model="tarjetaVisa.fechaVencimiento" required><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="number" v-model="tarjetaVisa.cvv" required><br>
+          <label for="pais">País:</label><br>
+          <input type="text" v-model="tarjetaVisa.pais" required><br>
+        </div>
+
+        <!-- Campos de tarjeta MasterCard -->
+        <div v-else-if="tipoTarjeta === 'Mastercard'">
+          <label for="numeroTarjeta">Número de tarjeta:</label><br>
+          <input type="number" v-model="tarjetaMasterCard.numero" required><br>
+          <label for="fechaVencimiento">Fecha de vencimiento:</label><br>
+          <input type="date" v-model="tarjetaMasterCard.fechaVencimiento" required><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="number" v-model="tarjetaMasterCard.cvv" required><br>
+          <label for="pais">País:</label><br>
+          <input type="text" v-model="tarjetaMasterCard.pais" required><br>
+        </div>
+
+        <button type="submit">Pagar Ahora</button>
       </form>
       <div class="right-container">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Imagen" class="floating-image">
@@ -60,57 +73,59 @@ export default {
   },
   data() {
     return {
-      tipoUsuario: '',
-      nombre: '',
-      apellido: '',
-      dni: '',
       nombreEmpresa: '',
       ruc: '',
       direccion: '',
       tipoMembresia: '',
       tipoTarjeta: '',
+      tarjetaVisa: {
+        numero: '',
+        fechaVencimiento: '',
+        cvv: '',
+        pais: '',
+      },
+      tarjetaMasterCard: {
+        numero: '',
+        fechaVencimiento: '',
+        cvv: '',
+        pais: '',
+      },
     };
-  },
-  created() {
-    console.log('this route is: ',this.$route);
-
-    // Obtiene el id del usuario
-    this.userId = this.$route.params.id;
-    console.log('User id:', this.userId);
-
-    // Obtiene el tipo de usuario
-    const routeParts = this.$route.path.split('/');
-    this.userType = routeParts[1];
-    console.log('User type:', this.userType);
   },
   methods: {
     submitForm() {
-      // Crear un objeto para almacenar los datos del formulario
-      const formData = {
-        tipoUsuario: this.tipoUsuario,
-        direccion: this.direccion,
-        tipoMembresia: this.tipoMembresia,
-        tipoTarjeta: this.tipoTarjeta,
-      };
-      console.log(formData)
-      if (this.tipoUsuario === 'cliente') {
-        // Agregar datos específicos del cliente
-        formData.nombre = this.nombre;
-        formData.apellido = this.apellido;
-        formData.dni = this.dni;
-        console.log("cliente",this.nombre)
-      } else if (this.tipoUsuario === 'empresa') {
-        // Agregar datos específicos de la empresa
-        formData.nombreEmpresa = this.nombreEmpresa;
-        formData.ruc = this.ruc;
-        console.log("empresa",this.nombreEmpresa)
+      {
+        setTimeout(() => {
+          // Redirigir al usuario a la página de la boleta con el número de boleta obtenido
+          this.$router.push({
+            path: 'boleta',
+            query: {
+              nombreEmpresa: this.nombreEmpresa,
+              ruc: this.ruc,
+              direccion: this.direccion,
+              tipoMembresia: this.tipoMembresia,
+              tipoTarjeta: this.tipoTarjeta,
+            },
+          });
+        },);
       }
-
-      // Redirigir al usuario a la página de la boleta con los datos del formulario
-      this.$router.push({
-        path: `/company/${this.userId}/boleta`,
-        query: formData,
-      });
+    },
+    resetCardFields() {
+      if (this.tipoTarjeta === 'Visa') {
+        this.tarjetaVisa = {
+          numero: '',
+          fechaVencimiento: '',
+          cvv: '',
+          pais: '',
+        };
+      } else if (this.tipoTarjeta === 'Mastercard') {
+        this.tarjetaMasterCard = {
+          numero: '',
+          fechaVencimiento: '',
+          cvv: '',
+          pais: '',
+        };
+      }
     }
   },
 };
