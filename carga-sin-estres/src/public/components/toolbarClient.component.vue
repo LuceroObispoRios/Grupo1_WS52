@@ -7,7 +7,7 @@ export default {
       items: [
         { label: 'Editar Perfil', to: '/client/:id/client-settings/' },
         { label: 'Busqueda de empresas', to: '/client/:id/company-search' },
-        { label: 'Historial de reserva', to: '/client/:id/client-booking-history' },
+        { label: 'Historial de reservas', to: '/client/:id/client-booking-history' },
         { label: 'Cerrar Sesion', to: '/home' },
       ],
       userId: '',
