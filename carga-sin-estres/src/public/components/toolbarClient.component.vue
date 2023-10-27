@@ -46,17 +46,16 @@ export default {
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><router-link :to="'/client/'+ this.userId + '/client-settings'" class="nav-link">Editar Perfil</router-link></li>
               <li class="nav-item"><router-link :to="'/client/' + this.userId + '/company-search'" class="nav-link">Búsqueda de Empresas</router-link></li>
-              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/client-booking-history'" class="nav-link">Historial de reserva</router-link></li>
+              <li class="nav-item"><router-link :to="'/client/' + this.userId + '/client-booking-history'" class="nav-link">Historial de reservas</router-link></li>
               <li class="nav-item"><router-link to="/home" class="btn btn-outline-dark">Cerrar Sesión</router-link></li>
             </ul>
           </div>
         </template>
       </pv-toolbar>
     </header>
-    <br><br><br>
+    <br><br><br><br><br>
     <RouterView />
   </div>
-  <br><br><br><br><br>
 </template>
 
 <style scoped>
