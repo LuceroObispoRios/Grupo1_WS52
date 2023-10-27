@@ -23,8 +23,13 @@ export default {
           message: null,
           dateTime: null
         }
-      ]
-
+      ],
+      workersApiService: new cargaSinEstresApiService(),
+      workers: [],
+      workerDialogVisible: false,
+      workerHeader: '',
+      commentToWorker: '',
+      workerToUpdate: [],
     }
   },
   created() {
@@ -38,14 +43,16 @@ export default {
     const routeParts = this.$route.path.split('/');
     this.userType = routeParts[1];
     console.log('User type:', this.userType);
+
+    // Obtiene todos los workers
+    this.getAllWorkers();
+
   },
   methods: {
     openChat() {
       this.bookingMessages = this.bookingHistory.chat;
       this.dialogVisible = true;
       this.chatHeader = `Chat con ${this.bookingHistory.hiredCompany.name}`;
-      console.log(`this.dialogVisible: ${this.dialogVisible}`);
-      console.log('bookingMessages: ', this.bookingMessages);
     },
     hideDialog() {
       this.dialogVisible = false;
@@ -65,12 +72,9 @@ export default {
         console.log('messages saved: ', this.bookingMessages);
         this.message = {};
         this.bookingHistory.chat = this.bookingMessages;
-        console.log('bookingHistory: ', this.bookingHistory);
         this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
         this.bookingToUpdate.chat.reverse();
         console.log('bookingToUpdate: ', this.bookingToUpdate);
-        // console.log('bookingToUpdate nuevo: ', this.bookingToUpdate);
-        // console.log('verificar si se cambia:', this.bookingHistory.chat);
 
         this.apiService.updateBooking(this.bookingToUpdate.id, this.bookingToUpdate)
             .then(response => {
@@ -80,14 +84,6 @@ export default {
           // Manejar el error si ocurre
           console.error('Error al actualizar el booking:', error);
         });
-
-        // console.log('messages saved: ', this.bookingMessages);
-        // this.bookingHistory.chat.id ='';
-        // this.bookingHistory.chat.user = this.userType;
-        // this.bookingHistory.chat.message = this.bookingMessages.reverse();
-        // this.bookingHistory.chat.dateTime = new Date().toLocaleString();
-        // console.log('bookingHistory: ', this.bookingHistory);
-
       }
     },
     cancelBooking(){
@@ -95,14 +91,70 @@ export default {
       this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
       this.bookingToUpdate.chat.reverse();
       console.log('bookingToUpdate: ', this.bookingToUpdate);
+
+      // Actualizado *************************************************************************************************
       this.apiService.updateBooking(this.bookingToUpdate.id, this.bookingToUpdate)
           .then(response => {
-            // Manejar la respuesta en consecuencia si es necesario
             console.log('Booking actualizado con éxito:', response);
+            this.$toast.add({severity:'success', summary: 'Reserva cancelada', detail:'Tu reserva del servicio ha sido cancelada.', life: 3000});
           }).catch(error => {
-        // Manejar el error si ocurre
-        console.error('Error al actualizar el booking:', error);
+            console.error('Error al actualizar el booking:', error);
+            this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al cancelar la reserva. Por favor, inténtalo de nuevo.', life: 3000});
       });
+      // *************************************************************************************************************
+    },
+
+    // Sección para realizar comentarios a los trabajadores
+    getAllWorkers(){
+      for(let i = 0; i < this.bookingHistory.workers.length; i++){
+        this.apiService.getWorkersById(this.bookingHistory.workers[i])
+            .then(response => {
+              this.workers.push(response.data[0]);
+            })
+            .catch(error => {
+            console.error('Error al obtener el worker:', error);
+            });
+      }
+    },
+    openWorkerDialog(worker) {
+      this.workerToUpdate = worker;
+      this.workerDialogVisible = true;
+      this.workerHeader = `Comentarios sobre el trabajador:`;
+      this.commentToWorker = '';
+      console.log('worker commentaries: ', this.workerToUpdate.comments);
+    },
+    commentToWorkers() {
+      if (this.commentToWorker.trim() !== '') {
+        console.log('workerComment: ', this.commentToWorker);
+
+      const newComment = {
+        comment: this.commentToWorker,
+        fromBooking: this.bookingHistory.id,
+      };
+      this.workerToUpdate.comments.push(newComment);
+      this.workerToUpdate = JSON.parse(JSON.stringify(this.workerToUpdate));
+      console.log('workerToUpdate: ', this.workerToUpdate);
+
+      this.workersApiService.updateWorkerComment(this.workerToUpdate.id, this.workerToUpdate)
+          .then(() => {
+            this.workerDialogVisible= false;
+            this.$toast.add({severity:'success', summary: 'Comentario enviado', detail:'Tu comentario ha sido enviado con éxito.', life: 3000});
+            console.log('Comentario enviado con éxito:', response);
+          })
+          .catch(error => {
+            console.error(error);
+            this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al enviar tu comentario. Por favor, inténtalo de nuevo.', life: 3000});
+            console.error('Error al actualizar los comentarios', error);
+          });
+
+        this.commentToWorker = '';
+        //this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
+
+      }
+    },
+    cancelCommentToWorker() {
+      this.workerDialogVisible = false;
+      this.commentToWorker = '';
     }
   }
 }
@@ -131,6 +183,25 @@ export default {
             <div class="col">
               <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
               <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
+
+<!--    -------------------Trabajadores de la empresa contratada -------------------------------------------->
+              <div class="mt-2"><span class="font-bold">Trabajadores: </span></div>
+              <div v-for="(worker, index) in workers" :key="index" class="mb-2">
+                <i class="pi pi-user mr-2 mt-2" style="color: #FDAE39"></i>
+                {{worker.firstName}} {{worker.lastName}}
+
+                <pv-button v-if="bookingHistory.status ==='Finalizado' && userType ==='client'" class="bg-blue-500 font-bold hover:bg-gray-300 p-2 pl-3 pr-3 mt-2 ml-3" @click="openWorkerDialog(worker)">
+                  <p class="m-0 text-xs">Comentar</p>
+                </pv-button>
+                <div v-if="bookingHistory.status ==='Finalizado'&& userType === 'company'">
+                  <div v-for="(comment, ind) in worker.comments" :key="ind">
+                    <div v-if="comment.fromBooking === bookingHistory.id">
+                      <p class="m-0 text-xs ml-5 font-italic">~"{{comment.comment}}"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- -------------------------------------------------------------------------------------------------------------->
             </div>
           </div>
           <div class="panel-right bg-white ml-8">
@@ -173,8 +244,6 @@ export default {
                   <p class="p-0 m-0 font-bold">Cliente</p>
                 </div>
                 <div v-else-if="message.user === 'company'">
-                  <!--                    Se muestra el nombre de la empresa-->
-                  <!--                    <p class="p-0 m-0 font-bold">Empresa {{bookingHistory.hiredCompany.name}}</p>-->
                   <p class="p-0 m-0 font-bold">Empresa</p>
                 </div>
                 <p class="p-0 m-0 text-gray-500 dateTime">{{message.dateTime}}</p>
@@ -212,6 +281,45 @@ export default {
 
       </pv-dialog>
     </div>
+
+    <!--------------------------------------   Dialogo para comentar a los trabajadores ---------------------------->
+    <div>
+      <pv-dialog
+          v-model:visible="workerDialogVisible"
+          :style="{ width: '450px' }"
+          :header="workerHeader"
+          :modal="true"
+          class="p-fluid">
+        <div class="flex align-content-center justify-content-left mb-3 font-semibold">
+          <i class="pi pi-user mr-2 ml-4" style="color: #FDAE39"></i>
+          {{this.workerToUpdate.firstName}} {{workerToUpdate.lastName}}
+        </div>
+
+        <div class="field">
+          <span class="p-float-label">
+            <pv-textarea
+                id="content"
+                v-model="commentToWorker"
+                placeholder="Escriba aquí su comentario..."
+                autofocus
+                required="false"
+                rows="5"
+                cols="20"/>
+            <label for="description"></label>
+          </span>
+        </div>
+        <template #footer>
+          <pv-button
+              :label="'Cancelar'.toUpperCase()"
+              icon="pi pi-times"
+              class="p-button-text"
+              @click="cancelCommentToWorker"
+          />
+          <pv-button :label="'Enviar'.toUpperCase()" icon="pi pi-check" class="p-button-text" @click="commentToWorkers()"/>
+        </template>
+      </pv-dialog>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------->
 
   </div>
 

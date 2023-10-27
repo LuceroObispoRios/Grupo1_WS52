@@ -8,6 +8,14 @@ export class cargaSinEstresApiService{
         return http.get(`/companies/${id}`);
     }
     // booking history
+    getWorkersById(id){
+        return http.get(`/workers?id=${id}`);
+    }
+
+    updateWorkerComment(id, data) {
+        return http.patch(`/workers/${id}`, data);
+    }
+
     getAllBookings() {
         return http.get('/bookingHistory');
     }

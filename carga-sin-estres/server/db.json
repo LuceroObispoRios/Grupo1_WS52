@@ -193,6 +193,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        1,
+        2,
+        3
       ]
     },
     {
@@ -226,6 +231,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        3,
+        4,
+        5
       ]
     },
     {
@@ -259,6 +269,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        4,
+        5,
+        6
       ]
     },
     {
@@ -292,6 +307,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        5,
+        6,
+        7
       ]
     },
     {
@@ -325,8 +345,12 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        1,
+        2,
+        3
       ]
-
     },
     {
       "id": 6,
@@ -359,6 +383,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        1,
+        7,
+        2
       ]
     },
     {
@@ -392,6 +421,11 @@
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
         }
+      ],
+      "workers": [
+        4,
+        7,
+        8
       ]
     },
     {
@@ -425,6 +459,80 @@
           "user": "company",
           "message": "Segundo mensaje",
           "dateTime": "2023-08-10 10:07:50"
+        }
+      ],
+      "workers": [
+        8,
+        2,
+        3
+      ],
+      "counter": 3
+    }
+  ],
+  "workers": [
+    {
+      "id": 1,
+      "firstName": "Luis",
+      "lastName": "García Pérez",
+      "companyId": 1,
+      "comments": []
+    },
+    {
+      "id": 2,
+      "firstName": "María",
+      "lastName": "Díaz Vargas",
+      "companyId": 2,
+      "comments": [
+        {
+          "comment": "Trato amable",
+          "fromBooking": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "José",
+      "lastName": "Pérez Gutiérrez",
+      "companyId": 3,
+      "comments": []
+    },
+    {
+      "id": 4,
+      "firstName": "Ana",
+      "lastName": "Vargas Mendoza",
+      "companyId": 4,
+      "comments": []
+    },
+    {
+      "id": 5,
+      "firstName": "Carlos",
+      "lastName": "Flores Ruiz",
+      "companyId": 5,
+      "comments": []
+    },
+    {
+      "id": 6,
+      "firstName": "Sofía",
+      "lastName": "Mendoza López",
+      "companyId": 6,
+      "comments": []
+    },
+    {
+      "id": 7,
+      "firstName": "Jorge",
+      "lastName": "Ruiz García",
+      "companyId": 7,
+      "comments": []
+    },
+    {
+      "id": 8,
+      "firstName": "Laura",
+      "lastName": "Gutiérrez Díaz",
+      "companyId": 8,
+      "comments": [
+        {
+          "comment": "Muy buen trabajador",
+          "fromBooking": 1
         }
       ]
     }
