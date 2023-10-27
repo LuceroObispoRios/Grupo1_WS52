@@ -49,7 +49,8 @@
       "montaje": false,
       "desmontaje": false,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "tipoMembresia": "35"
     },
     {
       "id": 4,
@@ -83,7 +84,8 @@
       "montaje": false,
       "desmontaje": false,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "tipoMembresia": "95"
     },
     {
       "id": 6,
