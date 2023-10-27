@@ -63,13 +63,14 @@
             if (this.originalData.length === 0) {
               this.originalData = [...responseData];
             }
+            // Ordenar empresas con membresía primero
             this.companies = responseData.sort((a, b) => {
               if (a.tipoMembresia && !b.tipoMembresia) {
-                return -1; 
+                return -1; // a viene antes que b
               } else if (!a.tipoMembresia && b.tipoMembresia) {
-                return 1; 
+                return 1; // b viene antes que a
               }
-              return 0; 
+              return 0; // sin cambios en el orden
             });
             console.log('Original Data:', this.originalData);
           });
