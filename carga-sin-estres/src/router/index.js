@@ -38,16 +38,15 @@ const router = createRouter({
             children: [
                 { path: 'company-settings', name: 'company-settings', component: CompanySettingsForm},
                 { path: 'company-booking-history', name: 'company-booking-history', component: bookingList},
-                { path: 'formulario', name: 'FormularioPage', component: FormularioPage },
-                { path: 'boleta', name: 'BoletaModal',
-                    component: BoletaModal,
+                { path: 'formulary', name: 'formulary-company', component: FormularyCompany },
+                { path: 'bolette', name: 'bolette-company',
+                    component: BoletteCompany,
                     props: (route) => ({
                         nombreEmpresa: route.query.nombreEmpresa,
                         ruc: route.query.ruc,
-                        direccion: route.query.direccion,
+                        direction: route.query.direction,
                         tipoMembresia: route.query.tipoMembresia,
                         tipoTarjeta: route.query.tipoTarjeta,
-                        numeroBoleta: route.query.numeroBoleta,
                     })
                 }
             ]
