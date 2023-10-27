@@ -246,59 +246,67 @@
       >
 
         <template #header>
+
           <div class="table-header flex flex-column md:flex-row md:justify-content-between">
 
-            <!--Buscar por nombre de empresa-->
-            <div class="p-input-icon-left p-field p-fluid">
-              <i class="pi pi-search" />
-              <pv-input-text v-model="manualCompanyName" @input="searchByName" placeholder="Nombre" />
-            </div>
-
-            <!--Buscar por servicios de empresa-->
-            <div class="p-field p-fluid">
-              <pv-multiselect
-                  v-model="selectedServices"
-                  :options="serviceOptions"
-                  optionLabel="label"
-                  placeholder="Selecciona servicios"
-                  class="w-full md:w-20rem"
-                  @change="searchByServices"
-              ></pv-multiselect>
-            </div>
-
-            <!-- Selector para elegir método de búsqueda -->
-            <div class="p-field p-fluid">
-                <pv-dropdown
-                    v-model="searchMethod"
-                    @change="searchByLocation"
-                    class="w-full md:w-14rem"
-                    :options="searchOptions"
+            <div class="div1">
+              <!--Buscar por servicios de empresa-->
+              <div class="p-field p-fluid">
+                  <pv-multiselect
+                    v-model="selectedServices"
+                    :options="serviceOptions"
                     optionLabel="label"
-                    placeholder="Selecciona ubicación"
-                />
-            </div>
-
-            <!-- Buscar por ubicación -->
-            <div class="p-field p-fluid" v-if="searchMethod.value === 'manualLocation'">
-              <div class="p-input-icon-left ">
-                <i class="pi pi-search" />
-                <pv-input-text v-model="manualLocation" @input="searchByLocation" placeholder="Dirección"></pv-input-text>
+                    placeholder="Selecciona servicios"
+                    class="w-full md:w-20rem"
+                    @change="searchByServices"
+                ></pv-multiselect>
               </div>
+
+              <!-- Selector para elegir método de búsqueda -->
+              <div class="p-field p-fluid">
+                  <pv-dropdown
+                      v-model="searchMethod"
+                      @change="searchByLocation"
+                      class="w-full md:w-14rem"
+                      :options="searchOptions"
+                      optionLabel="label"
+                      placeholder="Selecciona ubicación"
+                  />
+              </div>
+
+              <!-- Buscar por ubicación -->
+              <div class="p-field p-fluid" v-if="searchMethod.value === 'manualLocation'">
+                <div class="p-input-icon-left ">
+                  <i class="pi pi-search" />
+                  <pv-input-text v-model="manualLocation" @input="searchByLocation" placeholder="Dirección"></pv-input-text>
+                </div>
+              </div>
+
             </div>
+            
+            <div class="div2">
+              <!--Buscar por nombre de empresa-->
+              <div class="p-input-icon-left p-field p-fluid">
+                <i class="pi pi-search" />
+                <pv-input-text v-model="manualCompanyName" @input="searchByName" placeholder="Nombre" />
+              </div>
 
-            <!--Buscar por calificación promedio de empresa-->
-            <div class="p-field p-fluid">
-              <pv-dropdown
-                  v-model="selectedAverageRating"
-                  :options="averageRatingOptions"
-                  optionLabel="label"
-                  placeholder="Selecciona el filtro de calificación"
-                  @change="searchByAverageRating"
-              />
+              <!--Buscar por calificación promedio de empresa-->
+              <div class="p-field p-fluid">
+                <pv-dropdown
+                    v-model="selectedAverageRating"
+                    :options="averageRatingOptions"
+                    optionLabel="label"
+                    placeholder="Selecciona el filtro de calificación"
+                    @change="searchByAverageRating"
+                />
+              </div>
+
+              <!--Buscar por carga rapida-->
+              <pv-button icon="pi pi-plus" label="Carga Rapida" class="p-button-success p-mr-2" @click="OpenDialog"></pv-button>
+              
             </div>
-
-            <pv-button icon="pi pi-plus" label="Carga Rapida" class="p-button-success p-mr-2" @click="OpenDialog"></pv-button>
-
+            
           </div>
         </template>
 
@@ -334,9 +342,9 @@
       </div>
 
       <div class ="dialog-section">
-        <p> Servicios de carga rapidamente en tu puerta,<br>
-          pulsa el boton para buscar <br>
-          y nuestras empresas afiliadas podran responder a tu llamado</p>
+        <p> Pulsa el botón para buscar <br>
+            servicios de carga rápidamente en tu puerta<br>
+            y nuestras empresas afiliadas podran responder a tu llamado</p>
       </div>
 
       <div class ="dialog-section">
@@ -355,12 +363,24 @@
   font-family: sans-serif;
 }
 
-/* Contenedor principal */
-.table-header {
+/* Estilos para la parte izquierda (div1) de table-header */
+.table-header .div1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Estilos para la parte derecha (div2) de table-header */
+.table-header .div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
   padding: 1rem;
   background-color: #f4f4f4;
   border-radius: 5px;
@@ -370,16 +390,11 @@
 .p-field.p-fluid {
   margin: 0.5rem;
   display: inline-block;
+  width: 100%; 
 }
 
-/* Botón de búsqueda */
-.pi-search {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Campo de texto */
-.p-inputtext {
+/* Estilos para input y dropdown */
+.p-inputtext, .p-dropdown .p-dropdown-label, .p-multiselect .p-multiselect-label-container {
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid #333;
@@ -388,12 +403,20 @@
   background-color: transparent;
   color: #333;
   transition: border-color 0.3s;
+  width: 100%; /* Asegura que todos los elementos tengan el mismo ancho */
 }
 
-/* Cambiar color de la línea inferior en el enfoque */
-.p-inputtext:focus {
-  border-color: #007BFF;
+
+/* Búsqueda */
+.pi-search {
+  font-size: 1.2rem;
+  color: #666;
 }
+
+.p-inputtext:focus {
+  border-color: #FDAE39;
+}
+
 
 /* Menú desplegable */
 .p-dropdown .p-dropdown-label {
@@ -404,10 +427,12 @@
   color: #333;
 }
 
+
 /* Cambiar color de la línea inferior en el enfoque */
 .p-dropdown .p-dropdown-label:focus {
-  border-color: #007BFF;
+  border-color: #FDAE39;
 }
+
 
 /* Botón de búsqueda */
 .p-multiselect .p-multiselect-label {
@@ -419,16 +444,17 @@
   border-radius: 0;
 }
 
+
 /* Cambiar color de la línea inferior en el enfoque */
 .p-multiselect .p-multiselect-label:focus {
-  border-color: #007BFF;
+  border-color: #FDAE39;
 }
 
 .card {
   margin: 0 auto;
   width: 80%;
 }
-  
+
 /* Estilos para el dialogo */
 .dialog-container {
   font-weight: bold;
@@ -458,20 +484,30 @@
   color: grey;
   background-color: white;
   border: 1px solid #FDAE39;
+  border-width: 2px;
+  border-radius: 4px;
 }
 
+
 .btn-CargaRapida {
-  position: relative;
+  
   padding: 5px;
   margin: 20px;
+  position: relative;
   width: 100%;
   color: white;
   background-color: black;
   border: 1px solid #FDAE39;
+  border-width: 4px;
   border-radius: 4px;
 }
 
+
 .dialog-title{
   margin-right: 1rem;
+}
+
+.p-multiselect .p-multiselect-label-container {
+  width: 100%; 
 }
 </style>

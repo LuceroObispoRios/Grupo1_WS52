@@ -158,7 +158,6 @@ export default {
 </script>
 
 <template>
-  <br><br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">

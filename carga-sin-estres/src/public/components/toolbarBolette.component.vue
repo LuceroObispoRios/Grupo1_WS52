@@ -76,10 +76,9 @@ export default {
         </template>
       </pv-toolbar>
     </header>
-
+    <br><br><br><br><br>
     <RouterView />
   </div>
-  <br><br><br><br><br>
 </template>
 
 <style scoped>
