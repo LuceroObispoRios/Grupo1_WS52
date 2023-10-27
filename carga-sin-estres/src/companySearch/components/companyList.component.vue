@@ -13,6 +13,18 @@
 
         manualCompanyName: "",
 
+        selectedAverageRating: null,
+        averageRatingOptions: [
+          { label: 'Sin filtro', value: null },
+          { label: '1 estrella', value: 1 },
+          { label: '2 estrellas', value: 2 },
+          { label: '3 estrellas', value: 3 },
+          { label: '4 estrellas', value: 4 },
+          { label: '5 estrellas', value: 5 },
+          { label: 'Mayor a menor', value: 'desc' },
+          { label: 'Menor a mayor', value: 'asc' }
+        ],
+
         selectedServices: [],
         serviceOptions: [ // Opciones de servicios
           { label: 'Transporte', value: 'transporte' },
@@ -79,7 +91,7 @@
       this.searchByName();
       this.searchByServices();
       this.searchByLocation();
-
+      this.searchByAverageRating();
     },
 
     methods:{
@@ -142,6 +154,30 @@
           this.companies = this.originalData;
           this.searchMethod = '';
         }
+      },
+      searchByAverageRating() {
+        console.log('selectedAverageRating:', this.selectedAverageRating); // Imprime selectedAverageRating
+
+        if (this.selectedAverageRating && typeof this.selectedAverageRating.value === 'number') {
+          this.companies = this.originalData.filter((company) => {
+            // Si la compañía no tiene averageRating, trátala como si tuviera una calificación de 0
+            const averageRating = company.averageRating || 0;
+            return averageRating === this.selectedAverageRating.value;
+          });
+        } else if (this.selectedAverageRating && this.selectedAverageRating.value === 'desc') {
+          this.companies = [...this.originalData]; // Clonar la lista original
+          console.log('Ordenando de mayor a menor'); // Imprime un mensaje antes de ordenar
+          this.companies.sort((a, b) => (b.averageRating || 0) - (a.averageRating || 0));
+        } else if (this.selectedAverageRating && this.selectedAverageRating.value === 'asc') {
+          this.companies = [...this.originalData]; // Clonar la lista original
+          console.log('Ordenando de menor a mayor'); // Imprime un mensaje antes de ordenar
+          this.companies.sort((a, b) => (a.averageRating || 0) - (b.averageRating || 0));
+        } else {
+          this.companies = this.originalData;
+          this.selectedAverageRating = null; // Restablecer a null si es "Sin filtro"
+        }
+
+        console.log('companies:', this.companies); // Imprime las compañías después de filtrar/ordenar
       },
 
       CargaRapida(){
@@ -248,6 +284,17 @@
                 <i class="pi pi-search" />
                 <pv-input-text v-model="manualLocation" @input="searchByLocation" placeholder="Dirección"></pv-input-text>
               </div>
+            </div>
+
+            <!--Buscar por calificación promedio de empresa-->
+            <div class="p-field p-fluid">
+              <pv-dropdown
+                  v-model="selectedAverageRating"
+                  :options="averageRatingOptions"
+                  optionLabel="label"
+                  placeholder="Selecciona el filtro de calificación"
+                  @change="searchByAverageRating"
+              />
             </div>
 
             <pv-button icon="pi pi-plus" label="Carga Rapida" class="p-button-success p-mr-2" @click="OpenDialog"></pv-button>

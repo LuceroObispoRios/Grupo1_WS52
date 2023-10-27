@@ -24,21 +24,17 @@ export default {
           dateTime: null
         }
       ],
-<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
+      reviewDialogVisible: false,
+      reviewHeader: '',
+      rating: '',
+      comment: '',
+      reviewuser: new HttpCommonService(),
       workersApiService: new cargaSinEstresApiService(),
       workers: [],
       workerDialogVisible: false,
       workerHeader: '',
       commentToWorker: '',
       workerToUpdate: [],
-=======
-      reviewDialogVisible: false,
-      reviewHeader: '',
-      rating: '',
-      comment: '',
-      reviewuser: new HttpCommonService()
-
->>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
     }
   },
   created() {
@@ -110,7 +106,6 @@ export default {
             console.error('Error al actualizar el booking:', error);
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al cancelar la reserva. Por favor, inténtalo de nuevo.', life: 3000});
       });
-<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
       // *************************************************************************************************************
     },
 
@@ -165,7 +160,6 @@ export default {
     cancelCommentToWorker() {
       this.workerDialogVisible = false;
       this.commentToWorker = '';
-=======
     },
     openReview() {
       this.reviewDialogVisible = true;
@@ -176,7 +170,31 @@ export default {
     cancelReview() {
       this.reviewDialogVisible = false; // Ocultamos el diálogo de reseñas
     },
+    async addReviewAndUpdateAverage(companyId, review) {
+      try {
+        // Agrega la nueva reseña
+        const response = await this.reviewuser.addReview(companyId, review);
 
+        // Obtiene todas las reseñas de la compañía
+        const allReviews = await this.reviewuser.getReviews();
+        const companyReviews = allReviews.data.filter(r => r.companyId === companyId);
+
+        let averageRating = 0;
+        // Verifica si hay reseñas antes de calcular el promedio
+        if (companyReviews.length > 0) {
+          // Calcula la calificación promedio
+          const totalRating = companyReviews.reduce((total, review) => total + review.rating, 0);
+          averageRating = Math.round(totalRating / companyReviews.length);
+        }
+
+        // Actualiza la calificación promedio en la base de datos
+        await this.reviewuser.updateCompany(companyId, { averageRating });
+
+        return response;
+      } catch (error) {
+        console.error(error);
+      }
+    },
     submitReview() {
       // Comprueba si se ha seleccionado una calificación
       if (!this.rating) {
@@ -195,7 +213,7 @@ export default {
         comment: this.comment,
       };
 
-      this.reviewuser.addReview(this.bookingHistory.idCompany, review)
+      this.addReviewAndUpdateAverage(this.bookingHistory.idCompany, review)
           .then(() => {
             this.reviewDialogVisible = false;
             this.$toast.add({severity:'success', summary: 'Reseña enviada', detail:'Tu reseña ha sido enviada con éxito.', life: 3000});
@@ -204,10 +222,10 @@ export default {
             console.error(error);
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al enviar tu reseña. Por favor, inténtalo de nuevo.', life: 3000});
           });
->>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
-    }
+      }
+    },
+
   }
-}
 
 </script>
 
@@ -238,7 +256,6 @@ export default {
               <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
               <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
 
-<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
 <!--    -------------------Trabajadores de la empresa contratada -------------------------------------------->
               <div class="mt-2"><span class="font-bold">Trabajadores: </span></div>
               <div v-for="(worker, index) in workers" :key="index" class="mb-2">
@@ -257,8 +274,7 @@ export default {
                 </div>
               </div>
 <!-- -------------------------------------------------------------------------------------------------------------->
-=======
->>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
+
             </div>
           </div>
           <div class="panel-right bg-white ml-8">
