@@ -507,8 +507,7 @@
   margin-right: 1rem;
 }
 
-/* Estilos específicos para el multiselect */
 .p-multiselect .p-multiselect-label-container {
-  width: 100%; /* Asegura que el multiselect ocupe todo el ancho */
+  width: 100%; 
 }
 </style>
