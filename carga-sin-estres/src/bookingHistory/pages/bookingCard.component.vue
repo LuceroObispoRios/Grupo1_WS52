@@ -1,7 +1,7 @@
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service";
+import { HttpCommonService } from "@/services/http-common.service.js";
 export default {
-  name: "booking-card",
+  name: "bookingCard",
   props: {
     bookingHistory: null,
   },
@@ -12,7 +12,7 @@ export default {
       submitted: false,
       chatHeader: '',
       bookingMessages: [],
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
       userId: '',
       userType: '',
       bookingToUpdate:[],
@@ -28,7 +28,7 @@ export default {
       reviewHeader: '',
       rating: '',
       comment: '',
-      reviewuser: new cargaSinEstresApiService()
+      reviewuser: new HttpCommonService()
 
     }
   },
