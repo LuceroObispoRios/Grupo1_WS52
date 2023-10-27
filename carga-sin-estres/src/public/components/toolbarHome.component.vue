@@ -39,9 +39,9 @@ export default {
         </template>
       </pv-toolbar>
     </header>
+    <br><br><br>
     <router-view />
   </div>
-  <br><br>
 </template>
 
 <style scoped>
