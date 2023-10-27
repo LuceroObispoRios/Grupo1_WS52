@@ -363,7 +363,7 @@
   font-family: sans-serif;
 }
 
-/* Estilos para la parte superior (div1) de table-header */
+/* Estilos para la parte izquierda (div1) de table-header */
 .table-header .div1 {
   display: flex;
   flex-direction: column;
@@ -374,7 +374,7 @@
   border-radius: 5px;
 }
 
-/* Estilos para la parte inferior (div2) de table-header */
+/* Estilos para la parte derecha (div2) de table-header */
 .table-header .div2 {
   display: flex;
   flex-direction: column;
