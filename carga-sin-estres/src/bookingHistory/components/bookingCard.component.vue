@@ -29,7 +29,7 @@ export default {
       rating: '',
       comment: '',
       reviewuser: new HttpCommonService(),
-      workersApiService: new cargaSinEstresApiService(),
+      workersApiService: new HttpCommonService(),
       workers: [],
       workerDialogVisible: false,
       workerHeader: '',
@@ -97,7 +97,6 @@ export default {
       this.bookingToUpdate.chat.reverse();
       console.log('bookingToUpdate: ', this.bookingToUpdate);
 
-      // Actualizado *************************************************************************************************
       this.apiService.updateBooking(this.bookingToUpdate.id, this.bookingToUpdate)
           .then(response => {
             console.log('Booking actualizado con éxito:', response);
@@ -106,7 +105,6 @@ export default {
             console.error('Error al actualizar el booking:', error);
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al cancelar la reserva. Por favor, inténtalo de nuevo.', life: 3000});
       });
-      // *************************************************************************************************************
     },
 
     // Sección para realizar comentarios a los trabajadores
@@ -151,10 +149,7 @@ export default {
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al enviar tu comentario. Por favor, inténtalo de nuevo.', life: 3000});
             console.error('Error al actualizar los comentarios', error);
           });
-
         this.commentToWorker = '';
-        //this.bookingToUpdate = JSON.parse(JSON.stringify(this.bookingHistory));
-
       }
     },
     cancelCommentToWorker() {
@@ -256,7 +251,6 @@ export default {
               <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
               <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
 
-<!--    -------------------Trabajadores de la empresa contratada -------------------------------------------->
               <div class="mt-2"><span class="font-bold">Trabajadores: </span></div>
               <div v-for="(worker, index) in workers" :key="index" class="mb-2">
                 <i class="pi pi-user mr-2 mt-2" style="color: #FDAE39"></i>
@@ -273,7 +267,6 @@ export default {
                   </div>
                 </div>
               </div>
-<!-- -------------------------------------------------------------------------------------------------------------->
 
             </div>
           </div>
@@ -387,8 +380,6 @@ export default {
           <Rating v-model="rating" :cancel="false" />
         </div>
 
-
-
         <template #footer>
           <pv-button
               :label="'Cancelar'.toUpperCase()"
@@ -401,7 +392,6 @@ export default {
       </pv-dialog>
     </div>
 
-    <!--------------------------------------   Dialogo para comentar a los trabajadores ---------------------------->
     <div>
       <pv-dialog
           v-model:visible="workerDialogVisible"
@@ -438,7 +428,6 @@ export default {
         </template>
       </pv-dialog>
     </div>
-    <!-- -------------------------------------------------------------------------------------------------------------->
 
   </div>
 
