@@ -1,15 +1,14 @@
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service";
-import BookingCard from "@/bookingHistory/pages/booking-card.component.vue";
-import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+import { HttpCommonService } from "@/services/http-common.service.js";
+import BookingCard from "@/bookingHistory/components/bookingCard.component.vue";
 export default {
-  name: "booking-list",
-  components: { BookingCard, toolbarClient},
+  name: "bookingList",
+  components: { BookingCard },
   data() {
     return {
       bookingList: [],
       errors: [],
-      bookingApiService: new cargaSinEstresApiService(),
+      bookingApiService: new HttpCommonService(),
       userId: '',
       userType: '',
     };
@@ -74,7 +73,7 @@ export default {
 
   <div><h1 class="title flex justify-content-center">Historial de Reservas</h1></div>
   <div v-for="bookingHistory in bookingList" :key="bookingHistory.id">
-    <booking-card :bookingHistory="bookingHistory"></booking-card>
+    <bookingCard :bookingHistory="bookingHistory"></bookingCard>
   </div>
 </template>
 

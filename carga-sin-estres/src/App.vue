@@ -1,8 +1,8 @@
 <script>
-import FooterContent from "@/public/pages/footer-content.component.vue";
+import FooterSection from "@/public/components/footerSection.component.vue";
 export default {
   name: "app",
-  components: {FooterContent}
+  components: {FooterSection}
 }
 </script>
 
@@ -11,7 +11,7 @@ export default {
      <div class="main-content">
        <router-view></router-view>
      </div>
-     <footer-content></footer-content>
+     <footerSection></footerSection>
   </div>
 </template>
 

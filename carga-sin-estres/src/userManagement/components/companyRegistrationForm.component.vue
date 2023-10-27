@@ -1,88 +1,8 @@
-<template>
-  <div>
-    <toolbar-home></toolbar-home>
-  </div>
-  <br><br><br>
-  <div class="container">
-    <div class="container-back">
-      <div class="user-info">
-        <form @submit.prevent="onSubmit" id="registro">
-          <h2>Registrar Cuenta de Empresa</h2>
-          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Logo de Carga sin estres" class="logo" />
-
-          <div class="right-section">
-            <label for="nombre">Nombre de la empresa:</label><br>
-            <input type="text" placeholder="Nombre de la empresa" v-model="name" id="nombre" />
-
-            <label for="email">Email de la empresa:</label><br>
-            <input type="text" placeholder="Email" v-model="email" id="email" />
-
-            <label for="direccion">Dirección del local de empresa:</label><br>
-            <input type="text" placeholder="Dirección" v-model="direccion" id="direccion" />
-
-            <label for="numeroContacto">Telefono de contacto de la empresa:</label><br>
-            <input type="text" placeholder="Teléfono" v-model="numeroContacto" id="numeroContacto" />
-
-            <label for="password">Crear contraseña:</label><br>
-            <input type="password" placeholder="Contraseña" v-model="password" id="password" />
-
-            <label for="confirmarpassword">Confirmar contraseña:</label><br>
-            <input type="password" placeholder="Confirmar contraseña" v-model="confirmarpassword" id="confirmarpassword" />
-
-            <label for="photo">Link al logo de la empresa como imagen:</label><br>
-            <input type="text" placeholder="Link a la imagen" v-model="photo" id="photo" /><!--campo imagen logo de empresa--y pasarla a lo demás-->
-          </div>
-
-          <div class="service-boxes">
-            <label for="checkboxes">Marque los servicios que ofrece su empresa:</label>
-            <div class="checkboxes col" id="checkboxes">
-              <div class="check row-1">
-                <input type="checkbox" v-model="transporte" value="transporte" id="transporte" />
-                <label for="transporte">Transporte</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" v-model="carga" value="carga" id="carga" />
-                <label for="carga">Carga</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" v-model="embalaje" value="embalaje" id="embalaje" />
-                <label for="embalaje">Embalaje</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" v-model="montaje" value="montaje" id="montaje" />
-                <label for="montaje">Montaje</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" v-model="desmontaje" value="desmontaje" id="desmontaje" />
-                <label for="desmontaje">Desmontaje</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="description-box">
-            <label for="description">Descripción corta de la empresa:</label>
-            <textarea v-model="description" rows="6" id="description"></textarea>
-          </div>
-
-          <button id="registro-button" type="submit">Registrar Empresa</button>
-          <button id="cancel-button" type="button" @click="cancel">Cancelar</button>
-          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <br><br><br>
-</template>
-
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
-import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
+import { HttpCommonService } from "@/services/http-common.service.js";
+import ToolbarHome from "@/public/components/toolbarHome.component.vue";
 export default {
-  name: 'CompanyRegistrationForm',
+  name: 'companyRegistrationForm',
   components: {ToolbarHome},
 
   data() {
@@ -102,7 +22,7 @@ export default {
       desmontaje: false,
       description: '',
       errorMessage: '',
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
     };
   },
   methods: {
@@ -209,6 +129,86 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div>
+    <toolbar-home></toolbar-home>
+  </div>
+  <br><br><br>
+  <div class="container">
+    <div class="container-back">
+      <div class="user-info">
+        <form @submit.prevent="onSubmit" id="registro">
+          <h2>Registrar Cuenta de Empresa</h2>
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" alt="Logo de Carga sin estres" class="logo" />
+
+          <div class="right-section">
+            <label for="nombre">Nombre de la empresa:</label><br>
+            <input type="text" placeholder="Nombre de la empresa" v-model="name" id="nombre" />
+
+            <label for="email">Email de la empresa:</label><br>
+            <input type="text" placeholder="Email" v-model="email" id="email" />
+
+            <label for="direccion">Dirección del local de empresa:</label><br>
+            <input type="text" placeholder="Dirección" v-model="direccion" id="direccion" />
+
+            <label for="numeroContacto">Telefono de contacto de la empresa:</label><br>
+            <input type="text" placeholder="Teléfono" v-model="numeroContacto" id="numeroContacto" />
+
+            <label for="password">Crear contraseña:</label><br>
+            <input type="password" placeholder="Contraseña" v-model="password" id="password" />
+
+            <label for="confirmarpassword">Confirmar contraseña:</label><br>
+            <input type="password" placeholder="Confirmar contraseña" v-model="confirmarpassword" id="confirmarpassword" />
+
+            <label for="photo">Link al logo de la empresa como imagen:</label><br>
+            <input type="text" placeholder="Link a la imagen" v-model="photo" id="photo" /><!--campo imagen logo de empresa--y pasarla a lo demás-->
+          </div>
+
+          <div class="service-boxes">
+            <label for="checkboxes">Marque los servicios que ofrece su empresa:</label>
+            <div class="checkboxes col" id="checkboxes">
+              <div class="check row-1">
+                <input type="checkbox" v-model="transporte" value="transporte" id="transporte" />
+                <label for="transporte">Transporte</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" v-model="carga" value="carga" id="carga" />
+                <label for="carga">Carga</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" v-model="embalaje" value="embalaje" id="embalaje" />
+                <label for="embalaje">Embalaje</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" v-model="montaje" value="montaje" id="montaje" />
+                <label for="montaje">Montaje</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" v-model="desmontaje" value="desmontaje" id="desmontaje" />
+                <label for="desmontaje">Desmontaje</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="description-box">
+            <label for="description">Descripción corta de la empresa:</label>
+            <textarea v-model="description" rows="6" id="description"></textarea>
+          </div>
+
+          <button id="registro-button" type="submit">Registrar Empresa</button>
+          <button id="cancel-button" type="button" @click="cancel">Cancelar</button>
+          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+</template>
 
 <style scoped>
 body {

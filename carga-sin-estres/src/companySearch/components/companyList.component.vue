@@ -1,12 +1,7 @@
 <script>
-  import { cargaSinEstresApiService } from "../services/cargaSinEstres-api.service";
-  import { FilterMatchMode } from "primevue/api";
-  import toolbarClient from "@/public/pages/toolbar-client.component.vue";
+  import { HttpCommonService } from "@/services/http-common.service.js";
   export default{
-    name: "company-list",
-    components:{
-      toolbarClient,
-    },
+    name: "companyList",
     data(){
       return{
         companies: [],
@@ -36,7 +31,7 @@
         manualLocation: '',
         userLocation: '', // Ubicación del usuario
 
-        CargaRapidaDialog: false,
+        cargaRapidaDialog: false,
         reservation: {
           id: null,
           idCompany: null,
@@ -61,14 +56,22 @@
     },
     created() {
       this.userId = this.$route.params.id;
-      this.companyService = new cargaSinEstresApiService();
+      this.companyService = new HttpCommonService();
       this.companyService.getAll()
           .then((response) => {
             const responseData = response.data;
             if (this.originalData.length === 0) {
               this.originalData = [...responseData];
             }
-            this.companies = responseData;
+            // Ordenar empresas con membresía primero
+            this.companies = responseData.sort((a, b) => {
+              if (a.tipoMembresia && !b.tipoMembresia) {
+                return -1; // a viene antes que b
+              } else if (!a.tipoMembresia && b.tipoMembresia) {
+                return 1; // b viene antes que a
+              }
+              return 0; // sin cambios en el orden
+            });
             console.log('Original Data:', this.originalData);
           });
 
@@ -168,7 +171,7 @@
       },
 
       addReservation(){
-        this.cargaSinEstres_service = new cargaSinEstresApiService();
+        this.cargaSinEstres_service = new HttpCommonService();
         this.cargaSinEstres_service.createReservation(this.reservation)
             .then((response) => {
               console.log("Reservation:");
@@ -178,12 +181,12 @@
       },
 
       OpenDialog(){
-        this.CargaRapidaDialog = true;
+        this.cargaRapidaDialog = true;
       },
 
       hideDialog(){
-        this.CargaRapidaDialog = false;
-        console.log(this.CargaRapidaDialog);
+        this.cargaRapidaDialog = false;
+        console.log(this.cargaRapidaDialog);
       },
 
     }
@@ -276,7 +279,7 @@
     </div>
   </div>
 
-  <pv-dialog :visible="CargaRapidaDialog" :modal="true" :closable="false" :style="{width: '600px'}">
+  <pv-dialog :visible="cargaRapidaDialog" :modal="true" :closable="false" :style="{width: '600px'}">
     <div class="dialog-container">
       <div class ="dialog-section">
         <h2 class="dialog-title">Carga Rapida</h2>

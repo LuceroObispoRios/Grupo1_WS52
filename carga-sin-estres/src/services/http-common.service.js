@@ -1,6 +1,6 @@
-import http from '../../shared/services/http-common';
+import http from '../shared/services/http-common';
 
-export class cargaSinEstresApiService{
+export class HttpCommonService{
     getAll() {
         return http.get('/companies');
     }
@@ -65,4 +65,13 @@ export class cargaSinEstresApiService{
     getClientById(id) {
         return http.get(`/clients/${id}`);
     }
+    addReview(companyId, review) {
+
+        review.companyId = companyId;
+        return http.post(`/reviews`, review);
+    }
+    getReviews() {
+        return http.get('/reviews')
+    }
+
 }

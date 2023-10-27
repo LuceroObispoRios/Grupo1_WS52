@@ -28,6 +28,7 @@ import Menubar from "primevue/menubar";
 import Checkbox from 'primevue/checkbox';
 import MultiSelect from 'primevue/multiselect';
 import ScrollPanel from 'primevue/scrollpanel';
+import Rating from 'primevue/rating';
 
 createApp(App)
     .use(router)
@@ -52,4 +53,5 @@ createApp(App)
     .component('pv-checkbox', Checkbox)
     .component('pv-multiselect', MultiSelect)
     .component('pv-scrollpanel', ScrollPanel)
+    .component('Rating', Rating)
     .mount('#app')

@@ -1,78 +1,8 @@
-<template>
-  <div>
-    <toolbar-home></toolbar-home>
-  </div>
-  
-  <div class="container">
-    <div class="container-back">
-      <div class="user-info">
-        <div class="left-section">
-          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Avatar" />
-          <h5>Carga sin Estres</h5>
-        </div>
-        <form @submit.prevent="onSubmit" id="myForm">
-          <div class="right-section">
-            <input
-                type="text"
-                placeholder="nombre"
-                v-model="name"
-            />
-            <input
-                type="text"
-                placeholder="Apellido Materno"
-                v-model="apellidoMaterno"
-            />
-            <input
-                type="text"
-                placeholder="Apellido Paterno"
-                v-model="apellidoPaterno"
-            />
-            <input
-                type="text"
-                placeholder="Celular"
-                v-model="celular"
-            />
-            <input
-                type="text"
-                placeholder="Dirección"
-                v-model="direccion"
-            />
-          </div>
-          <div class="right-section">
-            <input
-                type="email"
-                placeholder="email electrónico"
-                v-model="email"
-            />
-            <input
-                type="password"
-                placeholder="Contraseña"
-                v-model="password"
-            />
-            <input
-                type="password"
-                placeholder="Repetir contraseña"
-                v-model="confirmarpassword"
-            />
-          </div>
-          <button id="registrarButton" type="submit">Registrar ➜</button>
-          <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <div
-              id="errorMessages"
-              class="error-messages"
-              v-html="errorMessage"
-          ></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
-import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
+import { HttpCommonService } from "@/services/http-common.service.js";
+import ToolbarHome from "@/public/components/toolbarHome.component.vue";
 export default {
-  name: "ClientRegistrationForm",
+  name: "clientRegistrationForm",
   components: {ToolbarHome},
   data() {
     return {
@@ -86,7 +16,7 @@ export default {
       confirmarpassword: '',
       userType: 'client',
       errorMessage: '',
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
     };
   },
   methods: {
@@ -179,6 +109,76 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div>
+    <toolbarHome></toolbarHome>
+  </div>
+  
+  <div class="container">
+    <div class="container-back">
+      <div class="user-info">
+        <div class="left-section">
+          <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Proyecto/image/Cargalogo.png?raw=true" alt="Avatar" />
+          <h5>Carga sin Estres</h5>
+        </div>
+        <form @submit.prevent="onSubmit" id="myForm">
+          <div class="right-section">
+            <input
+                type="text"
+                placeholder="nombre"
+                v-model="name"
+            />
+            <input
+                type="text"
+                placeholder="Apellido Materno"
+                v-model="apellidoMaterno"
+            />
+            <input
+                type="text"
+                placeholder="Apellido Paterno"
+                v-model="apellidoPaterno"
+            />
+            <input
+                type="text"
+                placeholder="Celular"
+                v-model="celular"
+            />
+            <input
+                type="text"
+                placeholder="Dirección"
+                v-model="direccion"
+            />
+          </div>
+          <div class="right-section">
+            <input
+                type="email"
+                placeholder="email electrónico"
+                v-model="email"
+            />
+            <input
+                type="password"
+                placeholder="Contraseña"
+                v-model="password"
+            />
+            <input
+                type="password"
+                placeholder="Repetir contraseña"
+                v-model="confirmarpassword"
+            />
+          </div>
+          <button id="registrarButton" type="submit">Registrar ➜</button>
+          <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
+          <div
+              id="errorMessages"
+              class="error-messages"
+              v-html="errorMessage"
+          ></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 body {

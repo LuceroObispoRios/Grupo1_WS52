@@ -1,53 +1,9 @@
-<template>
-  <div>
-    <toolbar-home></toolbar-home>
-  </div>
-  
-  <div class="login-form">
-    <form @submit.prevent="onSubmit">
-      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" class="logo" alt="Logo"/>
-      <h1>Carga Sin Estrés</h1>
-
-      <div class="content">
-        <div class="input-field">
-          <input
-              type="email"
-              v-model="loginForm.email"
-              placeholder="Correo electrónico o Usuario"
-              autofocus
-          />
-        </div>
-
-        <div class="input-field">
-          <input
-              type="password"
-              v-model="loginForm.password"
-              placeholder="Contraseña"
-          />
-        </div>
-
-        <div class="remember-me">
-          <label><input type="checkbox" v-model="loginForm.rememberMe" /> Recuérdame</label>
-        </div>
-
-        <div class="action" id="actionButtons">
-          <button id="login-button" type="submit">Iniciar Sesión</button>
-          <button id="cancel-button" type="button" @click="cancelar" >Cancelar</button>
-        </div>
-        <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
-
-      </div>
-    </form>
-  </div>
-  <br><br><br>
-</template>
-
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service.js";
-import ToolbarHome from "@/public/pages/toolbar-home.component.vue";
+import { HttpCommonService } from "@/services/http-common.service.js";
+import ToolbarHome from "@/public/components/toolbarHome.component.vue";
   
 export default {
-  name : "Login-Form",
+  name : "loginForm",
   components: {ToolbarHome},
   data() {
     return {
@@ -59,7 +15,7 @@ export default {
         rememberMe: false
       },
       errorMessage: '',
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
     };
   },
 
@@ -141,6 +97,50 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div>
+    <toolbarHome></toolbarHome>
+  </div>
+  
+  <div class="login-form">
+    <form @submit.prevent="onSubmit">
+      <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" class="logo" alt="Logo"/>
+      <h1>Carga Sin Estrés</h1>
+
+      <div class="content">
+        <div class="input-field">
+          <input
+              type="email"
+              v-model="loginForm.email"
+              placeholder="Correo electrónico o Usuario"
+              autofocus
+          />
+        </div>
+
+        <div class="input-field">
+          <input
+              type="password"
+              v-model="loginForm.password"
+              placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="remember-me">
+          <label><input type="checkbox" v-model="loginForm.rememberMe" /> Recuérdame</label>
+        </div>
+
+        <div class="action" id="actionButtons">
+          <button id="login-button" type="submit">Iniciar Sesión</button>
+          <button id="cancel-button" type="button" @click="cancelar" >Cancelar</button>
+        </div>
+        <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
+
+      </div>
+    </form>
+  </div>
+  <br><br><br>
+</template>
 
 <style scoped>
 * {

@@ -1,7 +1,7 @@
 <script>
-import { cargaSinEstresApiService } from "@/company-search/services/cargaSinEstres-api.service";
+import { HttpCommonService } from "@/services/http-common.service.js";
 export default {
-  name: "booking-card",
+  name: "bookingCard",
   props: {
     bookingHistory: null,
   },
@@ -12,7 +12,7 @@ export default {
       submitted: false,
       chatHeader: '',
       bookingMessages: [],
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
       userId: '',
       userType: '',
       bookingToUpdate:[],
@@ -24,12 +24,21 @@ export default {
           dateTime: null
         }
       ],
+<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
       workersApiService: new cargaSinEstresApiService(),
       workers: [],
       workerDialogVisible: false,
       workerHeader: '',
       commentToWorker: '',
       workerToUpdate: [],
+=======
+      reviewDialogVisible: false,
+      reviewHeader: '',
+      rating: '',
+      comment: '',
+      reviewuser: new HttpCommonService()
+
+>>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
     }
   },
   created() {
@@ -101,6 +110,7 @@ export default {
             console.error('Error al actualizar el booking:', error);
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al cancelar la reserva. Por favor, inténtalo de nuevo.', life: 3000});
       });
+<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
       // *************************************************************************************************************
     },
 
@@ -155,6 +165,46 @@ export default {
     cancelCommentToWorker() {
       this.workerDialogVisible = false;
       this.commentToWorker = '';
+=======
+    },
+    openReview() {
+      this.reviewDialogVisible = true;
+      this.reviewHeader = `Reseña de ${this.bookingHistory.hiredCompany.name}`;
+      this.rating = '';
+      this.comment = '';
+    },
+    cancelReview() {
+      this.reviewDialogVisible = false; // Ocultamos el diálogo de reseñas
+    },
+
+    submitReview() {
+      // Comprueba si se ha seleccionado una calificación
+      if (!this.rating) {
+        this.$toast.add({severity:'error', summary: 'Error', detail:'Por favor, selecciona una calificación antes de enviar tu reseña.', life: 3000});
+        return;
+      }
+
+      // Comprueba si el comentario es demasiado corto
+      if (this.comment.length < 10) { // Ajusta este número al mínimo de caracteres que desees
+        this.$toast.add({severity:'error', summary: 'Error', detail:'Tu comentario es demasiado corto. Por favor, escribe un comentario más detallado.', life: 3000});
+        return;
+      }
+      // Crea un objeto de reseña
+      const review = {
+        rating: this.rating,
+        comment: this.comment,
+      };
+
+      this.reviewuser.addReview(this.bookingHistory.idCompany, review)
+          .then(() => {
+            this.reviewDialogVisible = false;
+            this.$toast.add({severity:'success', summary: 'Reseña enviada', detail:'Tu reseña ha sido enviada con éxito.', life: 3000});
+          })
+          .catch(error => {
+            console.error(error);
+            this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al enviar tu reseña. Por favor, inténtalo de nuevo.', life: 3000});
+          });
+>>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
     }
   }
 }
@@ -177,13 +227,18 @@ export default {
               <div class="mt-3"><span class="font-bold">Dirección de recojo: </span>{{bookingHistory.pickupAddress}}</div>
               <div class="mt-1"><span class="mt-3 pt-7 font-bold">Dirección de entrega: </span>{{bookingHistory.destinationAddress}}</div>
               <div class="flex ml-2 mt-3">
-
+                <div class="review">
+                  <pv-button v-if="bookingHistory.status === 'Finalizado'" class="btn-chat hover:bg-gray-300" @click="openReview">
+                    <div class="pi pi-star font-bold"></div>&nbsp;<p>Realizar Reseña</p>
+                  </pv-button>
+                </div>
               </div>
             </div>
             <div class="col">
               <div class="mt-3"><span class="font-bold">Pago total: </span>S/.{{bookingHistory.payment.totalAmount}}</div>
               <div class="mt-2"><span class="font-bold">Empresa contratada: </span>{{bookingHistory.hiredCompany.name}}</div>
 
+<<<<<<< HEAD:carga-sin-estres/src/bookingHistory/pages/booking-card.component.vue
 <!--    -------------------Trabajadores de la empresa contratada -------------------------------------------->
               <div class="mt-2"><span class="font-bold">Trabajadores: </span></div>
               <div v-for="(worker, index) in workers" :key="index" class="mb-2">
@@ -202,12 +257,15 @@ export default {
                 </div>
               </div>
 <!-- -------------------------------------------------------------------------------------------------------------->
+=======
+>>>>>>> c1cbd688c2c60e04807c2dda625400afed717b8d:carga-sin-estres/src/bookingHistory/components/bookingCard.component.vue
             </div>
           </div>
           <div class="panel-right bg-white ml-8">
             <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name"
                  class="lg:border-round" width="150" height="150">
           </div>
+
         </div>
         <div class="flex flex-wrap ml-3">
           <div class="mr-2 mb-2">
@@ -279,6 +337,51 @@ export default {
               class="p-button-text" @click="sendMessage"/>
         </template>
 
+      </pv-dialog>
+    </div>
+    <div class="reviews">
+      <pv-dialog
+          v-model:visible="reviewDialogVisible"
+          :style="{ width: '450px' }"
+          :header="reviewHeader"
+          :modal="true"
+          class="p-fluid"
+      >
+        <div class="flex align-content-center justify-content-center bg-white">
+          <img :src="bookingHistory.hiredCompany.logo" :alt="bookingHistory.hiredCompany.name" class="lg:border-round" width="150" height="150">
+        </div>
+
+        <div class="field">
+        <span class="p-float-label">
+          <pv-textarea
+              id="content"
+              v-model="comment"
+              placeholder="Escriba aquí su reseña..."
+              autofocus
+              required="false"
+              rows="5"
+              cols="20"
+          />
+          <label for="description"></label>
+        </span>
+        </div>
+
+        <div class="field">
+          <label for="rating">Calificación</label>
+          <Rating v-model="rating" :cancel="false" />
+        </div>
+
+
+
+        <template #footer>
+          <pv-button
+              :label="'Cancelar'.toUpperCase()"
+              icon="pi pi-times"
+              class="p-button-text"
+              @click="cancelReview"
+          />
+          <pv-button :label="'Enviar'.toUpperCase()" icon="pi pi-check" class="p-button-text" @click="submitReview" />
+        </template>
       </pv-dialog>
     </div>
 

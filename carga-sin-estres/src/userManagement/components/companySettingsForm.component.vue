@@ -1,72 +1,9 @@
-<template>
-  <br><br><br>
-  <div class="container">
-    <div class="container-back">
-      <div class="user-info">
-        <form @submit.prevent="onSubmit">
-          <h2>Editar Datos de Perfil de Empresa</h2>
-          <div class="right-section">
-            <input type="text" placeholder="Nombre de la empresa" v-model="formData.name" id="name"/>
-            <input type="text" placeholder="email" v-model="formData.email" id="email"/>
-            <input type="text" placeholder="Dirección" v-model="formData.direccion" id="direccion"/>
-            <input type="text" placeholder="Teléfono" v-model="formData.numeroContacto" pattern="[0-9]+" id="numeroContacto"/>
-            <input type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
-            <input type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
-            <input type="text" placeholder="Link a la imagen" v-model="formData.photo" id="photo"/>
-          </div>
-
-          <div class="service-boxes">
-            <p>Marque los servicios que ofrece su empresa:</p>
-            <div class="checkboxes col">
-              <div class="check row-1">
-                <input type="checkbox" name="transporte" v-model="formData.transporte" value="transporte"/>
-                <label for="transporte">Transporte</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" name="carga" v-model="formData.carga" value="carga"/>
-                <label for="carga">Carga</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" name="embalaje" v-model="formData.embalaje" value="embalaje"/>
-                <label for="embalaje">Embalaje</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" name="montaje" v-model="formData.montaje" value="montaje"/>
-                <label for="montaje">Montaje</label>
-              </div>
-
-              <div class="check row-1">
-                <input type="checkbox" name="desmontaje" v-model="formData.desmontaje" value="desmontaje"/>
-                <label for="desmontaje">Desmontaje</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="description-box">
-            <label for="description">Descripción corta de la empresa:</label>
-            <textarea name="description" v-model="formData.description" rows="6"></textarea>
-          </div>
-
-          <button id="submitButton" type="submit">Guardar cambios</button>
-          <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
-          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <br><br>
-
-</template>
-
 <script>
-import toolbarCompany from "@/public/pages/toolbar-company.component.vue";
-import {cargaSinEstresApiService} from "@/company-search/services/cargaSinEstres-api.service";
+import toolbarCompany from "@/public/components/toolbarCompany.component.vue";
+import { HttpCommonService } from "@/services/http-common.service.js";
 
 export default {
-  name: 'CompanySettingsForm',
+  name: 'companySettingsForm',
   components: {toolbarCompany},
 
   data() {
@@ -85,7 +22,7 @@ export default {
         desmontaje: false,
         description: '',
         id: '',
-        },
+      },
       confirmarpassword: '',
       errorMessage: '',
       id: null,
@@ -104,7 +41,7 @@ export default {
         desmontaje: false,
         description: '',
       },
-      apiService: new cargaSinEstresApiService(),
+      apiService: new HttpCommonService(),
     };
   },
 
@@ -219,6 +156,69 @@ export default {
   },
 };
 </script>
+
+<template>
+  <br><br><br>
+  <div class="container">
+    <div class="container-back">
+      <div class="user-info">
+        <form @submit.prevent="onSubmit">
+          <h2>Editar Datos de Perfil de Empresa</h2>
+          <div class="right-section">
+            <input type="text" placeholder="Nombre de la empresa" v-model="formData.name" id="name"/>
+            <input type="text" placeholder="Email" v-model="formData.email" id="email"/>
+            <input type="text" placeholder="Dirección" v-model="formData.direccion" id="direccion"/>
+            <input type="text" placeholder="Teléfono" v-model="formData.numeroContacto" pattern="[0-9]+" id="numeroContacto"/>
+            <input class="text-xs" type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
+            <input class="text-xs" type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
+            <input type="text" placeholder="Link a la imagen" v-model="formData.photo" id="photo"/>
+          </div>
+
+          <div class="service-boxes">
+            <p>Marque los servicios que ofrece su empresa:</p>
+            <div class="checkboxes col">
+              <div class="check row-1">
+                <input type="checkbox" name="transporte" v-model="formData.transporte" value="transporte"/>&nbsp;
+                <label for="transporte">Transporte</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" name="carga" v-model="formData.carga" value="carga"/>&nbsp;
+                <label for="carga">Carga</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" name="embalaje" v-model="formData.embalaje" value="embalaje"/>&nbsp;
+                <label for="embalaje">Embalaje</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" name="montaje" v-model="formData.montaje" value="montaje"/>&nbsp;
+                <label for="montaje">Montaje</label>
+              </div>
+
+              <div class="check row-1">
+                <input type="checkbox" name="desmontaje" v-model="formData.desmontaje" value="desmontaje"/>&nbsp;
+                <label for="desmontaje">Desmontaje</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="description-box">
+            <label for="description">Descripción corta de la empresa:</label>
+            <textarea name="description" v-model="formData.description" rows="6"></textarea>
+          </div>
+
+          <button id="submitButton" type="submit">Guardar cambios</button>
+          <button id="cancelButton" type="button" @click="cancel">Cancelar</button>
+          <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+</template>
 
 <style scoped>
 body {
