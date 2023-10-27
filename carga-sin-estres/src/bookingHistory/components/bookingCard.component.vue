@@ -118,7 +118,31 @@ export default {
     cancelReview() {
       this.reviewDialogVisible = false; // Ocultamos el diálogo de reseñas
     },
+    async addReviewAndUpdateAverage(companyId, review) {
+      try {
+        // Agrega la nueva reseña
+        const response = await this.reviewuser.addReview(companyId, review);
 
+        // Obtiene todas las reseñas de la compañía
+        const allReviews = await this.reviewuser.getReviews();
+        const companyReviews = allReviews.data.filter(r => r.companyId === companyId);
+
+        let averageRating = 0;
+        // Verifica si hay reseñas antes de calcular el promedio
+        if (companyReviews.length > 0) {
+          // Calcula la calificación promedio
+          const totalRating = companyReviews.reduce((total, review) => total + review.rating, 0);
+          averageRating = Math.round(totalRating / companyReviews.length);
+        }
+
+        // Actualiza la calificación promedio en la base de datos
+        await this.reviewuser.updateCompany(companyId, { averageRating });
+
+        return response;
+      } catch (error) {
+        console.error(error);
+      }
+    },
     submitReview() {
       // Comprueba si se ha seleccionado una calificación
       if (!this.rating) {
@@ -137,7 +161,7 @@ export default {
         comment: this.comment,
       };
 
-      this.reviewuser.addReview(this.bookingHistory.idCompany, review)
+      this.addReviewAndUpdateAverage(this.bookingHistory.idCompany, review)
           .then(() => {
             this.reviewDialogVisible = false;
             this.$toast.add({severity:'success', summary: 'Reseña enviada', detail:'Tu reseña ha sido enviada con éxito.', life: 3000});
@@ -146,7 +170,7 @@ export default {
             console.error(error);
             this.$toast.add({severity:'error', summary: 'Error', detail:'Hubo un error al enviar tu reseña. Por favor, inténtalo de nuevo.', life: 3000});
           });
-    }
+    },
   }
 }
 

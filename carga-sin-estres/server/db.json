@@ -15,7 +15,8 @@
       "montaje": true,
       "desmontaje": true,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": null
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "montaje": false,
       "desmontaje": false,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": 5
     },
     {
       "id": 3,
@@ -50,7 +52,8 @@
       "desmontaje": false,
       "description": "empresa",
       "userType": "company",
-      "tipoMembresia": "35"
+      "tipoMembresia": "35",
+      "averageRating": 3
     },
     {
       "id": 4,
@@ -67,7 +70,8 @@
       "montaje": true,
       "desmontaje": true,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": null
     },
     {
       "id": 5,
@@ -85,7 +89,8 @@
       "desmontaje": false,
       "description": "empresa",
       "userType": "company",
-      "tipoMembresia": "95"
+      "tipoMembresia": "95",
+      "averageRating": null
     },
     {
       "id": 6,
@@ -102,7 +107,8 @@
       "montaje": false,
       "desmontaje": false,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": 5
     },
     {
       "id": 7,
@@ -119,7 +125,8 @@
       "montaje": true,
       "desmontaje": true,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": 4
     },
     {
       "id": 8,
@@ -136,7 +143,8 @@
       "montaje": true,
       "desmontaje": false,
       "description": "empresa",
-      "userType": "company"
+      "userType": "company",
+      "averageRating": 4
     }
   ],
   "reviews": [

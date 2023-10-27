@@ -52,7 +52,7 @@ export default {
       this.addReservation();
     },
     addReservation(){
-      this.cargaSinEstres_service = new cargaSinEstresApiService();
+      this.cargaSinEstres_service = new HttpCommonService();
       this.cargaSinEstres_service.createReservation(this.reservation)
           .then((response) => {
             console.log("Reservation:");
@@ -63,12 +63,15 @@ export default {
     },
     async fetchReviews() { // Crea un nuevo método para obtener las reseñas
       try {
-        this.ReviewService = new cargaSinEstresApiService();
+        this.ReviewService = new HttpCommonService();
         const response = await this.ReviewService.getReviews();
         this.reviews = response.data.filter(review => review.companyId === this.company.id);
         // Calcula la calificación promedio
         const totalRating = this.reviews.reduce((total, review) => total + review.rating, 0);
-        this.averageRating = Math.round(totalRating / this.reviews.length);
+        const averageRating = Math.round(totalRating / this.reviews.length);
+        this.averageRating = averageRating;
+        // Actualiza la calificación promedio en la base de datos
+        await this.ReviewService.updateCompany(this.company.id, { averageRating });
       } catch (error) {
         console.error(error);
       }
