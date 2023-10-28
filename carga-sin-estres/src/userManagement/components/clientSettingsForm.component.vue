@@ -167,7 +167,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: auto;
+  margin: 5rem auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
@@ -187,7 +187,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+  
 .user-info {
   display: flex;
   align-items: center;
