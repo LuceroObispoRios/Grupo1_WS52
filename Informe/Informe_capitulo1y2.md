@@ -108,7 +108,7 @@ Ciclo 2023-02
    5.2.2.5. Execution Evidence for Sprint Review.  
    5.2.2.6. Services Documentation Evidence for Sprint Review.  
    5.2.2.7. Software Deployment Evidence for Sprint Review.  
-   5.2.2.8. Team Collaboration Insights during Sprint.
+   5.2.2.8. Team Collaboration Insights during Sprint.  
    5.2.3. Sprint 3  
    5.2.3.1. Sprint Planning 3.  
    5.2.3.2. Sprint Backlog 3.  
