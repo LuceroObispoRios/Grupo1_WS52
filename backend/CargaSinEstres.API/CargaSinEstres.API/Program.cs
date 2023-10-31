@@ -1,10 +1,19 @@
 using CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 using CargaSinEstres.API.CargaSinEstres.Domain.Services;
 using CargaSinEstres.API.CargaSinEstres.Mapping;
+using CargaSinEstres.API.CargaSinEstres.Security.Authorization.Handlers.Implementations;
+using CargaSinEstres.API.CargaSinEstres.Security.Authorization.Handlers.Interfaces;
+using CargaSinEstres.API.CargaSinEstres.Security.Authorization.Middleware;
+using CargaSinEstres.API.CargaSinEstres.Security.Authorization.Settings;
 using CargaSinEstres.API.CargaSinEstres.Services;
-using CargaSinEstres.API.Shared.Persistance.Contexts;
-using CargaSinEstres.API.Shared.Persistance.Repositories;
+using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Contexts;
+using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Repositories;
+using CargaSinEstres.API.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
+using CompanyRepository = CargaSinEstres.API.CargaSinEstres.Security.Persistence.Repositories.CompanyRepository;
+using CompanyService = CargaSinEstres.API.CargaSinEstres.Security.Services.CompanyService;
+using ICompanyRepository = CargaSinEstres.API.CargaSinEstres.Security.Domain.Repositories.ICompanyRepository;
+using ICompanyService = CargaSinEstres.API.CargaSinEstres.Security.Domain.Services.ICompanyService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,13 +36,27 @@ builder.Services.AddDbContext<AppDbContext>(
 //add lowercase routes
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
+// Shared Injection Configuration
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// AppSettings Configuration
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+
 // Dependency Injection Configuration
-  //builder.Services.AddScoped<>
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+
+// Security Injection Configuration
+builder.Services.AddScoped<IJwtHandler, JwtHandler>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
 
 // AutoMapper Configuration
-builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), typeof(ResourceToModelProfile));
-
-
+builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), 
+    typeof(ResourceToModelProfile),
+    typeof(CargaSinEstres.API.CargaSinEstres.Security.Mapping.ModelToResourceProfile),
+    typeof(CargaSinEstres.API.CargaSinEstres.Security.Mapping.ResourceToModelProfile)
+    );
 var app = builder.Build();
 
 //validation for ensuring Database Objects are created
@@ -49,6 +72,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Configure Error Handler Middleware
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
+
+// Configure JWT Handling
+
+app.UseMiddleware<JwtMiddleware>();
 
 app.UseHttpsRedirection();
 
