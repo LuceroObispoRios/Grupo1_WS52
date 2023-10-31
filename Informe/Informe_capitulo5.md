@@ -674,8 +674,8 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
 **Problema:** Falta configurar adecuadamente los enlaces del footer, lo que provoca que los usuarios sean redirigidos a una página de error "Page Not Found" en lugar de llevarlos a las secciones correspondientes de la página.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true" alt="imagen problema 1" width="950px">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true" alt="imagen problema 2" width="950px">
     </a>
 </p>  
 
@@ -687,8 +687,8 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
 **Problema:** No se puede acceder a las rutas del landing page "servicios", "nosotros", "planes" y "testimonios" desde la página de inicio de sesión. 
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true" alt="imagen problema 1" width="950px">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true" alt="imagen problema 3" width="950px">
     </a>
 </p>
 
@@ -699,8 +699,8 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Visibilidad del estado del sistema  
 **Problema:** No hay una retroalimentación clara después de presionar el botón de carga rápida, lo que impide a los usuarios saber si el servicio se ha generado correctamente.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true" alt="imagen problema 1" width="950px">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true" alt="imagen problema 4" width="950px">
     </a>
 </p>
 
@@ -712,8 +712,8 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Control y libertad del usuario  
 **Problema:** Falta de especificaciones claras sobre la cantidad de carga que debe transportar la empresa durante el proceso de registro de reserva. Esta falta de información limita la capacidad del usuario para tomar decisiones informadas y tener control sobre la reserva.
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true" alt="imagen problema 1" width="350px">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true" alt="imagen problema 5" width="350px">
     </a>
 </p>
 
@@ -725,8 +725,8 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Visibilidad del estado del sistema  
 **Problema:** El botón 'Recuérdame' en la página de inicio de sesión no realiza la función esperada de recordar la información de inicio de sesión para futuras visitas.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true" alt="imagen problema 1" width="300px">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true" alt="imagen problema 6" width="300px">
     </a>
 </p>
 
@@ -738,7 +738,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Consistencia y estándares  
 **Problema:** En la sección de "Historial de reservas", el botón de "realizar reseña" tiene un posicionamiento incorrecto. El texto del botón no está alineado correctamente con los demás elementos de la interfaz, lo que crea una falta de coherencia en el diseño.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true" alt="imagen problema 7" width="950px"">
     </a>
 </p>
@@ -751,7 +751,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Consistencia y estándares  
 **Problema:** Faltan validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva. Los usuarios pueden ingresar datos incorrectos o inapropiados sin recibir retroalimentación, lo que podría llevar a errores y problemas en el sistema..  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true" alt="imagen problema 8" width="950px"">
     </a>
 </p>
@@ -764,7 +764,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Visibilidad del estado del sistema  
 **Problema:** Al utilizar el botón de carga rápida, la nueva reserva no se visualiza en el historial. Los usuarios no reciben retroalimentación sobre el resultado de su acción, lo que afecta la visibilidad del estado del sistema.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true" alt="imagen problema 9" width="950px">
     </a>
 </p>
@@ -777,7 +777,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Flexibilidad y eficiencia en el uso  
 **Problema:** El chat en el historial de reserva solo representa la comunicación entre la empresa y el cliente, pero no permite la comunicación entre los trabajadores y el cliente. Esto limita la flexibilidad y eficiencia en la comunicación.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true" alt="imagen problema 10" width="950px">
     </a>
 </p>
@@ -790,7 +790,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Flexibilidad y eficiencia en el uso  
 **Problema:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí. Esto limita la flexibilidad y eficiencia en el uso de los filtros.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true" alt="imagen problema 11" width="950px">
     </a>
 </p>
@@ -803,7 +803,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Heurística violada:** Prevención de errores  
 **Problema:** La empresa puede calificarse a sí misma con una reseña después de haberse realizado la reserva, lo que podría llevar a resultados incorrectos o sesgados.  
 <p align="center">
-    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true">
         <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true" alt="imagen problema 12" width="950px">
     </a>
 </p>
