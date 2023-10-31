@@ -8,5 +8,5 @@ public class Chat{
     //message
     public string Message { get; set;}
     //datetime
-    public DateTime DateTime { get; set;}
+    //public datetime DateTime { get; set;}
 }

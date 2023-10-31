@@ -18,11 +18,10 @@ public class BookingHistory
 
     public string Status { get; set;}
 
-    //public Payment Payment {get; set;}
+    public Payment Payment {get; set;}
 
-    //public HiredCompany HiredCompany { get; set;}
+    public HiredCompany HiredCompany { get; set;}
 
-    //public IList<Chat> Chats { get; set;} = new List<Chat>();
+    public IList<Chat> Chats { get; set;} = new List<Chat>();
 
 }
-```
