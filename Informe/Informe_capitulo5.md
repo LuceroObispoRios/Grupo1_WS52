@@ -618,39 +618,39 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
         </tr>
         <tr>
             <td style="border: 1px solid black;">7</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">En Historial de reservas, el botón de “realizar reseña”, el texto del botón está mal posicionado</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Usability: Consistencia y estándares</td>
         </tr>
         <tr>
             <td style="border: 1px solid black;">8</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">Faltan validaciones de datos para el formulario de edición de cuenta y realización de una reserva</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Prevención de errores</td>
         </tr>
         <tr>
             <td style="border: 1px solid black;">9</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">Al utilizar el botón de carga rápida no se visualiza la nueva reserva en el historial.</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
         </tr>
         <tr>
             <td style="border: 1px solid black;">10</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">El chat en el historial de reserva representa la comunicación entre la empresa y el cliente, pero falta que se integre la comunicación entre los trabajadores y el cliente.</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Flexibilidad y eficiencia en el uso</td>
         </tr>
         <tr>
             <td style="border: 1px solid black;">11</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí.</td>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Usability: Flexibilidad y eficiencia en el uso</td>
         </tr>
         <tr>
             <td style="border: 1px solid black;">12</td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
-            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">La empresa no debería calificarse a sí misma con una reseña después de haberse realizado la reserva.</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Prevención de errores</td>
         </tr>
     </tbody>
 </table>
@@ -734,45 +734,81 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 ---
 
-**PROBLEMA #7:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #7:** En Historial de reservas, el botón de “realizar reseña”, el texto del botón está mal posicionado.  
+**Heurística violada:** Consistencia y estándares  
+**Problema:** En la sección de "Historial de reservas", el botón de "realizar reseña" tiene un posicionamiento incorrecto. El texto del botón no está alineado correctamente con los demás elementos de la interfaz, lo que crea una falta de coherencia en el diseño.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true" alt="imagen problema 7" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Reposicionar el botón de "realizar reseña" de manera que esté alineado apropiadamente con los elementos circundantes. Esto ayudará a mantener la coherencia en el diseño y mejorará la usabilidad de la interfaz. 
 
 ---
 
-**PROBLEMA #8:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #8:** Faltan validaciones de datos para el formulario de edición de cuenta y realización de una reserva.  
+**Heurística violada:** Consistencia y estándares  
+**Problema:** Faltan validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva. Los usuarios pueden ingresar datos incorrectos o inapropiados sin recibir retroalimentación, lo que podría llevar a errores y problemas en el sistema..  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true" alt="imagen problema 8" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Implementar validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva para evitar que los usuarios ingresen información incorrecta. Proporcionar retroalimentación clara y oportuna en caso de que se ingresen datos incorrectos, lo que ayudará a prevenir errores y garantizar una experiencia de usuario más sólida. 
 
 ---
 
-**PROBLEMA #9:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #9:** Al utilizar el botón de carga rápida no se visualiza la nueva reserva en el historial.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** Al utilizar el botón de carga rápida, la nueva reserva no se visualiza en el historial. Los usuarios no reciben retroalimentación sobre el resultado de su acción, lo que afecta la visibilidad del estado del sistema.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true" alt="imagen problema 9" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Asegurar que la aplicación muestre de manera inmediata y clara la nueva reserva en el historial después de que un usuario utilice el botón de carga rápida. Esto mejorará la visibilidad del estado del sistema y proporcionará retroalimentación oportuna. 
 
 ---
 
-**PROBLEMA #10:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #10:** El chat en el historial de reserva representa la comunicación entre la empresa y el cliente, pero falta que se integre la comunicación entre los trabajadores y el cliente.  
+**Heurística violada:** Flexibilidad y eficiencia en el uso  
+**Problema:** El chat en el historial de reserva solo representa la comunicación entre la empresa y el cliente, pero no permite la comunicación entre los trabajadores y el cliente. Esto limita la flexibilidad y eficiencia en la comunicación.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true" alt="imagen problema 10" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Integrar la comunicación entre los trabajadores y el cliente en la sección del chat en el historial de reserva. Esto permitirá una comunicación efectiva y sin complicaciones entre todas las partes involucradas. 
 
 ---
 
-**PROBLEMA #11:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #11:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí.  
+**Heurística violada:** Flexibilidad y eficiencia en el uso  
+**Problema:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí. Esto limita la flexibilidad y eficiencia en el uso de los filtros.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true" alt="imagen problema 11" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Ajustar el diseño de los filtros para que funcionen de manera eficiente y se complementen entre sí, en lugar de superponerse. Esto mejorará la flexibilidad y eficiencia en el uso de los filtros. 
 
 ---
 
-**PROBLEMA #12:**
-**Heurística violada:**
-**Problema:**
-**Recomendación:**
+**PROBLEMA #12:** La empresa no debería calificarse a sí misma con una reseña después de haberse realizado la reserva.  
+**Heurística violada:** Prevención de errores  
+**Problema:** La empresa puede calificarse a sí misma con una reseña después de haberse realizado la reserva, lo que podría llevar a resultados incorrectos o sesgados.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true" alt="imagen problema 12" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Implementar una validación que evite que la empresa se califique a sí misma después de una reserva. Esto ayudará a prevenir errores y garantizará que las calificaciones sean justas y precisas. 
 
 
 ## 5.4 Video About-the-Product  
