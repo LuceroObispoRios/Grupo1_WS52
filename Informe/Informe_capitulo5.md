@@ -455,7 +455,33 @@ más para su correcto funcionamiento, se necesita desplegar el servidor json-ser
   
 #### 5.2.3.4. Testing Suite Evidence for Sprint Review.  
 Acceptance Tests actualizados de los User Stories, archivos .feature utilizando el lenguaje Gherkin.  
-  
+
+
+**feature 9**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature9-sprint3.png?raw=true" width="600px" alt="feature 9">
+</div>
+
+**feature 10**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature10-sprint3.png?raw=true" width="600px" alt="feature 10">
+</div>
+
+**feature 11**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature11-sprint3.png?raw=true" width="600px" alt="feature 11">
+</div>
+
+**feature 16**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature16-sprint3.png?raw=true" width="600px" alt="feature 16">
+</div>
+
+**feature 21**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature21-sprint3.png?raw=true" width="600px" alt="feature 21">
+</div>
+
 #### 5.2.3.5. Execution Evidence for Sprint Review  
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
