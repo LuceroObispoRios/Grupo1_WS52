@@ -72,15 +72,15 @@ export default {
           <div class="flex-column">
             <pv-button @click="goToMembershipForm" class="p-button-text text-white">Membresia</pv-button>
             <pv-button @click="goToCompanySettings" class="p-button-text text-white">Editar Perfil</pv-button>
-            <pv-button @click="goToBookingHistory" class="p-button-text text-white">Historial de Reserva</pv-button>
+            <pv-button @click="goToBookingHistory" class="p-button-text text-white">Historial de Reservas</pv-button>
             <pv-button @click="logOut" class="p-button-text text-white">Cerrar Sesion</pv-button>
           </div>
         </template>
       </pv-toolbar>
     </header>
   </div>
+  <br><br><br><br><br>
   <router-view></router-view>
-  <br><br>
 </template>
 
 <style scoped>

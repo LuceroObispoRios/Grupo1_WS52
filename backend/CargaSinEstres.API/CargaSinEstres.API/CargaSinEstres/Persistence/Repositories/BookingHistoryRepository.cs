@@ -1,11 +1,6 @@
 using CargaSinEstres.API.CargaSinEstres.Domain.Models;
 using CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
-using CargaSinEstres.API.Shared.Persistence.Contexts;
+using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargaSinEstres.API.Shared.Persistence.Repositories;
-
-public class BookingHistoryRepository : BaseRepository, IBookingHistoryRepository{
-
-    
-}

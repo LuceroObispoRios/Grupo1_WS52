@@ -1,6 +1,6 @@
-﻿namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
+namespace CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 
 public interface IUnitOfWork
 {
-    
+    Task CompleteAsync();
 }
