@@ -667,6 +667,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 **Recomendación:** Eliminar el número de contacto de la empresa de la sección de "información de la empresa". En su lugar, se puede proporcionar información sobre cómo los usuarios pueden utilizar la aplicación para comunicarse con la empresa de manera efectiva.
 
+---
 
 **PROBLEMA #2:** Los links del footer te redireccionan a una página con el error page not found.  
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
@@ -679,6 +680,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 **Recomendación:** Revisar y corregir la configuración de los enlaces del footer para asegurarse de que estén apuntando a las secciones relevantes y disponibles de la página.  
 
+---
 
 **PROBLEMA #3:** Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”.  
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
@@ -703,6 +705,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 **Recomendación:** Implementar una retroalimentación visual inmediata después de presionar el botón de carga rápida para informar a los usuarios sobre el estado de su solicitud. Esto puede lograrse mediante mensajes de confirmación visibles, animaciones o cambios de estado en la interfaz de usuario que indiquen claramente que el servicio de carga rápida se ha generado con éxito.  
 
+---
 
 **PROBLEMA #5:** En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa.  
 **Heurística violada:** Control y libertad del usuario  
@@ -715,6 +718,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 **Recomendación:** Agregar un campo de entrada de datos en el proceso de registro de reserva que permita a los usuarios especificar la cantidad de carga que la empresa debe transportar.   
 
+---
 
 **PROBLEMA #6:** En login el botón de “recuerdame” no hace nada.  
 **Heurística violada:** Visibilidad del estado del sistema  
@@ -727,30 +731,42 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 **Recomendación:** Se podría corregir la funcionalidad del botón "Recuérdame" para que efectivamente recuerde la información de inicio de sesión en visitas posteriores, o considerar eliminar el botón.  
 
+---
+
 **PROBLEMA #7:**
 **Heurística violada:**
 **Problema:**
 **Recomendación:**
+
+---
 
 **PROBLEMA #8:**
 **Heurística violada:**
 **Problema:**
 **Recomendación:**
 
+---
+
 **PROBLEMA #9:**
 **Heurística violada:**
 **Problema:**
 **Recomendación:**
+
+---
 
 **PROBLEMA #10:**
 **Heurística violada:**
 **Problema:**
 **Recomendación:**
 
+---
+
 **PROBLEMA #11:**
 **Heurística violada:**
 **Problema:**
 **Recomendación:**
+
+---
 
 **PROBLEMA #12:**
 **Heurística violada:**
