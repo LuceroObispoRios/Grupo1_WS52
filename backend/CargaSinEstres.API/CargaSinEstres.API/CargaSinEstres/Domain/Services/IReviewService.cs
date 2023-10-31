@@ -5,4 +5,6 @@ namespace CargaSinEstres.API.CargaSinEstres.Domain.Services;
 
 public interface IReviewService{
 
+    Task<IEnumerable<Review>> ListAsync();
+    Task<ReviewResponse> SaveAsync(Review review);
 }
