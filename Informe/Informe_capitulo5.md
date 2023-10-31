@@ -499,9 +499,229 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 2.   
 3.  
   
-### 5.3.3 Evaluaciones segun heuristicas  
+### 5.3.3 Evaluaciones segúnn heurísticas  
   
 **UX Heuristics & Principles Evaluation Usability – Inclusive Design – Information Architecture**  
+
+**Site o App a evaluar**  
+Carga Sin Estrés
+
+**Tareas a evaluar:**  
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:  
+
+1. Registro de usuario tipo empresa
+2. Registro de usuario tipo cliente
+3. Inicio de sesión a la aplicación
+4. Edición de los datos de cuenta de empresa
+5. Edición de los datos de cuenta de cliente
+6. Cerrar Sesión en la aplicación
+7. Búsqueda de empresas
+8. Filtrar empresas por servicios, ubicación y nombre de la empresa
+9. Visualizar perfil de empresa
+10. Reserva de un servicio de empresas de mudanzas
+11. Cancelación de una reserva en el Historial de reservas
+12. Agregar mensaje en el chat de una reserva
+13. Realizar una reseña a una empresa
+14. Generar reservas tipo carga rápida
+15. Compra de membresia para empresa
+16. Visualizar boleta por compra de membresia
+17. Enviar reseña a empleados
+18. Visualizar reseña de empleados  
+  
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*  
+
+1. Adición de empleados a información de la empresa  
+2. Acceso a redes sociales de la startup  
+
+**Escala de severidad**  
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*
+
+
+<table style="border: 1px solid black; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black;">Nivel</th>
+            <th style="border: 1px solid black;">Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+**Tabla de resumen** 
+
+
+<table style="border: 1px solid black; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black;">#</th>
+            <th style="border: 1px solid black;">Problema</th>
+            <th style="border: 1px solid black;">Escala de severidad (1/2/3/4)</th>
+            <th style="border: 1px solid black;">Heurísticas (1/2/3/4)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">El número de contacto de la empresa no debería visualizarse en la sección de “información de empresa”.</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Information Architecture: Is it clear?</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Los links del footer te redireccionan a una página con el error page not found</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Correspondencia entre el sistema y el mundo real</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Correspondencia entre el sistema y el mundo real</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Cuando se presiona el botón de carga rápida, no se sabe si ha generado correctamente el servicio de carga rápida</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">5</td>
+            <td style="border: 1px solid black;">En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa</td>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Usability: Control y libertad del usuario</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">6</td>
+            <td style="border: 1px solid black;">En login el botón de “recuerdame” no hace nada</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">7</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">8</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">9</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">10</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">11</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">12</td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+        </tr>
+    </tbody>
+</table>
+
+**Descripción de problemas**
+
+**PROBLEMA #1:** El número de contacto de la empresa no debería visualizarse en la sección de “información de empresa”.  
+
+**Heurística violada:** Information Architecture: Is it clear?  
+**Problema:** La visualización del número de contacto de la empresa en la sección de "información de empresa" puede incitar a los usuarios a comunicarse directamente con la empresa en lugar de utilizar la aplicación. Esta situación contradice los objetivos del sistema, que buscan fomentar el uso de la aplicación.  
+**Recomendación:** Eliminar el número de contacto de la empresa de la sección de "información de la empresa". En su lugar, se puede proporcionar información sobre cómo los usuarios pueden utilizar la aplicación para comunicarse con la empresa de manera efectiva.
+
+
+**PROBLEMA #2:** Los links del footer te redireccionan a una página con el error page not found.  
+**Heurística violada:** Correspondencia entre el sistema y el mundo real  
+**Problema:** Falta configurar adecuadamente los enlaces del footer, lo que provoca que los usuarios sean redirigidos a una página de error "Page Not Found" en lugar de llevarlos a las secciones correspondientes de la página.  
+**Recomendación:** Revisar y corregir la configuración de los enlaces del footer para asegurarse de que estén apuntando a las secciones relevantes y disponibles de la página.  
+
+
+**PROBLEMA #3:** Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”.  
+**Heurística violada:** Correspondencia entre el sistema y el mundo real  
+**Problema:** No se puede acceder a las rutas del landing page "servicios", "nosotros", "planes" y "testimonios" desde la página de inicio de sesión.  
+**Recomendación:** Asegurarse de que las rutas hacia las páginas "servicios", "nosotros", "planes" y "testimonios" estén correctamente configuradas y sean accesibles desde la página de inicio de sesión.   
+
+
+**PROBLEMA #4:** Cuando se presiona el botón de carga rápida, no se sabe si ha generado correctamente el servicio de carga rápida.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** No hay una retroalimentación clara después de presionar el botón de carga rápida, lo que impide a los usuarios saber si el servicio se ha generado correctamente.  
+**Recomendación:** Implementar una retroalimentación visual inmediata después de presionar el botón de carga rápida para informar a los usuarios sobre el estado de su solicitud. Esto puede lograrse mediante mensajes de confirmación visibles, animaciones o cambios de estado en la interfaz de usuario que indiquen claramente que el servicio de carga rápida se ha generado con éxito.  
+
+
+**PROBLEMA #5:** En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa.  
+**Heurística violada:** Control y libertad del usuario  
+**Problema:** Falta de especificaciones claras sobre la cantidad de carga que debe transportar la empresa durante el proceso de registro de reserva. Esta falta de información limita la capacidad del usuario para tomar decisiones informadas y tener control sobre la reserva.  
+**Recomendación:** Agregar un campo de entrada de datos en el proceso de registro de reserva que permita a los usuarios especificar la cantidad de carga que la empresa debe transportar.   
+
+
+**PROBLEMA #6:** En login el botón de “recuerdame” no hace nada.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** El botón 'Recuérdame' en la página de inicio de sesión no realiza la función esperada de recordar la información de inicio de sesión para futuras visitas.  
+**Recomendación:** Se podría corregir la funcionalidad del botón "Recuérdame" para que efectivamente recuerde la información de inicio de sesión en visitas posteriores, o considerar eliminar el botón.  
+
+**PROBLEMA #7:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
+**PROBLEMA #8:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
+**PROBLEMA #9:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
+**PROBLEMA #10:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
+**PROBLEMA #11:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
+**PROBLEMA #12:**
+**Heurística violada:**
+**Problema:**
+**Recomendación:**
+
 
 ## 5.4 Video About-the-Product  
 
