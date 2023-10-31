@@ -739,7 +739,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** En la sección de "Historial de reservas", el botón de "realizar reseña" tiene un posicionamiento incorrecto. El texto del botón no está alineado correctamente con los demás elementos de la interfaz, lo que crea una falta de coherencia en el diseño.  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true" alt="imagen problema 7" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true" alt="imagen problema 7" width="950px"">
     </a>
 </p>
 
@@ -752,7 +752,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** Faltan validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva. Los usuarios pueden ingresar datos incorrectos o inapropiados sin recibir retroalimentación, lo que podría llevar a errores y problemas en el sistema..  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true" alt="imagen problema 8" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true" alt="imagen problema 8" width="950px"">
     </a>
 </p>
 
@@ -765,7 +765,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** Al utilizar el botón de carga rápida, la nueva reserva no se visualiza en el historial. Los usuarios no reciben retroalimentación sobre el resultado de su acción, lo que afecta la visibilidad del estado del sistema.  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true" alt="imagen problema 9" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true" alt="imagen problema 9" width="950px">
     </a>
 </p>
 
@@ -778,7 +778,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** El chat en el historial de reserva solo representa la comunicación entre la empresa y el cliente, pero no permite la comunicación entre los trabajadores y el cliente. Esto limita la flexibilidad y eficiencia en la comunicación.  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true" alt="imagen problema 10" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true" alt="imagen problema 10" width="950px">
     </a>
 </p>
 
@@ -791,7 +791,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí. Esto limita la flexibilidad y eficiencia en el uso de los filtros.  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true" alt="imagen problema 11" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true" alt="imagen problema 11" width="950px">
     </a>
 </p>
 
@@ -804,7 +804,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** La empresa puede calificarse a sí misma con una reseña después de haberse realizado la reserva, lo que podría llevar a resultados incorrectos o sesgados.  
 <p align="center">
     <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
-        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true" alt="imagen problema 12" width="300px">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true" alt="imagen problema 12" width="950px">
     </a>
 </p>
 
