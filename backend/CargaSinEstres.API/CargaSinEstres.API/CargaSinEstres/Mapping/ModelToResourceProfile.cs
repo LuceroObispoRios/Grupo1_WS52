@@ -10,5 +10,6 @@ public class ModelToResourceProfile : Profile
     {
         CreateMap<Client, ClientResource>();
         CreateMap<Review, ReviewResource>();
+        CreateMap<BookingHistoryResource, BookingHistory>();
     }
 }
