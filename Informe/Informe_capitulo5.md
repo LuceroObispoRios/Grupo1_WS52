@@ -657,39 +657,74 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Descripción de problemas**
 
 **PROBLEMA #1:** El número de contacto de la empresa no debería visualizarse en la sección de “información de empresa”.  
-
 **Heurística violada:** Information Architecture: Is it clear?  
 **Problema:** La visualización del número de contacto de la empresa en la sección de "información de empresa" puede incitar a los usuarios a comunicarse directamente con la empresa en lugar de utilizar la aplicación. Esta situación contradice los objetivos del sistema, que buscan fomentar el uso de la aplicación.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true" alt="imagen problema 1" width="350px">
+    </a>
+</p>
+
 **Recomendación:** Eliminar el número de contacto de la empresa de la sección de "información de la empresa". En su lugar, se puede proporcionar información sobre cómo los usuarios pueden utilizar la aplicación para comunicarse con la empresa de manera efectiva.
 
 
 **PROBLEMA #2:** Los links del footer te redireccionan a una página con el error page not found.  
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
 **Problema:** Falta configurar adecuadamente los enlaces del footer, lo que provoca que los usuarios sean redirigidos a una página de error "Page Not Found" en lugar de llevarlos a las secciones correspondientes de la página.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true" alt="imagen problema 1" width="950px">
+    </a>
+</p>  
+
 **Recomendación:** Revisar y corregir la configuración de los enlaces del footer para asegurarse de que estén apuntando a las secciones relevantes y disponibles de la página.  
 
 
 **PROBLEMA #3:** Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”.  
 **Heurística violada:** Correspondencia entre el sistema y el mundo real  
-**Problema:** No se puede acceder a las rutas del landing page "servicios", "nosotros", "planes" y "testimonios" desde la página de inicio de sesión.  
+**Problema:** No se puede acceder a las rutas del landing page "servicios", "nosotros", "planes" y "testimonios" desde la página de inicio de sesión. 
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true" alt="imagen problema 1" width="950px">
+    </a>
+</p>
+
 **Recomendación:** Asegurarse de que las rutas hacia las páginas "servicios", "nosotros", "planes" y "testimonios" estén correctamente configuradas y sean accesibles desde la página de inicio de sesión.   
 
 
 **PROBLEMA #4:** Cuando se presiona el botón de carga rápida, no se sabe si ha generado correctamente el servicio de carga rápida.  
 **Heurística violada:** Visibilidad del estado del sistema  
 **Problema:** No hay una retroalimentación clara después de presionar el botón de carga rápida, lo que impide a los usuarios saber si el servicio se ha generado correctamente.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true" alt="imagen problema 1" width="950px">
+    </a>
+</p>
+
 **Recomendación:** Implementar una retroalimentación visual inmediata después de presionar el botón de carga rápida para informar a los usuarios sobre el estado de su solicitud. Esto puede lograrse mediante mensajes de confirmación visibles, animaciones o cambios de estado en la interfaz de usuario que indiquen claramente que el servicio de carga rápida se ha generado con éxito.  
 
 
 **PROBLEMA #5:** En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa.  
 **Heurística violada:** Control y libertad del usuario  
-**Problema:** Falta de especificaciones claras sobre la cantidad de carga que debe transportar la empresa durante el proceso de registro de reserva. Esta falta de información limita la capacidad del usuario para tomar decisiones informadas y tener control sobre la reserva.  
+**Problema:** Falta de especificaciones claras sobre la cantidad de carga que debe transportar la empresa durante el proceso de registro de reserva. Esta falta de información limita la capacidad del usuario para tomar decisiones informadas y tener control sobre la reserva.
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true" alt="imagen problema 1" width="350px">
+    </a>
+</p>
+
 **Recomendación:** Agregar un campo de entrada de datos en el proceso de registro de reserva que permita a los usuarios especificar la cantidad de carga que la empresa debe transportar.   
 
 
 **PROBLEMA #6:** En login el botón de “recuerdame” no hace nada.  
 **Heurística violada:** Visibilidad del estado del sistema  
 **Problema:** El botón 'Recuérdame' en la página de inicio de sesión no realiza la función esperada de recordar la información de inicio de sesión para futuras visitas.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true" alt="imagen problema 1" width="300px">
+    </a>
+</p>
+
 **Recomendación:** Se podría corregir la funcionalidad del botón "Recuérdame" para que efectivamente recuerde la información de inicio de sesión en visitas posteriores, o considerar eliminar el botón.  
 
 **PROBLEMA #7:**
