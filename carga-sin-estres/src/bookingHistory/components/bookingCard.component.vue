@@ -241,7 +241,7 @@ export default {
               <div class="mt-1"><span class="mt-3 pt-7 font-bold">Dirección de entrega: </span>{{bookingHistory.destinationAddress}}</div>
               <div class="flex ml-2 mt-3">
                 <div class="review">
-                  <pv-button v-if="bookingHistory.status === 'Finalizado'" class="btn-chat hover:bg-gray-300 review-button" @click="openReview">
+                  <pv-button v-if="bookingHistory.status === 'Finalizado' && this.userId === 'client'" class="btn-chat hover:bg-gray-300 review-button" @click="openReview">
                     <div class="flex items-center">
                       <i class="pi pi-star font-bold mr-1"></i>
                       <span>Realizar Reseña</span>
