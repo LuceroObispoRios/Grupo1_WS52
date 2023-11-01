@@ -118,9 +118,10 @@ export default {
         <p class="value">{{ company.direccion }}</p>
       </div>
 
+
       <div class="company-services">
-        <p class="label">Número de contacto: </p>
-        <p class="value">{{ company.numeroContacto }}</p>
+        <p class="label">Contacto: </p>
+        <p class="value">Para comunicarse con nosotros, por favor utilice los servicios de mensajería dentro de la aplicación</p>
       </div>
 
     </template>
