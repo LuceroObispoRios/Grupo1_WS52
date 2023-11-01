@@ -204,8 +204,16 @@
         this.reservation.movingTime = currentHour + ":" + currentMinute;
 
         this.addReservation();
+        this.mostrarMensajeCargaRapidaEnProceso();
       },
-
+      mostrarMensajeCargaRapidaEnProceso() {
+        this.$toast.add({
+          severity: "info",
+          summary: "Carga Rápida en proceso",
+          detail: "Tu solicitud de carga rápida se está procesando. Por favor, espera.",
+          life: 5000, // Duración del mensaje en milisegundos
+        });
+      },
       addReservation(){
         this.cargaSinEstres_service = new HttpCommonService();
         this.cargaSinEstres_service.createReservation(this.reservation)
