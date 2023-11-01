@@ -30,6 +30,7 @@ export default {
       },
       cargaSinEstres_service: null,
       ReviewService: null,
+      errorMessage: '',
     };
   },
   created() {
@@ -42,24 +43,60 @@ export default {
   },
   methods:{
     submitForm(){
-      this.reservation.idCompany=this.company.id;
+      this.errorMessage = '';
+      let warnings = '';
+
+      // Validaciones para los campos del formulario de reserva
+      if (!this.reservation.bookingDate || !/^\d{4}-\d{2}-\d{2}$/.test(this.reservation.bookingDate)) {
+        warnings += 'La fecha de hoy debe tener el formato YYYY-MM-DD.<br>';
+      }
+
+      if (!this.reservation.services.trim().length < 6) {
+        warnings += 'El campo de servicios debe contener más de 6 letras.<br>';
+      }
+
+      if (!this.reservation.pickupAddress.trim().length < 6) {
+        warnings += 'El campo de dirección de entrega debe contener más de 6 letras.<br>';
+      }
+
+      if (!this.reservation.destinationAddress.length < 6) {
+        warnings += 'El campo de dirección de destino debe contener más de 6 letras.<br>';
+      }
+
+      if (!this.reservation.movingDate || !/^\d{4}-\d{2}-\d{2}$/.test(this.reservation.movingDate)) {
+        warnings += 'La fecha de movimiento debe tener el formato YYYY-MM-DD.<br>';
+      }
+
+      if (!this.reservation.movingTime || !/^\d{2}:\d{2}$/.test(this.reservation.movingTime)) {
+        warnings += 'La hora de movimiento debe tener el formato HH:MM.<br>';
+      }
+
+      if (warnings) {
+        // Si hay mensajes de error, muestra los mensajes y detén la operación
+        this.errorMessage = warnings;
+      } else {
+        // Si no hay errores, procede a agregar la reserva
+        this.addReservation();
+      }
+    },
+    addReservation() {
+      // Asigna valores a las propiedades del objeto reservation
+      this.reservation.idCompany = this.company.id;
       this.reservation.hiredCompany.name = this.company.name;
       this.reservation.hiredCompany.logo = this.company.photo;
-      this.reservation.status="En curso";
-      this.reservation.payment.totalAmount=0;
-      this.reservation.payment.paymentMethod="Por definir";
+      this.reservation.status = "En curso";
+      this.reservation.payment.totalAmount = 0;
+      this.reservation.payment.paymentMethod = "Por definir";
 
-      this.addReservation();
-    },
-    addReservation(){
+
       this.cargaSinEstres_service = new HttpCommonService();
       this.cargaSinEstres_service.createReservation(this.reservation)
           .then((response) => {
             console.log("Reservation:");
             console.log(response.data);
             this.$data.reservation = response.data;
-            this.$router.push('/bookingHistory')
-      });
+            this.$router.push('/bookingHistory');
+          });
     },
     async fetchReviews() { // Crea un nuevo método para obtener las reseñas
       try {
@@ -156,6 +193,9 @@ export default {
         <input type="text" id="cvvCard"  required placeholder="Ex. 123"><br>
         <label for="dateCard">Fecha de vencimiento de la tarjeta:</label><br>
         <input type="text" id="dateCard"  required  placeholder="Ex. 10/25"><br>
+
+        
+        <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
 
         <button type="submit">Realizar reserva</button>
 
@@ -322,5 +362,9 @@ button:hover {
   color: #FDAE39;
   font-family: sans-serif;
 }
-
+.error-messages {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 10px;
+}
 </style>
