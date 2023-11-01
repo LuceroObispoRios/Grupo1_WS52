@@ -99,7 +99,30 @@ Ciclo 2023-02
    5.2.1.5. Execution Evidence for Sprint Review.  
    5.2.1.6. Services Documentation Evidence for Sprint Review.  
    5.2.1.7. Software Deployment Evidence for Sprint Review.  
-   5.2.1.8. Team Collaboration Insights during Sprint.  
+   5.2.1.8. Team Collaboration Insights during Sprint.
+   5.2.2. Sprint 2  
+   5.2.2.1. Sprint Planning 2.  
+   5.2.2.2. Sprint Backlog 2.  
+   5.2.2.3. Development Evidence for Sprint Review.  
+   5.2.2.4. Testing Suite Evidence for Sprint Review.  
+   5.2.2.5. Execution Evidence for Sprint Review.  
+   5.2.2.6. Services Documentation Evidence for Sprint Review.  
+   5.2.2.7. Software Deployment Evidence for Sprint Review.  
+   5.2.2.8. Team Collaboration Insights during Sprint.  
+   5.2.3. Sprint 3  
+   5.2.3.1. Sprint Planning 3.  
+   5.2.3.2. Sprint Backlog 3.  
+   5.2.3.3. Development Evidence for Sprint Review.  
+   5.2.3.4. Testing Suite Evidence for Sprint Review.  
+   5.2.3.5. Execution Evidence for Sprint Review.  
+   5.2.3.6. Services Documentation Evidence for Sprint Review.  
+   5.2.3.7. Software Deployment Evidence for Sprint Review.   
+   5.2.3.8. Team Collaboration Insights during Sprint.  
+   5.3. Validation Interviews.  
+   5.3.1. Diseño de Entrevistas.  
+   5.3.2. Registro de Entrevistas.  
+   5.3.3. Evaluaciones según heurísticas.  
+   5.4. Video About-the-Product.  
 ---
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
