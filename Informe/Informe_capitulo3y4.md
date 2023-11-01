@@ -425,21 +425,25 @@ DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la op
 | 3| HU03    | Iniciar Sesión en la plataforma    | Como usuario registrado de Carga sin estrés, quiero poder iniciar sesión en mi cuenta para acceder a mis opciones según mi tipo de cuenta.     | 3|
 | 4| HU04   | Ajustes de cuenta de cliente  | Como cliente registrado en Carga sin estrés, quiero ajustar los datos de mi cuenta para que refleje mis datos actuales.    | 2|
 | 5| HU05   | Ajustes de cuenta de empresa   | Como empresa usuaria de Carga sin estrés, quiero ajustar los datos de la cuenta de empresa para que reflejen el estado actual de esta.    | 3|
-| 6| HU06   | Cerrar Sesión   | Como usuario quiero cerrar la sesión de la cuenta empresarial para mantener la seguridad de la cuenta.   | 2|
+| 6| HU06   | Cerrar Sesión   | Como usuario quiero cerrar la sesión de la cuenta empresarial para mantener la seguridad de la cuenta.   | 1|
 | 7| HU07   | Elección de membresía de empresa    | Como usuario empresa quiero una opción que permita aumentar mi visibilidad dentro de la plataforma para captar clientes.    | 2|
-| 8| HU08    | Pago de membresía  | *Como usuario empresa quiero poder ingresar los detalles de mi tarjeta para pagar la membresía.   | 3|
-| 9| HU09   | Pago para reserva de servicio   | Como usuario cliente quiero poder elegir entre diferentes métodos de pago al reservar el servicio de mudanza para elegir el que más se acomode a mi preferencia y pueda pagar el servicio exitosamente.   | 5|
-| 10| HU10    | Detalles de pago   | Como usuario cliente quiero poder revisar los detalles de pago de todas mis reservas para poder ver los costos de los servicios contratados.   | 3|
-| 11| HU11   | Búsqueda de empresas cercanas  | Como usuario cliente quiero poder buscar empresas que ofrezcan servicios de mudanza o carga cercanos a mi ubicación actual para asegurarme que el servicio sea conveniente.   | 2|
-| 12| HU12   | Filtrar por servicios ofrecidos  | Como usuario cliente quiero poder filtrar las empresas por los servicios que ofrecen para encontrar aquellas que ofrecen el servicio que deseo.   | 3|
-| 13| HU13   | Filtrar por calificación | Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio y número de reseñas para tener la seguridad de encontrar calidad y confiabilidad en el servicio.   | 2|
-| 14| HU14    | Visualizar perfil de empresa    | Como usuario cliente quiero poder visualizar el perfil de cada empresa para conocer su información detallada y así tomar una decisión informada y confiable al seleccionar la empresa adecuada para mis necesidades. | 2|
-| 15| HU15   | Envío de información sobre la posible reserva  | Como cliente quiero hacer una reserva sobre los servicios que ofrece la empresa de mudanza para que estos tengan más detalle de la reserva que quiero.    | 5|
-| 16| HU16   | Acordar un precio por servicio reservado | Como empresa quiero acordar horarios y precio por los servicios tras conversar con el cliente para realizar la mudanza.   | 3|
-| 17| HU17   | Visualizar historial de reservas | Como usuario cliente quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.  | 5|
-| 18| HU18   | Visualizar varias reservas en una página | Como usuario cliente quiero visualizar varias reservas en una sola página para que pueda tener una vista panorámica de todos mis servicios de mudanza contratados de manera fácil y rápida.  | 3|
-| 19| HU19   | Comunicación mediante chat con la empresa | Como usuario cliente quiero comunicarme con la empresa que reservé para poder coordinar los detalles de la mudanza.   | 5|
-  
+| 8| HU08    | Pago de membresía  | Como usuario empresa quiero poder ingresar los detalles de mi tarjeta para pagar la membresía.   | 3|
+| 9| HU09   | Pago para reserva de servicio   | Como usuario cliente, quiero poder ingresar los detalles de mi tarjeta al momento de realizar una reserva de servicio, y que la plataforma cobre automáticamente el importe al finalizar el servicio, para facilitar un proceso de pago conveniente y sin complicaciones.   | 5|
+| 10| HU10   | Búsqueda de empresas cercanas  | Como usuario cliente quiero poder buscar empresas que ofrezcan servicios de mudanza o carga cercanos a mi ubicación actual para asegurarme que el servicio sea conveniente.   | 2|
+| 11| HU11   | Filtrar por servicios ofrecidos  | Como usuario cliente quiero poder filtrar las empresas por los servicios que ofrecen para encontrar aquellas que ofrecen el servicio que deseo.   | 3|
+| 12| HU12    | Visualizar perfil de empresa    | Como usuario cliente quiero poder visualizar el perfil de cada empresa para conocer su información detallada y así tomar una decisión informada y confiable al seleccionar la empresa adecuada para mis necesidades. | 2|
+| 13| HU13   | Envío de información sobre la posible reserva  | Como cliente quiero hacer una reserva sobre los servicios que ofrece la empresa de mudanza para que estos tengan más detalle de la reserva que quiero.    | 5|
+| 14| HU14   | Visualizar historial de reservas | Como usuario quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.  | 5|  
+| 15| HU15   | Calificación del servicio | Como usuario cliente, quiero poder calificar el servicio de la empresa de mudanza o carga para poder compartir mi experiencia y retroalimentar la calidad del servicio.  | 3|  
+| 16| HU16   | Comunicación mediante chat con la empresa | Como usuario quiero comunicarme con la empresa para poder coordinar los detalles de la mudanza.   | 5|  
+| 17| HU17   | Cancelar una reserva | Como usuario quiero poder cancelar una reserva para dejar de solicitar los servicios de una empresa.   | 1|  
+| 18| HU18   | Buscar Empresas por su nombre | Como usuario cliente quiero buscar a las empresas dentro de la app por su nombre para hallar las que me llaman la atención.   | 2| 
+| 19| HU19   | Visualización de reseñas de una empresa | Como usuario cliente quiero poder ver reseñas dejadas hacia una empresa para que influyan en mi decisión sobre si buscar sus servicios.  | 2|  
+| 20| HU20   | Resaltar las empresas con membresías | Como una empresa de mudanzas con membresía en la app quiero que los datos de mi empresa se muestren al inicio de la búsqueda para llegar a más posibles clientes.  | 4|  
+| 21| HU21   | Búsqueda de una Carga Rápida | Como usuario quiero poder generar reservas al momento para obtener servicios de carga rápidamente de las empresas de la app.  | 4|  
+| 22| HU22   | Agregar reseña sobre el trabajador de empresa de mudanzas | Como usuario cliente quiero poder agregar reseñas sobre el servicio que brindó un trabajador en particular para brindar retroalimentación constructiva, quejas o impresiones positivas.  | 3|  
+| 23| HU23   | Visualizar reseñas de los trabajadores de empresa de mudanzas | Como usuario empresa quiero poder visualizar las reseñas de mis trabajadores para validar si están brindando un buen servicio  | 2|  
+| 24| HU24   | Filtrar por calificación | Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio para tener la seguridad de encontrar calidad y confiabilidad en el servicio. | 2|  
 
 # Capítulo 4: Product Design
 ## 4.1. Style Guidelines
