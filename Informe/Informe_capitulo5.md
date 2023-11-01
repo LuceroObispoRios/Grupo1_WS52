@@ -527,7 +527,26 @@ Durante este sprint, nuestra colaboración como equipo se destacó por una organ
 ***Representantes de Empresas:***   
 1. [https://youtu.be/VjBsWHqTmmM]   
 2.   
-3.  
+3.  Tercera entrevista:
+Entrevistado: Alfredo Lozano
+Residencia: San Martin de Porres, Lima
+Ocupación: Trabajador de empresa de mudanza
+Entrevistador: Lucero Obispo
+Enlace []
+
+Resumen de entrevista:
+08:00 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
+Esta la mayor parte, pero podria adicionar un número de contacto para que se puedan comunicar directamente el trabajador con el cliente, porque el numero de contacto que esta ahi es para que se comunique la empresa con el cliente. Por ejemplo, el servicio se brinda a una direccion que esta aislada, el trabajador necesita comunicarse via telefonica para que el cliente le sugiera caminos por donde debería ingresar, eso me ayudaría bastante.
+
+10:10 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
+“Ese beneficio te va a ayudar, vas a ser más conocido, vas a tener la opción como uno de los primeros para tener contacto con los clientes”
+
+11:05 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
+Esto como historial, una vez que realizas varios trabajos, vas a formar tu historia de los beneficios que entregas, la calidad que entregas, las seguridad que llevas. La pagina wen que indica es bastante amigable, y yo pienso que va a ayudar mucho para ambos laods.
+
+15:14 - ¿Cuáles son los mayores desafíos que ha enfrentado su empresa al llevar a cabo sus servicios en los últimos años?
+"Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"
+
 ***Individuos de 18 a 50 años***  
 1.   
 2.   
