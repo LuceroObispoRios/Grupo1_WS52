@@ -39,9 +39,9 @@ DADO  QUE estoy completando el registro de mi empresa de mudanzas, CUANDO ingres
         <td>Como usuario nuevo de Carga sin estrés, deseo registrarme en la plataforma para poder solicitar servicios de mudanza cuando los necesite.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario ingresa al formulario de registro de empresa.
+                <li><strong>Escenario 1:</strong> El usuario ingresa al formulario de registro de cliente.
 DADO QUE soy un cliente interesado en utilizar el servicio de mudanzas, CUANDO acceda a la página de registro de clientes, Y seleccione la opción cuenta de cliente, ENTONCES puedo ver un formulario de registro que solicita información básica.</li>
-                <li><strong>Escenario 2:</strong> El usuario registra sus datos de empresa correctamente.
+                <li><strong>Escenario 2:</strong> El usuario registra sus datos de cliente correctamente.
 DADO QUE estoy completando el registro como cliente, CUANDO ingreso la información requerida como son los campos nombre, apellido materno, apellido paterno, celular, dirección, correo electrónico, contraseña, Y presiono el botón “Registrar”, ENTONCES recibo una confirmación en pantalla de que mi registro se ha completado con éxito.</li>
             </ul>
         </td>
