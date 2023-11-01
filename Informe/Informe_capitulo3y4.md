@@ -101,24 +101,10 @@ DADO QUE,  el usuario haya iniciado sesión en Carga sin estrés, , CUANDO llene
         <td>Como usuario quiero cerrar la sesión de la cuenta empresarial para mantener la seguridad de la cuenta.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario empresa cierra sesión.
+                <li><strong>Escenario 1:</strong> El usuario empresa cierra sesión.  
 DADO QUE, soy un usuario con tipo de cuenta empresa autenticado en la plataforma, CUANDO hago clic en la opción "Cerrar Sesión" en cualquier página, ENTONCES soy redirigido a la landing page, Y mi sesión se cierra con éxito.</li>
                 <li><strong>Escenario 2:</strong> El usuario cliente cierra sesión.
 DADO QUE, soy un usuario con tipo de cuenta cliente autenticado en la plataforma, CUANDO hago clic en la opción "Cerrar Sesión" en cualquier página, ENTONCES soy redirigido a la landing page, Y mi sesión se cierra con éxito.</li>
-            </ul>
-        </td>
-        <td>#1</td>
-    </tr>
-    <tr>
-        <td>Manejo de usuario</td>
-        <td>Elección de membresía de empresa</td>
-        <td>Como usuario empresa quiero una opción que permita aumentar mi visibilidad dentro de la plataforma para captar clientes.</td>
-        <td>
-            <ul>
-                <li><strong>Escenario 1:</strong> El usuario empresa elige membresía.
-DADO QUE, soy un usuario con tipo de cuenta empresa autenticado en la plataforma, CUANDO hago clic en la opción "Membresía" en cualquier página, ENTONCES soy redirigido a la página de membresía, Y puedo elegir entre las opciones de membresía disponibles.</li>
-                <li><strong>Escenario 2:</strong> El usuario empresa elige membresía.
-DADO QUE, soy un usuario con tipo de cuenta empresa autenticado en la plataforma, CUANDO hago clic en la opción "Membresía" en cualquier página, ENTONCES soy redirigido a la página de membresía, Y puedo elegir entre las opciones de membresía disponibles.</li>
             </ul>
         </td>
         <td>#1</td>
@@ -129,10 +115,12 @@ DADO QUE, soy un usuario con tipo de cuenta empresa autenticado en la plataforma
         <td>Como usuario empresa quiero una opción que permita aumentar mi visibilidad dentro de la plataforma para captar clientes.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario visualiza los planes de membresía.
-DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO accedo a la sección de elección de membresía en mi perfil, ENTONCES puedo visualizar los diferentes planes de membresía disponibles.</li>
-                <li><strong>Escenario 2:</strong> El usuario selecciona un plan de membresía.
-DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO selecciono un plan de membresía, ya sea de 3 meses, 6 meses o 1 año, Y presiono el botón “Adquirir Membresía”, ENTONCES se muestra la página de pago.</li>
+                <li><strong>Escenario 1:</strong> El usuario visualiza los planes de membresía.   
+DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO accedo a la sección de elección de membresía en mi perfil, ENTONCES puedo visualizar los diferentes planes de membresía disponibles.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario selecciona un plan de membresía.   
+DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO selecciono un plan de membresía, ya sea de 3 meses, 6 meses o 1 año, Y presiono el botón “Adquirir Membresía”, ENTONCES se muestra la página de pago.
+                </li>
             </ul>
         </td>
         <td>#2</td>
@@ -143,11 +131,12 @@ DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO sel
         <td>Como usuario empresa quiero poder ingresar los detalles de mi tarjeta para pagar la membresía.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario paga la membresía que eligió.
-DADO QUE, estoy en la página de procesamiento de pagos para un plan de membresía premium, CUANDO elija el método de pago Y coloque la información de mi tarjeta Y presione "Pagar", ENTONCES el sistema procesa la transacción de manera segura y exitosa.</li>
-                <li><strong>Escenario 2:</strong> El usuario ingresa datos incorrectos en el sistema de pago.
+                <li><strong>Escenario 1:</strong> El usuario paga la membresía que eligió.   
+DADO QUE, estoy en la página de procesamiento de pagos para un plan de membresía premium, CUANDO elija el método de pago Y coloque la información de mi tarjeta Y presione "Pagar", ENTONCES el sistema procesa la transacción de manera segura y exitosa
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario ingresa datos incorrectos en el sistema de pago.  
 DADO QUE, soy un representante autorizado de una empresa de mudanzas, CUANDO el sistema detecta un problema durante el procesamiento del pago, como datos incorrectos, ENTONCES recibo un mensaje de error claro que explique la razón del problema y cómo corregirlo.</li>
-                <li><strong>Escenario 3:</strong> El usuario visualiza los beneficios de la membresía que eligió.
+                <li><strong>Escenario 3:</strong> El usuario visualiza los beneficios de la membresía que eligió.   
 DADO QUE, he realizado con éxito el pago de la membresía premium, CUANDO vuelvo a mi perfil de empresa, ENTONCES se aplican los beneficios de la membresía premium de manera inmediata.</li>
             </ul>
         </td>
@@ -163,20 +152,6 @@ DADO QUE, he realizado con éxito el pago de la membresía premium, CUANDO vuelv
 DADO QUE, el usuario está en el proceso de reserva de servicio de mudanza o carga. CUANDO, introduce los detalles de su tarjeta ENTONCES  se guardan los datos de manera segura y protegida, utilizando un formulario de pago encriptado y confiable.</li>
                 <li><strong>Escenario 2:</strong> Cobro automático al finalizar el servicio.
 DADO QUE, el servicio de mudanza o carga ha sido completado con éxito según la reserva. CUANDO, la plataforma indica la finalización del servicio. ENTONCES se procederá a cobrar automáticamente el importe acordado previamente de la tarjeta registrada al realizar la reserva.</li>
-            </ul>
-        </td>
-        <td>#2</td>
-    </tr>
-    <tr>
-        <td>Métodos de pago</td>
-        <td>Detalles de pago</td>
-        <td>Como usuario cliente quiero poder revisar los detalles de pago de todas mis reservas para poder ver los costos de los servicios contratados.</td>
-        <td>
-            <ul>
-                <li><strong>Escenario 1:</strong> El usuario visualiza su historial de pagos.
-DADO QUE, el usuario cliente se encuentra en la página de su perfil. CUANDO, selecciona “Historial de pagos” Y haya realizado pagos anteriormente. ENTONCES, se muestra en forma de lista el historial de pagos los cuales contienen información detallada.</li>
-                <li><strong>Escenario 2:</strong> El usuario visualiza su historial de pagos sin ningún registro.
-DADO QUE, el usuario cliente se encuentra en la página de su perfil. CUANDO, selecciona “Historial de pagos” Y no haya realizado pagos anteriormente. ENTONCES, se muestra el mensaje “No existen pagos registrados hasta la fecha”.</li>   
             </ul>
         </td>
         <td>#2</td>
@@ -214,32 +189,34 @@ DADO QUE, estoy viendo el buscador CUANDO, escriba las letras del nombre del ser
     <tr>
         <td>Búsqueda de empresas</td>
         <td>Filtrar por calificación</td>
-        <td>Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio y número de reseñas para tener la seguridad de encontrar calidad y confiabilidad en el servicio.</td>
+        <td>Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio para tener la seguridad de encontrar calidad y confiabilidad en el servicio.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario visualiza las opciones de filtro de ordenamiento de las empresas.
-DADO QUE, me encuentro en el landing page y estoy logueado con mi cuenta personal. CUANDO, presione el botón de “Búsqueda”. ENTONCES, se muestra la opción “Ordenar por calificación” y la opción “Ordenar por número de reseñas”</li>
-                <li><strong>Escenario 2:</strong> El usuario selecciona el filtro de ordenamiento por calificación.
-DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la opción de “Ordenar por calificación”. ENTONCES, la plataforma reorganiza los resultados para mostrar primero las empresas con las calificaciones más altas, es decir los ordena de 5 estrellas a 0 estrellas.</li>
-                <li><strong>Escenario 3:</strong> El usuario selecciona el filtro de ordenamiento por reseñas.
-DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la opción de “Ordenar por número de reseñas”, ENTONCES, la plataforma reorganiza los resultados para mostrar primero las empresas con los números de reseñas más altos.</li>
+                <li><strong>Escenario 1:</strong> El usuario visualiza las opciones de filtro de ordenamiento de las empresas.  
+DADO QUE, me encuentro en el landing page y estoy logueado con mi cuenta personal. CUANDO, presione el botón de “Búsqueda”. ENTONCES, se muestra la opción “Ordenar por calificación” 
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario selecciona el filtro de ordenamiento por calificación.  
+DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la opción de “Ordenar por calificación” Y selecciona la opción de mostrar empresas con calificación 5 estrellas, ENTONCES, la plataforma organiza los resultados para mostrar solo las empresas con las calificaciones promedio a 5 estrellas.
+                </li>
             </ul>
         </td>
         <td>#3</td>
     </tr>
     <tr>
-        <td>Reserva de servicios</td>
+        <td>Búsqueda de empresas</td>
         <td>Visualizar perfil de empresa</td>
-        <td>Como usuario cliente quiero poder visualizar el perfil de cada empresa para conocer su información detallada y así tomar una decisión informada y confiable al seleccionar la empresa adecuada para mis necesidades.</td>
+        <td>Como usuario cliente quiero poder filtrar las empresas por los servicios que ofrecen para encontrar aquellas que ofrecen el servicio que deseo.</td>
         <td>
             <ul>
                 <li><strong>Escenario 1:</strong> El usuario selecciona una empresa para ver su información.
-DADO QUE, estoy viendo la lista de empresas disponibles. CUANDO, haga clic en el nombre o foto de una empresa. ENTONCES, el sistema me redirige a la página de su perfil. </li>
-                <li><strong>Escenario 2:</strong> El usuario visualiza la información detallada de una empresa.
-DADO QUE, estoy en el perfil de la empresa. CUANDO, me desplace hacia abajo. ENTONCES, la página muestra una breve descripción, su experiencia, ubicación, foto, calificación promedio, reseñas anteriores, disponibilidad y servicios ofrecidos, así como el botón de “Reserva”. </li>
+DADO QUE, estoy viendo la lista de empresas disponibles. CUANDO, haga clic en el nombre o foto de una empresa. ENTONCES, el sistema me redirige a la página de su perfil. 
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario realiza la opción de búsqueda por servicios seleccionados.
+DADO QUE, estoy en el perfil de la empresa. CUANDO, me desplace hacia abajo. ENTONCES, la página muestra una breve descripción, su experiencia, ubicación, foto, calificación promedio, reseñas anteriores, disponibilidad y servicios ofrecidos, así como el botón de “Reserva”. 
+                </li>
             </ul>
         </td>
-        <td>#4</td> 
+        <td>#3</td> 
     </tr>
     <tr>
         <td>Reserva de servicios</td>
@@ -257,28 +234,16 @@ DADO QUE, el cliente se encuentra en el formulario de reserva de servicios de un
     </tr>
     <tr>
         <td>Reserva de servicios</td>
-        <td>Acordar un precio por servicio reservado</td>
-        <td>Como empresa quiero acordar horarios y precio por los servicios tras conversar con el cliente para realizar la mudanza.</td>
-        <td>
-            <ul>
-                <li><strong>Escenario 1:</strong> Los usuarios visualizan la opción para editar los detalles del servicio.
-DADO QUE, el cliente y un trabajador de la empresa de mudanza están en chat en vivo, CUANDO, terminen de definir detalles, ENTONCES, el usuario empresa se dirige a la pantalla de historial de reservas para editar los detalles de la reserva.</li>
-                <li><strong>Escenario 2:</strong> El usuario cliente visualiza la opción de pago de servicio.
-DADO QUE, el usuario empresa se encuentra en la pantalla de historial de reservas, CUANDO, edite los campos precios, fecha y hora de la reserva Y presione el icono de editar, ENTONCES, se pone visible el botón de pagar para el usuario cliente.</li>
-            </ul>
-        </td>
-        <td>#4</td>
-    </tr>
-    <tr>
-        <td>Reserva de servicios</td>
         <td>Visualizar historial de reservas</td>
-        <td>Como usuario cliente  quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.</td>
+        <td>Como usuario quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.</td>
         <td>
             <ul>
                 <li><strong>Escenario 1:</strong> El usuario ingresa a reservas.
-DADO QUE, el usuario ingresa a la sección de reservas. CUANDO seleccione el botón ver historial de reservas. ENTONCES aparecerá la página del historial. </li>
-                <li><strong>Escenario 2:</strong> El usuario visualiza su historial de reservas.
-DADO QUE, el usuario se encuentra en la página del historial de reservas. CUANDO el usuario haga scroll. ENTONCES la página le permitirá ver más reservas hechas anteriormente. </li>
+DADO QUE, el usuario ingresa a la sección de reservas. CUANDO seleccione el botón ver historial de reservas. ENTONCES aparecerá la página del historial. 
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario visualiza su historial de reservas.   
+DADO QUE, el usuario se encuentra en la página del historial de reservas. CUANDO el usuario haga scroll. ENTONCES la página le permitirá ver más reservas hechas anteriormente. 
+                </li>
                 <li><strong>Escenario 3:</strong> El usuario visualiza sus últimas reservas.
 DADO QUE, el usuario ingresa a la sección de reservas. CUANDO la plataforma carga la página. ENTONCES las últimas reservas se visualizarán primero y las más antiguas al último.</li>
             </ul>
@@ -332,12 +297,12 @@ DADO QUE, el usuario ha realizado una reserva de servicios de mudanza o carga. C
     <tr>
         <td>Búsqueda de empresas</td>
         <td>Buscar Empresas por su nombre</td>
-        <td>Como usuario quiero poder buscar a las empresas dentro de la app por su nombre para hallar las que me llaman la atención.</td>
+        <td>Como usuario cliente quiero buscar a las empresas dentro de la app por su nombre para hallar las que me llaman la atención.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario visualiza la opción de búsqueda por nombre de empresa.
+                <li><strong>Escenario 1:</strong> El usuario visualiza la opción de búsqueda por nombre de empresa.  
 DADO QUE soy un usuario logueado con su cuenta personal y me encuentro en la página de editar datos de la cuenta. CUANDO, me dirija a la página de búsqueda de empresas”. ENTONCES, aparece un input en el cual se puede buscar por nombre de empresa.</li>
-                <li><strong>Escenario 2:</strong> El usuario realiza la opción de búsqueda por nombre de empresa.
+                <li><strong>Escenario 2:</strong> El usuario realiza la opción de búsqueda por nombre de empresa.  
 DADO QUE, estoy viendo el buscador CUANDO, escriba las letras del nombre de la empresa que quiero. ENTONCES, se muestran las filas con las empresas cuyos nombres llevan las letras que ingrese en el buscador.</li>
             </ul>
         </td>
@@ -349,10 +314,12 @@ DADO QUE, estoy viendo el buscador CUANDO, escriba las letras del nombre de la e
         <td>Como usuario cliente quiero poder ver reseñas dejadas hacia una empresa para que influyan en mi decisión sobre si buscar sus servicios.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> El usuario accede a la página de perfil de la empresa.
-DADO QUE, soy un cliente interesado en los servicios de una empresa, CUANDO accedo a la página de perfil de la empresa, ENTONCES puedo ver una sección dedicada a las reseñas dejadas por otros clientes.</li>  
+                <li><strong>Escenario 1:</strong>El usuario accede a la página de perfil de la empresa.  
+DADO QUE, soy un cliente interesado en los servicios de una empresa, CUANDO accedo a la página de perfil de la empresa, ENTONCES puedo ver una sección dedicada a las reseñas dejadas por otros clientes.
+                </li>  
                 <li><strong>Escenario 2:</strong> El usuario visualiza la calificación promedio de la empresa.
-DADO QUE, estoy en la página del perfil de la empresa, CUANDO veo la sección de reseñas, ENTONCES puedo visualizar una calificación promedio basada en las reseñas dejadas por los clientes.</li>
+DADO QUE, estoy en la página del perfil de la empresa, CUANDO veo la sección de reseñas, ENTONCES puedo visualizar una calificación promedio basada en las reseñas dejadas por los clientes.
+                </li>
             </ul>
         </td>
         <td>#3</td>
@@ -363,10 +330,12 @@ DADO QUE, estoy en la página del perfil de la empresa, CUANDO veo la sección d
         <td>Como una empresa de mudanzas con membresía en la app quiero que los datos de mi empresa se muestren al inicio de la búsqueda para llegar a más posibles clientes.</td>
         <td>
             <ul>
-                <li><strong>Escenario 1:</strong> el usuario visualiza primero las empresas con membresía al buscar empresas
-DADO QUE soy un usuario logueado con cuenta de cliente, CUANDO me dirija a la pagina de busqueda de empresas, ENTONCES podré visualizar primero a las empresas con membresía</li>
-                <li><strong>Escenario 2:</strong> el usuario visualiza empresas resaltadas en la búsqueda de empresas
-DADO QUE soy un usuario logueado con cuenta de cliente, CUANDO me dirija a la pagina de busqueda de empresas, ENTONCES veré resaltadas resaltada la información de las empresas con membresía</li>
+                <li><strong>Escenario 1:</strong> el usuario visualiza primero las empresas con membresía al buscar empresas.  
+DADO QUE soy un usuario logueado con cuenta de cliente, CUANDO me dirija a la pagina de busqueda de empresas, ENTONCES podré visualizar primero a las empresas con membresía
+                </li>
+                <li><strong>Escenario 2:</strong> el usuario visualiza empresas resaltadas en la búsqueda de empresas.  
+DADO QUE soy un usuario logueado con cuenta de cliente, CUANDO me dirija a la pagina de busqueda de empresas, ENTONCES veré resaltada la información de las empresas con membresía
+                </li>
             </ul>
         </td>
         <td>#3</td>
@@ -384,6 +353,59 @@ DADO QUE el usuario se encuentre visualizando el diálogo de Carga Rápida CUAND
             </ul>
         </td>
         <td>#4</td>
+    </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Agregar reseña sobre el trabajador de empresa de mudanzas</td>
+        <td>Como usuario cliente quiero poder agregar reseñas sobre el servicio que brindó un trabajador en particular para brindar retroalimentación constructiva, quejas o impresiones positivas.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> Acceder al Historial de Reservas  
+DADO QUE soy un usuario registrado en la página web, CUANDO presiona el botón de Historial de Reservas desde el toolbar, ENTONCES aparece el historial de reservas a través de la plataforma.  
+                </li>
+                <li><strong>Escenario 2:</strong> Dejar una Reseña en una Reserva Pasada DADO QUE he accedido a mi historial de reservas, CUANDO me posiciono en una reserva en la que el trabajo se ha completado, ENTONCES aparece una opción clara y accesible para dejar una reseña sobre el servicio proporcionado por el trabajador.  
+                </li>
+                <li><strong>Escenario 3:</strong> Enviar la Reseña   
+DADO QUE estoy escribiendo una reseña sobre el servicio, CUANDO completo mi reseña y estoy satisfecho con mi comentario, Y presione el botón Enviar Reseña, ENTONCES la reseña se envía para su procesamiento y publicación.  
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Visualizar reseñas de los trabajadores de empresa de mudanzas</td>
+        <td>Como usuario empresa quiero poder visualizar las reseñas de mis trabajadores para validar si están brindando un buen servicio.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> Acceder al Historial de Reservas
+DADO QUE soy un usuario registrado en la página web, CUANDO presiona el botón de Historial de Reservas desde el toolbar, ENTONCES aparece el historial de reservas a través de la plataforma.
+                </li>
+                <li><strong>Escenario 2:</strong> Visualización de las Reseñas de Trabajadores   
+DADO QUE he accedido al historial de reservas, CUANDO me posiciono en una reserva en la que el trabajo se ha completado, ENTONCES se puede visualizar la reseña dejada por el cliente sobre sobre el servicio proporcionado por ese trabajador.
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Búsqueda de empresas</td>
+        <td>Filtrar por calificación</td>
+        <td>Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio para tener la seguridad de encontrar calidad y confiabilidad en el servicio.  
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> El usuario visualiza la página de búsqueda de empresas.  
+DADO QUE, me encuentro en el landing page y estoy logueado con mi cuenta personal. CUANDO, presione el botón de “Búsqueda de empresas”. ENTONCES, se muestra la lista completa de las empresas junto a filtros para realizar una búsqueda especializada.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario selecciona el filtro para mostrar empresas según promedio de calificación de sus reseñas.   
+DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la opción de “Ordenar por calificación” Y selecciona la opción de mostrar empresas con calificación 5 estrellas, ENTONCES, la plataforma organiza los resultados para mostrar solo las empresas con las calificaciones promedio a 5 estrellas.  
+                </li>
+            </ul>
+        </td>
+        <td>#3</td>
     </tr>
 </table>
 
@@ -403,21 +425,25 @@ DADO QUE el usuario se encuentre visualizando el diálogo de Carga Rápida CUAND
 | 3| HU03    | Iniciar Sesión en la plataforma    | Como usuario registrado de Carga sin estrés, quiero poder iniciar sesión en mi cuenta para acceder a mis opciones según mi tipo de cuenta.     | 3|
 | 4| HU04   | Ajustes de cuenta de cliente  | Como cliente registrado en Carga sin estrés, quiero ajustar los datos de mi cuenta para que refleje mis datos actuales.    | 2|
 | 5| HU05   | Ajustes de cuenta de empresa   | Como empresa usuaria de Carga sin estrés, quiero ajustar los datos de la cuenta de empresa para que reflejen el estado actual de esta.    | 3|
-| 6| HU06   | Cerrar Sesión   | Como usuario quiero cerrar la sesión de la cuenta empresarial para mantener la seguridad de la cuenta.   | 2|
+| 6| HU06   | Cerrar Sesión   | Como usuario quiero cerrar la sesión de la cuenta empresarial para mantener la seguridad de la cuenta.   | 1|
 | 7| HU07   | Elección de membresía de empresa    | Como usuario empresa quiero una opción que permita aumentar mi visibilidad dentro de la plataforma para captar clientes.    | 2|
-| 8| HU08    | Pago de membresía  | *Como usuario empresa quiero poder ingresar los detalles de mi tarjeta para pagar la membresía.   | 3|
-| 9| HU09   | Pago para reserva de servicio   | Como usuario cliente quiero poder elegir entre diferentes métodos de pago al reservar el servicio de mudanza para elegir el que más se acomode a mi preferencia y pueda pagar el servicio exitosamente.   | 5|
-| 10| HU10    | Detalles de pago   | Como usuario cliente quiero poder revisar los detalles de pago de todas mis reservas para poder ver los costos de los servicios contratados.   | 3|
-| 11| HU11   | Búsqueda de empresas cercanas  | Como usuario cliente quiero poder buscar empresas que ofrezcan servicios de mudanza o carga cercanos a mi ubicación actual para asegurarme que el servicio sea conveniente.   | 2|
-| 12| HU12   | Filtrar por servicios ofrecidos  | Como usuario cliente quiero poder filtrar las empresas por los servicios que ofrecen para encontrar aquellas que ofrecen el servicio que deseo.   | 3|
-| 13| HU13   | Filtrar por calificación | Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio y número de reseñas para tener la seguridad de encontrar calidad y confiabilidad en el servicio.   | 2|
-| 14| HU14    | Visualizar perfil de empresa    | Como usuario cliente quiero poder visualizar el perfil de cada empresa para conocer su información detallada y así tomar una decisión informada y confiable al seleccionar la empresa adecuada para mis necesidades. | 2|
-| 15| HU15   | Envío de información sobre la posible reserva  | Como cliente quiero hacer una reserva sobre los servicios que ofrece la empresa de mudanza para que estos tengan más detalle de la reserva que quiero.    | 5|
-| 16| HU16   | Acordar un precio por servicio reservado | Como empresa quiero acordar horarios y precio por los servicios tras conversar con el cliente para realizar la mudanza.   | 3|
-| 17| HU17   | Visualizar historial de reservas | Como usuario cliente quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.  | 5|
-| 18| HU18   | Visualizar varias reservas en una página | Como usuario cliente quiero visualizar varias reservas en una sola página para que pueda tener una vista panorámica de todos mis servicios de mudanza contratados de manera fácil y rápida.  | 3|
-| 19| HU19   | Comunicación mediante chat con la empresa | Como usuario cliente quiero comunicarme con la empresa que reservé para poder coordinar los detalles de la mudanza.   | 5|
-  
+| 8| HU08    | Pago de membresía  | Como usuario empresa quiero poder ingresar los detalles de mi tarjeta para pagar la membresía.   | 3|
+| 9| HU09   | Pago para reserva de servicio   | Como usuario cliente, quiero poder ingresar los detalles de mi tarjeta al momento de realizar una reserva de servicio, y que la plataforma cobre automáticamente el importe al finalizar el servicio, para facilitar un proceso de pago conveniente y sin complicaciones.   | 5|
+| 10| HU10   | Búsqueda de empresas cercanas  | Como usuario cliente quiero poder buscar empresas que ofrezcan servicios de mudanza o carga cercanos a mi ubicación actual para asegurarme que el servicio sea conveniente.   | 2|
+| 11| HU11   | Filtrar por servicios ofrecidos  | Como usuario cliente quiero poder filtrar las empresas por los servicios que ofrecen para encontrar aquellas que ofrecen el servicio que deseo.   | 3|
+| 12| HU12    | Visualizar perfil de empresa    | Como usuario cliente quiero poder visualizar el perfil de cada empresa para conocer su información detallada y así tomar una decisión informada y confiable al seleccionar la empresa adecuada para mis necesidades. | 2|
+| 13| HU13   | Envío de información sobre la posible reserva  | Como cliente quiero hacer una reserva sobre los servicios que ofrece la empresa de mudanza para que estos tengan más detalle de la reserva que quiero.    | 5|
+| 14| HU14   | Visualizar historial de reservas | Como usuario quiero poder ver los servicios de mudanza contratados para tener control y seguimiento de mis transacciones dentro de la aplicación.  | 5|  
+| 15| HU15   | Calificación del servicio | Como usuario cliente, quiero poder calificar el servicio de la empresa de mudanza o carga para poder compartir mi experiencia y retroalimentar la calidad del servicio.  | 3|  
+| 16| HU16   | Comunicación mediante chat con la empresa | Como usuario quiero comunicarme con la empresa para poder coordinar los detalles de la mudanza.   | 5|  
+| 17| HU17   | Cancelar una reserva | Como usuario quiero poder cancelar una reserva para dejar de solicitar los servicios de una empresa.   | 1|  
+| 18| HU18   | Buscar Empresas por su nombre | Como usuario cliente quiero buscar a las empresas dentro de la app por su nombre para hallar las que me llaman la atención.   | 2| 
+| 19| HU19   | Visualización de reseñas de una empresa | Como usuario cliente quiero poder ver reseñas dejadas hacia una empresa para que influyan en mi decisión sobre si buscar sus servicios.  | 2|  
+| 20| HU20   | Resaltar las empresas con membresías | Como una empresa de mudanzas con membresía en la app quiero que los datos de mi empresa se muestren al inicio de la búsqueda para llegar a más posibles clientes.  | 4|  
+| 21| HU21   | Búsqueda de una Carga Rápida | Como usuario quiero poder generar reservas al momento para obtener servicios de carga rápidamente de las empresas de la app.  | 4|  
+| 22| HU22   | Agregar reseña sobre el trabajador de empresa de mudanzas | Como usuario cliente quiero poder agregar reseñas sobre el servicio que brindó un trabajador en particular para brindar retroalimentación constructiva, quejas o impresiones positivas.  | 3|  
+| 23| HU23   | Visualizar reseñas de los trabajadores de empresa de mudanzas | Como usuario empresa quiero poder visualizar las reseñas de mis trabajadores para validar si están brindando un buen servicio  | 2|  
+| 24| HU24   | Filtrar por calificación | Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio para tener la seguridad de encontrar calidad y confiabilidad en el servicio. | 2|  
 
 # Capítulo 4: Product Design
 ## 4.1. Style Guidelines
