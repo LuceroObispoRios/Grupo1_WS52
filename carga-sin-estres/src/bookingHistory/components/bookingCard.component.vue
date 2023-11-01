@@ -241,8 +241,11 @@ export default {
               <div class="mt-1"><span class="mt-3 pt-7 font-bold">Dirección de entrega: </span>{{bookingHistory.destinationAddress}}</div>
               <div class="flex ml-2 mt-3">
                 <div class="review">
-                  <pv-button v-if="bookingHistory.status === 'Finalizado'" class="btn-chat hover:bg-gray-300" @click="openReview">
-                    <div class="pi pi-star font-bold"></div>&nbsp;<p>Realizar Reseña</p>
+                  <pv-button v-if="bookingHistory.status === 'Finalizado'" class="btn-chat hover:bg-gray-300 review-button" @click="openReview">
+                    <div class="flex items-center">
+                      <i class="pi pi-star font-bold mr-1"></i>
+                      <span>Realizar Reseña</span>
+                    </div>
                   </pv-button>
                 </div>
               </div>
@@ -467,7 +470,14 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
+.review-button {
+  height: 2.5rem; /* Ajusta altura del boton */
+}
 
+
+.review-button .flex {
+  align-items: center;
+}
 .panel-left {
   flex: 1;
   font-size: 15px;
