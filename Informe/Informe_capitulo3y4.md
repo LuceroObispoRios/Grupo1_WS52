@@ -354,6 +354,59 @@ DADO QUE el usuario se encuentre visualizando el diálogo de Carga Rápida CUAND
         </td>
         <td>#4</td>
     </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Agregar reseña sobre el trabajador de empresa de mudanzas</td>
+        <td>Como usuario cliente quiero poder agregar reseñas sobre el servicio que brindó un trabajador en particular para brindar retroalimentación constructiva, quejas o impresiones positivas.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> Acceder al Historial de Reservas  
+DADO QUE soy un usuario registrado en la página web, CUANDO presiona el botón de Historial de Reservas desde el toolbar, ENTONCES aparece el historial de reservas a través de la plataforma.  
+                </li>
+                <li><strong>Escenario 2:</strong> Dejar una Reseña en una Reserva Pasada DADO QUE he accedido a mi historial de reservas, CUANDO me posiciono en una reserva en la que el trabajo se ha completado, ENTONCES aparece una opción clara y accesible para dejar una reseña sobre el servicio proporcionado por el trabajador.  
+                </li>
+                <li><strong>Escenario 3:</strong> Enviar la Reseña   
+DADO QUE estoy escribiendo una reseña sobre el servicio, CUANDO completo mi reseña y estoy satisfecho con mi comentario, Y presione el botón Enviar Reseña, ENTONCES la reseña se envía para su procesamiento y publicación.  
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Visualizar reseñas de los trabajadores de empresa de mudanzas</td>
+        <td>Como usuario empresa quiero poder visualizar las reseñas de mis trabajadores para validar si están brindando un buen servicio.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> Acceder al Historial de Reservas
+DADO QUE soy un usuario registrado en la página web, CUANDO presiona el botón de Historial de Reservas desde el toolbar, ENTONCES aparece el historial de reservas a través de la plataforma.
+                </li>
+                <li><strong>Escenario 2:</strong> Visualización de las Reseñas de Trabajadores   
+DADO QUE he accedido al historial de reservas, CUANDO me posiciono en una reserva en la que el trabajo se ha completado, ENTONCES se puede visualizar la reseña dejada por el cliente sobre sobre el servicio proporcionado por ese trabajador.
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Búsqueda de empresas</td>
+        <td>Filtrar por calificación</td>
+        <td>Como usuario cliente quiero poder ordenar a las empresas de acuerdo por la cantidad de estrellas promedio para tener la seguridad de encontrar calidad y confiabilidad en el servicio.  
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> El usuario visualiza la página de búsqueda de empresas.  
+DADO QUE, me encuentro en el landing page y estoy logueado con mi cuenta personal. CUANDO, presione el botón de “Búsqueda de empresas”. ENTONCES, se muestra la lista completa de las empresas junto a filtros para realizar una búsqueda especializada.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario selecciona el filtro para mostrar empresas según promedio de calificación de sus reseñas.   
+DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la opción de “Ordenar por calificación” Y selecciona la opción de mostrar empresas con calificación 5 estrellas, ENTONCES, la plataforma organiza los resultados para mostrar solo las empresas con las calificaciones promedio a 5 estrellas.  
+                </li>
+            </ul>
+        </td>
+        <td>#3</td>
+    </tr>
 </table>
 
 
