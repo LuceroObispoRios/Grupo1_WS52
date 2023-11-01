@@ -245,6 +245,9 @@ Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
 Durante el primer sprint, el equipo optó por dividir los puntos entre todos los integrantes por cada capítulo para completar el informe. También, se optó por dividir las páginas por integrante teniendo en cuenta que estas deberán ser responsive y funcionales. Para asegurar que todo esté realizado correctamente, se organizaron reuniones constantes que se llevaron a cabo a través de Google Meet, donde se logró completar el informe y el código de las páginas landing page, registro para cuenta de empresa, registro para cuenta de cliente, inicio de sesión y la página de búsqueda de empresas.  
+
+Asimismo, nuestra estructura en nuestro repositorio de GitHub se basa de la rama rama main, en el cual colocabamos todo los cambios de todos los integrantes, ya sea del proyecto o informe. 
+
 A continuación, se presentan screenshots que reflejan el trabajo realizado durante este sprint.  
 
 ![team collaboration](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/teamcollaboration_sprint1.png?raw=true)     
@@ -403,13 +406,16 @@ La aplicación desplegada se encuentra en el siguiente enlace
 más para su correcto funcionamiento, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)     
   
 #### 5.2.2.8. Team Collaboration Insights during Sprint.  
+
+Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Establecimos dos ramas principales: "main" para el informe final y "develop" para consolidar las contribuciones de todos. Cada uno de nosotros tenía su propia rama personalizada, lo que nos permitió trabajar de manera eficiente y llevar un registro claro de nuestras contribuciones al proyecto. Realizamos reuniones regulares y actualizaciones periódicas para asegurarnos de que todos contribuyeran de manera equitativa. Esta estructura organizativa y enfoque de colaboración eficiente fueron esenciales para nuestro éxito en este sprint.
+
 **GitFlow**     
 ![gitflow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2.JPG?raw=true)  
 ![gitflow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflowSprint2_1.JPG?raw=true)  
   
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
-  
+
 ### 5.2.3. Sprint 3
   
 #### 5.2.3.1. Sprint Planning 3.  
