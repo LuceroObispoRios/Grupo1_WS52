@@ -9,6 +9,7 @@
         companyService: null,
         userId: null,
 
+        tempCompanies: [],
         originalData: [],
 
         manualCompanyName: "",
@@ -47,6 +48,7 @@
         reservation: {
           id: null,
           idCompany: null,
+          idClient: null,
           services: null,
           bookingDate: null,
           pickupAddress: null,
@@ -61,7 +63,9 @@
           hiredCompany: {
             name: null,
             logo: null,
-          }
+          },
+          workers: [],
+          chat: []
         }
         
       };
@@ -84,7 +88,11 @@
               }
               return 0; // sin cambios en el orden
             });
+
             console.log('Original Data:', this.originalData);
+
+            // Almacena una copia de las empresas originales sin filtros
+            this.tempCompanies = [...this.originalData];
           });
 
       this.getUserDistrict();
@@ -120,15 +128,34 @@
           });
         });
       },
+
+      applyOtherFilters() {
+        this.companies = this.originalData.filter((company) => {
+          return (
+              (!this.selectedServices.length || this.selectedServices.every((selectedService) => company[selectedService.value])) &&
+              (!this.manualCompanyName.trim() || company.name.toLowerCase().includes(this.manualCompanyName.toLowerCase())) &&
+              (this.selectedAverageRating === null || (company.averageRating || 0) === this.selectedAverageRating.value) &&
+              (!this.manualLocation.trim() || company.direccion.toLowerCase().includes(this.manualLocation.toLowerCase()))
+          );
+        });
+      },
+
+
+
       searchByName() {
         if (this.manualCompanyName.trim() === "") {
           // Si el campo de búsqueda está vacío, muestra todas las empresas originales
-          this.companies = this.originalData;
+          this.companies = [...this.tempCompanies];
         } else {
-          this.companies = this.originalData.filter((company) => {
+          this.companies = this.tempCompanies.filter((company) => {
             return company.name.toLowerCase().includes(this.manualCompanyName.toLowerCase());
           });
+          this.tempCompanies = [...this.companies];
+
         }
+        this.applyOtherFilters();
+
+
       },
       searchByServices() {
         if (this.selectedServices.length === 0) {
@@ -137,7 +164,10 @@
           this.companies = this.originalData.filter((company) => {
             return this.selectedServices.every((selectedService) => company[selectedService.value]);
           });
+          this.tempCompanies = [...this.companies];
+          this.applyOtherFilters();
         }
+
       },
 
       searchByLocation() {
@@ -145,13 +175,20 @@
           this.companies = this.originalData.filter((company) => {
             return company.direccion.toLowerCase().includes(this.userLocation.toLowerCase());
           });
+          this.tempCompanies = [...this.companies];
+          this.applyOtherFilters();
         } else if (this.searchMethod.value === 'manualLocation') {
           this.companies = this.originalData.filter((company) => {
             return company.direccion.toLowerCase().includes(this.manualLocation.toLowerCase());
           });
+          this.tempCompanies = [...this.companies];
+          this.applyOtherFilters();
+        } else if(this.manualLocation === ''){
+          this.companies = [...this.tempCompanies];
+          this.searchMethod = '';
         } else {
           // Si se selecciona "Sin filtro", no se aplica ningún filtro
-          this.companies = this.originalData;
+          this.companies = [...this.tempCompanies];
           this.searchMethod = '';
         }
       },
@@ -168,16 +205,18 @@
           this.companies = [...this.originalData]; // Clonar la lista original
           console.log('Ordenando de mayor a menor'); // Imprime un mensaje antes de ordenar
           this.companies.sort((a, b) => (b.averageRating || 0) - (a.averageRating || 0));
+          this.tempCompanies = [...this.companies];
+          this.applyOtherFilters();
         } else if (this.selectedAverageRating && this.selectedAverageRating.value === 'asc') {
           this.companies = [...this.originalData]; // Clonar la lista original
           console.log('Ordenando de menor a mayor'); // Imprime un mensaje antes de ordenar
           this.companies.sort((a, b) => (a.averageRating || 0) - (b.averageRating || 0));
+          this.tempCompanies = [...this.companies];
+          this.applyOtherFilters();
         } else {
           this.companies = this.originalData;
           this.selectedAverageRating = null; // Restablecer a null si es "Sin filtro"
         }
-
-        console.log('companies:', this.companies); // Imprime las compañías después de filtrar/ordenar
       },
 
       CargaRapida(){
@@ -195,6 +234,11 @@
 
         //generar nueva reserva
         this.reservation.idCompany = randomCompany.id;
+        this.reservation.idClient = this.userId;
+        this.reservation.bookingDate= formattedDate;
+        this.reservation.services="Carga";
+        this.reservation.pickupAddress = this.userLocation;
+        this.reservation.destinationAddress= this.userLocation;
         this.reservation.hiredCompany.name = randomCompany.name;
         this.reservation.hiredCompany.logo = randomCompany.photo;
         this.reservation.status = "En curso";
@@ -204,8 +248,16 @@
         this.reservation.movingTime = currentHour + ":" + currentMinute;
 
         this.addReservation();
+        this.mostrarMensajeCargaRapidaEnProceso();
       },
-
+      mostrarMensajeCargaRapidaEnProceso() {
+        this.$toast.add({
+          severity: "info",
+          summary: "Carga Rápida en proceso",
+          detail: "Tu solicitud de carga rápida se está procesando. Por favor, espera.",
+          life: 5000, // Duración del mensaje en milisegundos
+        });
+      },
       addReservation(){
         this.cargaSinEstres_service = new HttpCommonService();
         this.cargaSinEstres_service.createReservation(this.reservation)
@@ -230,6 +282,7 @@
 </script>
 
 <template>
+  <br>
   <div>
     <div><h1 class="title flex justify-content-center">Búsqueda de empresas</h1></div>
     <br><br>

@@ -93,7 +93,6 @@ export default {
     cancelar() {
       this.$router.push('/home');
     }
-
   }
 };
 </script>
@@ -102,7 +101,6 @@ export default {
   <div>
     <toolbarHome></toolbarHome>
   </div>
-  
   <div class="login-form">
     <form @submit.prevent="onSubmit">
       <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" class="logo" alt="Logo"/>
@@ -113,6 +111,8 @@ export default {
           <input
               type="email"
               v-model="loginForm.email"
+              :name="loginForm.rememberMe ? 'email' : ''"
+              :autocomplete="loginForm.rememberMe ? 'username' : ''"
               placeholder="Correo electrónico o Usuario"
               autofocus
           />
@@ -122,12 +122,17 @@ export default {
           <input
               type="password"
               v-model="loginForm.password"
+              :name="loginForm.rememberMe ? 'password' : ''"
+              :autocomplete="loginForm.rememberMe ? 'current-password' : ''"
               placeholder="Contraseña"
           />
         </div>
+        <!-- Dependiendo del navegador y configuración, Chrome puede requerir estos atributos para mostrar correos guardados. -->
 
         <div class="remember-me">
-          <label><input type="checkbox" v-model="loginForm.rememberMe" /> Recuérdame</label>
+          <label>
+            <input type="checkbox" v-model="loginForm.rememberMe" /> Mostrar correos
+          </label>
         </div>
 
         <div class="action" id="actionButtons">

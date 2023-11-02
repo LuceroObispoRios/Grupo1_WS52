@@ -27,19 +27,22 @@ export default {
         </div>
         <div class="col-md-3">
           <a href="#aboutus" style="color: white;">Sobre Nosotros</a><br>
-          <a href="#" style="color: white;">Preguntas Frecuentes</a>
+          <a href="#services" style="color: white;">Servicios</a><br>
+          <a href="#plans" style="color: white;">Planes</a><br>
+          <a href="#testimonials" style="color: white;">Testimonios</a><br>
         </div>
         <div class="col-md-3">
-          <a href="/home" style="color: white;">Mi Cuenta</a><br>
-          <a href="/home" style="color: white;">Registrarse</a>
+          <a href="/login" style="color: white;">Iniciar sesión</a><br>
+          <a href="/register-client" style="color: white;">Registrar Cliente</a><br>
+          <a href="/register-company" style="color: white;">Registrar Empresa</a>
         </div>
         <div class="col-md-3">
           <p>Contacto: <br> +51 123-456-789</p>
           <p>Lima, Perú</p>
-          <a href="#"><img src="https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_WS52/Eric/feature/Proyecto/image/facebook-icon.webp" alt="Facebook"></a>
-          <a href="#"><img src="https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_WS52/Eric/feature/Proyecto/image/instagram-icon.webp" alt="Instagram"></a>
-          <a href="#"><img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Eric/feature/Proyecto/image/linkedin-icon.png?raw=true" alt="LinkedIn"></a>
-          <a href="#"><img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Eric/feature/Proyecto/image/youtube-icon.png?raw=true" alt="YouTube"></a>
+          <a href="https://www.facebook.com"><img src="https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_WS52/Eric/feature/Proyecto/image/facebook-icon.webp" alt="Facebook"></a>
+          <a href="https://www.instagram.com"><img src="https://raw.githubusercontent.com/LuceroObispoRios/Grupo1_WS52/Eric/feature/Proyecto/image/instagram-icon.webp" alt="Instagram"></a>
+          <a href="https://pe.linkedin.com"><img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Eric/feature/Proyecto/image/linkedin-icon.png?raw=true" alt="LinkedIn"></a>
+          <a href="https://www.youtube.com"><img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Eric/feature/Proyecto/image/youtube-icon.png?raw=true" alt="YouTube"></a>
         </div>
       </div>
     </div>

@@ -51,12 +51,24 @@ export default {
       };
 
       let warnings = '';
+      // Validación para name, apellidoMaterno y apellidoPaterno
+      if (!formData.name.trim() || formData.name.trim().length < 3) {
+        warnings += 'El nombre debe tener al menos 3 letras.<br>';
+      }
+      if (!formData.apellidoMaterno.trim() || formData.apellidoMaterno.trim().length < 3) {
+        warnings += 'El apellido materno debe tener al menos 3 letras.<br>';
+      }
 
-      if (
-          !formData.celular ||
-          !/^\d+$/.test(formData.celular)
-      ) {
-        warnings += 'El nuevo celular debe contener solo dígitos enteros.<br>';
+      if (!formData.apellidoPaterno.trim() || formData.apellidoPaterno.trim().length < 3) {
+        warnings += 'El apellido paterno debe tener al menos 3 letras.<br>';
+      }
+
+      if (!formData.celular || !/^\d+$/.test(formData.celular) || formData.celular.length > 11) {
+        warnings += 'El número de celular debe contener solo dígitos y tener un máximo de 11 dígitos.<br>';
+      }
+      // Validación para direccion
+      if (!formData.direccion.trim().length < 6) {
+        warnings += 'La dirección no debe estar en blanco y tener al menos 6 letras.<br>';
       }
 
       if (
@@ -167,7 +179,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: auto;
+  margin: 5rem auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
@@ -187,7 +199,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+  
 .user-info {
   display: flex;
   align-items: center;
