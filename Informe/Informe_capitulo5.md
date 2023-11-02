@@ -99,7 +99,7 @@ Ahora, para inicializar el despliegue:
 ![Paso6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso6.JPG?raw=true)  
   
 Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente link:  
-[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app)
+[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app)
 
 *Para que funcione correctamente se tiene que hacer $json-server --watch db.json --routes routes.json , a nuestra db en json 
 
@@ -431,8 +431,8 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 | Sprint 2 Retrospective Summary | Se trabajo fluidamente, participando todos por igual en la realización del proyecto, más en la aopinión del grupo creemos que pudimos haber terminado más partes del front-end. |
 | | **Sprint Goal & User Stories** |
 | Sprint & Goal | El objetivo del Sprint 3 sera terminar Frontend de la applicación, asi como avanzar el back-end hasta un punto funcional que podamos completar el siguiente sprint. |
-| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es XX. |
-| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
+| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es 39. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es 39. |
 
 #### 5.2.3.2. Sprint Backlog 3.
 
@@ -547,6 +547,15 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
   
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
+La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
+[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app),   
+*más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nuestro archivo db.json, el cual se encuentra en este mismo repositorio  
+  
+Para el backend se puede acceder por medio de estos links:  
+Este para el servidor - [https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1](https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1)  
+*la cuenta es ericcr-001 y la contraseña u202112766  
+Y este para la pagina - [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)  
+  
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
 
 **Gitflow**
@@ -589,7 +598,24 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
-1. [https://youtu.be/VjBsWHqTmmM]   
+1. Primera Entrevista:  
+Entrevistado: Felix Bianchi  
+Residencia: Chorrillos, Lima  
+Ocupación: Trabajador de empresa de mudanzas  
+Entrevistador: Eric Cuevas  
+Enlace: [https://youtu.be/VjBsWHqTmmM](https://youtu.be/VjBsWHqTmmM)  
+![Entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion-empresa1-web.JPG?raw=true)  
+  
+Resumen de entrevista:  
+07:26 - ¿Que caracteristica de la pagina encuentra usted más util en cuanto a contribuir con el crecimiento de su empresa?  
+La posibilidad de poder ampliar el acceso al publico al servicio que nosotros brindamos. En estas epocas que exite un acceso masivo por parte del publico a los servicios respecto a los servicios que brindan todas las empresas yo creo que los servicios que nosotros brindamos deben tener un mecanismo que permita acercarnos a la población, y yo creo que este es el medio.         
+        
+08:21 - ¿Que otras funcionalidades le gustaria ver o cree pueden mejorar en la aplicación a futuro?  
+El tema de hacer un seguimiento apenas se inicio el servicio al traslado de la carga, asi como su estado situacional, y por ultimo el tema de las estadisticas, que yo creo es uno muy importante, so solamente la calificación, sino la estadistica de la calidad del servicio, esto nos obligaria a todos a mejoras nuestros servicios.  
+      
+09:25 - ¿Recomendaria nuestra aplicación web "Carga Sin estrés" a otras empresas de mudanza?  
+Si, definitivamente, yo lo veo como una opcion para poder de alguna manera profesionalizar y poder llegar directamente al publico usuario.  
+
 2.  Segunda entrevista:  
 Entrevistado: José David  
 Residencia: Cercado de lima  
@@ -634,6 +660,8 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 
 ***Individuos de 18 a 50 años***  
 1.   
+
+
 2. Segunda entrevista:     
 Entrevistado: Sergio Leandro     
 Residencia: Lima   
