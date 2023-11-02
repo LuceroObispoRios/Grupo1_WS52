@@ -431,8 +431,8 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 | Sprint 2 Retrospective Summary | Se trabajo fluidamente, participando todos por igual en la realización del proyecto, más en la aopinión del grupo creemos que pudimos haber terminado más partes del front-end. |
 | | **Sprint Goal & User Stories** |
 | Sprint & Goal | El objetivo del Sprint 3 sera terminar Frontend de la applicación, asi como avanzar el back-end hasta un punto funcional que podamos completar el siguiente sprint. |
-| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es XX. |
-| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
+| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es 39. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es 39. |
 
 #### 5.2.3.2. Sprint Backlog 3.
 
@@ -546,6 +546,15 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
+  
+La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
+[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app),   
+*más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nuestro archivo db.json, el cual se encuentra en este mismo repositorio  
+  
+Para el backend se puede acceder por medio de estos links:  
+Este para el servidor - [https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1](https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1)  
+*la cuenta es ericcr-001 y la contraseña u202112766  
+Y este para la pagina - [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)  
   
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
 
