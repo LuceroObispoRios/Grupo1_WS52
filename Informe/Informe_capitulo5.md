@@ -507,9 +507,20 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
-Durante este sprint, nuestra colaboración como equipo se destacó por una organización eficiente en nuestro repositorio de GitHub. Decidimos establecer un proceso sólido para gestionar nuestros commits y ramas, lo que contribuyó significativamente al flujo de trabajo. En primer lugar, designamos dos ramas fundamentales: "main" y "develop". La rama "main" se reservó para el informe final y el proyecto completo, listo para su presentación en esta entrega. La rama "develop" desempeñó un papel central, ya que la actualizamos constantemente. Fue en esta rama donde reunimos y fusionamos todas las contribuciones individuales de los miembros del equipo. Además, cada integrante tuvo su propia rama personalizada cuyo formato de nombre es "nombre de integrante/feature", esta organización garantizó que cada integrante tuviera su propio espacio para trabajar de manera efectiva y mantener un registro claro de sus aportaciones al proyecto en un entorno de colaboración sin problemas. Durante el proceso, establecimos una rutina de reuniones periódicas y commits en días específicos, asegurándonos de que cada miembro aportara de manera equitativa. Este enfoque en la organización y la colaboración efectiva fue fundamental para el éxito de nuestro proyecto en este sprint.
 
-## 5.3 Validation Interviews  
+**Gitflow**
+Durante este sprint, nuestra colaboración como equipo se destacó por una organización eficiente en nuestro repositorio de GitHub. Decidimos establecer un proceso sólido para gestionar nuestros commits y ramas, lo que contribuyó significativamente al flujo de trabajo. En primer lugar, designamos dos ramas fundamentales: "main" y "develop". La rama "main" se reservó para el informe final y el proyecto completo, listo para su presentación en esta entrega. La rama "develop" desempeñó un papel central, ya que la actualizamos constantemente. Fue en esta rama donde reunimos y fusionamos todas las contribuciones individuales de los miembros del equipo. Además, cada integrante tuvo su propia rama personalizada cuyo formato de nombre es "nombre de integrante/feature", esta organización garantizó que cada integrante tuviera su propio espacio para trabajar de manera efectiva y mantener un registro claro de sus aportaciones al proyecto en un entorno de colaboración sin problemas. Durante el proceso, establecimos una rutina de reuniones periódicas y commits en días específicos, asegurándonos de que cada miembro aportara de manera equitativa. Este enfoque en la organización y la colaboración efectiva fue fundamental para el éxito de nuestro proyecto en este sprint.
+En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregado una rama llamada Leonardo/feature, ya que Leonardo es nuevo miembro del equipo y tambien requeria de su espacio personal para trabajar en el repositorio.
+
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow1_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow2_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow3_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow4_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow5_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow6_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow7_3.JPG?raw=true)  
+
+## 5.3 Validation Interviews   
   
 ### 5.3.1 Diseño de Entrevistas  
 **Segmento de individuos de 18 a 50 años, peruanos:**
@@ -538,26 +549,27 @@ Durante este sprint, nuestra colaboración como equipo se destacó por una organ
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
 1. [https://youtu.be/VjBsWHqTmmM]   
-2.   
-3.  Tercera entrevista:
-Entrevistado: Alfredo Lozano
-Residencia: San Martin de Porres, Lima
-Ocupación: Trabajador de empresa de mudanza
-Entrevistador: Lucero Obispo
-Enlace []
+2.    
+3.  Tercera entrevista:  
+Entrevistado: Alfredo Lozano  
+Residencia: San Martin de Porres, Lima  
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Lucero Obispo  
+Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG)   
+![entrevista-3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/EntrevistaValidation3-Trabajador.JPG?raw=true)  
 
-Resumen de entrevista:
+Resumen de entrevista:  
 08:00 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
-Esta la mayor parte, pero podria adicionar un número de contacto para que se puedan comunicar directamente el trabajador con el cliente, porque el numero de contacto que esta ahi es para que se comunique la empresa con el cliente. Por ejemplo, el servicio se brinda a una direccion que esta aislada, el trabajador necesita comunicarse via telefonica para que el cliente le sugiera caminos por donde debería ingresar, eso me ayudaría bastante.
+Esta la mayor parte, pero podria adicionar un número de contacto para que se puedan comunicar directamente el trabajador con el cliente, porque el numero de contacto que esta ahi es para que se comunique la empresa con el cliente. Por ejemplo, el servicio se brinda a una direccion que esta aislada, el trabajador necesita comunicarse via telefonica para que el cliente le sugiera caminos por donde debería ingresar, eso me ayudaría bastante.  
 
-10:10 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
-“Ese beneficio te va a ayudar, vas a ser más conocido, vas a tener la opción como uno de los primeros para tener contacto con los clientes”
+10:10 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?  
+“Ese beneficio te va a ayudar, vas a ser más conocido, vas a tener la opción como uno de los primeros para tener contacto con los clientes”  
 
-11:05 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
-Esto como historial, una vez que realizas varios trabajos, vas a formar tu historia de los beneficios que entregas, la calidad que entregas, las seguridad que llevas. La pagina wen que indica es bastante amigable, y yo pienso que va a ayudar mucho para ambos laods.
+11:05 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?   
+Esto como historial, una vez que realizas varios trabajos, vas a formar tu historia de los beneficios que entregas, la calidad que entregas, las seguridad que llevas. La pagina wen que indica es bastante amigable, y yo pienso que va a ayudar mucho para ambos laods.   
 
-15:14 - ¿Cuáles son los mayores desafíos que ha enfrentado su empresa al llevar a cabo sus servicios en los últimos años?
-"Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"
+15:14 - ¿Cuáles son los mayores desafíos que ha enfrentado su empresa al llevar a cabo sus servicios en los últimos años?   
+"Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"   
 
 ***Individuos de 18 a 50 años***  
 1.   
