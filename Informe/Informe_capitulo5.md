@@ -346,7 +346,7 @@ Durante este sprint, nos enfocamos en terminar con la sección de manejo de usua
 ![membresias2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution12.JPG?raw=true)
   
 Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
-Link a la plataforma: [https://cargasinestres-vue.web.app/home](https://cargasinestres-vue.web.app/home)  
+Link a la plataforma: [https://cargasinestres-vue-tb2.web.app](https://cargasinestres-vue-tb2.web.app)  
   
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
   
@@ -504,7 +504,16 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
-#### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review. 
+  
+La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
+[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app),   
+más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace  [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)   
+  
+Para el backend se puede acceder por medio de estos links:  
+Este para el servidor - [https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1](https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1)  
+*la cuenta es ericcr-001 y la contraseña u202112766  
+Y este para la pagina - [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)  
   
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
 
@@ -548,9 +557,38 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
-1. [https://youtu.be/VjBsWHqTmmM]   
-2.    
-3.  Tercera entrevista:  
+1. Primera Entrevista:  
+Entrevistado: Felix Bianchi  
+Residencia: Chorrillos, Lima  
+Ocupación: Trabajador de empresa de mudanzas  
+Entrevistador: Eric Cuevas  
+Enlace: [https://youtu.be/VjBsWHqTmmM](https://youtu.be/VjBsWHqTmmM)
+![Entrevista-1]()
+
+Resumen de entrevista:
+07:26 - ¿Que caracteristica de la pagina encuentra usted más util en cuanto a contribuir con el crecimiento de su empresa?
+      
+      
+08:21 - ¿Que otras funcionalidades le gustaria ver o cree pueden mejorar en la aplicación a futuro?
+      
+      
+09:25 - ¿Recomendaria nuestra aplicación web "Carga Sin estrés" a otras empresas de mudanza?
+      
+      
+   
+
+   
+   
+
+3. Segunda Entrevista:  
+   Entrevistado:  
+   Residencia:   
+   Ocupación: Trabajador de empresa de mudanzas  
+   Entrevistador:   
+   Enlace: []()
+   ![Entrevista-2]()
+
+4.  Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
 Ocupación: Trabajador de empresa de mudanza  
@@ -573,6 +611,7 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 
 ***Individuos de 18 a 50 años***  
 1.   
+
 2. SEGUNDA ENTREVISTA:  
 Nombre y apellido: Sergio Leandro  
 Edad: 19  
@@ -928,9 +967,9 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
 
-- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+- El desarrollo colaborativo en los sprints  fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
 
-- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito tres sprints. Durante este período, utilizamos herramientas como WebStorm y IntelliJ, asi como lenguajes y frameworks como Vue.js, JavaScript, y Java, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
 
 # Bibliografia  
 --
