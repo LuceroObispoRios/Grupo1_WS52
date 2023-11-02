@@ -590,7 +590,27 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
 1. [https://youtu.be/VjBsWHqTmmM]   
-2.    
+2.  Segunda entrevista:  
+Entrevistado: José David  
+Residencia: Cercado de lima  
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Leonardo Patrocinio  
+Enlace [https://youtu.be/4w9yW6qvU-Q](https://youtu.be/4w9yW6qvU-Q)
+![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg)  
+
+Resumen de entrevista:  
+03:20 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
+“Como información adicional podria ser su cobertura geografica de las empresas y si tienen otros tipos de servicios como almacenamiento temporales”  
+
+03:50 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?  
+“Sí, las membresías ofrecen ventajas interesantes, como visibilidad destacada y mayor acceso a clientes potenciales”  
+
+04:25 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?   
+El historial de reservas es útil para llevar un registro de los servicios realizados, pero sería aún más valioso si se pudiera generar automáticamente un informe de cada reserva.   
+
+06:12 - ¿Recomendarían nuestra aplicación web "Carga Sin Estrés" a otras empresas de mudanza? ¿Por qué?   
+Sí, definitivamente la recomendaría. La plataforma puede llegar a simplificar la forma en que interactuamos con nuestros clientes y aumentar nuestras oportunidades de negocio.  
+   
 3.  Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
