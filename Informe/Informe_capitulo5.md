@@ -458,7 +458,17 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 |                      |                          |     WI16                  |     Agregar reseña de un trabajador de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
 
 #### 5.2.3.3. Development Evidence for Sprint Review.  
-  
+
+<div style="text-align:center;">
+    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true)" alt="Development Evidence - parte 1" width="400">
+</div>
+<div style="text-align:center;">
+    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true)" alt="Development Evidence - parte 2" width="400">
+</div>
+<div style="text-align:center;">
+    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true)" alt="Development Evidence - parte 3" width="400">
+</div>
+
 #### 5.2.3.4. Testing Suite Evidence for Sprint Review.  
 Acceptance Tests actualizados de los User Stories, archivos .feature utilizando el lenguaje Gherkin.  
 
