@@ -9,9 +9,14 @@ export default {
       reviews: [],
       averageRating: null,
       reviewFilter: 'all',
+      cardNumber: null,
+      cvvCard:null,
+      dateCard: null,
+      loadQuantity: null,
       reservation:{
         id: null,
         idCompany: null,
+        idClient: null,
         services: null,
         bookingDate: null,
         pickupAddress: null,
@@ -27,39 +32,113 @@ export default {
           name: null,
           logo: null,
         },
+        workers: [],
+        chat: []
       },
       cargaSinEstres_service: null,
       ReviewService: null,
+      errorMessage: '',
+      userId: '',
+      userType: '',
     };
   },
   created() {
     const companyData = this.$route.query.companyData;
-    this.id = this.$route.params.id;
+    // Obtiene el id del usuario
+    this.userId = this.$route.params.id;
+    console.log('User id:', this.userId);
     if (companyData) {
       this.company = JSON.parse(companyData);
     }
+    const routeParts = this.$route.path.split('/');
+    this.userType = routeParts[1];
+    console.log('User type:', this.userType);
+
     this.fetchReviews(); // Llama al método fetchReviews cuando se crea el componente
   },
   methods:{
     submitForm(){
-      this.reservation.idCompany=this.company.id;
+      this.errorMessage = '';
+      let warnings = '';
+
+      console.log("Boooking date: ", this.reservation.bookingDate);
+
+      // Validaciones para los campos del formulario de reserva
+      if (!this.reservation.bookingDate || !/^\d{4}-\d{2}-\d{2}$/.test(this.reservation.bookingDate)) {
+        warnings += 'La fecha de hoy debe tener el formato YYYY-MM-DD.<br>';
+      }
+
+      if (!this.reservation.services.trim().length > 4) {
+        warnings += 'El campo de servicios debe contener más de 4 letras.<br>';
+      }
+
+      if (!this.reservation.pickupAddress) {
+        warnings += 'El campo de dirección de entrega es requerido<br>';
+      }
+
+      if (!this.reservation.destinationAddress) {
+        warnings += 'El campo de dirección de destino es requerido<br>';
+      }
+
+      if (!this.reservation.movingDate || !/^\d{4}-\d{2}-\d{2}$/.test(this.reservation.movingDate)) {
+        warnings += 'La fecha de movimiento debe tener el formato YYYY-MM-DD.<br>';
+      }
+
+      if (!this.reservation.movingTime || !/^\d{2}:\d{2}$/.test(this.reservation.movingTime)) {
+        warnings += 'La hora de movimiento debe tener el formato HH:MM.<br>';
+      }
+
+      if (this.cardNumber.length < 16) {
+        warnings += 'Número de tarjeta no válido, debe tener 16 dígitos <br>';
+      }
+      if (this.cvvCard.length < 3) {
+        warnings += 'El cvv debe tener 3 dígitos <br>';
+      }
+
+      if (!this.dateCard.length || !/^\d{2}\/\d{2}$/.test(this.dateCard)) {
+        warnings += 'La fecha de cvv debe tener el formato DD-MM.<br>';
+      }
+
+
+      if (warnings) {
+        // Si hay mensajes de error, muestra los mensajes y detén la operación
+        this.errorMessage = warnings;
+      } else {
+        // Si no hay errores, procede a agregar la reserva
+        this.addReservation();
+      }
+    },
+    addReservation() {
+      // Asigna valores a las propiedades del objeto reservation
+      this.reservation.idCompany = this.company.id;
       this.reservation.hiredCompany.name = this.company.name;
       this.reservation.hiredCompany.logo = this.company.photo;
-      this.reservation.status="En curso";
-      this.reservation.payment.totalAmount=0;
-      this.reservation.payment.paymentMethod="Por definir";
+      this.reservation.status = "En curso";
+      this.reservation.payment.totalAmount = 0;
+      this.reservation.payment.paymentMethod = "Por definir";
+      this.reservation.idClient=this.userId;
 
-      this.addReservation();
-    },
-    addReservation(){
+
       this.cargaSinEstres_service = new HttpCommonService();
       this.cargaSinEstres_service.createReservation(this.reservation)
           .then((response) => {
             console.log("Reservation:");
             console.log(response.data);
             this.$data.reservation = response.data;
-            this.$router.push('/bookingHistory')
-      });
+
+            if(this.userType =='company'){
+              this.$router.push({
+                path: `/company/${this.userId}/company-booking-history`,
+                name:'company-booking-history',
+              });
+            }
+            else{
+              this.$router.push({
+                path: `/client/${this.userId}/client-booking-history`,
+                name:'client-booking-history',
+              });
+            }
+          });
     },
     async fetchReviews() { // Crea un nuevo método para obtener las reseñas
       try {
@@ -118,9 +197,10 @@ export default {
         <p class="value">{{ company.direccion }}</p>
       </div>
 
+
       <div class="company-services">
-        <p class="label">Número de contacto: </p>
-        <p class="value">{{ company.numeroContacto }}</p>
+        <p class="label">Contacto: </p>
+        <p class="value">Para comunicarse con nosotros, por favor utilice los servicios de mensajería dentro de la aplicación</p>
       </div>
 
     </template>
@@ -139,6 +219,8 @@ export default {
         <input type="text" v-model="reservation.bookingDate" id="bookingDate"  required placeholder="Ex. 2023-10-17"><br>
         <label for="services">Servicios:</label><br>
         <input type="text" v-model="reservation.services" id="services"  required placeholder="Ex. Carga"><br>
+        <label for="loadQuantity">Cantidad de carga:</label><br>
+        <input type="text" v-model="loadQuantity" id="loadQuantity"  required placeholder="Ex. 100kg"><br>
         <label for="pickupAddress">Direccion de entrega:</label><br>
         <input type="text" v-model="reservation.pickupAddress" id="pickupAddress" required placeholder="Ex. Monterrico"><br>
         <label for="destinationAddress">Direccion de destino:</label><br>
@@ -150,11 +232,14 @@ export default {
 
         <!-- metodo de pago info -->
         <label for="cardNumber">Numero de tarjeta de pago:</label><br>
-        <input type="text" id="cardNumber"  required placeholder="Ex. 1234 5678 9012 3456"><br>
+        <input type="text" v-model="cardNumber" id="cardNumber"  required placeholder="Ex. 1234 5678 9012 3456"><br>
         <label for="cvvCard">CVV de la tarjeta de pago:</label><br>
-        <input type="text" id="cvvCard"  required placeholder="Ex. 123"><br>
+        <input type="text" v-model="cvvCard" id="cvvCard"  required placeholder="Ex. 123"><br>
         <label for="dateCard">Fecha de vencimiento de la tarjeta:</label><br>
-        <input type="text" id="dateCard"  required  placeholder="Ex. 10/25"><br>
+        <input type="text" id="dateCard" v-model="dateCard" required  placeholder="Ex. 10/25"><br>
+
+        
+        <div id="errorMessages" class="error-messages" v-html="errorMessage"></div>
 
         <button type="submit">Realizar reserva</button>
 
@@ -321,5 +406,9 @@ button:hover {
   color: #FDAE39;
   font-family: sans-serif;
 }
-
+.error-messages {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 10px;
+}
 </style>
