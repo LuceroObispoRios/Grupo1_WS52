@@ -558,37 +558,36 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
 1. Primera Entrevista:  
+Entrevistado:  
+Residencia:   
+Ocupación:
+Entrevistador:
+Enlace: []()
+![Entrevista-1]()
+
+Resumen de entrevista:
+      
+
+2. Segunda Entrevista:  
 Entrevistado: Felix Bianchi  
 Residencia: Chorrillos, Lima  
 Ocupación: Trabajador de empresa de mudanzas  
 Entrevistador: Eric Cuevas  
 Enlace: [https://youtu.be/VjBsWHqTmmM](https://youtu.be/VjBsWHqTmmM)
-![Entrevista-1]()
+![Entrevista-2]()
 
 Resumen de entrevista:
 07:26 - ¿Que caracteristica de la pagina encuentra usted más util en cuanto a contribuir con el crecimiento de su empresa?
-      
+La posibilidad de poder ampliar el acceso al publico al servicio que nosotros brindamos. En estas epocas que exite un acceso masivo por parte del publico a los servicios respecto a los servicios que brindan todas las empresas yo creo que los servicios que nosotros brindamos deben tener un mecanismo que permita acercarnos a la población, y yo creo que este es el medio.      
       
 08:21 - ¿Que otras funcionalidades le gustaria ver o cree pueden mejorar en la aplicación a futuro?
-      
+El tema de hacer un seguimiento apenas se inicio el servicio al traslado de la carga, asi como su estado situacional, y por ultimo el tema de las estadisticas, que yo creo es uno muy importante, so solamente la calificación, sino la estadistica de la calidad del servicio, esto nos obligaria a todos a mejoras nuestros servicios.
       
 09:25 - ¿Recomendaria nuestra aplicación web "Carga Sin estrés" a otras empresas de mudanza?
-      
-      
-   
+Si, definitivamente, yo lo veo como una opcion para poder de alguna manera profesionalizar y poder llegar directamente al publico usuario.
 
-   
-   
 
-3. Segunda Entrevista:  
-   Entrevistado:  
-   Residencia:   
-   Ocupación: Trabajador de empresa de mudanzas  
-   Entrevistador:   
-   Enlace: []()
-   ![Entrevista-2]()
-
-4.  Tercera entrevista:  
+3.  Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
 Ocupación: Trabajador de empresa de mudanza  
