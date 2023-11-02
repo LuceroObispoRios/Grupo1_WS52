@@ -616,6 +616,8 @@ Distrito: Lima
 Duración: 8:49min
 Link de la entrevista: https://youtu.be/fIztTa-DjhI
 
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/Entrevista_Ciudadano.jpg?raw=true)
+
 Timings:  
 04:09 - ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
 "Me parece intuitiva, es fácil de utilizarlo, no me complicaría tanto para reserva a una empresa con el tipo de mudanza. Asimismo, hay una variedad de empresas a escoger"
