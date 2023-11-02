@@ -573,32 +573,31 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 
 ***Individuos de 18 a 50 años***  
 1.   
-2. SEGUNDA ENTREVISTA:  
-Nombre y apellido: Sergio Leandro  
-Edad: 19  
-Distrito: Lima   
-Duración: 06:34
-Link de la entrevista: [link](https://youtu.be/Q-FgFnv3q2s) 
-![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion2-client.png?raw=true)  
+2. Segunda entrevista:     
+Entrevistado: Sergio Leandro     
+Residencia: Lima   
+Entrevistador: Andrea O'Higgins   
+Enlace: [https://youtu.be/Q-FgFnv3q2s](https://youtu.be/Q-FgFnv3q2s)   
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion2-client.png?raw=true)   
 
-Timings:  
-04:55 - ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?  
-"Sí, tiene suficiente información, pero habría sido útil tener más detalles sobre los costos como mencioné antes. Y también, con respecto a la seguridad, sería bueno que se puedan ver las certificaciones y licencias de las empresas de mudanza, para que sepamos que verdaderamente nuestros bienes están seguros."
+Resumen de entrevista:   
+04:55 - ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?    
+"Sí, tiene suficiente información, pero habría sido útil tener más detalles sobre los costos como mencioné antes. Y también, con respecto a la seguridad, sería bueno que se puedan ver las certificaciones y licencias de las empresas de mudanza, para que sepamos que verdaderamente nuestros bienes están seguros."  
 
-05:14 - ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?  
-"Sí, se puede visualizar y buscar a las empresas facilmente. Se ve bastante ordenado.También al utilizar los filtros, la busqueda de empresas se ve bien y nada complejo."
+05:14 - ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?    
+"Sí, se puede visualizar y buscar a las empresas facilmente. Se ve bastante ordenado.También al utilizar los filtros, la busqueda de empresas se ve bien y nada complejo."  
 
-06:11 - ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?  
-"Sí recomendaría, me parece que la plataforma en general puede facilitar el proceso de mudanza y tiene una buena distribución."
+06:11 - ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?   
+"Sí recomendaría, me parece que la plataforma en general puede facilitar el proceso de mudanza y tiene una buena distribución."  
 
-3. TERCERA ENTREVISTA:
-Edad: 22   
-Distrito: Lima  
-Duración: 14:27
-Link de la entrevista: [link](https://youtu.be/zPuaC_a67c8) 
+3. Tercera entrevista:   
+Entrevistado: Virginia Borja      
+Residencia: Lima    
+Entrevistador: Andrea O'Higgins   
+Enlace:  [https://youtu.be/zPuaC_a67c8](https://youtu.be/zPuaC_a67c8) 
 ![EntrevistaValidation-3-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion3-client.png?raw=true)
 
-Timings:  
+Resumen de entrevista:  
 06:46 - ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?  
 "Creo que está bastante completa, creo que tiene lo importante, no me parece que haya, no se necesite más para tomar información como te digo tal vez algo que simule un poco lo que yo busco, no?. Por ejemplo, que yo pueda poner servicios, que es el servicio que yo busco, seleccionar la ubicación de, que me gustaría que diese ubicación pero de destino de origen, como un uber que simulan la ruta y te salen precioso."
 
