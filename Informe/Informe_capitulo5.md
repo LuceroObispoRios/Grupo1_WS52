@@ -501,6 +501,15 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 </div>
 
 #### 5.2.3.5. Execution Evidence for Sprint Review  
+
+Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
+
+- Establecimiento de múltiples archivos(frontend,backend, informes) en el repositorio de nuestro GitHub. 
+- Elaboración del frontend(membresía, reseñas y trabajadores)
+- Realización de la implementación de companies, client y reviews en backend
+- Despliegue del fronted de Carga Sin Estrés
+
+
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
