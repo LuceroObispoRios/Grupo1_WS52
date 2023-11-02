@@ -28,7 +28,7 @@ Ciclo 2023-02
   TB2 | 29/09/23 - 02/11/23  | Lucero Obispo| Se actualizo las historias de usuarios y el product backlog. Para el sprint 3, se realizo el services documentation y team collaboration insights. En el frontend, se hizo los filtros de la pagina busqueda de empresa en relacion a buscar por nombre, servicios, ubicacion ingresada, ubicacion del usuario. En el backend, se apoyo con la estructura base del proyecto.
   TB2 | 29/09/23 - 02/11/23  | Andrea O'Higgins| Se desarrollo ....
   TB2 | 29/09/23 - 02/11/23  | Damaris Tasayco| Se desarrollo ...
-  TB2 | 29/09/23 - 02/11/23  | Leonardo Patrocinio| Se desarrollo en el inrforme el sprint backlog 3 y 6 problemas de evaluacion de heuristicas. En el frontend, se implementó realizar reseñas en el historial de reserbas, visualizar reseñas en infomración de la empresa y filtro de la empresa según su calificación promedio. En el backend, se apoyo con la estructura base del proyecto y un avance del historial de reserva.
+  TB2 | 29/09/23 - 02/11/23  | Leonardo Patrocinio| Se desarrollo en el inrforme el sprint backlog 3 y 6 problemas de evaluacion de heuristicas. En el frontend, se implementó realizar reseñas en el historial de reservas, visualizar reseñas en la informaación de la empresa y filtro de la empresa según su calificación promedio. En el backend, se apoyo con la estructura base del proyecto y un avance del historial de reserva.
 ---
 1. Capitulo 1: Introducción  
    1.1 Startup Profile     
