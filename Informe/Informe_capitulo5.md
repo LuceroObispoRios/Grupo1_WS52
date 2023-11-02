@@ -460,13 +460,13 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 #### 5.2.3.3. Development Evidence for Sprint Review.  
 
 <div style="text-align:center;">
-    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true)" alt="Development Evidence - parte 1" width="400">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true" alt="Development Evidence - parte 1" width="400">
 </div>
 <div style="text-align:center;">
-    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true)" alt="Development Evidence - parte 2" width="400">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true" alt="Development Evidence - parte 2" width="400">
 </div>
 <div style="text-align:center;">
-    <img src="[https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true)" alt="Development Evidence - parte 3" width="400">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true" alt="Development Evidence - parte 3" width="400">
 </div>
 
 #### 5.2.3.4. Testing Suite Evidence for Sprint Review.  
