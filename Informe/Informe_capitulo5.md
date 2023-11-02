@@ -490,9 +490,34 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature11-sprint3.png?raw=true" width="600px" alt="feature 11">
 </div>
 
+**feature 15**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature15-sprint3.png?raw=true" width="600px" alt="feature 15">
+</div>
+
 **feature 16**
 <div style="text-align:center;">
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature16-sprint3.png?raw=true" width="600px" alt="feature 16">
+</div>
+
+**feature 17**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature17-sprint3.png?raw=true" width="600px" alt="feature 17">
+</div>
+
+**feature 18**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature18-sprint3.png?raw=true" width="600px" alt="feature 18">
+</div>
+
+**feature 19**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature19-sprint3.png?raw=true" width="600px" alt="feature 19">
+</div>
+
+**feature 20**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature20-sprint3.png?raw=true" width="600px" alt="feature 20">
 </div>
 
 **feature 21**
