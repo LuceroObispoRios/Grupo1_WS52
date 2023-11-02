@@ -415,8 +415,8 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
   
 **Contribuitors**    
 ![contribuitors](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/contribuitorsSprint2.JPG?raw=true)   
-  
-### 5.2.2. Sprint 3
+
+### 5.2.3. Sprint 3
   
 #### 5.2.3.1. Sprint Planning 3.  
 | **Sprint 1** | |
@@ -435,53 +435,437 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
 
 #### 5.2.3.2. Sprint Backlog 3.
+--
+|     Sprint #         |     Sprint 3             |                           |                                                                      |                                                                                    |                   |                         |                      |
+|----------------------|--------------------------|---------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
+|     User   Story     |                          |     Work –   Item/Task    |                                                                      |                                                                                    |                   |                         |                      |
+|     Id               |     Título               |     Id                    |     Título                                                           |     Descripción                                                                    |     Estimación    |     Asignado   a        |     Estado           |
+| HU001-HU003          |    Manejo de Usuario     |     WI01                  |     Ajustes de cuenta de cliente                                     |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI02                  |     Ajustes de cuenta de empresa                                     |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI03                  |     Visualización de membresia de la empresa                         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     1h            |     Damaris Tasayco     |     Completado       |
+| HU004-HU005          | Métodos de pago          |     WI04                  |     Pago para reserva de servicio                                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Andrea O’Higgins    |     Completado       |
+|                      |                          |     WI05                  |     Activar funcionalidades de membresia                             |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Damaris Tasayco     |     Completado       |
+| HU006-HU010          | Búsqueda de empresas     |     WI06                  |     Búsqueda de empresas cercanas                                    |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     4h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI07                  |     Filtrar por servicios ofrecidos                                  |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     3h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI08                  |     Filtrar por calificación                                         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI09                  |     Filtrar por ubicación                                            |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI10                  |     Solicitar Carga rápida                                           |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Eric Cuevas         |     Completado       |
+| HU011-HU013          | Reserva de Servicios     |     WI11                  |     Realizar la transacción                                          |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI12                  |     Visualizar la calificación de la empresa                         |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI13                  |     Visualizar reseñas de los trabajadores de empresa de mudanza     |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU013 - HU016        | Historial de reservas    |     WI14                  |     Realizar una reseña a la empresa                                 |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI15                  |     Cancelar reserva                                                 |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
+|                      |                          |     WI16                  |     Agregar reseña de un trabajador de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
 
-#### 5.2.3.3. Development Evidence for Sprint Review.
+#### 5.2.3.3. Development Evidence for Sprint Review.  
+  
+#### 5.2.3.4. Testing Suite Evidence for Sprint Review.  
+Acceptance Tests actualizados de los User Stories, archivos .feature utilizando el lenguaje Gherkin.  
 
-#### 5.2.3.4. Testing Suite Evidence for Sprint Review.
 
-#### 5.2.3.5. Execution Evidence for Sprint Review.
+**feature 9**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature9-sprint3.png?raw=true" width="600px" alt="feature 9">
+</div>
 
-#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+**feature 10**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature10-sprint3.png?raw=true" width="600px" alt="feature 10">
+</div>
 
-#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+**feature 11**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature11-sprint3.png?raw=true" width="600px" alt="feature 11">
+</div>
 
-#### 5.2.3.8. Team Collaboration Insights during Sprint.
+**feature 16**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature16-sprint3.png?raw=true" width="600px" alt="feature 16">
+</div>
+
+**feature 21**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature21-sprint3.png?raw=true" width="600px" alt="feature 21">
+</div>
+
+#### 5.2.3.5. Execution Evidence for Sprint Review  
+  
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
+  
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
+  
+#### 5.2.3.8. Team Collaboration Insights during Sprint.  
 Durante este sprint, nuestra colaboración como equipo se destacó por una organización eficiente en nuestro repositorio de GitHub. Decidimos establecer un proceso sólido para gestionar nuestros commits y ramas, lo que contribuyó significativamente al flujo de trabajo. En primer lugar, designamos dos ramas fundamentales: "main" y "develop". La rama "main" se reservó para el informe final y el proyecto completo, listo para su presentación en esta entrega. La rama "develop" desempeñó un papel central, ya que la actualizamos constantemente. Fue en esta rama donde reunimos y fusionamos todas las contribuciones individuales de los miembros del equipo. Además, cada integrante tuvo su propia rama personalizada cuyo formato de nombre es "nombre de integrante/feature", esta organización garantizó que cada integrante tuviera su propio espacio para trabajar de manera efectiva y mantener un registro claro de sus aportaciones al proyecto en un entorno de colaboración sin problemas. Durante el proceso, establecimos una rutina de reuniones periódicas y commits en días específicos, asegurándonos de que cada miembro aportara de manera equitativa. Este enfoque en la organización y la colaboración efectiva fue fundamental para el éxito de nuestro proyecto en este sprint.
 
-## 5.3. Validation Interviews.
-### 5.3.1. Diseño de Entrevistas. 
-** Segmento de individuos de 18 a 50 años, peruanos: **  
-1. ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
-2. ¿Qué características de la aplicación encontraste más útiles para tu proceso de mudanza? 
-3. ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”?   
-4. ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?  
-5. ¿Tuvo alguna experiencia negativa o desafío al buscar una herramienta/funcionalidad?. Descríbala.  
-6. ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?  
-7. ¿Cree que es adecuado que la comunicación con las empresas de mudanza sea mediante chat?   
-8. ¿Qué recomendaciones nos brindarías para mejorar la experiencia de usuario, de modo que la aplicación sea más fácil de usar?   
-9. ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?   
+## 5.3 Validation Interviews  
+  
+### 5.3.1 Diseño de Entrevistas  
+**Segmento de individuos de 18 a 50 años, peruanos:**
+1. ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?
+2. ¿Qué características de la aplicación encontraste más útiles para tu proceso de mudanza?
+3. ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”?
+4. ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?
+5. ¿Tuvo alguna experiencia negativa o desafío al buscar una herramienta/funcionalidad?. Descríbala.
+6. ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
+7. ¿Cree que es adecuado que la comunicación con las empresas de mudanza sea mediante chat?
+8. ¿Qué recomendaciones nos brindarías para mejorar la experiencia de usuario, de modo que la aplicación sea más fácil de usar? 
+9. ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?
 
 
-** Segmento de empresas de mudanza/transporte: **   
-1. ¿Qué piensa sobre la experiencia de navegación brindada por Carga sin estrés?   
-2. ¿Considera que brindamos suficiente información para que las empresas puedan guiarse y entender las funciones de la app?  
-3. ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
-4. ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?   
-5. ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?   
-6. ¿Piensa que la característica de mensajería, así como la ve, mejoraría la interacción entre su empresa y sus clientes?  
-7. ¿Qué característica de la página encuentra usted más útil en cuanto a contribuir con el crecimiento de su empresa?   
-8. ¿Qué otras funcionalidades le gustaría ver o cree podrían mejorar en la aplicación web a futuro?   
-9. ¿Recomendarían nuestra aplicación web “Carga Sin Estrés” a otras empresas de mudanza? ¿Por qué?   
+**Segmento de empresas de mudanza/transporte:**
+1. ¿Qué piensa sobre la experiencia de navegación brindada por Carga sin estrés? 
+2. ¿Considera que brindamos suficiente información para que las empresas puedan guiarse y entender las funciones de la app?
+3. ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?
+4. ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
+5. ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
+6. ¿Piensa que la característica de mensajería, así como la ve, mejoraría la interacción entre su empresa y sus clientes?
+7. ¿Qué característica de la página encuentra usted más útil en cuanto a contribuir con el crecimiento de su empresa?
+8. ¿Qué otras funcionalidades le gustaría ver o cree podrían mejorar en la aplicación web a futuro?.
+9. ¿Recomendarían nuestra aplicación web “Carga Sin Estrés” a otras empresas de mudanza? ¿Por qué?
 
-### 5.3.2. Registro de Entrevistas.
+### 5.3.2 Registro  de Entrevistas   
+***Representantes de Empresas:***   
+1. [https://youtu.be/VjBsWHqTmmM]   
+2.   
+3.  Tercera entrevista:
+Entrevistado: Alfredo Lozano
+Residencia: San Martin de Porres, Lima
+Ocupación: Trabajador de empresa de mudanza
+Entrevistador: Lucero Obispo
+Enlace []
 
-### 5.3.3. Evaluaciones según heurísticas.
+Resumen de entrevista:
+08:00 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
+Esta la mayor parte, pero podria adicionar un número de contacto para que se puedan comunicar directamente el trabajador con el cliente, porque el numero de contacto que esta ahi es para que se comunique la empresa con el cliente. Por ejemplo, el servicio se brinda a una direccion que esta aislada, el trabajador necesita comunicarse via telefonica para que el cliente le sugiera caminos por donde debería ingresar, eso me ayudaría bastante.
 
-## 5.4. Video About-the-Product.
+10:10 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?
+“Ese beneficio te va a ayudar, vas a ser más conocido, vas a tener la opción como uno de los primeros para tener contacto con los clientes”
 
+11:05 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?
+Esto como historial, una vez que realizas varios trabajos, vas a formar tu historia de los beneficios que entregas, la calidad que entregas, las seguridad que llevas. La pagina wen que indica es bastante amigable, y yo pienso que va a ayudar mucho para ambos laods.
+
+15:14 - ¿Cuáles son los mayores desafíos que ha enfrentado su empresa al llevar a cabo sus servicios en los últimos años?
+"Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"
+
+***Individuos de 18 a 50 años***  
+1.   
+2.   
+3.  
+  
+### 5.3.3 Evaluaciones segúnn heurísticas  
+  
+**UX Heuristics & Principles Evaluation Usability – Inclusive Design – Information Architecture**  
+
+**Site o App a evaluar**  
+Carga Sin Estrés
+
+**Tareas a evaluar:**  
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:  
+
+1. Registro de usuario tipo empresa
+2. Registro de usuario tipo cliente
+3. Inicio de sesión a la aplicación
+4. Edición de los datos de cuenta de empresa
+5. Edición de los datos de cuenta de cliente
+6. Cerrar Sesión en la aplicación
+7. Búsqueda de empresas
+8. Filtrar empresas por servicios, ubicación y nombre de la empresa
+9. Visualizar perfil de empresa
+10. Reserva de un servicio de empresas de mudanzas
+11. Cancelación de una reserva en el Historial de reservas
+12. Agregar mensaje en el chat de una reserva
+13. Realizar una reseña a una empresa
+14. Generar reservas tipo carga rápida
+15. Compra de membresia para empresa
+16. Visualizar boleta por compra de membresia
+17. Enviar reseña a empleados
+18. Visualizar reseña de empleados  
+  
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*  
+
+1. Adición de empleados a información de la empresa  
+2. Acceso a redes sociales de la startup  
+
+**Escala de severidad**  
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*
+
+
+<table style="border: 1px solid black; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black;">Nivel</th>
+            <th style="border: 1px solid black;">Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+**Tabla de resumen** 
+
+
+<table style="border: 1px solid black; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black;">#</th>
+            <th style="border: 1px solid black;">Problema</th>
+            <th style="border: 1px solid black;">Escala de severidad (1/2/3/4)</th>
+            <th style="border: 1px solid black;">Heurísticas (1/2/3/4)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">El número de contacto de la empresa no debería visualizarse en la sección de “información de empresa”.</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Information Architecture: Is it clear?</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Los links del footer te redireccionan a una página con el error page not found</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Correspondencia entre el sistema y el mundo real</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Correspondencia entre el sistema y el mundo real</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Cuando se presiona el botón de carga rápida, no se sabe si ha generado correctamente el servicio de carga rápida</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">5</td>
+            <td style="border: 1px solid black;">En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa</td>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Usability: Control y libertad del usuario</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">6</td>
+            <td style="border: 1px solid black;">En login el botón de “recuerdame” no hace nada</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">7</td>
+            <td style="border: 1px solid black;">En Historial de reservas, el botón de “realizar reseña”, el texto del botón está mal posicionado</td>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Usability: Consistencia y estándares</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">8</td>
+            <td style="border: 1px solid black;">Faltan validaciones de datos para el formulario de edición de cuenta y realización de una reserva</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Prevención de errores</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">9</td>
+            <td style="border: 1px solid black;">Al utilizar el botón de carga rápida no se visualiza la nueva reserva en el historial.</td>
+            <td style="border: 1px solid black;">4</td>
+            <td style="border: 1px solid black;">Usability: Visibilidad del estado del sistema</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">10</td>
+            <td style="border: 1px solid black;">El chat en el historial de reserva representa la comunicación entre la empresa y el cliente, pero falta que se integre la comunicación entre los trabajadores y el cliente.</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Flexibilidad y eficiencia en el uso</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">11</td>
+            <td style="border: 1px solid black;">La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí.</td>
+            <td style="border: 1px solid black;">3</td>
+            <td style="border: 1px solid black;">Usability: Flexibilidad y eficiencia en el uso</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">12</td>
+            <td style="border: 1px solid black;">La empresa no debería calificarse a sí misma con una reseña después de haberse realizado la reserva.</td>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Usability: Prevención de errores</td>
+        </tr>
+    </tbody>
+</table>
+
+**Descripción de problemas**
+
+**PROBLEMA #1:** El número de contacto de la empresa no debería visualizarse en la sección de “información de empresa”.  
+**Heurística violada:** Information Architecture: Is it clear?  
+**Problema:** La visualización del número de contacto de la empresa en la sección de "información de empresa" puede incitar a los usuarios a comunicarse directamente con la empresa en lugar de utilizar la aplicación. Esta situación contradice los objetivos del sistema, que buscan fomentar el uso de la aplicación.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema1.png?raw=true" alt="imagen problema 1" width="350px">
+    </a>
+</p>
+
+**Recomendación:** Eliminar el número de contacto de la empresa de la sección de "información de la empresa". En su lugar, se puede proporcionar información sobre cómo los usuarios pueden utilizar la aplicación para comunicarse con la empresa de manera efectiva.
 
 ---
+
+**PROBLEMA #2:** Los links del footer te redireccionan a una página con el error page not found.  
+**Heurística violada:** Correspondencia entre el sistema y el mundo real  
+**Problema:** Falta configurar adecuadamente los enlaces del footer, lo que provoca que los usuarios sean redirigidos a una página de error "Page Not Found" en lugar de llevarlos a las secciones correspondientes de la página.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema2.png?raw=true" alt="imagen problema 2" width="950px">
+    </a>
+</p>  
+
+**Recomendación:** Revisar y corregir la configuración de los enlaces del footer para asegurarse de que estén apuntando a las secciones relevantes y disponibles de la página.  
+
+---
+
+**PROBLEMA #3:** Desde el login no funcionan las rutas al landing page “servicios”, “nosotros”, “planes” y “testimonios”.  
+**Heurística violada:** Correspondencia entre el sistema y el mundo real  
+**Problema:** No se puede acceder a las rutas del landing page "servicios", "nosotros", "planes" y "testimonios" desde la página de inicio de sesión. 
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema3.png?raw=true" alt="imagen problema 3" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Asegurarse de que las rutas hacia las páginas "servicios", "nosotros", "planes" y "testimonios" estén correctamente configuradas y sean accesibles desde la página de inicio de sesión.   
+
+
+**PROBLEMA #4:** Cuando se presiona el botón de carga rápida, no se sabe si ha generado correctamente el servicio de carga rápida.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** No hay una retroalimentación clara después de presionar el botón de carga rápida, lo que impide a los usuarios saber si el servicio se ha generado correctamente.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema4.png?raw=true" alt="imagen problema 4" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Implementar una retroalimentación visual inmediata después de presionar el botón de carga rápida para informar a los usuarios sobre el estado de su solicitud. Esto puede lograrse mediante mensajes de confirmación visibles, animaciones o cambios de estado en la interfaz de usuario que indiquen claramente que el servicio de carga rápida se ha generado con éxito.  
+
+---
+
+**PROBLEMA #5:** En el registro de reserva, no hay una especificación de cuánta carga  debe llevar la empresa.  
+**Heurística violada:** Control y libertad del usuario  
+**Problema:** Falta de especificaciones claras sobre la cantidad de carga que debe transportar la empresa durante el proceso de registro de reserva. Esta falta de información limita la capacidad del usuario para tomar decisiones informadas y tener control sobre la reserva.
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema5.png?raw=true" alt="imagen problema 5" width="350px">
+    </a>
+</p>
+
+**Recomendación:** Agregar un campo de entrada de datos en el proceso de registro de reserva que permita a los usuarios especificar la cantidad de carga que la empresa debe transportar.   
+
+---
+
+**PROBLEMA #6:** En login el botón de “recuerdame” no hace nada.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** El botón 'Recuérdame' en la página de inicio de sesión no realiza la función esperada de recordar la información de inicio de sesión para futuras visitas.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema6.png?raw=true" alt="imagen problema 6" width="300px">
+    </a>
+</p>
+
+**Recomendación:** Se podría corregir la funcionalidad del botón "Recuérdame" para que efectivamente recuerde la información de inicio de sesión en visitas posteriores, o considerar eliminar el botón.  
+
+---
+
+**PROBLEMA #7:** En Historial de reservas, el botón de “realizar reseña”, el texto del botón está mal posicionado.  
+**Heurística violada:** Consistencia y estándares  
+**Problema:** En la sección de "Historial de reservas", el botón de "realizar reseña" tiene un posicionamiento incorrecto. El texto del botón no está alineado correctamente con los demás elementos de la interfaz, lo que crea una falta de coherencia en el diseño.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema7.png?raw=true" alt="imagen problema 7" width="950px"">
+    </a>
+</p>
+
+**Recomendación:** Reposicionar el botón de "realizar reseña" de manera que esté alineado apropiadamente con los elementos circundantes. Esto ayudará a mantener la coherencia en el diseño y mejorará la usabilidad de la interfaz. 
+
+---
+
+**PROBLEMA #8:** Faltan validaciones de datos para el formulario de edición de cuenta y realización de una reserva.  
+**Heurística violada:** Consistencia y estándares  
+**Problema:** Faltan validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva. Los usuarios pueden ingresar datos incorrectos o inapropiados sin recibir retroalimentación, lo que podría llevar a errores y problemas en el sistema..  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema8.png?raw=true" alt="imagen problema 8" width="950px"">
+    </a>
+</p>
+
+**Recomendación:** Implementar validaciones de datos en el formulario de edición de cuenta y en el proceso de reserva para evitar que los usuarios ingresen información incorrecta. Proporcionar retroalimentación clara y oportuna en caso de que se ingresen datos incorrectos, lo que ayudará a prevenir errores y garantizar una experiencia de usuario más sólida. 
+
+---
+
+**PROBLEMA #9:** Al utilizar el botón de carga rápida no se visualiza la nueva reserva en el historial.  
+**Heurística violada:** Visibilidad del estado del sistema  
+**Problema:** Al utilizar el botón de carga rápida, la nueva reserva no se visualiza en el historial. Los usuarios no reciben retroalimentación sobre el resultado de su acción, lo que afecta la visibilidad del estado del sistema.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema9.png?raw=true" alt="imagen problema 9" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Asegurar que la aplicación muestre de manera inmediata y clara la nueva reserva en el historial después de que un usuario utilice el botón de carga rápida. Esto mejorará la visibilidad del estado del sistema y proporcionará retroalimentación oportuna. 
+
+---
+
+**PROBLEMA #10:** El chat en el historial de reserva representa la comunicación entre la empresa y el cliente, pero falta que se integre la comunicación entre los trabajadores y el cliente.  
+**Heurística violada:** Flexibilidad y eficiencia en el uso  
+**Problema:** El chat en el historial de reserva solo representa la comunicación entre la empresa y el cliente, pero no permite la comunicación entre los trabajadores y el cliente. Esto limita la flexibilidad y eficiencia en la comunicación.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema10.png?raw=true" alt="imagen problema 10" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Integrar la comunicación entre los trabajadores y el cliente en la sección del chat en el historial de reserva. Esto permitirá una comunicación efectiva y sin complicaciones entre todas las partes involucradas. 
+
+---
+
+**PROBLEMA #11:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí.  
+**Heurística violada:** Flexibilidad y eficiencia en el uso  
+**Problema:** La aplicación no combina adecuadamente múltiples filtros al realizar búsquedas en la lista de empresas, lo que provoca que los filtros se superpongan en lugar de complementarse entre sí. Esto limita la flexibilidad y eficiencia en el uso de los filtros.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema11.png?raw=true" alt="imagen problema 11" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Ajustar el diseño de los filtros para que funcionen de manera eficiente y se complementen entre sí, en lugar de superponerse. Esto mejorará la flexibilidad y eficiencia en el uso de los filtros. 
+
+---
+
+**PROBLEMA #12:** La empresa no debería calificarse a sí misma con una reseña después de haberse realizado la reserva.  
+**Heurística violada:** Prevención de errores  
+**Problema:** La empresa puede calificarse a sí misma con una reseña después de haberse realizado la reserva, lo que podría llevar a resultados incorrectos o sesgados.  
+<p align="center">
+    <a href="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true">
+        <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/problema12.png?raw=true" alt="imagen problema 12" width="950px">
+    </a>
+</p>
+
+**Recomendación:** Implementar una validación que evite que la empresa se califique a sí misma después de una reserva. Esto ayudará a prevenir errores y garantizará que las calificaciones sean justas y precisas. 
+
+
+## 5.4 Video About-the-Product  
+
+  
 # Conclusiones
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
