@@ -435,7 +435,7 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
 
 #### 5.2.3.2. Sprint Backlog 3.
---
+
 |     Sprint #         |     Sprint 3             |                           |                                                                      |                                                                                    |                   |                         |                      |
 |----------------------|--------------------------|---------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
 |     User   Story     |                          |     Work –   Item/Task    |                                                                      |                                                                                    |                   |                         |                      |
