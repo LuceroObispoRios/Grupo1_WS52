@@ -4931,11 +4931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\CargaSinEstres.API 123\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\Grupo1_WS52\\backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
       "projectName": "CargaSinEstres.API",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\CargaSinEstres.API 123\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Grupo1_WS52\\backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\CargaSinEstres.API 123\\CargaSinEstres.API\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Grupo1_WS52\\backend\\CargaSinEstres.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"

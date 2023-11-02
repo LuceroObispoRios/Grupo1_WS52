@@ -32,18 +32,15 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "ACME Learning Center API",
-        Description = "ACME Learning Center RESTful API",
-        TermsOfService = new Uri("https://acme-learning.com/tos"),
+        Title = "CARGA SIN ESTRÉS",
+        Description = "CARGA SIN ESTRÉS RESTful API",
         Contact = new OpenApiContact
         {
-            Name = "ACME.studio",
-            Url = new Uri("https://acme.studio")
+            Name = "CSE.studio",
         },
         License = new OpenApiLicense
         {
-            Name = "ACME Learning Center Resources License",
-            Url = new Uri("https://acme-learning.com/license")
+            Name = "CSE Carga Sin Estrés Resources License",
         }
     });
     options.EnableAnnotations();

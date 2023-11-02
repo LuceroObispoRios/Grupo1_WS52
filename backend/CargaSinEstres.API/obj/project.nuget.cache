@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fgSQfrSppliUrU2BDv8IAxAU4JbsG2MZFvfgDzSEh+61NdbEeV+xGwu4BOJdxrV4hz2DwgPIPqcgiP1ievKhPw==",
+  "dgSpecHash": "ayy8vmdpGDtALrC2u0oxnl7uATIQ0RBKGOiMC4D8H2lHlOouNUqpBq7M+daJmWC3i3Ex3CUyRK+WKv8vYDh7sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Downloads\\CargaSinEstres.API 123\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Grupo1_WS52\\backend\\CargaSinEstres.API\\CargaSinEstres.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
