@@ -1108,7 +1108,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 
 ## 5.4 Video About-the-Product  
-Enlace: [https://drive.google.com/file/d/1ikxj9b2gUW-HcuvoLwQIh79hBZ9i4mf4/view?usp=sharing](https://drive.google.com/file/d/1ikxj9b2gUW-HcuvoLwQIh79hBZ9i4mf4/view?usp=sharing)
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k)
 Timing: 2:51 minutos
 Screenshoot: 
 ![Screenshoot](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/screenshoot-video-product.png?raw=true)
@@ -1123,7 +1123,7 @@ Screenshoot:
 
 
 ## Video About-the-Team
-Enlace: [https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing](https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing)
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC)
 
 Proceso de trabajo:
 - Timing de Lucero explicando informe: 00:02 - 1:02
