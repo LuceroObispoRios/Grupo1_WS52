@@ -554,7 +554,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 
 #### MOBILE  
 ![mobile wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-cliente-m.png?raw=true)
-![mobile wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-empresa-m.png?raw=true)
+![mobile wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-registro-empresa.png?raw=true)
 ![mobile wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login-m.png?raw=true) 
 ![mobile wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanySearch_3.jpeg?raw=true) 
 ![mobile wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanyDetail_3.jpeg?raw=true) 
@@ -563,7 +563,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![mobile wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review-responsive.png?raw=true)
 ![mobile wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker-responsive.png?raw=true)
 ![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-wireframeMobile_3.jpeg?raw=true)
-![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-empresa-m.png?raw=true)
+![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)
 ![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente-m.png?raw=true)
 
 ### 4.4.2. Web Applications Wireflow Diagrams.  
@@ -573,7 +573,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ### 4.4.2. Web Applications Mock-ups.  
 #### DESKTOP   
 ![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente.png?raw=true)    
-![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa.png?raw=true)    
+![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-empresa.png?raw=true)    
 ![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login.png?raw=true)   
 ![formulario-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupDesktop_3.jpeg?raw=true)
 ![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)
