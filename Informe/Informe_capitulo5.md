@@ -225,7 +225,7 @@ Durante este sprint, nos enfocamos en completar el landing page y en las página
 
 ![registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution7_sprint1.JPG?raw=true)  
 
-![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution8_sprint1.JPG?raw=true)  
+![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa.png?raw=true)  
 
 ![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution9_sprint1.JPG?raw=true)  
 
@@ -240,7 +240,7 @@ Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
 * Para este **primer** avance, el cual abarcaba la landing page, asi como el registro y login de usuarios, se llevo a cabo un desplegue por medio de GitHub Pages.  
-![Page_deployment](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/deployment.png?raw=true)  
+![Page_deployment](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-page-deployment.jpeg?raw=true)  
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
@@ -308,7 +308,7 @@ Para este Sprint se desarrolló el Frontend de la plataforma.
   
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
   
-![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
+![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)  
 ![feature 02](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature02-sprint2.png?raw=true)  
 ![feature 03](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature03-sprint2.png?raw=true)  
 ![feature 04](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature04-sprint2.png?raw=true)  
