@@ -570,7 +570,7 @@ Los metodos GET all reviews y GET reviews, estan relacionados a la pantalla de I
 |  /reviews                      |       GET       | 200 OK: Retorna la lista de todas las reseñas guardadas                                                         | [http://localhost:7122/api/v1/reviews](http://localhost:7122/api/v1/reviews)  |
 
 Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)
-Link del swagger desplegado: 
+Link del swagger desplegado: [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)
 
 **Capturas de interaccion con datos de prueba**  
 - Registrar empresa (POST)   
@@ -605,7 +605,11 @@ El usuario con cuenta de cliente edita sus datos para mantener su informacion ac
 ![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services9_3.JPG?raw=true)
 - Obtener lista de todos los clientes (GET)   
 Consultar una lista de todas los clientes registrados en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que solicita la lista de todas los clientes.  
-![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_3.JPG?raw=true)     
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_3.JPG?raw=true)
+- Logearse con cuenta de empresa (POST)
+El usuario ingresa su email y password para logearse en la web. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario Plata ha colocado todos los datos necesarios para logearse en su cuenta empresa
+Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services11_3.JPG?raw=true)  
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
