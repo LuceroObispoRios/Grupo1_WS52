@@ -544,7 +544,69 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 #### 5.2.3.5. Execution Evidence for Sprint Review  
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
-  
+
+**Introduccion:**  
+Para este tercer sprint se ha logrado implementar 11 endpoints, los cuales han sido exitosamente logrados y documentados.  
+Los metodos GET clients y companies con parametro de id estan relacionados a la pantalla de Login, para verificar que el usuario existe en la base de datos json.  
+Asmismo, los metodos POST companies y clientes estan relacionados a las pantallas de Register Client y Register Company para registrar la informacion tanto del cliente como de la empresa.  
+Ademas, los metodos PUT companies y clientes estan relacionados a las pantallas de Client Settings y Company Settings para editar la informacion tanto del cliente como de la empresa.  
+Los metodos GET all companies y GET companies con parametro de id, estan relacionados a la pantalla de Busqueda de Empresas, donde el usuario puede ver la lista completa de empresa, y cuando le da click a una fila puede acceder a la informacion de una empresa en especifica.  
+Los metodos GET all reviews y GET reviews, estan relacionados a la pantalla de Informacion de Empresa porque aqui se visualizaran las reseñas que recibe, mientras que en la pantalla Historial de Reservas se podrá crear una reseña, una vez la reserva tenga como estado finalizado.
+
+**Tabla:**  
+
+|     **Endpoint**    | **Metodo HTTP** |           **Acciones (Explicacion del response)**                                                           | **Enlace** | 
+|--------|----------|--------|-------|
+|  /companies                    |       GET       | 200 OK: Retorna la lista de todas las empresas registradas                                                      | [https://localhost:7122/api/v1/companies](https://localhost:7122/api/v1/companies)  |
+|  /companies/{id}               |       GET       | 200 OK: Retorna información de la compañía correspondiente al ID especificado (parametro: id, ejemplo: '1')     | [http://localhost:7122/api/v1/companies/1](http://localhost:7122/api/v1/companies/1)     |
+|  /companies/sign-up            |       POST      | 201 Created: Indica que la compañía se ha registrado exitosamente                                               | [http://localhost:7122/api/v1/companies](http://localhost:7122/api/v1/companies/sign-up)     |
+|  /companies/sign-in            |       POST      | 201 Created: Indica que la compañía se ha logeado exitosamente                                                  | [http://localhost:7122/api/v1/companies](http://localhost:7122/api/v1/companies/sign-in)     |
+|  /companies/{id}               |       PUT       | 200 OK: Indica que la compañía con el ID especificado se ha actualizado con exito (parametro: id, ejemplo: '1') | [http://localhost:7122/api/v1/companies/1](http://localhost:7122/api/v1/companies/1)     |
+|  /clients                      |       GET       | 200 OK: Retorna la lista de todos clientes registrados                                                          | [http://localhost:7122/api/v1/clients](http://localhost:7122/api/v1/clients)  |
+|  /clients                      |       POST      | 201 Created: Indica que el cliente ha sido creado exitosamente                                                  | [http://localhost:7122/api/v1/clients](http://localhost:7122/api/v1/clients) |
+|  /clients/{id}                 |       GET       | 200 OK: Retorna información del cliente correspondiente al ID especificado (parametro: id, ejemplo: '1')        | [http://localhost:7122/api/v1/clients/1](http://localhost:7122/api/v1/clients/1) |
+|  /clients/{id}                 |       PUT       | 200 OK: Indica que el cliente con el ID especificado se ha actualizado con exito (parametro: id, ejemplo: '1')  | [http://localhost:7122/api/v1/clients/1](http://localhost:7122/api/v1/clients/1) |
+|  /reviews                      |       POST      | 201 Created: Indica que la reseña ha sido creada exitosamente                                                   | [http://localhost:7122/api/v1/reviews](http://localhost:7122/api/v1/reviews) |
+|  /reviews                      |       GET       | 200 OK: Retorna la lista de todas las reseñas guardadas                                                         | [http://localhost:7122/api/v1/reviews](http://localhost:7122/api/v1/reviews)  |
+
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)
+Link del swagger desplegado: 
+
+**Capturas de interaccion con datos de prueba**  
+- Registrar empresa (POST)   
+El usuario agrega una nueva empresa a la base de datos para registrarse. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario ha colocado todos datos necesarios para registrar su empresa Plata
+Una vez que se haya registrado la empresa, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services1_3.JPG?raw=true)   
+- Registrar cliente (POST)   
+El usuario agrega un nuevo cliente a la base de datos para registrarse. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario Lucero ha colocado todos datos necesarios para registrar su cuenta personal
+Una vez que se haya registrado el cliente, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services2_3.JPG?raw=true)   
+- Registrar reseña (POST)   
+El usuario agrega una nueva reseña a la base de datos para calificar el servicio brindado por una empresa. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario ha colocado todos datos necesarios para publicar su reseña.
+Una vez que se haya creado la reseña, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services3_3.JPG?raw=true)      
+- Obtener lista de todas las empresas (GET)   
+Los usuarios desean consultar una lista de todas las empresas registradas en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que un cliente solicita la lista de todas las empresas disponibles.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services4_3.JPG?raw=true)     
+- Obtener empresa por su id (GET)  
+Los usuarios desean consultar la información de una empresa específica en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) de la empresa. A continuación, se presenta un ejemplo en el que un cliente solicita la información de una empresa por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services5_3.JPG?raw=true)      
+- Obtener cliente por su id (GET)
+Los usuarios desean consultar su información personal, por eso se brinda el id del cliente. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) del cliente. A continuación, se presenta un ejemplo en el que se solicita la información de un cliente por su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services6_3.JPG?raw=true)     
+- Obtener reseñas (GET)    
+Esta funcionalidad permite obtener reseñas asociadas a empresas. Se realiza una solicitud HTTP GET para recuperar los detalles de las reseñas de la empresa. A continuación, se presenta un ejemplo en el que se solicita información de las reseñas.   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services7_3.JPG?raw=true)   
+- Editar empresa (PUT)   
+El usuario con cuenta de empresa edita sus datos para mantener su informacion actualizada para sus cliente.  Esta operación se realiza mediante una solicitud HTTP PUT utilizando el identificador único (ID) de la empresa. A continuación, se presenta un ejemplo en el que una empresa solicita actualizar su información brindando su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services8_3.JPG?raw=true)   
+- Editar cliente (PUT)    
+El usuario con cuenta de cliente edita sus datos para mantener su informacion actualizada.  Esta operación se realiza mediante una solicitud HTTP PUT utilizando el identificador único (ID) del cliente. A continuación, se presenta un ejemplo en el que un cliente solicita actualizar su información brindando su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services9_3.JPG?raw=true)
+- Obtener lista de todos los clientes (GET)   
+Consultar una lista de todas los clientes registrados en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que solicita la lista de todas los clientes.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_3.JPG?raw=true)     
+
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
 La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
