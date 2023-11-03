@@ -542,6 +542,22 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 
 
 #### 5.2.3.5. Execution Evidence for Sprint Review  
+
+Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
+
+- Establecimiento de múltiples archivos(frontend,backend, informes) en el repositorio de nuestro GitHub. 
+- Elaboración del frontend(membresía, reseñas, añadir filtros por servicio, )
+- Realización de la implementación de companies, client y reviews en backend
+- Despliegue del fronted de Carga Sin Estrés
+
+##### Empresa
+![membership](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership.jpg?raw=true)
+![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership1.jpg?raw=true)
+
+##### Cliente
+![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/filtro.jpg?raw=true)
+![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/reservas.jpg?raw=true)
+![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
 
@@ -725,8 +741,24 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 "Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"   
 
 ***Individuos de 18 a 50 años***  
-1.   
+1. PRIMERA ENTREVISTA:
+Nombre y apellido: Mariela Martínez
+Edad: 19
+Distrito: Lima
+Duración: 8:49min
+Link de la entrevista: https://youtu.be/fIztTa-DjhI
 
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/Entrevista_Ciudadano.jpg?raw=true)
+
+Timings:  
+04:09 - ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
+"Me parece intuitiva, es fácil de utilizarlo, no me complicaría tanto para reserva a una empresa con el tipo de mudanza. Asimismo, hay una variedad de empresas a escoger"
+
+05:03 - ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”? 
+"El tema de los precios, en qué se basan los cálculos del precio de dicho trabajo"
+
+06:21 - .¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
+"Si, claro. Debido a que puedo filtrar con respecto a mi ubicación, servicios, calificación y nombre de la empresa. Me parece una herramienta muy útil"
 
 2. Segunda entrevista:     
 Entrevistado: Sergio Leandro     
