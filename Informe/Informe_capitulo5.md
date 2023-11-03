@@ -1108,7 +1108,10 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 
 ## 5.4 Video About-the-Product  
-
+Enlace: [https://drive.google.com/file/d/1ikxj9b2gUW-HcuvoLwQIh79hBZ9i4mf4/view?usp=sharing](https://drive.google.com/file/d/1ikxj9b2gUW-HcuvoLwQIh79hBZ9i4mf4/view?usp=sharing)
+Timing: 2:51 minutos
+Screenshoot: 
+![Screenshoot](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/screenshoot-video-product.png?raw=true)
   
 # Conclusiones
 
@@ -1117,6 +1120,25 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 - El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
 
 - Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+
+
+## Video About-the-Team
+Enlace: [https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing](https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing)
+
+Proceso de trabajo:
+- Timing de Lucero explicando informe: 00:02 - 1:02
+- Timing de Andrea explicando el frontend: 1:02 - 2:02
+- Timing de Leonardo explicando el frontend: 2:02 - 3:02
+- Timing de Eric explicando el backend: 3:02 - 4:02
+- Timing de Damaris explicando el backend: 4:02 - 5:02
+
+Testimonios:
+- Timing de Lucero Obispo: 5:02 - 6:02
+- Timing de Andrea O'Higgins: 6:02 - 7:02
+- Timing de Leonardo Patrocinio: 7:02 - 8:02
+- Timing de Eric Cuevas: 8:02 - 9:02
+- Timing de Damaris Tasayco: 9:02 - 10:02
+
 
 # Bibliografia  
 --
@@ -1145,9 +1167,9 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 # Anexos  
 ## Anexo Videos de Exposiciones  
 
-- TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-- TP: https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing
-
+- TB1: [https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing ](https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing)
+- TP: [https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing](https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing)
+- TB2: [https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing](https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing)
 
 
 
