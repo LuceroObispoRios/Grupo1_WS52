@@ -1108,22 +1108,24 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 
 ## 5.4 Video About-the-Product  
-Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k)
-Timing: 2:51 minutos
-Screenshoot: 
-![Screenshoot](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/screenshoot-video-product.png?raw=true)
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k)  
+Enlace de youtube: [https://www.youtube.com/watch?v=wAuSouCqarw](https://www.youtube.com/watch?v=wAuSouCqarw)  
+Timing: 2:51 minutos   
+Screenshoot:   
+![Screenshoot](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/screenshoot-video-product.png?raw=true)   
   
 # Conclusiones
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
 
-- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+- El desarrollo colaborativo en los sprints 1, 2 y 3 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos, asi como se agrego caracteristicas en la pagina como solucion de los problemas detectados de las evaluaciones heuristicas realizados por nuestros 2 segmentos objetivos.
 
-- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito tres sprints, con el tercer sprint representando nuestra última entrega. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript para la parte frontend,  con el objetivo de desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios. En la parte backend, se implemtarios los servicios relacionados a crear, obtener información y actualizar las clases relacionadas a clientes, reseñas y empresas.
 
 
 ## Video About-the-Team
-Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC)
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC)   
+Enlace de youtube: [https://www.youtube.com/watch?v=vSu9mSNPYqI](https://www.youtube.com/watch?v=vSu9mSNPYqI)
 
 Proceso de trabajo:
 - Timing de Lucero explicando informe: 00:02 - 1:02
