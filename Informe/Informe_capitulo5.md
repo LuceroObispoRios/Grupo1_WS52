@@ -505,11 +505,24 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
 
 - Establecimiento de múltiples archivos(frontend,backend, informes) en el repositorio de nuestro GitHub. 
-- Elaboración del frontend(membresía, reseñas y trabajadores)
+- Elaboración del frontend(membresía, reseñas, añadir filtros por servicio, )
 - Realización de la implementación de companies, client y reviews en backend
 - Despliegue del fronted de Carga Sin Estrés
 
+##### Empresa
+![membership](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership.jpg?raw=true)
+![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership1.jpg?raw=true)
 
+##### Cliente
+![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/filtro.jpg?raw=true)
+![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/reservas.jpg?raw=true)
+![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
+
+##### Backend
+![backend](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend.jpg?raw=true)
+![backend2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend2.jpg?raw=true)
+![backend_client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend_clients2.jpg?raw=true)
+![backend_company](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend_company.jpg?raw=true)
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
