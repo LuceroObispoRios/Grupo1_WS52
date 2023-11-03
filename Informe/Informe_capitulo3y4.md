@@ -544,8 +544,10 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login.png?raw=true) 
 ![wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanySearch.png?raw=true) 
 ![wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanyDetail.png?raw=true) 
-![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-historial-reservas.png?raw=true)
+![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history.png?raw=true)
 ![wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat.png?raw=true)
+![wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review.png?raw=true)
+![wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker.png?raw=true)
 ![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-membresia.png?raw=true)
 ![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-empresa.png?raw=true)
 ![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente.png?raw=true)
@@ -556,8 +558,10 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![mobile wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login-m.png?raw=true) 
 ![mobile wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanySearch.png?raw=true) 
 ![mobile wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanyDetail.png?raw=true) 
-![mobile wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-historial-reservas.png?raw=true)
-![mobile wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-chat.png?raw=true)
+![mobile wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history-responsive.png?raw=true)
+![mobile wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat-responsive.png?raw=true)
+![mobile wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review-responsive.png?raw=true)
+![mobile wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker-responsive.png?raw=true)
 ![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-membresia.png?raw=true)
 ![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-empresa-m.png?raw=true)
 ![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente-m.png?raw=true)
@@ -588,8 +592,10 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-cliente-m.png?raw=true)
 ![mobile mockup busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companySearch_mockupMobile.png?raw=true)  
 ![mobile mockup detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companyDetail_mockupMobile.png?raw=true)  
-![mobile mockup historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/historialReservas_mockupMobile.png?raw=true)   
-![mobile mockup chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/chat_mockupMobile.png?raw=true)   
+![mobile mockup historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-booking-history-responsive.png?raw=true)   
+![mobile mockup chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-chat-responsive.png?raw=true)   
+![mobile mockup review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-review-responsive.png?raw=true)   
+![mobile mockup worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-worker-responsive.png?raw=true)   
 
 ### 4.4.3. Web Applications User Flow Diagrams.  
 ![mockup-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow1.png?raw=true)  
@@ -652,5 +658,5 @@ El diagrama de clases se realizo con la pagina Lucidchart, este es el enlace del
 ## 4.8. Database Design.
 
 ### 4.8.1. Database Diagram.
-![Database](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Carga_sin_estres_DB.png?raw=true)
+![Database](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/CargaSinEstres-Web-DB.png?raw=true)
 

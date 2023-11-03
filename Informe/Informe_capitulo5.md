@@ -99,7 +99,7 @@ Ahora, para inicializar el despliegue:
 ![Paso6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/paso6.JPG?raw=true)  
   
 Con esto nuestra aplicación fue desplegada y se puede encontrar en el siguiente link:  
-[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app)
+[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app)
 
 *Para que funcione correctamente se tiene que hacer $json-server --watch db.json --routes routes.json , a nuestra db en json 
 
@@ -431,11 +431,11 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 | Sprint 2 Retrospective Summary | Se trabajo fluidamente, participando todos por igual en la realización del proyecto, más en la aopinión del grupo creemos que pudimos haber terminado más partes del front-end. |
 | | **Sprint Goal & User Stories** |
 | Sprint & Goal | El objetivo del Sprint 3 sera terminar Frontend de la applicación, asi como avanzar el back-end hasta un punto funcional que podamos completar el siguiente sprint. |
-| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es XX. |
-| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es XX. |
+| Sprint & Velocity | Debido al alcanze establecido para este sprint, el Velocity establecido para este sprint es 39. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollano este sprint es 39. |
 
 #### 5.2.3.2. Sprint Backlog 3.
---
+
 |     Sprint #         |     Sprint 3             |                           |                                                                      |                                                                                    |                   |                         |                      |
 |----------------------|--------------------------|---------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
 |     User   Story     |                          |     Work –   Item/Task    |                                                                      |                                                                                    |                   |                         |                      |
@@ -458,7 +458,19 @@ Durante este sprint, nuestro equipo trabajó de manera organizada en GitHub. Est
 |                      |                          |     WI16                  |     Agregar reseña de un trabajador de empresa                       |     Hacer uso de la herramienta WebStorm, los lenguajes:  VUE, CSS y JavaScript    |     2h            |     Andrea O’Higgins    |     Completado       |
 
 #### 5.2.3.3. Development Evidence for Sprint Review.  
-  
+
+Para este Sprint se desarrolló el frontend y backend de la plataforma.  
+
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-1.png?raw=true" alt="Development Evidence - parte 1" width="400">
+</div>  
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-2.png?raw=true" alt="Development Evidence - parte 2" width="400">
+</div>  
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint3-3.png?raw=true" alt="Development Evidence - parte 3" width="400">
+</div>  
+
 #### 5.2.3.4. Testing Suite Evidence for Sprint Review.  
 Acceptance Tests actualizados de los User Stories, archivos .feature utilizando el lenguaje Gherkin.  
 
@@ -478,9 +490,34 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature11-sprint3.png?raw=true" width="600px" alt="feature 11">
 </div>
 
+**feature 15**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature15-sprint3.png?raw=true" width="600px" alt="feature 15">
+</div>
+
 **feature 16**
 <div style="text-align:center;">
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature16-sprint3.png?raw=true" width="600px" alt="feature 16">
+</div>
+
+**feature 17**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature17-sprint3.png?raw=true" width="600px" alt="feature 17">
+</div>
+
+**feature 18**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature18-sprint3.png?raw=true" width="600px" alt="feature 18">
+</div>
+
+**feature 19**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature19-sprint3.png?raw=true" width="600px" alt="feature 19">
+</div>
+
+**feature 20**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature20-sprint3.png?raw=true" width="600px" alt="feature 20">
 </div>
 
 **feature 21**
@@ -488,11 +525,36 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature21-sprint3.png?raw=true" width="600px" alt="feature 21">
 </div>
 
+**feature 22**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature22-sprint3.png?raw=true" width="600px" alt="feature 22">
+</div>  
+
+**feature 23**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature23-sprint3.png?raw=true" width="600px" alt="feature 23">
+</div> 
+
+**feature 24**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature24-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
+
 #### 5.2.3.5. Execution Evidence for Sprint Review  
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
+  
+La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
+[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app),   
+*más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nuestro archivo db.json, el cual se encuentra en este mismo repositorio  
+  
+Para el backend se puede acceder por medio de estos links:  
+Este para el servidor - [https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1](https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1)  
+*la cuenta es ericcr-001 y la contraseña u202112766  
+Y este para la pagina - [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)  
   
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
 
@@ -536,8 +598,45 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
-1. [https://youtu.be/VjBsWHqTmmM]   
-2.    
+1. Primera Entrevista:  
+Entrevistado: Felix Bianchi  
+Residencia: Chorrillos, Lima  
+Ocupación: Trabajador de empresa de mudanzas  
+Entrevistador: Eric Cuevas  
+Enlace: [https://youtu.be/VjBsWHqTmmM](https://youtu.be/VjBsWHqTmmM)  
+![Entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion-empresa1-web.JPG?raw=true)  
+  
+Resumen de entrevista:  
+07:26 - ¿Que caracteristica de la pagina encuentra usted más util en cuanto a contribuir con el crecimiento de su empresa?  
+La posibilidad de poder ampliar el acceso al publico al servicio que nosotros brindamos. En estas epocas que exite un acceso masivo por parte del publico a los servicios respecto a los servicios que brindan todas las empresas yo creo que los servicios que nosotros brindamos deben tener un mecanismo que permita acercarnos a la población, y yo creo que este es el medio.         
+        
+08:21 - ¿Que otras funcionalidades le gustaria ver o cree pueden mejorar en la aplicación a futuro?  
+El tema de hacer un seguimiento apenas se inicio el servicio al traslado de la carga, asi como su estado situacional, y por ultimo el tema de las estadisticas, que yo creo es uno muy importante, so solamente la calificación, sino la estadistica de la calidad del servicio, esto nos obligaria a todos a mejoras nuestros servicios.  
+      
+09:25 - ¿Recomendaria nuestra aplicación web "Carga Sin estrés" a otras empresas de mudanza?  
+Si, definitivamente, yo lo veo como una opcion para poder de alguna manera profesionalizar y poder llegar directamente al publico usuario.  
+
+2.  Segunda entrevista:  
+Entrevistado: José David  
+Residencia: Cercado de lima  
+Ocupación: Trabajador de empresa de mudanza  
+Entrevistador: Leonardo Patrocinio  
+Enlace [https://youtu.be/4w9yW6qvU-Q](https://youtu.be/4w9yW6qvU-Q)
+![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg)  
+
+Resumen de entrevista:  
+03:20 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
+“Como información adicional podria ser su cobertura geografica de las empresas y si tienen otros tipos de servicios como almacenamiento temporales”  
+
+03:50 - ¿Cree que los beneficios brindados por las membresías son útiles para su empresa mientras usa la aplicación?  
+“Sí, las membresías ofrecen ventajas interesantes, como visibilidad destacada y mayor acceso a clientes potenciales”  
+
+04:25 - ¿Cómo considera que la función de historial de reservas podría mejorar su capacidad de seguimiento y gestión de mudanzas?   
+El historial de reservas es útil para llevar un registro de los servicios realizados, pero sería aún más valioso si se pudiera generar automáticamente un informe de cada reserva.   
+
+06:12 - ¿Recomendarían nuestra aplicación web "Carga Sin Estrés" a otras empresas de mudanza? ¿Por qué?   
+Sí, definitivamente la recomendaría. La plataforma puede llegar a simplificar la forma en que interactuamos con nuestros clientes y aumentar nuestras oportunidades de negocio.  
+   
 3.  Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
@@ -561,8 +660,43 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 
 ***Individuos de 18 a 50 años***  
 1.   
-2.   
-3.  
+
+
+2. Segunda entrevista:     
+Entrevistado: Sergio Leandro     
+Residencia: Lima   
+Entrevistador: Andrea O'Higgins   
+Enlace: [https://youtu.be/Q-FgFnv3q2s](https://youtu.be/Q-FgFnv3q2s)   
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion2-client.png?raw=true)   
+
+Resumen de entrevista:   
+04:55 - ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?    
+"Sí, tiene suficiente información, pero habría sido útil tener más detalles sobre los costos como mencioné antes. Y también, con respecto a la seguridad, sería bueno que se puedan ver las certificaciones y licencias de las empresas de mudanza, para que sepamos que verdaderamente nuestros bienes están seguros."  
+
+05:14 - ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?    
+"Sí, se puede visualizar y buscar a las empresas facilmente. Se ve bastante ordenado.También al utilizar los filtros, la busqueda de empresas se ve bien y nada complejo."  
+
+06:11 - ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?   
+"Sí recomendaría, me parece que la plataforma en general puede facilitar el proceso de mudanza y tiene una buena distribución."  
+
+3. Tercera entrevista:   
+Entrevistado: Virginia Borja      
+Residencia: Lima    
+Entrevistador: Andrea O'Higgins   
+Enlace:  [https://youtu.be/zPuaC_a67c8](https://youtu.be/zPuaC_a67c8) 
+![EntrevistaValidation-3-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/entrevista-validacion3-client.png?raw=true)
+
+Resumen de entrevista:  
+06:46 - ¿Consideras que se proporciona suficiente información sobre las empresas de mudanza que desea reservar?¿Considera alguna característica faltante?  
+"Creo que está bastante completa, creo que tiene lo importante, no me parece que haya, no se necesite más para tomar información como te digo tal vez algo que simule un poco lo que yo busco, no?. Por ejemplo, que yo pueda poner servicios, que es el servicio que yo busco, seleccionar la ubicación de, que me gustaría que diese ubicación pero de destino de origen, como un uber que simulan la ruta y te salen precioso."
+
+09:27 - ¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?  
+"Sí, me parece bastante adecuada, siento que permite ver de forma bastante ordenada como los servicios que son adecuados para mí, ¿no?. Porque si yo filtro y todo puedo encontrar lo que yo busco y me podrían aparecer, son los que podrían satisfacer eso."
+
+13:14 - ¿Recomendaría “Carga Sin Estrés” a otras personas que desean solicitar el servicio de mudanza?¿Por qué?  
+"Sí, me parece adecuado el servicio, me parece que suma bastante valor para las personas que necesitan este tipo de servicios. Muchas veces son muy informales estas empresas. Si hay un intermediario que permite regularizarlas, aunque sea de un poco y poderlas juntar en un solo lugar que es la plataforma, a mí me da bastantes opciones de cotización, me da bastantes opciones de saber que estas empresas al menos tienen algún cierto filtro para trabajar con ustedes."  
+
+ 
   
 ### 5.3.3 Evaluaciones segúnn heurísticas  
   
