@@ -505,6 +505,11 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature25-sprint3.png?raw=true" width="600px" alt="feature 24">
 </div> 
 
+**feature 23**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature26-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
 #### 5.2.3.5. Execution Evidence for Sprint Review  
 
 Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
