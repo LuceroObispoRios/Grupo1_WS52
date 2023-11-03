@@ -596,7 +596,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![mobile mockup historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-booking-history-responsive.png?raw=true)   
 ![mobile mockup chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-chat-responsive.png?raw=true)   
 ![mobile mockup review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-review-responsive.png?raw=true)   
-![mobile mockup worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-worker-responsive.png?raw=true)   
+![mobile mockup worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-mockup-worker.png?raw=true)   
 
 ### 4.4.3. Web Applications User Flow Diagrams.  
 ![mockup-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow1.png?raw=true)  
