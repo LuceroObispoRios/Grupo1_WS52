@@ -567,10 +567,9 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente-m.png?raw=true)
 
 ### 4.4.2. Web Applications Wireflow Diagrams.  
-![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframes-flow1.png?raw=true)  
-  
-![wireframe-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframes-flow2.png?raw=true)  
-
+![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow1_3.png?raw=true)  
+![wireframe-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow2_3.png?raw=true)  
+![wireframe-flow3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow3_3.png?raw=true)  
 ### 4.4.2. Web Applications Mock-ups.  
 #### DESKTOP   
 ![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente.png?raw=true)    
