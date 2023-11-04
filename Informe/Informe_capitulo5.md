@@ -630,7 +630,7 @@ Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cl
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
 La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
-[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app),   
+[https://cargasinestres-vue-tb2.web.app/](https://cargasinestres-vue-tb2.web.app/),   
 *más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nuestro archivo db.json, el cual se encuentra en este mismo repositorio  
   
 Para el backend se puede acceder por medio de estos links:  
