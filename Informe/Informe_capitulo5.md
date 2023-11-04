@@ -11,21 +11,22 @@ Para el presente trabajo, por motivo de comodidad, dominio o preferencia de cier
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a 
 la instalación, la cual es guiada e intuitiva. 	
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/VisualStudioCodeLogo.png?raw=true" alt="Visual Studio Code" width="600px">
+![Visual Studio Code](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/VisualStudioCodeLogo.png?raw=true)  
+
 
 *Se han utilizado las siguientes extensiones, todas ellas se encuentran dentro de la tienda de extensiones en el IDE Visual Studio Code:*
 
 **Live Server (Extensión de Visual Studio Code)**: La extensión "Live Server" es una herramienta esencial para cualquier desarrollador web que busque agilizar el proceso de desarrollo y pruebas de aplicaciones web. Con esta herramienta podemos tener una experiencia de desarrollo en tiempo real, permitiéndonos ver los cambios que realizamos en el Landing Page y el aplicativo web de inmediato en el navegador, sin necesidad de recargar la página manualmente. Esto nos permite  concentrarnos en la lógica y la apariencia de nuestro diseño sin interrupciones.
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/LiveServer.png?raw=true" alt="Extensión vscode-style-components" width="700px">
+![Extension Live Server](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/LiveServer.png?raw=true)  
 
 **Auto Rename Tag (Extensión de Visual Studio Code)**: La extensión "AutoRenameTag" es una herramienta esencial que simplifica la edición de etiquetas HTML en el desarrollo web. Esta extensión permite cambiar automáticamente el nombre de una etiqueta y su cierre correspondiente cuando se modifica una de ellas. Esta extensión ahorra tiempo y posibles errores al equipo dado a la cantidad de actualizaciones en el código.
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AutoRenameTag.png?raw=true" alt="Extensión vscode-style-components" width="700px">
+![Extension Auto Rename Tag](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AutoRenameTag.png?raw=true)  
 
 **vscode-styled-components (Extensión de Visual Studio Code)**: La extensión "vscode-styled-components" fue de gran utilidad para el desarrollo del código CSS.  Los beneficios que esta extensión puede ofrecer es dar detalle sobre las propiedades y autocompletado  inteligente para las plantillas de estilo dentro de  componentes. Esto facilita la creación de CSS-JS de manera eficiente y ayuda a mantener  un código limpio y organizado.
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/vscode-style-components.png?raw=true" alt="Extensión vscode-style-components" width="700px">  
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/vscode-style-components.png?raw=true)  
 
 
 **Git**: Dado que es necesario colaborar en el proyecto tanto del landing page como el aplicativo web de  manera remota. Se optó por el sistema de control de versiones GIT. Dado que permite la colaboración activa de los miembros del equipo incluso cuando no tengan acceso a internet. Cada miembro almacena  un clon local del proyecto y puede realizar las actualizaciones correspondientes.    
@@ -34,14 +35,14 @@ la instalación, la cual es guiada e intuitiva.
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a 
 la instalación, la cual es guiada e intuitiva.
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitLogo.png?raw=true" alt="Extensión vscode-style-components" width="400px">
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitLogo.png?raw=true)
 
 **Github**: GitHub es la herramienta perfecta para nuestro equipo. En primer lugar, nos permite  mantener un control preciso de cada cambio en nuestro código, lo que facilita la colaboración  en tiempo real y minimiza los conflictos. Además, es posible realizar revisiones de código,  abrir problemas y fusionar solicitudes de extracción de manera fluida hace que nuestro  trabajo en equipo sea más eficiente y efectivo. En resumen, GitHub se ha convertido en el  núcleo de nuestra estrategia de desarrollo.
 
 Ruta de descarga: https://desktop.github.com    
 Una vez descargado el ejecutable, teniendo en cuenta el sistema operativo del usuario, se procede a la instalación, la cual es guiada e intuitiva.
 
-<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/GitHubLogo.png?raw=true" alt="Extensión vscode-style-components" width="400px">  
+![Extensión vscode-style-components](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/GitHubLogo.png?raw=true)
 
 ### 5.1.2. Source Code Management.
 El repositorio de Github donde esta el proyecto y el markdown de este informe será [https://github.com/LuceroObispoRios/Grupo1_WS52.git]  
@@ -167,45 +168,45 @@ Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje G
 
 ![feature 1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)    
 
-![feature 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us02.png?raw=true)   
+![feature 2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us02.png?raw=true)  
 
-![feature 3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us03.png?raw=true)  
+![feature 3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us03.png?raw=true)
 
-![feature 4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us04.png?raw=true)  
+![feature 4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us04.png?raw=true)
 
-![feature 5](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us05.png?raw=true)  
+![feature 5](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us05.png?raw=true)
 
-![feature 6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us06.png?raw=true)  
+![feature 6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us06.png?raw=true)
 
-![feature 7](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us07.png?raw=true)  
+![feature 7](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us07.png?raw=true)
 
-![feature 8](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us08.png?raw=true)  
+![feature 8](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us08.png?raw=true)
 
-![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)  
+![feature 9](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us09.png?raw=true)
 
-![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)  
+![feature 10](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us10.png?raw=true)
 
-![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)  
+![feature 11](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us11.png?raw=true)
 
 ![feature 12](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US012.jpg?raw=true)  
 
 ![feature 13](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US013.jpg?raw=true)  
  
-![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US14.jpg?raw=true)  
+![feature 14](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US014.jpg?raw=true)  
 
-![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US15.jpg?raw=true)  
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US015.jpg?raw=true)  
 
-![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US16.jpg?raw=true)  
+![feature 16](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US016.jpg?raw=true)  
 
-![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US17.jpg?raw=true)  
+![feature 17](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US017.jpg?raw=true)  
 
 ![feature 18](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US018.jpg?raw=true)  
  
-![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true)  
+![feature 19](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US019.jpg?raw=true) 
 
 ![feature 20](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US020.jpg?raw=true)  
 
-![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)  
+![feature 21](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/US021.jpg?raw=true)
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 ***Primer Sprint***  
@@ -335,7 +336,7 @@ Durante este sprint, nos enfocamos en terminar con la sección de manejo de usua
 ![Registrar-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution2.JPG?raw=true)
 ![registrar-empresa1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution3.JPG?raw=true)
 ![registrar-empresa2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution4.JPG?raw=true)
-![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution5.JPG?raw=true)
+![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution5.JPG?raw=true)
 ![busqueda de empresas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution6.JPG?raw=true)
 ![Carta de información de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution7.JPG?raw=true)
 ![historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution8.JPG?raw=true)
@@ -550,13 +551,13 @@ Durante este tercer sprint, en términos generales, hemos alcanzado los siguient
 - Despliegue del fronted de Carga Sin Estrés
 
 ##### Empresa
-![membership](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership.jpg?raw=true)
-![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership1.jpg?raw=true)
+![membership]https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/membership.jpg?raw=true)
+![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/membership1.jpg?raw=true)
 
 ##### Cliente
-![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/filtro.jpg?raw=true)
-![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/reservas.jpg?raw=true)
-![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
+![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/filtro.jpg?raw=true)
+![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/reservas.jpg?raw=true)
+![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
 
@@ -644,12 +645,12 @@ Durante este sprint, nuestra colaboración como equipo se destacó por una organ
 En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregado una rama llamada Leonardo/feature, ya que Leonardo es nuevo miembro del equipo y tambien requeria de su espacio personal para trabajar en el repositorio.
 
 ![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow1_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow2_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow3_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow4_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow5_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow6_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow7_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow2_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow3_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow4_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow5_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow6_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow7_3.JPG?raw=true)  
 
 ## 5.3 Validation Interviews   
   
@@ -703,7 +704,7 @@ Residencia: Cercado de lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Leonardo Patrocinio  
 Enlace [https://youtu.be/4w9yW6qvU-Q](https://youtu.be/4w9yW6qvU-Q)
-![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg)  
+![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg?raw=true)  
 
 Resumen de entrevista:  
 03:20 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
@@ -724,7 +725,7 @@ Residencia: San Martin de Porres, Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Lucero Obispo  
 Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG)   
-![entrevista-3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/EntrevistaValidation3-Trabajador.JPG?raw=true)  
+![entrevista-3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation3-Trabajador.JPG?raw=true)  
 
 Resumen de entrevista:  
 08:00 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
@@ -1170,7 +1171,4 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 
 - TB1: [https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing ](https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing)
 - TP: [https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing](https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing)
-- TB2: [https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing](https://drive.google.com/file/d/1kMPH_qkJyHocJXPljnZRUKjVzSLciNs_/view?usp=sharing)
-
-
-
+- TB2: [https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing](https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing)
