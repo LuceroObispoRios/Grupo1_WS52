@@ -529,79 +529,79 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ## 4.3. Landing Page UI Design.
 
 ### 4.3.1. Landing Page Wireframe.
-![LandingPage_wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe_LandingPage.png?raw=true)  
-![mobile-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-mobile-landing.png?raw=true)  
+![LandingPage_wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe_LandingPage.png?raw=true)    
+![mobile-wireframe](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-mobile-landing.png?raw=true)    
 
 ### 4.3.2. Landing Page Mock-up.
-![LandingPage_mock_up](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_LandingPage.png?raw=true)
-![mobile-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-mobile.png?raw=true)  
+![LandingPage_mock_up](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup_LandingPage.png?raw=true)   
+![mobile-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-mobile.png?raw=true)    
 
 ## 4.4. Web Applications UX/UI Design.  
 ### 4.4.1. Web Applications Wireframes.    
 #### DESKTOP  
-![wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-cliente.png?raw=true)  
-![wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-empresa.png?raw=true)  
-![wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login.png?raw=true) 
-![wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanySearch_3.png?raw=true) 
-![wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanyDetail_3.jpeg?raw=true) 
-![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history.png?raw=true)
-![wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat.png?raw=true)
-![wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review.png?raw=true)
-![wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker.png?raw=true)
-![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-wireframeDesktop_3.jpeg?raw=true)
-![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-empresa.png?raw=true)
-![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente.png?raw=true)
+![wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-cliente.png?raw=true)    
+![wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-empresa.png?raw=true)    
+![wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login.png?raw=true)   
+![wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanySearch_3.png?raw=true)   
+![wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeDesktop-CompanyDetail_3.jpeg?raw=true)   
+![wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history.png?raw=true)   
+![wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat.png?raw=true)   
+![wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review.png?raw=true)   
+![wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker.png?raw=true)   
+![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-wireframeDesktop_3.jpeg?raw=true)   
+![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-empresa.png?raw=true)   
+![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente.png?raw=true)   
 
 #### MOBILE  
-![mobile wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-cliente-m.png?raw=true)
-![mobile wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-registro-empresa.png?raw=true)
-![mobile wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login-m.png?raw=true) 
-![mobile wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanySearch_3.jpeg?raw=true) 
-![mobile wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanyDetail_3.jpeg?raw=true) 
-![mobile wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history-responsive.png?raw=true)
-![mobile wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat-responsive.png?raw=true)
-![mobile wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review-responsive.png?raw=true)
-![mobile wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker-responsive.png?raw=true)
-![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-wireframeMobile_3.jpeg?raw=true)
-![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)
-![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente-m.png?raw=true)
+![mobile wireframe registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-registro-cliente-m.png?raw=true)   
+![mobile wireframe registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-wireframe-registro-empresa.png?raw=true)   
+![mobile wireframe inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-login-m.png?raw=true)    
+![mobile wireframe busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanySearch_3.jpeg?raw=true)   
+![mobile wireframe detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframeMobile-CompanyDetail_3.jpeg?raw=true)   
+![mobile wireframe historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-booking-history-responsive.png?raw=true)  
+![mobile wireframe chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-chat-responsive.png?raw=true)   
+![mobile wireframe review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-review-responsive.png?raw=true)   
+![mobile wireframe worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/wireframe-worker-responsive.png?raw=true)  
+![wireframe membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-wireframeMobile_3.jpeg?raw=true)  
+![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)   
+![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/w-ajustes-cliente-m.png?raw=true)  
 
 ### 4.4.2. Web Applications Wireflow Diagrams.  
-![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow1_3.png?raw=true)  
-![wireframe-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow2_3.png?raw=true)  
-![wireframe-flow3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow3_3.png?raw=true)  
-### 4.4.2. Web Applications Mock-ups.  
+![wireframe-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow1_3.png?raw=true)    
+![wireframe-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow2_3.png?raw=true)    
+![wireframe-flow3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/userflow3_3.png?raw=true)    
+### 4.4.2. Web Applications Mock-ups.    
 #### DESKTOP   
-![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente.png?raw=true)    
-![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-empresa.png?raw=true)    
-![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-inicio-sesion-desktop.png?raw=true)   
-![formulario-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia.png?raw=true)
-![boleta-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupDesktop_3.jpeg?raw=true)
-![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)
-![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-cliente.png?raw=true)
+![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente.png?raw=true)      
+![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-empresa.png?raw=true)     
+![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-inicio-sesion-desktop.png?raw=true)     
+![formulario-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia.png?raw=true)   
+![boleta-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupDesktop_3.jpeg?raw=true) 
+![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa.png?raw=true)  
+![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-cliente.png?raw=true)   
 ![busquedaSearch-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companySearch_mockupDesktop_3.jpeg?raw=true) 
 ![busquedaDetail-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companyDetail_mockupDesktop_3.jpeg?raw=true)    
 
 
 #### MOBILE   
-![mobile mockup registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente-m.png) 
-![mobile mockup registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa-m.png?raw=true)  
-![mobile mockup inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login-m.png?raw=true)  
-![formulario-membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-m.png?raw=true)
-![boleta-membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupMobile_3.jpeg?raw=true)
-![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa-m.png?raw=true)
-![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-cliente-m.png?raw=true)
-![mobile mockup busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companySearch_mockupMobile_3.jpeg?raw=true)  
-![mobile mockup detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companyDetail_mockupMobile_3.jpeg?raw=true)  
-![mobile mockup historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-booking-history-responsive.png?raw=true)   
+![mobile mockup registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente-m.png)  
+![mobile mockup registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa-m.png?raw=true)    
+![mobile mockup inicio sesion](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/login-m.png?raw=true)    
+![formulario-membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-m.png?raw=true)   
+![boleta-membresia](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupMobile_3.jpeg?raw=true)   
+![ajustes-empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-empresa-m.png?raw=true)   
+![ajustes-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ajustes-cliente-m.png?raw=true)   
+![mobile mockup busqueda de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companySearch_mockupMobile_3.jpeg?raw=true)   
+![mobile mockup detalle de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/companyDetail_mockupMobile_3.jpeg?raw=true)   
+![mobile mockup historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-booking-history-responsive.png?raw=true)    
 ![mobile mockup chat](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-chat-responsive.png?raw=true)   
-![mobile mockup review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-review-responsive.png?raw=true)   
-![mobile mockup worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-mockup-worker.png?raw=true)   
+![mobile mockup review](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-review-responsive.png?raw=true)    
+![mobile mockup worker](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mobile-mockup-worker.png?raw=true)    
 
 ### 4.4.3. Web Applications User Flow Diagrams.  
 ![mockup-flow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow1.png?raw=true)  
-  
-![mockup-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow2.png?raw=true) 
+
+![mockup-flow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-flow2.png?raw=true)  
 ## 4.5. Web Applications Prototyping.  
 El prototipo de secuencia web se encuentra en el siguiente enlace :  
 [https://www.figma.com/proto/FFKvovSKPyL6LW7e2DDSph/Wireframes?type=design&node-id=26-453&t=wLRuXHHBxMj8lVew-1&scaling=min-zoom&page-id=2%3A3&starting-point-node-id=26%3A453&show-proto-sidebar=1&mode=design](https://www.figma.com/proto/FFKvovSKPyL6LW7e2DDSph/Wireframes?type=design&node-id=26-453&t=wLRuXHHBxMj8lVew-1&scaling=min-zoom&page-id=2%3A3&starting-point-node-id=26%3A453&show-proto-sidebar=1&mode=design)    
@@ -612,7 +612,8 @@ El prototipo de secuencia mobile se encuentra en el siguiente enlace :
 
 ## 4.6. Domain-Driven Software Architecture. 
 
-Los diagramas c4 se realizaron con Structurizr.   Enlace:[https://www.structurizr.com/share/85676/294b91b5-fde5-4ad9-bb61-11105de941e6]  
+Los diagramas c4 se realizaron con Structurizr.  
+Enlace:[https://www.structurizr.com/share/85676/294b91b5-fde5-4ad9-bb61-11105de941e6]   
 
 ### 4.6.1. Software Architecture Context Diagram.  
 
