@@ -573,7 +573,7 @@ incluso más sencilla en web dirigiendose al menu directamente.
 ### 4.4.2. Web Applications Mock-ups.    
 #### DESKTOP   
 ![registro-cliente-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-cliente.png?raw=true)      
-![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-registro-empresa.png?raw=true)     
+![registro-empresa-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa.png?raw=true)     
 ![inicio-sesion-mockup](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/mockup-inicio-sesion-desktop.png?raw=true)     
 ![formulario-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia.png?raw=true)   
 ![boleta-membresias](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/formulario-membresia-mockupDesktop_3.jpeg?raw=true) 
