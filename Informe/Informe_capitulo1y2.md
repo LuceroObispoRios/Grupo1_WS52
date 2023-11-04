@@ -3,7 +3,7 @@ Ingeniería de Sistemas y Comunicaciones | Ingenieria de Software
 
 Para el curso de Aplicaciones Web  
 WS52 - Juan Carlos Tinoco Licas  
-# Course Project - Final Report TP  
+# Course Project - Final Report TB2  
 
 Integrantes:
 - Obispo Rios, Lucero Abigail
@@ -104,7 +104,7 @@ Ciclo 2023-02
    5.2.1.5. Execution Evidence for Sprint Review.  
    5.2.1.6. Services Documentation Evidence for Sprint Review.  
    5.2.1.7. Software Deployment Evidence for Sprint Review.  
-   5.2.1.8. Team Collaboration Insights during Sprint.
+   5.2.1.8. Team Collaboration Insights during Sprint.  
    5.2.2. Sprint 2  
    5.2.2.1. Sprint Planning 2.  
    5.2.2.2. Sprint Backlog 2.  
@@ -173,8 +173,7 @@ Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma
 **Acerca De:** Me considero una persona creativa, responsable y ordenada. Tengo experiencia trabajando en equipo, escucho las ideas de mis compañeros y me desempeño bien para el avance de los trabajos.  
 **Fotografia de Perfil:**  
 <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante5.png?raw=true" width="160" height="190">
-
-## 1.2 Solution profile  
+ 
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problemática  
