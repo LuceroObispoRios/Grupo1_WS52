@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
     public DbSet<Company.Domain.Models.Company> Companies { get; set; }
     public DbSet<Client> Clients { get; set; }
     public DbSet<Review> Reviews { get; set; }
+    public DbSet<BookingHistory> BookingHistories { get; set; }
     
     public AppDbContext(DbContextOptions options) : base(options)
     {
@@ -29,6 +30,16 @@ public class AppDbContext : DbContext
         builder.Entity<Client>().Property(p => p.Email).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.Password).IsRequired().HasMaxLength(50);
         builder.Entity<Client>().Property(p => p.Direccion).HasMaxLength(120);
+        
+        builder.Entity<BookingHistory>().ToTable("BookingHistories");
+        builder.Entity<BookingHistory>().HasKey(p => p.Id);
+        builder.Entity<BookingHistory>().Property(p => p.IdCompany).IsRequired();
+        builder.Entity<BookingHistory>().Property(p => p.idClient).IsRequired();
+        builder.Entity<BookingHistory>().Property(p => p.bookingDate).IsRequired().HasMaxLength(50);
+        builder.Entity<BookingHistory>().Property(p => p.pickupAdress).IsRequired().HasMaxLength(150);
+        builder.Entity<BookingHistory>().Property(p => p.destinationAdress).IsRequired().HasMaxLength(150);
+        builder.Entity<BookingHistory>().Property(p => p.movingDate).IsRequired().HasMaxLength(50);
+        builder.Entity<BookingHistory>().Property(p => p.Status).IsRequired().HasMaxLength(50);
         
         
         // Relationships
