@@ -9,5 +9,5 @@ public class Review{
     
     public int CompanyId { get; set; }
     
-    public Company.Domain.Models.Company Company { get; set; }
+    public Security.Domain.Models.Company Company { get; set; }
 }

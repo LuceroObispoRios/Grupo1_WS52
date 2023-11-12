@@ -1,20 +1,25 @@
 using CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 using CargaSinEstres.API.CargaSinEstres.Domain.Services;
 using CargaSinEstres.API.CargaSinEstres.Mapping;
+using CargaSinEstres.API.CargaSinEstres.Persistence.Repositories;
 using CargaSinEstres.API.CargaSinEstres.Services;
-using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Contexts;
-using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Repositories;
-using CargaSinEstres.API.Company.Authorization.Handlers.Implementations;
-using CargaSinEstres.API.Company.Authorization.Handlers.Interfaces;
-using CargaSinEstres.API.Company.Authorization.Middleware;
-using CargaSinEstres.API.Company.Authorization.Settings;
+using CargaSinEstres.API.Security.Authorization.Handlers.Implementations;
+using CargaSinEstres.API.Security.Authorization.Handlers.Interfaces;
+using CargaSinEstres.API.Security.Authorization.Middleware;
+using CargaSinEstres.API.Security.Authorization.Settings;
+using CargaSinEstres.API.Security.Domain.Repositories;
+using CargaSinEstres.API.Security.Domain.Services;
+using CargaSinEstres.API.Security.Persistence.Repositories;
+using CargaSinEstres.API.Security.Services;
+using CargaSinEstres.API.Shared.Persistence.Contexts;
 using CargaSinEstres.API.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using CompanyRepository = CargaSinEstres.API.Company.Persistence.Repositories.CompanyRepository;
-using CompanyService = CargaSinEstres.API.Company.Services.CompanyService;
-using ICompanyRepository = CargaSinEstres.API.Company.Domain.Repositories.ICompanyRepository;
-using ICompanyService = CargaSinEstres.API.Company.Domain.Services.ICompanyService;
+using CompanyRepository = CargaSinEstres.API.Security.Persistence.Repositories.CompanyRepository;
+using CompanyService = CargaSinEstres.API.Security.Services.CompanyService;
+using ErrorHandlerMiddleware = CargaSinEstres.API.Security.Authorization.Middleware.ErrorHandlerMiddleware;
+using ICompanyRepository = CargaSinEstres.API.Security.Domain.Repositories.ICompanyRepository;
+using ICompanyService = CargaSinEstres.API.Security.Domain.Services.ICompanyService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,19 +89,22 @@ builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSet
 // Dependency Injection Configuration
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
-builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IBookingHistoryRepository, BookingHistoryRepository>();
+builder.Services.AddScoped<IBookingHistoryService, BookingHistoryService>();
 
 // Security Injection Configuration
 builder.Services.AddScoped<IJwtHandler, JwtHandler>();
+builder.Services.AddScoped<IJwtHandler, JwtHandlerClient>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<IClientService, ClientService>();
 
 // AutoMapper Configuration
 builder.Services.AddAutoMapper(typeof(ModelToResourceProfile), 
     typeof(ResourceToModelProfile),
-    typeof(CargaSinEstres.API.Company.Mapping.ModelToResourceProfile),
-    typeof(CargaSinEstres.API.Company.Mapping.ResourceToModelProfile)
+    typeof(CargaSinEstres.API.Security.Mapping.ModelToResourceProfile),
+    typeof(CargaSinEstres.API.Security.Mapping.ResourceToModelProfile)
     );
 var app = builder.Build();
 

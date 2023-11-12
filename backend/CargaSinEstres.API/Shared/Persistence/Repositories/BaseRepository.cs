@@ -1,6 +1,6 @@
-using CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Contexts;
+using CargaSinEstres.API.Shared.Persistence.Contexts;
 
-namespace CargaSinEstres.API.CargaSinEstres.Shared.Persistence.Repositories;
+namespace CargaSinEstres.API.Shared.Persistence.Repositories;
 
 public class BaseRepository
 {

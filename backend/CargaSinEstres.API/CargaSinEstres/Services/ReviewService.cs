@@ -2,7 +2,7 @@ using CargaSinEstres.API.CargaSinEstres.Domain.Models;
 using CargaSinEstres.API.CargaSinEstres.Domain.Repositories;
 using CargaSinEstres.API.CargaSinEstres.Domain.Services;
 using CargaSinEstres.API.CargaSinEstres.Domain.Services.Communication;
-using CargaSinEstres.API.Company.Domain.Repositories;
+using CargaSinEstres.API.Security.Domain.Repositories;
 
 namespace CargaSinEstres.API.CargaSinEstres.Services;
 
