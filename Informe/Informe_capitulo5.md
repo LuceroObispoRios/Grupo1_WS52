@@ -346,7 +346,7 @@ Durante este sprint, nos enfocamos en terminar con la sección de manejo de usua
 ![membresias2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution12.JPG?raw=true)
   
 Link al repositorio de codigo: https://github.com/LuceroObispoRios/Grupo1_WS52.git  
-Link a la plataforma: [https://cargasinestres-vue.web.app/home](https://cargasinestres-vue.web.app/home)  
+Link a la plataforma: [https://cargasinestres-vue-tb2.web.app](https://cargasinestres-vue-tb2.web.app)  
   
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.  
   
@@ -500,11 +500,62 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
     <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature21-sprint3.png?raw=true" width="600px" alt="feature 21">
 </div>
 
+**feature 22**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature25-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
+**feature 23**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature26-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
+**feature 24**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature27-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
+**feature 25**
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature28-sprint3.png?raw=true" width="600px" alt="feature 24">
+</div> 
+
 #### 5.2.3.5. Execution Evidence for Sprint Review  
+
+Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
+
+- Establecimiento de múltiples archivos(frontend,backend, informes) en el repositorio de nuestro GitHub. 
+- Elaboración del frontend(membresía, reseñas, añadir filtros por servicio, )
+- Realización de la implementación de companies, client y reviews en backend
+- Despliegue del fronted de Carga Sin Estrés
+
+##### Empresa
+![membership](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership.jpg?raw=true)
+![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/membership1.jpg?raw=true)
+
+##### Cliente
+![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/filtro.jpg?raw=true)
+![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/reservas.jpg?raw=true)
+![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
+
+##### Backend
+![backend](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend.jpg?raw=true)
+![backend2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend2.jpg?raw=true)
+![backend_client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend_clients2.jpg?raw=true)
+![backend_company](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/backend_company.jpg?raw=true)
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
   
-#### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review. 
+  
+La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
+[https://cargasinestres-vue.web.app](https://cargasinestres-vue.web.app),   
+más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nustro archivo db.json, en cual se encuentra en el siguiente enlace  [https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/carga-sin-estres/server/db.json)   
+  
+Para el backend se puede acceder por medio de estos links:  
+Este para el servidor - [https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1](https://win8030.site4now.net:8172/msdeploy.axd?site=ericcr-001-site1)  
+*la cuenta es ericcr-001 y la contraseña u202112766  
+Y este para la pagina - [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)  
   
 #### 5.2.3.8. Team Collaboration Insights during Sprint.  
 
@@ -548,8 +599,36 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 
 ### 5.3.2 Registro  de Entrevistas   
 ***Representantes de Empresas:***   
-1. [https://youtu.be/VjBsWHqTmmM]   
-2.    
+1. Primera Entrevista:  
+Entrevistado:  
+Residencia:   
+Ocupación:
+Entrevistador:
+Enlace: []()
+![Entrevista-1]()
+
+Resumen de entrevista:
+      
+
+2. Segunda Entrevista:  
+Entrevistado: Felix Bianchi  
+Residencia: Chorrillos, Lima  
+Ocupación: Trabajador de empresa de mudanzas  
+Entrevistador: Eric Cuevas  
+Enlace: [https://youtu.be/VjBsWHqTmmM](https://youtu.be/VjBsWHqTmmM)
+![Entrevista-2]()
+
+Resumen de entrevista:
+07:26 - ¿Que caracteristica de la pagina encuentra usted más util en cuanto a contribuir con el crecimiento de su empresa?
+La posibilidad de poder ampliar el acceso al publico al servicio que nosotros brindamos. En estas epocas que exite un acceso masivo por parte del publico a los servicios respecto a los servicios que brindan todas las empresas yo creo que los servicios que nosotros brindamos deben tener un mecanismo que permita acercarnos a la población, y yo creo que este es el medio.      
+      
+08:21 - ¿Que otras funcionalidades le gustaria ver o cree pueden mejorar en la aplicación a futuro?
+El tema de hacer un seguimiento apenas se inicio el servicio al traslado de la carga, asi como su estado situacional, y por ultimo el tema de las estadisticas, que yo creo es uno muy importante, so solamente la calificación, sino la estadistica de la calidad del servicio, esto nos obligaria a todos a mejoras nuestros servicios.
+      
+09:25 - ¿Recomendaria nuestra aplicación web "Carga Sin estrés" a otras empresas de mudanza?
+Si, definitivamente, yo lo veo como una opcion para poder de alguna manera profesionalizar y poder llegar directamente al publico usuario.
+
+
 3.  Tercera entrevista:  
 Entrevistado: Alfredo Lozano  
 Residencia: San Martin de Porres, Lima  
@@ -572,7 +651,26 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 "Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"   
 
 ***Individuos de 18 a 50 años***  
-1.   
+1. PRIMERA ENTREVISTA:
+Nombre y apellido: Mariela Martínez
+Edad: 19
+Distrito: Lima
+Duración: 8:49min
+Link de la entrevista: https://youtu.be/fIztTa-DjhI
+
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/Entrevista_Ciudadano.jpg?raw=true)
+
+Timings:  
+04:09 - ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
+"Me parece intuitiva, es fácil de utilizarlo, no me complicaría tanto para reserva a una empresa con el tipo de mudanza. Asimismo, hay una variedad de empresas a escoger"
+
+05:03 - ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”? 
+"El tema de los precios, en qué se basan los cálculos del precio de dicho trabajo"
+
+06:21 - .¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
+"Si, claro. Debido a que puedo filtrar con respecto a mi ubicación, servicios, calificación y nombre de la empresa. Me parece una herramienta muy útil"
+
+
 2. SEGUNDA ENTREVISTA:  
 Nombre y apellido: Sergio Leandro  
 Edad: 19  
@@ -928,9 +1026,9 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
 
-- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+- El desarrollo colaborativo en los sprints  fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
 
-- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito tres sprints. Durante este período, utilizamos herramientas como WebStorm y IntelliJ, asi como lenguajes y frameworks como Vue.js, JavaScript, y Java, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
 
 # Bibliografia  
 --
