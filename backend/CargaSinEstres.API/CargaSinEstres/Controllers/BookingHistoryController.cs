@@ -64,7 +64,7 @@ public class BookingHistoryController : ControllerBase{
     [ProducesResponseType(typeof(IEnumerable<BookingHistoryResource>), 200)]
     public async Task<ActionResult<BookingHistoryResource>> GetBookingsByCompanyId(int companyId)
     {
-        var booking = await _bookingHistoryService.GetBookingsByClientIdAsync(companyId);
+        var booking = await _bookingHistoryService.GetBookingsByCompanyIdAsync(companyId);
 
         if (booking == null)
         {
