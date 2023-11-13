@@ -37,8 +37,8 @@ public class AppDbContext : DbContext
         builder.Entity<BookingHistory>().Property(p => p.IdCompany).IsRequired();
         builder.Entity<BookingHistory>().Property(p => p.idClient).IsRequired();
         builder.Entity<BookingHistory>().Property(p => p.bookingDate).IsRequired().HasMaxLength(50);
-        builder.Entity<BookingHistory>().Property(p => p.pickupAdress).IsRequired().HasMaxLength(150);
-        builder.Entity<BookingHistory>().Property(p => p.destinationAdress).IsRequired().HasMaxLength(150);
+        builder.Entity<BookingHistory>().Property(p => p.pickupAddress).IsRequired().HasMaxLength(150);
+        builder.Entity<BookingHistory>().Property(p => p.destinationAddress).IsRequired().HasMaxLength(150);
         builder.Entity<BookingHistory>().Property(p => p.movingDate).IsRequired().HasMaxLength(50);
         builder.Entity<BookingHistory>().Property(p => p.Status).IsRequired().HasMaxLength(50);
         

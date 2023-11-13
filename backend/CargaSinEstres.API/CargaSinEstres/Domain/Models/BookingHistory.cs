@@ -10,9 +10,9 @@ public class BookingHistory
 
     public string bookingDate { get; set;}
 
-    public string pickupAdress { get; set;}
+    public string pickupAddress { get; set;}
 
-    public string destinationAdress { get; set;}
+    public string destinationAddress { get; set;}
 
     public string movingDate {get; set;}
 
