@@ -24,6 +24,20 @@ public class BookingHistoryRepository :BaseRepository, IBookingHistoryRepository
         return await _context.BookingHistories.ToListAsync();
     }
 
+     public async Task<IEnumerable<BookingHistory>> ListByClientIdAsync(int clientId)
+    {
+        return await _context.BookingHistories
+            .Where(p => p.idClient == clientId)
+            .ToListAsync();
+    }
+    
+    public async Task<IEnumerable<BookingHistory>> ListByCompanyIdAsync(int companyId)
+    {
+        return await _context.BookingHistories
+            .Where(p => p.IdCompany == companyId)
+            .ToListAsync();
+    }
+
     public async Task AddAsync(BookingHistory booking)
     {
         await _context.BookingHistories.AddAsync(booking);
