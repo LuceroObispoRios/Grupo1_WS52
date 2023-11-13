@@ -24,6 +24,16 @@ public class BookingHistoryService : IBookingHistoryService
         return await _bookingHistoryRepository.ListAsync();
     }
 
+    public async Task<IEnumerable<BookingHistory>> GetBookingsByClientIdAsync(int clientId)
+    {
+        return await _bookingHistoryRepository.ListByClientIdAsync(clientId);
+    }
+    
+    public async Task<IEnumerable<BookingHistory>> GetBookingsByCompanyIdAsync(int companyId)
+    {
+        return await _bookingHistoryRepository.ListByCompanyIdAsync(companyId);
+    }
+
     public async Task<BookingHistoryResponse> CreateBookingAsync(BookingHistory booking)
     {
         try
