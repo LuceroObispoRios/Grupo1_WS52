@@ -9,7 +9,7 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace CargaSinEstres.API.CargaSinEstres.Controllers;
 
 [ApiController]
-[Route("/api/v1/clients/{clientId}/companies")]
+[Route("/api/v1/booking-history")]
 public class BookingHistoryController : ControllerBase{
     private readonly IBookingHistoryService _bookingHistoryService;
     private readonly IMapper _mapper;
@@ -29,6 +29,7 @@ public class BookingHistoryController : ControllerBase{
     }
 
     [HttpGet("{id}")]
+    [ProducesResponseType(typeof(IEnumerable<BookingHistoryResource>), 200)]
     public async Task<ActionResult<BookingHistoryResource>> GetBooking(int id)
     {
         var booking = await _bookingHistoryService.GetBookingAsync(id);
@@ -42,7 +43,44 @@ public class BookingHistoryController : ControllerBase{
         return Ok(bookingResource);
     }
 
+
+        
+    [HttpGet("idClient/{clientId}")]
+    [ProducesResponseType(typeof(IEnumerable<BookingHistoryResource>), 200)]
+    public async Task<ActionResult<BookingHistoryResource>> GetBookingsByClientId(int clientId)
+    {
+        var booking = await _bookingHistoryService.GetBookingsByClientIdAsync(clientId);
+
+        if (booking == null)
+        {
+            return NotFound();
+        }
+
+        var bookingResource = _mapper.Map<IEnumerable<BookingHistory>, IEnumerable<BookingHistoryResource>>(booking);
+        return Ok(bookingResource);
+    }
+    
+    [HttpGet("idCompany/{companyId}")]
+    [ProducesResponseType(typeof(IEnumerable<BookingHistoryResource>), 200)]
+    public async Task<ActionResult<BookingHistoryResource>> GetBookingsByCompanyId(int companyId)
+    {
+        var booking = await _bookingHistoryService.GetBookingsByClientIdAsync(companyId);
+
+        if (booking == null)
+        {
+            return NotFound();
+        }
+
+        var bookingResource = _mapper.Map<IEnumerable<BookingHistory>, IEnumerable<BookingHistoryResource>>(booking);
+        return Ok(bookingResource);
+    }
+
+    
+
     [HttpPost]
+    [ProducesResponseType(typeof(BookingHistoryResource), 201)]
+    [ProducesResponseType(typeof(List<string>), 400)]
+    [ProducesResponseType(500)]
     public async Task<ActionResult<BookingHistoryResource>> CreateBooking([FromBody] SaveBookingHistoryResource resource)
     {
         if (!ModelState.IsValid)
