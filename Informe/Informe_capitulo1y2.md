@@ -3,7 +3,7 @@ Ingeniería de Sistemas y Comunicaciones | Ingenieria de Software
 
 Para el curso de Aplicaciones Web  
 WS52 - Juan Carlos Tinoco Licas  
-# Course Project - Final Report TP  
+# Course Project - Final Report TB2  
 
 Integrantes:
 - Obispo Rios, Lucero Abigail
@@ -24,11 +24,11 @@ Ciclo 2023-02
   TP | 05/09/23 - 27/09/23  | Lucero Obispo| Se actualizo el diagrama de clases, labeling systems, descripcion de startup. Para el sprint 2, se realizo el services documentation y el execution evidance for sprint review y team collaboration insights. En codigo, se hizo la pagina busqueda de empresas e informacion de empresa.
   TP | 05/09/23 - 27/09/23  | Andrea O'Higgins| Se añadió el historial de reserva y el chat en la app, se diseñaron los wireframes y mockups. Se actualizó los user stories y features, y se agregó para el sprint2 el development evidence.
   TP | 05/09/23 - 27/09/23  | Damaris Tasayco| Se actualizo el impact mapping, product backlog. Se añadio el sprint backlog, testing suite evidence. En el codigo, se hizo la pagina del landing page, el formulario de membresia y la pagina de boleta
-  TB2 | 29/09/23 - 02/11/23  | Eric Cuevas|  Se desarrollo e implemento mejoras al avance del backend, se actualizo la base de datos, se participo en las heuristicas y se desplego la primera version del backend. Para el sprint 3 se hizo 1 entrevista a sector empresas y se realizo la parte de sprint palnning y deployment evidence.
+  TB2 | 29/09/23 - 02/11/23  | Eric Cuevas|  Se desarrollo e implemento mejoras al avance del backend, se actualizo la base de datos, se participo en las heuristicas y se desplego la primera version del backend. Para el sprint 3 se hizo 1 entrevista a sector empresas y se realizo la parte de sprint planning y deployment evidence.
   TB2 | 29/09/23 - 02/11/23  | Lucero Obispo| Se actualizo las historias de usuarios y el product backlog. Para el sprint 3, se realizo el services documentation y team collaboration insights. En el frontend, se hizo los filtros de la pagina busqueda de empresa en relacion a buscar por nombre, servicios, ubicacion ingresada, ubicacion del usuario. En el backend, se apoyo con la estructura base del proyecto.
   TB2 | 29/09/23 - 02/11/23  | Andrea O'Higgins| Se desarrollo en el informe parte de los wireframes y mockups, se actualizo los user stories y features. Se añadió para el sprint 3 el development y testing evidence, y se realizó 2 entrevistas al segmento de ciudadanos. En el frontend, se arregló el chat y se agregó la funcionalidad de enviar comentarios a trabajadores, y para el backend se avanzó con las reseñas.
-  TB2 | 29/09/23 - 02/11/23  | Damaris Tasayco| Se desarrollo ...
-  TB2 | 29/09/23 - 02/11/23  | Leonardo Patrocinio| Se desarrollo en el inrforme el sprint backlog 3 y 6 problemas de evaluacion de heuristicas. En el frontend, se implementó realizar reseñas en el historial de reservas, visualizar reseñas en la informaación de la empresa y filtro de la empresa según su calificación promedio. En el backend, se apoyo con la estructura base del proyecto y un avance del historial de reserva.
+  TB2 | 29/09/23 - 02/11/23  | Damaris Tasayco| Se desarrollo en el informe el execution and deployment Evidence for Sprint Review, se actualizó los features. Se añadió la entrevista a un ciudadano con respecto a nuestra aplicación. En el fronted se implementó la opción de beneficio al comprar una membresía, en este caso el primer posicionamiento en la lista con respecto a la búsqueda de empresas para el cliente. Finalmente, en el backend se implementó la parte de companies.
+  TB2 | 29/09/23 - 02/11/23  | Leonardo Patrocinio| Se desarrollo en el informe el sprint backlog 3 y 6 problemas de evaluacion de heuristicas. En el frontend, se implementó realizar reseñas en el historial de reservas, visualizar reseñas en la informaación de la empresa y filtro de la empresa según su calificación promedio. En el backend, se apoyo con la estructura base del proyecto y un avance del historial de reserva.
 ---
 1. Capitulo 1: Introducción  
    1.1 Startup Profile     
@@ -104,7 +104,7 @@ Ciclo 2023-02
    5.2.1.5. Execution Evidence for Sprint Review.  
    5.2.1.6. Services Documentation Evidence for Sprint Review.  
    5.2.1.7. Software Deployment Evidence for Sprint Review.  
-   5.2.1.8. Team Collaboration Insights during Sprint.
+   5.2.1.8. Team Collaboration Insights during Sprint.  
    5.2.2. Sprint 2  
    5.2.2.1. Sprint Planning 2.  
    5.2.2.2. Sprint Backlog 2.  
@@ -173,8 +173,7 @@ Nuestra startup, "Carga sin estres", se especializa en una innovadora plataforma
 **Acerca De:** Me considero una persona creativa, responsable y ordenada. Tengo experiencia trabajando en equipo, escucho las ideas de mis compañeros y me desempeño bien para el avance de los trabajos.  
 **Fotografia de Perfil:**  
 <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/integrante5.png?raw=true" width="160" height="190">
-
-## 1.2 Solution profile  
+ 
 
 ## 1.2 Solution profile  
 ### 1.2.1 Antecendentes y problemática  

@@ -225,7 +225,7 @@ Durante este sprint, nos enfocamos en completar el landing page y en las página
 
 ![registro cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution7_sprint1.JPG?raw=true)  
 
-![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution8_sprint1.JPG?raw=true)  
+![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/registro-empresa.png?raw=true)  
 
 ![registro empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution9_sprint1.JPG?raw=true)  
 
@@ -240,7 +240,7 @@ Link al video de ejecución: https://drive.google.com/file/d/1dpaDSXDfR2oe4wCnh-
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
 * Para este **primer** avance, el cual abarcaba la landing page, asi como el registro y login de usuarios, se llevo a cabo un desplegue por medio de GitHub Pages.  
-![Page_deployment](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/deployment.png?raw=true)  
+![Page_deployment](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/landing-page-deployment.jpeg?raw=true)  
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 ***Primer Sprint***  
@@ -308,7 +308,7 @@ Para este Sprint se desarrolló el Frontend de la plataforma.
   
 Acceptance Tests de los User Stories, archivos .feature utilizando el lenguaje Gherkin
   
-![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature01-sprint2.png?raw=true)  
+![feature 01](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/feature-us01.png?raw=true)  
 ![feature 02](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature02-sprint2.png?raw=true)  
 ![feature 03](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature03-sprint2.png?raw=true)  
 ![feature 04](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Andrea/feature/Informe/Imagenes/feature04-sprint2.png?raw=true)  
@@ -336,7 +336,7 @@ Durante este sprint, nos enfocamos en terminar con la sección de manejo de usua
 ![Registrar-cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution2.JPG?raw=true)
 ![registrar-empresa1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution3.JPG?raw=true)
 ![registrar-empresa2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution4.JPG?raw=true)
-![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution5.JPG?raw=true)
+![ajustes de cliente](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/execution5.JPG?raw=true)
 ![busqueda de empresas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution6.JPG?raw=true)
 ![Carta de información de empresa](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution7.JPG?raw=true)
 ![historial de reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/execution8.JPG?raw=true)
@@ -542,6 +542,22 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 
 
 #### 5.2.3.5. Execution Evidence for Sprint Review  
+
+Durante este tercer sprint, en términos generales, hemos alcanzado los siguientes hitos:
+
+- Establecimiento de múltiples archivos(frontend,backend, informes) en el repositorio de nuestro GitHub. 
+- Elaboración del frontend(membresía, reseñas, añadir filtros por servicio, )
+- Realización de la implementación de companies, client y reviews en backend
+- Despliegue del fronted de Carga Sin Estrés
+
+##### Empresa
+![membership]https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/membership.jpg?raw=true)
+![membership2](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/membership1.jpg?raw=true)
+
+##### Cliente
+![filtro](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/filtro.jpg?raw=true)
+![reservas](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/reservas.jpg?raw=true)
+![reseñas](https://github.com/LuceroObispoRios/Grupo1_WS52/raw/develop/Informe/Imagenes/rese%C3%B1as.jpg?raw=true)
   
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.  
 
@@ -569,7 +585,7 @@ Los metodos GET all reviews y GET reviews, estan relacionados a la pantalla de I
 |  /reviews                      |       POST      | 201 Created: Indica que la reseña ha sido creada exitosamente                                                   | [http://localhost:7122/api/v1/reviews](http://localhost:7122/api/v1/reviews) |
 |  /reviews                      |       GET       | 200 OK: Retorna la lista de todas las reseñas guardadas                                                         | [http://localhost:7122/api/v1/reviews](http://localhost:7122/api/v1/reviews)  |
 
-Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)  
 Link del swagger desplegado: [http://ericcr-001-site1.atempurl.com/swagger/index.html](http://ericcr-001-site1.atempurl.com/swagger/index.html)
 
 **Capturas de interaccion con datos de prueba**  
@@ -606,7 +622,7 @@ El usuario con cuenta de cliente edita sus datos para mantener su informacion ac
 - Obtener lista de todos los clientes (GET)   
 Consultar una lista de todas los clientes registrados en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que solicita la lista de todas los clientes.  
 ![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_3.JPG?raw=true)
-- Logearse con cuenta de empresa (POST)
+- Logearse con cuenta de empresa (POST)  
 El usuario ingresa su email y password para logearse en la web. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario Plata ha colocado todos los datos necesarios para logearse en su cuenta empresa
 Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).    
 ![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services11_3.JPG?raw=true)  
@@ -614,7 +630,7 @@ Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cl
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.  
   
 La aplicación Frontend desplegada se encuentra en el siguiente enlace :  
-[https://cargasinestres-tb2.web.app](https://cargasinestres-tb2.web.app),   
+[https://cargasinestres-vue-tb2.web.app/](https://cargasinestres-vue-tb2.web.app/),   
 *más para su correcto funcionamiento esta entrega, se necesita desplegar el servidor json-server de nuestro archivo db.json, el cual se encuentra en este mismo repositorio  
   
 Para el backend se puede acceder por medio de estos links:  
@@ -629,12 +645,47 @@ Durante este sprint, nuestra colaboración como equipo se destacó por una organ
 En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregado una rama llamada Leonardo/feature, ya que Leonardo es nuevo miembro del equipo y tambien requeria de su espacio personal para trabajar en el repositorio.
 
 ![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow1_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow2_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow3_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow4_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow5_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow6_3.JPG?raw=true)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/gitflow7_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow2_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow3_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow4_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow5_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow6_3.JPG?raw=true)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflow7_3.JPG?raw=true)  
+  
+### 5.2.4. Sprint 4  
+  
+#### 5.2.4.1. Sprint Planning 4.  
+  
+| **Sprint 4** | |
+|:---: | :---| 
+| | **Sprint planning background** |   
+| Date | 11/11/23 |
+| Time | 09:00 PM |
+| Location | Google Meet - Virtual Meeting |
+| Prepared by | Obispo, Lucero |
+| Attendees to meeting | Cuevas, Eric / O´Higgins, Andrea / Vilcamiza, Damaris / ... ,Leonardo |
+| Sprint 3 Review Summary | Se realizo el sprint 3, se comenzo con el backend y se mejoraron otros aspectos de la app.|
+| Sprint 3 Retrospective Summary | Se trabajo de manera ordenada, en la opinión del equipo creemos que pudimos haber avanzado más rapido el desarrollo del backend y front-end.  |
+| | **Sprint Goal & User Stories** |
+| Sprint & Goal | El objetivo del Sprint 4 sera terminar el backend de la applicación, asi como conectarlo con el front-end para tener asi la versión entregable de la app final. |
+| Sprint & Velocity | Debido al alcance establecido para este sprint, el Velocity establecido para este sprint es XX. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es XX. |  
+  
+#### 5.2.4.2. Sprint Backlog 4.  
+  
+#### 5.2.4.3. Development Evidence for Sprint Review.  
+  
+#### 5.2.4.4. Testing Suite Evidence for Sprint Review.  
+  
+#### 5.2.4.5. Execution Evidence for Sprint Review.  
+  
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review.  
+  
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review.  
+  
+#### 5.2.4.8. Team Collaboration Insights during Sprint.
+  
+  
 
 ## 5.3 Validation Interviews   
   
@@ -688,7 +739,7 @@ Residencia: Cercado de lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Leonardo Patrocinio  
 Enlace [https://youtu.be/4w9yW6qvU-Q](https://youtu.be/4w9yW6qvU-Q)
-![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg)  
+![entrevista-2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation2-trabajador.jpg?raw=true)  
 
 Resumen de entrevista:  
 03:20 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
@@ -709,7 +760,7 @@ Residencia: San Martin de Porres, Lima
 Ocupación: Trabajador de empresa de mudanza  
 Entrevistador: Lucero Obispo  
 Enlace [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ERrg-UG6p-NJh5zoUZIe5iMBLlbLTnigZvz1QYCtT-rrtw?e=PGXcLG)   
-![entrevista-3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/EntrevistaValidation3-Trabajador.JPG?raw=true)  
+![entrevista-3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/EntrevistaValidation3-Trabajador.JPG?raw=true)  
 
 Resumen de entrevista:  
 08:00 - ¿Qué tipo de información adicional le gustaría que estuviera disponible en las descripciones de las empresas de mudanza?  
@@ -725,8 +776,24 @@ Esto como historial, una vez que realizas varios trabajos, vas a formar tu histo
 "Si, de hecho, porque esta pagina web te ayuda mucho, facil de uso, te ayuda a captar mas clientes, te va a ayudar en la seguridad del servicio que te va a dar, la calidad del servicio que tu vas a dar. Y lo mejor es que vas a captar clientes, más rápido"   
 
 ***Individuos de 18 a 50 años***  
-1.   
+1. PRIMERA ENTREVISTA:
+Nombre y apellido: Mariela Martínez
+Edad: 19
+Distrito: Lima
+Duración: 8:49min
+Link de la entrevista: https://youtu.be/fIztTa-DjhI
 
+![EntrevistaValidation-2-client](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/develop/Informe/Imagenes/Entrevista_Ciudadano.jpg?raw=true)
+
+Timings:  
+04:09 - ¿Cómo describirías tu experiencia al navegar en “Carga Sin Estrés”?  
+"Me parece intuitiva, es fácil de utilizarlo, no me complicaría tanto para reserva a una empresa con el tipo de mudanza. Asimismo, hay una variedad de empresas a escoger"
+
+05:03 - ¿Qué característica o herramienta sentiste que faltaba o que te hubiera gustado ver en “Carga Sin Estrés”? 
+"El tema de los precios, en qué se basan los cálculos del precio de dicho trabajo"
+
+06:21 - .¿Considera que la manera de búsqueda de empresas de mudanza mediante tablas, logró satisfacer su búsqueda de manera ágil y satisfactoria?
+"Si, claro. Debido a que puedo filtrar con respecto a mi ubicación, servicios, calificación y nombre de la empresa. Me parece una herramienta muy útil"
 
 2. Segunda entrevista:     
 Entrevistado: Sergio Leandro     
@@ -1076,15 +1143,39 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 
 ## 5.4 Video About-the-Product  
-
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EfYAue-wCvZDtNvsmVA-OYYBF_C8m4gA17WgskQJulezyA?e=eAga2k)  
+Enlace de youtube: [https://www.youtube.com/watch?v=wAuSouCqarw](https://www.youtube.com/watch?v=wAuSouCqarw)  
+Timing: 2:51 minutos   
+Screenshoot:   
+![Screenshoot](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/screenshoot-video-product.png?raw=true)   
   
 # Conclusiones
 
 - Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
 
-- El desarrollo colaborativo en los sprints 1 y 2 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos.
+- El desarrollo colaborativo en los sprints 1, 2 y 3 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos, asi como se agrego caracteristicas en la pagina como solucion de los problemas detectados de las evaluaciones heuristicas realizados por nuestros 2 segmentos objetivos.
 
-- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito dos sprints, con el segundo sprint representando nuestra última entrega parcial. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript, entre otros, para desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios.
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito tres sprints, con el tercer sprint representando nuestra última entrega. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript para la parte frontend,  con el objetivo de desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios. En la parte backend, se implemtarios los servicios relacionados a crear, obtener información y actualizar las clases relacionadas a clientes, reseñas y empresas.
+
+
+## Video About-the-Team
+Enlace de microsoft stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/ETH4z86j-mBFk2pQPBiSRtoB-UnXgVqm0_LHIUhyWgIplg?e=BL25aC)   
+Enlace de youtube: [https://www.youtube.com/watch?v=vSu9mSNPYqI](https://www.youtube.com/watch?v=vSu9mSNPYqI)
+
+Proceso de trabajo:
+- Timing de Lucero explicando informe: 00:02 - 1:02
+- Timing de Andrea explicando el frontend: 1:02 - 2:02
+- Timing de Leonardo explicando el frontend: 2:02 - 3:02
+- Timing de Eric explicando el backend: 3:02 - 4:02
+- Timing de Damaris explicando el backend: 4:02 - 5:02
+
+Testimonios:
+- Timing de Lucero Obispo: 5:02 - 6:02
+- Timing de Andrea O'Higgins: 6:02 - 7:02
+- Timing de Leonardo Patrocinio: 7:02 - 8:02
+- Timing de Eric Cuevas: 8:02 - 9:02
+- Timing de Damaris Tasayco: 9:02 - 10:02
+
 
 # Bibliografia  
 --
@@ -1113,9 +1204,6 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 # Anexos  
 ## Anexo Videos de Exposiciones  
 
-- TB1: https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing 
-- TP: https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing
-
-
-
-
+- TB1: [https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing ](https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing)
+- TP: [https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing](https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing)
+- TB2: [https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing](https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing)

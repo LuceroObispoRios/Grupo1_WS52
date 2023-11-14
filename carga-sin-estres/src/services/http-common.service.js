@@ -56,12 +56,6 @@ export class HttpCommonService{
         return http.patch(`/companies/${id}`, data);
     }
 
-    delete(id) {
-        return http.delete(`/companies/${id}`);
-    }
-    findByTitle(title) {
-        return http.get(`/companies?title=${title}`);
-    }
     getClientById(id) {
         return http.get(`/clients/${id}`);
     }
