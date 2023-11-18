@@ -663,7 +663,7 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 | Time | 09:00 PM |
 | Location | Google Meet - Virtual Meeting |
 | Prepared by | Obispo, Lucero |
-| Attendees to meeting | Cuevas, Eric / O´Higgins, Andrea / Vilcamiza, Damaris / ... ,Leonardo |
+| Attendees to meeting | Cuevas, Eric / O´Higgins, Andrea / Vilcamiza, Damaris / Patrocinio, Leonardo |
 | Sprint 3 Review Summary | Se realizo el sprint 3, se comenzo con el backend y se mejoraron otros aspectos de la app.|
 | Sprint 3 Retrospective Summary | Se trabajo de manera ordenada, en la opinión del equipo creemos que pudimos haber avanzado más rapido el desarrollo del backend y front-end.  |
 | | **Sprint Goal & User Stories** |
