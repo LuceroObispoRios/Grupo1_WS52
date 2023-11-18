@@ -85,6 +85,19 @@ export default {
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/wAuSouCqarw"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="plans" class="plans">
@@ -246,6 +259,27 @@ export default {
   padding: 20px;
   color: #333;
   text-align:center;
+}
+
+/* Estilos para el video */
+.video-container {
+  border-radius:30px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin-top: 20px;
+}
+.video-container:hover{
+  transform: scale(1.05);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Estilos para la sección "Planes para Empresa" */
