@@ -677,7 +677,10 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
   
 #### 5.2.4.4. Testing Suite Evidence for Sprint Review.  
   
-#### 5.2.4.5. Execution Evidence for Sprint Review.  
+#### 5.2.4.5. Execution Evidence for Sprint Review.
+
+Durante este cuarto y último sprint, en términos generales, hemos alcanzado los siguientes hitos:
+
   
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.  
   
