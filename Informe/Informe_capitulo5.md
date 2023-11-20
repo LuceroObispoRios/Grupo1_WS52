@@ -690,8 +690,11 @@ Durante este cuarto y último sprint, en términos generales, hemos alcanzado lo
 Durante este sprint, nuestro equipo se centró en completar el backend de la aplicación e integrarlo con el frontend para lograr una versión entregable de la aplicación final. Para garantizar un proceso de colaboración fluido, continuamos utilizando Gitflow, un modelo de ramificación que facilita el control eficiente de versiones y la colaboración en GitHub.
 
 Nuestra estrategia de colaboración se basó en mantener una estructura organizativa clara en nuestro repositorio de GitHub. Nos adherimos a la metodología Gitflow al designar dos ramas principales: "main" para el informe final y "develop" para consolidar las contribuciones individuales. Cada miembro del equipo tenía su rama personalizada siguiendo el formato "nombre del miembro del equipo/funcionalidad", lo que permitía espacios de trabajo individualizados y un seguimiento transparente de las contribuciones.
-  
-  
+
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_7.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_8.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_10.jpg)  
 
 ## 5.3 Validation Interviews   
   
