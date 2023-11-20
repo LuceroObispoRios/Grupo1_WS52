@@ -672,6 +672,27 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 | Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es XX. |  
   
 #### 5.2.4.2. Sprint Backlog 4.  
+
+|     Sprint #         |     Sprint 4             |                           |                                                                      |                                                                                                                      |                   |                         |                      |
+|----------------------|--------------------------|---------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------|----------------------|
+|     User   Story     |                          |     Work –   Item/Task    |                                                                      |                                                                                                                      |                   |                         |                      |
+|     Id               |     Título               |     Id                    |     Título                                                           |     Descripción                                                                                                      |     Estimación    |     Asignado   a        |     Estado           |
+| HU001-HU005          |    Manejo de Usuario     |     WI01                  |     Registro de Empresa de Mudanzas                                  |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI02                  |     Registro de Cliente                                              |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     3h            |     Eric Cuevas         |     Completado       |
+|                      |                          |     WI03                  |     Iniciar Sesión en la plataforma                                  |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     1h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI04                  |     Visualización de membresia de la empresa                         |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     1h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI05                  |     Ajustes de cuenta de cliente y empresa                           |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     1h            |     Damaris Tasayco     |     Completado       |
+| HU006-HU007          | Métodos de pago          |     WI06                  |     Activar funcionalidades de membresia                             |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     4h            |     Andrea O’Higgins    |     Completado       |
+|                      |                          |     WI07                  |     Detalles de pago                                                 |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     3h            |     Damaris Tasayco     |     Completado       |
+| HU008-HU012          | Búsqueda de empresas     |     WI08                  |     Búsqueda de empresas cercanas                                    |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     4h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI09                  |     Filtrar por servicios ofrecidos                                  |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     3h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI10                  |     Filtrar por calificación                                         |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI11                  |     Filtrar por ubicación                                            |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Lucero Obispo       |     Completado       |
+|                      |                          |     WI12                  |     Solicitar Carga rápida                                           |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Eric Cuevas         |     Completado       |
+| HU013-HU014          | Reserva de Servicios     |     WI13                  |     Visualizar la calificación de la empresa                         |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Damaris Tasayco     |     Completado       |
+|                      |                          |     WI14                  |     Solicitud de servicio de mudanza                                 |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Andrea O’Higgins    |     Completado       |
+| HU015 - HU016        | Historial de reservas    |     WI15                  |     Visualizar historial de reservas                                 |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Leonardo Patrocinio |     Completado       |
+|                      |                          |     WI16                  |     Cancelar reserva                                                 |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Andrea O’Higgins    |     Completado       |
   
 #### 5.2.4.3. Development Evidence for Sprint Review.  
   
@@ -744,8 +765,14 @@ Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cl
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.  
   
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
-  
-  
+Durante este sprint, nuestro equipo se centró en completar el backend de la aplicación e integrarlo con el frontend para lograr una versión entregable de la aplicación final. Para garantizar un proceso de colaboración fluido, continuamos utilizando Gitflow, un modelo de ramificación que facilita el control eficiente de versiones y la colaboración en GitHub.
+
+Nuestra estrategia de colaboración se basó en mantener una estructura organizativa clara en nuestro repositorio de GitHub. Nos adherimos a la metodología Gitflow al designar dos ramas principales: "main" para el informe final y "develop" para consolidar las contribuciones individuales. Cada miembro del equipo tenía su rama personalizada siguiendo el formato "nombre del miembro del equipo/funcionalidad", lo que permitía espacios de trabajo individualizados y un seguimiento transparente de las contribuciones.
+
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_7.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_8.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_10.jpg)  
 
 ## 5.3 Validation Interviews   
   
