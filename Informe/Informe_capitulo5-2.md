@@ -164,12 +164,13 @@ Durante este sprint, nuestro equipo se centró en completar el backend de la apl
 
 Nuestra estrategia de colaboración se basó en mantener una estructura organizativa clara en nuestro repositorio de GitHub. Nos adherimos a la metodología Gitflow al designar dos ramas principales: "main" para el informe final y "develop" para consolidar las contribuciones individuales. Cada miembro del equipo tenía su rama personalizada siguiendo el formato "nombre del miembro del equipo/funcionalidad", lo que permitía espacios de trabajo individualizados y un seguimiento transparente de las contribuciones.
 
-![gitflow1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_7.jpg)  
-![gitflow2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_8.jpg)  
-![gitflow3](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg)
-![gitflow4](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_11.jpg)
-![gitflow5](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_10.jpg)
-![gitflow6](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_12.jpg) 
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_7.jpg" alt="gitflow" width="600px">  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_8.jpg" alt="gitflow" width="600px">  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg" alt="gitflow" width="600px">  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_11.jpg" alt="gitflow" width="600px">  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_10.jpg" alt="gitflow" width="600px">  
+<img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_12.jpg" alt="gitflow" width="600px">  
+
 
 ## 5.3 Validation Interviews   
   
