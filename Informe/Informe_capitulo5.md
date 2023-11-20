@@ -716,7 +716,8 @@ Nuestra estrategia de colaboración se basó en mantener una estructura organiza
 
 ![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_7.jpg)  
 ![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_8.jpg)  
-![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg)  
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_9.jpg)
+![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_11.jpg)
 ![gitflow](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/gitflowSprint4_10.jpg)  
 
 ## 5.3 Validation Interviews   
