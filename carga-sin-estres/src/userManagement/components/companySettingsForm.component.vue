@@ -13,6 +13,7 @@ export default {
         email: '',
         direccion: '',
         numeroContacto: '',
+        confirmarPassword:'',
         password: '',
         photo: '', //link como enlace en texto
         transporte: false,
@@ -23,7 +24,7 @@ export default {
         description: '',
         id: '',
       },
-      confirmarpassword: '',
+      /*confirmarPassword: '',*/
       errorMessage: '',
       id: null,
       formData:{
@@ -32,7 +33,7 @@ export default {
         direccion: '',
         numeroContacto: '',
         password: '',
-        confirmarpassword: '',
+        confirmarPassword: '',
         photo: '', //link como enlace en texto
         transporte: false,
         carga: false,
@@ -60,7 +61,7 @@ export default {
         direccion: this.formData.direccion,
         numeroContacto: this.formData.numeroContacto,
         password: this.formData.password,
-        confirmarpassword: this.formData.confirmarpassword,
+        confirmarPassword: this.formData.confirmarPassword,
         photo: this.formData.photo,
         transporte: this.formData.transporte,
         carga: this.formData.carga,
@@ -94,9 +95,9 @@ export default {
       }
 
       console.log(formData.password);
-      console.log(formData.confirmarpassword);
+      console.log(formData.confirmarPassword);
 
-      if (formData.password !== formData.confirmarpassword) {
+      if (formData.password !== formData.confirmarPassword) {
         warnings += 'Las contraseñas no coinciden <br>';
       }
 
@@ -114,6 +115,7 @@ export default {
       this.company.direccion = this.formData.direccion;
       this.company.numeroContacto = this.formData.numeroContacto;
       this.company.password = this.formData.password;
+      this.company.confirmarPassword = this.formData.confirmarPassword;
       this.company.photo = this.formData.photo;
       this.company.transporte = this.formData.transporte;
       this.company.carga = this.formData.carga;
@@ -158,7 +160,6 @@ export default {
 </script>
 
 <template>
-  <br><br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -170,7 +171,7 @@ export default {
             <input type="text" placeholder="Dirección" v-model="formData.direccion" id="direccion"/>
             <input type="text" placeholder="Teléfono" v-model="formData.numeroContacto" pattern="[0-9]+" id="numeroContacto"/>
             <input class="text-xs" type="password" placeholder="Contraseña" v-model="formData.password" id="password"/>
-            <input class="text-xs" type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarpassword" id="confirmarpassword"/>
+            <input class="text-xs" type="password" placeholder="Confirmar contraseña" v-model="formData.confirmarPassword" id="confirmarpassword"/>
             <input type="text" placeholder="Link a la imagen" v-model="formData.photo" id="photo"/>
           </div>
 
