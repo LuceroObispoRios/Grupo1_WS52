@@ -13,11 +13,12 @@ export default {
         direccion: '',
         email: '',
         password: '',
-        id: '',
       },
+
       confirmarpassword: '',
       errorMessage: '',
       id: null,
+
       formData: {
         name: '',
         apellidoMaterno: '',
@@ -47,16 +48,29 @@ export default {
         direccion: this.formData.direccion,
         email: this.formData.email,
         password: this.formData.password,
-        confirmarpassword: this.formData.confirmarpassword,
       };
 
-      let warnings = '';
+      console.log("formdata: ", formData);
 
-      if (
-          !formData.celular ||
-          !/^\d+$/.test(formData.celular)
-      ) {
-        warnings += 'El nuevo celular debe contener solo dígitos enteros.<br>';
+      let warnings = '';
+      // Validación para name, apellidoMaterno y apellidoPaterno
+      if (!formData.name.trim() || formData.name.trim().length < 3) {
+        warnings += 'El nombre debe tener al menos 3 letras.<br>';
+      }
+      if (!formData.apellidoMaterno.trim() || formData.apellidoMaterno.trim().length < 3) {
+        warnings += 'El apellido materno debe tener al menos 3 letras.<br>';
+      }
+
+      if (!formData.apellidoPaterno.trim() || formData.apellidoPaterno.trim().length < 3) {
+        warnings += 'El apellido paterno debe tener al menos 3 letras.<br>';
+      }
+
+      if (!formData.celular || !/^\d+$/.test(formData.celular) || formData.celular.length > 11) {
+        warnings += 'El número de celular debe contener solo dígitos y tener un máximo de 11 dígitos.<br>';
+      }
+      // Validación para direccion
+      if (formData.direccion.trim().length < 3) {
+        warnings += 'La dirección no debe estar en blanco y tener al menos 6 letras.<br>';
       }
 
       if (
@@ -92,15 +106,15 @@ export default {
       this.client.direccion = this.formData.direccion;
       this.client.email = this.formData.email;
       this.client.password = this.formData.password;
-      this.client.id = this.id;
 
       this.saveUpdatedClientDataToServer();
 
     },
 
     async saveUpdatedClientDataToServer() {
+      console.log("Client update data:", this.client);
       try {
-        const response = await this.apiService.updateClient(this.client.id , this.client);
+        const response = await this.apiService.updateClient(this.id , this.client);
 
         if (response.status === 200) {
           console.log('Datos del cliente actualizados con éxito:', response.data);
@@ -114,13 +128,7 @@ export default {
     },
 
     cancel(){
-      this.$router.push({
-        path: `/company/${this.id}/company-search`,
-        name: 'company-search',
-        params: {
-          id: this.id,
-        },
-      });
+      this.$router.push(`/company/${this.id}/company-search`);
     }
 
   },
@@ -167,7 +175,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: auto;
+  margin: 5rem auto;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
@@ -187,7 +195,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+  
 .user-info {
   display: flex;
   align-items: center;
