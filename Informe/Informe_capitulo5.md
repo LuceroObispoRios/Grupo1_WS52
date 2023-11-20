@@ -712,7 +712,82 @@ Durante este cuarto y último sprint, en términos generales, hemos llegado a co
 ![status2company](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/status2company.jpg?raw=true)
   
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.  
-  
+
+
+
+**Introduccion:**  
+En total se realizaron 24 endpoints. Para este cuarto sprint, se han agregado 13 endpoints de ellos, los cuales han sido exitosamente logrados y documentados.
+El metodo POST de cliente se utiliza para que el usuario pueda logearse a su cuenta.
+Asmismo, los metodos POST, GET y PATCH workers se utilizan para registrar, obtener y actualizar la data del trabajador, ya que estos aparecen asignados en cada reserva, para poder visualizar que trabajador te ha atendido y dejarle un comentario sobre su trato.
+Los metodos POST, GET, PATCH, PUT de booking history, se utilizan para gestionar el historial de reservas dentro de la aplicacion.
+Por ultimo, se agregaron los endpoints relacionados a membresias para permitir que una empresa adquiera una membresia y puede utilizar nuevas funcionalidades.
+
+**Tabla:**  
+
+|     **Endpoint**    | **Metodo HTTP** |           **Acciones (Explicacion del response)**                                                           | **Enlace** | 
+|--------|----------|--------|-------|
+|  /api/v1/clients/sign-in       |       POST      | 201 Created: Indica que el cliente ha sido logeado exitosamente             | [http://cargasinestres-001-site1.ftempurl.com/api/v1/clients/sign-in](http://cargasinestres-001-site1.ftempurl.com/api/v1/clients/sign-in) |      
+|  /api/v1/workers/{id}          |       GET       | 200 Ok: Indica que la informacion del trabajador se ha obtenido correctamente (paramatro: id, ejemplo: 1)   | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1) |
+|  /api/v1/workers               |       POST      | 201 Created: Indica que el trabajador se ha creado exitosamente             | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers) |    
+|  /api/v1/workers/{id}          |       PATCH     | 200 Ok: Actualiza el trabajador correspondiente a un id (paramatro: id, ejemplo: 1)   | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1) |
+|  /api/v1/booking-history       |       GET       | 200 Ok: Indica que la informacion de todas las reservas se ha obtenido correctamente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history) |
+|  /api/v1/booking-history       |       POST      | 201 Created: Indica que la reserva se ha obtenido correctamente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history) |
+|  /api/v1/booking-history/{id}  |       GET       | 200 Ok: Obtiene una reserva por su id (paramatro: id, ejemplo: 1) | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1) |
+|  /api/v1/booking-history/{id}  |       PATCH     | 200 Ok: Actualiza la informacion de la reserva correctamente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1) |
+|  /api/v1/booking-history/idclient/{clientId}  |    GET   | 200 Ok: Obtiene la informacion de la reserva segun id cliente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idclient/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idclient/1) |
+|  /api/v1/booking-history/idcompany/{companyId}|   GET    | 200 Ok: Obtiene la informacion de la reserva segun id company | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idcompany/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idcompany/1) |
+|  /api/v1/booking-history/{id}/messages  |    PUT    | 200 Ok: Actualiza la informacion de una reserva segun id | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1/messages](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1/messages) |
+|  /api/v1/memberships/          |       GET       | 200 Ok: Obtiene la informacion de las membresias  | [http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships](http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships) |
+|  /api/v1/memberships/          |       POST       | 201 Created: Indica que la membresia sea creado exitosamente  | [http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships](http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships) |
+
+
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)  
+Link del swagger desplegado: [http://cargasinestres-001-site1.ftempurl.com/swagger/index.html](http://cargasinestres-001-site1.ftempurl.com/swagger/index.html)
+
+**Capturas de interaccion con datos de prueba**  
+- Logear cliente (POST)   
+El usuario se logea como usuario tipo cliente. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario ha colocado todos datos necesarios para logearse en su cuenta personal
+Una vez que se haya logeado el cliente, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services1_4.JPG?raw=true)
+- Obtener trabajador por su id (GET)  
+Los usuarios desean consultar la información de un trabajador en específico. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) del trabajador. A continuación, se presenta un ejemplo en el que se solicita la información de un trabajador por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services2_4.JPG?raw=true)     
+- Registrar trabajador (POST)   
+El usuario registra un trabajador de una empresa de mudanzas o carga. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario ha colocado todos datos necesarios para registrar un trabajador.
+Una vez que se haya registrado el trabajador, el servidor enviará una respuesta al trabajador que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services3_4.JPG?raw=true)
+- Actualizar trabajador por su id (PATCH)  
+Los usuarios desean actualizar la información de un trabajador en específica para agregarle un comentario sobre una reserva en donde participo. Esta operación se realiza mediante una solicitud HTTP PATCH utilizando el identificador único (ID) del trabajador. A continuación, se presenta un ejemplo en el que se actualiza la información de un trabajador por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services4_4.JPG?raw=true)      
+- Obtener membresias (GET)
+Los usuarios desean consultar las empresas con membresias. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que se solicita la información de las distintas membresias.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services5_4.JPG?raw=true)     
+- Comprar Membresia (POST)    
+Esta funcionalidad permite comprar una membresia. Se realiza una solicitud HTTP POST para crear una membresia de una empresa. A continuación, se presenta un ejemplo en el que se compra una membresia.   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services6_4.JPG?raw=true)
+- Obtener reservas (GET)
+Los usuarios desean consultar sus reservas. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que se solicita la información de las distintas reservas.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services7_4.JPG?raw=true)  
+- Obtener reserva por su id (GET)  
+Los usuarios desean consultar la información de una reserva en específico. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) de la reserva. A continuación, se presenta un ejemplo en el que se solicita la información de una reserva por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services8_4.JPG?raw=true)
+- Obtener reserva por id cliente (GET)  
+Los usuarios desean consultar la información de una reserva en relacion a un cliente en especifico. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) del cliente. A continuación, se presenta un ejemplo en el que se solicita la información de una reserva.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services9_4.JPG?raw=true)
+- Obtener reserva por id empresa (GET)  
+Los usuarios desean consultar la información de una reserva en relacion a una empresa en especifico. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) de la empresa. A continuación, se presenta un ejemplo en el que se solicita la información de una reserva.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_4.JPG?raw=true)  
+- Realizar reserva (POST)    
+Esta funcionalidad permite realizar una reserva. Se realiza una solicitud HTTP POST para crear una reserva. A continuación, se presenta un ejemplo en el que se ejecuta la creacion de una reserva.   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services11_4.JPG?raw=true)
+- Actualizar reserva por su id (PATCH)  
+Los usuarios desean actualizar los detalles de una reserva como estado, pago, fecha, etc. Esta operación se realiza mediante una solicitud HTTP PATCH utilizando el identificador único (ID) de la reserva. A continuación, se presenta un ejemplo en el que se actualiza la información de una reserva por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services12_4.JPG?raw=true)
+- Actualizar reserva por su id para agregar mensajes (PUT)  
+Los usuarios desean actualizar reservas para que se envian los mensajes a traves del chat. Esta operación se realiza mediante una solicitud HTTP PUI utilizando el identificador único (ID) de la reserva. A continuación, se presenta un ejemplo en el que se actualiza la información de una reserva por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services13_4.JPG?raw=true)
+
+
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.  
   
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
