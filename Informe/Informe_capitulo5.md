@@ -751,8 +751,8 @@ Por ultimo, se agregaron los endpoints relacionados a membresias para permitir q
 |  /api/v1/memberships/          |       POST       | 201 Created: Indica que la membresia sea creado exitosamente  | [http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships](http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships) |
 
 
-Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)  
-Link del swagger desplegado: [http://cargasinestres-001-site1.ftempurl.com/swagger/index.html](http://cargasinestres-001-site1.ftempurl.com/swagger/index.html)
+Link del Repositorio de Web Services: [https://github.com/Ericcuevas03/Grupo1-Web-Backend-TF](https://github.com/Ericcuevas03/Grupo1-Web-Backend-TF)
+Link del swagger desplegado: [https://web-cargasinestres-grupo1.azurewebsites.net](https://web-cargasinestres-grupo1.azurewebsites.net/swagger/index.html)   
 
 **Capturas de interaccion con datos de prueba**  
 - Logear cliente (POST)   
