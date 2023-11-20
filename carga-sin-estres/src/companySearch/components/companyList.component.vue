@@ -46,63 +46,83 @@
 
         cargaRapidaDialog: false,
         reservation: {
-          id: null,
-          idCompany: null,
-          idClient: null,
           services: null,
           bookingDate: null,
           pickupAddress: null,
           destinationAddress: null,
           movingDate: null,
           movingTime: null,
-          status: null,
-          payment: {
-            totalAmount: null,
-            paymentMethod: null,
-          },
-          hiredCompany: {
-            name: null,
-            logo: null,
-          },
-          workers: [],
-          chat: []
-        }
+          weight: null
+        },
+        memberships: [],
         
       };
     },
+
+
     created() {
-      this.userId = this.$route.params.id;
-      this.companyService = new HttpCommonService();
-      this.companyService.getAll()
-          .then((response) => {
-            const responseData = response.data;
-            if (this.originalData.length === 0) {
-              this.originalData = [...responseData];
-            }
-            // Ordenar empresas con membresía primero
-            this.companies = responseData.sort((a, b) => {
-              if (a.tipoMembresia && !b.tipoMembresia) {
-                return -1; // a viene antes que b
-              } else if (!a.tipoMembresia && b.tipoMembresia) {
-                return 1; // b viene antes que a
+        this.userId = this.$route.params.id;
+        this.companyService = new HttpCommonService();
+
+        // se obtienen todas las membresías
+        this.getMemberships()
+
+        //listar empresas con membresias
+        this.companyService.getAll()
+            .then((response) => {
+              const responseData = response.data;
+              if (this.originalData.length === 0) {
+                this.originalData = [...responseData];
               }
-              return 0; // sin cambios en el orden
+
+              // Ordenar empresas con membresía primero  //getAllMemberships
+              console.log('Response data: ',responseData);
+              console.log("Membresías completas:", this.memberships);
+              this.company = responseData.sort((a, b) => {
+                // const aHasMembership = this.memberships.some(m => m.idCompany === a.id);
+                // const bHasMembership = this.memberships.some(m => m.idCompany === b.id);
+                // console.log("A HAS MEMBERSHIP:", aHasMembership, " Empresa:", a );
+
+                console.log("Original data:", this.originalData);
+
+                this.originalData.forEach((company) => {
+                  this.memberships.forEach((membership) => {
+                    if (company.id === membership.idCompany) {
+                      console.log('Empresa: '+ company.name + ' tiene membresía');
+                    }
+                  });
+                });
+                // if (aHasMembership && !bHasMembership) {
+                //   return -1; // a viene antes que b
+                // } else if (!aHasMembership && bHasMembership) {
+                //   return 1; // b viene antes que a
+                // }
+                // return 0; // sin cambios en el orden
+              });
+
+              console.log('Original Data:', this.originalData);
+
+              // Almacena una copia de las empresas originales sin filtros
+              this.tempCompanies = [...this.originalData];
+
+              this.companies = this.originalData;
             });
 
-            console.log('Original Data:', this.originalData);
-
-            // Almacena una copia de las empresas originales sin filtros
-            this.tempCompanies = [...this.originalData];
-          });
-
-      this.getUserDistrict();
-      this.searchByName();
-      this.searchByServices();
-      this.searchByLocation();
-      this.searchByAverageRating();
+        this.getUserDistrict();
+        this.searchByName();
+        this.searchByServices();
+        this.searchByLocation();
+        this.searchByAverageRating();
     },
 
+
     methods:{
+      getMemberships(){
+        this.memberships = this.companyService.getAllMemberships()
+            .then((response) => {
+              this.memberships = response.data;
+              console.log("memberships: ", this.memberships);});
+      },
       getUserDistrict() {
         this.companyService.getClientById(this.userId)
         .then((response) => {
@@ -140,8 +160,6 @@
         });
       },
 
-
-
       searchByName() {
         if (this.manualCompanyName.trim() === "") {
           // Si el campo de búsqueda está vacío, muestra todas las empresas originales
@@ -157,6 +175,7 @@
 
 
       },
+
       searchByServices() {
         if (this.selectedServices.length === 0) {
           this.companies = this.originalData;
@@ -192,6 +211,7 @@
           this.searchMethod = '';
         }
       },
+
       searchByAverageRating() {
         console.log('selectedAverageRating:', this.selectedAverageRating); // Imprime selectedAverageRating
 
@@ -233,23 +253,24 @@
         let randomCompany = this.companies[randCompanyIndex]; //obtiene un company a partir de un index al azar
 
         //generar nueva reserva
-        this.reservation.idCompany = randomCompany.id;
-        this.reservation.idClient = this.userId;
+        //this.reservation.idCompany = randomCompany.id;
+        //this.reservation.idClient = this.userId;
+
         this.reservation.bookingDate= formattedDate;
         this.reservation.services="Carga";
         this.reservation.pickupAddress = this.userLocation;
-        this.reservation.destinationAddress= this.userLocation;
-        this.reservation.hiredCompany.name = randomCompany.name;
-        this.reservation.hiredCompany.logo = randomCompany.photo;
-        this.reservation.status = "En curso";
-        this.reservation.payment.totalAmount = 0;
-        this.reservation.payment.paymentMethod = "Por definir";
-        this.reservation.movingDate = formattedDate;
-        this.reservation.movingTime = currentHour + ":" + currentMinute;
+        this.reservation.destinationAddress= "Por definirse";
+        //this.reservation.payment = 0;
+        this.reservation.movingDate = formattedDate; //
+        this.reservation.movingTime = currentHour + ":" + currentMinute; //
+        this.reservation.weight = 0;
+        //this.reservation.status = "Inicia proceso";
 
-        this.addReservation();
+        this.addReservation(this.userId, randomCompany.id);
         this.mostrarMensajeCargaRapidaEnProceso();
+        this.$router.push({path: `/client/${this.userId}/client-booking-history`});
       },
+
       mostrarMensajeCargaRapidaEnProceso() {
         this.$toast.add({
           severity: "info",
@@ -258,9 +279,11 @@
           life: 5000, // Duración del mensaje en milisegundos
         });
       },
-      addReservation(){
+
+      addReservation(userId, companyId){
         this.cargaSinEstres_service = new HttpCommonService();
-        this.cargaSinEstres_service.createReservation(this.reservation)
+
+        this.cargaSinEstres_service.createReservation(userId, companyId, this.reservation)
             .then((response) => {
               console.log("Reservation:");
               console.log(response.data);
