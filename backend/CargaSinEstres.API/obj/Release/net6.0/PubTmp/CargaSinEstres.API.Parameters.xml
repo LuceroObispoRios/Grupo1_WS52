@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="cargasinestres-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Usuario\\Downloads\\Damaris\ \(ZBook\)\\UPC\\6\ CICLO\\Aplicaciones\ Web\\Avance\\backend-V1-TF-WEB\\backend\\CargaSinEstres\.API\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
