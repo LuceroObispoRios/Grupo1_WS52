@@ -13,7 +13,6 @@ export default {
       direccion: '',
       email: '',
       password: '',
-      confirmarpassword: '',
       userType: 'client',
       errorMessage: '',
       apiService: new HttpCommonService(),
@@ -30,7 +29,6 @@ export default {
         direccion: this.direccion,
         email: this.email,
         password: this.password,
-        confirmarpassword: this.confirmarpassword,
       };
 
       let warnings = '';
@@ -42,8 +40,7 @@ export default {
           !formData.celular ||
           !formData.direccion ||
           !formData.email ||
-          !formData.password ||
-          !formData.confirmarpassword
+          !formData.password
       ) {
         warnings += 'Todos los campos son obligatorios. <br>';
       }
@@ -61,10 +58,6 @@ export default {
 
       if (formData.password.length < 6) {
         warnings += 'La contraseña debe tener al menos 6 caracteres <br>';
-      }
-
-      if (formData.password !== formData.confirmarpassword) {
-        warnings += 'Las contraseñcas no coinciden.<br>';
       }
 
       this.errorMessage = warnings;
@@ -92,6 +85,7 @@ export default {
           // Verifica si el registro fue exitoso (puedes ajustar la lógica según tu API)
           if (response.status === 201) {
             this.$router.push('/login');
+            console.log("Registro")
           } else {
             this.errorMessage = 'Error al registrar al cliente. Intente nuevamente.';
           }
@@ -114,7 +108,7 @@ export default {
   <div>
     <toolbarHome></toolbarHome>
   </div>
-  
+  <br><br>
   <div class="container">
     <div class="container-back">
       <div class="user-info">
@@ -160,11 +154,6 @@ export default {
                 type="password"
                 placeholder="Contraseña"
                 v-model="password"
-            />
-            <input
-                type="password"
-                placeholder="Repetir contraseña"
-                v-model="confirmarpassword"
             />
           </div>
           <button id="registrarButton" type="submit">Registrar ➜</button>
