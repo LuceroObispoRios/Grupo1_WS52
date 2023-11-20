@@ -683,6 +683,57 @@ Durante este cuarto y último sprint, en términos generales, hemos alcanzado lo
 
   
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.  
+
+
+**Introduccion:**  
+En total se realizaron 24 endpoints. Para este cuarto sprint, se han agregado 11 endpoints de ellos, los cuales han sido exitosamente logrados y documentados.
+El metodo POST de cliente se utiliza para que el usuario pueda logearse a su cuenta.
+Asmismo, los metodos POST, GET y PATCH workers se utilizan para registrar, obtener y actualizar la data del trabajador, ya que estos aparecen asignados en cada reserva, para poder visualizar que trabajador te ha atendido y dejarle un comentario sobre su trato.
+
+
+**Tabla:**  
+
+|     **Endpoint**    | **Metodo HTTP** |           **Acciones (Explicacion del response)**                                                           | **Enlace** | 
+|--------|----------|--------|-------|
+|  /api/v1/clients/sign-in       |       POST      | 201 Created: Indica que el cliente ha sido logeado exitosamente             | [http://cargasinestres-001-site1.ftempurl.com/api/v1/clients/sign-in](http://cargasinestres-001-site1.ftempurl.com/api/v1/clients/sign-in) |      
+|  /api/v1/workers/{id}          |       GET       | 200 Ok: Indica que la informacion del trabajador se ha obtenido correctamente (paramatro: id, ejemplo: 1)   | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1) |
+|  /api/v1/workers               |       POST      | 201 Created: Indica que el trabajador se ha creado exitosamente             | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers) |    
+|  /api/v1/workers/{id}          |       PATCH     | 200 Ok: Actualiza el trabajador correspondiente a un id (paramatro: id, ejemplo: 1)   | [http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/workers/1) |
+|  /api/v1/booking-history       |       GET       | 200 Ok: Indica que la informacion de todas las reservas se ha obtenido correctamente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history) |
+
+Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)  
+Link del swagger desplegado: [http://cargasinestres-001-site1.ftempurl.com/swagger/index.html](http://cargasinestres-001-site1.ftempurl.com/swagger/index.html)
+
+**Capturas de interaccion con datos de prueba**  
+- Logear cliente (POST)   
+El usuario agrega un nuevo cliente a la base de datos para registrarse. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario Lucero ha colocado todos datos necesarios para registrar su cuenta personal
+Una vez que se haya registrado el cliente, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services2_3.JPG?raw=true)   
+- Obtener lista de todos las workers (GET)   
+Los usuarios desean consultar una lista de todas las empresas registradas en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que un cliente solicita la lista de todas las empresas disponibles.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services4_3.JPG?raw=true)     
+- Obtener empresa por su id (GET)  
+Los usuarios desean consultar la información de una empresa específica en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) de la empresa. A continuación, se presenta un ejemplo en el que un cliente solicita la información de una empresa por su ID.    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services5_3.JPG?raw=true)      
+- Obtener cliente por su id (GET)
+Los usuarios desean consultar su información personal, por eso se brinda el id del cliente. Esta operación se realiza mediante una solicitud HTTP GET utilizando el identificador único (ID) del cliente. A continuación, se presenta un ejemplo en el que se solicita la información de un cliente por su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services6_3.JPG?raw=true)     
+- Obtener reseñas (GET)    
+Esta funcionalidad permite obtener reseñas asociadas a empresas. Se realiza una solicitud HTTP GET para recuperar los detalles de las reseñas de la empresa. A continuación, se presenta un ejemplo en el que se solicita información de las reseñas.   
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services7_3.JPG?raw=true)   
+- Editar empresa (PUT)   
+El usuario con cuenta de empresa edita sus datos para mantener su informacion actualizada para sus cliente.  Esta operación se realiza mediante una solicitud HTTP PUT utilizando el identificador único (ID) de la empresa. A continuación, se presenta un ejemplo en el que una empresa solicita actualizar su información brindando su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services8_3.JPG?raw=true)   
+- Editar cliente (PUT)    
+El usuario con cuenta de cliente edita sus datos para mantener su informacion actualizada.  Esta operación se realiza mediante una solicitud HTTP PUT utilizando el identificador único (ID) del cliente. A continuación, se presenta un ejemplo en el que un cliente solicita actualizar su información brindando su ID.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services9_3.JPG?raw=true)
+- Obtener lista de todos los clientes (GET)   
+Consultar una lista de todas los clientes registrados en la plataforma de búsqueda de servicios de mudanza. Esta operación se realiza mediante una solicitud HTTP GET. A continuación, se presenta un ejemplo en el que solicita la lista de todas los clientes.  
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services10_3.JPG?raw=true)
+- Logearse con cuenta de empresa (POST)  
+El usuario ingresa su email y password para logearse en la web. Esta operación se realiza mediante una solicitud HTTP POST. En este ejemplo vemos que el usuario Plata ha colocado todos los datos necesarios para logearse en su cuenta empresa
+Una vez que se haya logeado la empresa, el servidor enviará una respuesta al cliente que realizó la solicitud POST. Esta respuesta generalmente incluirá un código de estado HTTP para indicar si la operación se realizó con éxito (por ejemplo, código 201 - Creado) o si hubo algún error (por ejemplo, código 400 - Error de solicitud).    
+![services](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/services11_3.JPG?raw=true)  
   
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.  
   
