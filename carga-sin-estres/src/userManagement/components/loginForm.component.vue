@@ -53,33 +53,17 @@ export default {
       }
 
       try {
-        // Buscar en clientes
-        const clientResponse = await this.apiService.getClientsForLogin(
-            this.emailVerify,
-            this.passwordVerify,
+        const verifyUserCompany ={
+          email: this.emailVerify,
+          password: this.passwordVerify
+        };
 
-        );
+        const companyResponse = await this.apiService.getCompaniesForLogin(verifyUserCompany);
+        console.log("CompanyResponse", companyResponse);
 
-        // Buscar en empresas
-        const companyResponse = await this.apiService.getCompaniesForLogin(
-            this.emailVerify,
-            this.passwordVerify
-        );
-
-        if (clientResponse.data.length > 0) {
-          // Las credenciales son válidas para un cliente, redirigir a la página correspondiente
-          this.$router.push({
-            path: '/client/:id/client-settings',
-            name: 'client-settings',
-            params: { id: clientResponse.data[0].id },
-          });
-        } else if (companyResponse.data.length > 0) {
-          // Las credenciales son válidas para una empresa, redirigir a la página correspondiente
-          this.$router.push({
-            path: '/company/:id/company-settings',
-            name: 'company-settings',
-            params: { id: companyResponse.data[0].id },
-          });
+        if (companyResponse.data != null) {
+          console.log("ID de company: ",companyResponse.data.id );
+          this.$router.push(`/company/${companyResponse.data.id}/company-settings`);
         } else {
           this.errorMessage = 'Credenciales incorrectas. Intente nuevamente.';
         }
@@ -87,13 +71,33 @@ export default {
         console.error(error);
         this.errorMessage = 'Ocurrió un error al iniciar sesión. Intente nuevamente.';
       }
-      //aqui te lleva a la pagina de inicio
+
+      try{
+        const verifyUserClient ={
+          email: this.emailVerify,
+          password: this.passwordVerify
+        };
+
+        const clientResponse = await this.apiService.getClientsForLogin(verifyUserClient);
+        console.log("ClientResponse", clientResponse);
+
+        if(clientResponse.data != null){
+          console.log("Client Id: ", clientResponse.data.id);
+          this.$router.push(`/client/${clientResponse.data.id}/client-settings`);
+        }else{
+          this.errorMessage = 'Credenciales incorrectas. Intente nuevamente.';
+        }
+
+      } catch (error){
+        console.error(error);
+        this.errorMessage = 'Ocurrió un error al iniciar sesión. Intente nuevamente.';
+      }
+
     },
 
     cancelar() {
       this.$router.push('/home');
     }
-
   }
 };
 </script>
@@ -102,7 +106,6 @@ export default {
   <div>
     <toolbarHome></toolbarHome>
   </div>
-  
   <div class="login-form">
     <form @submit.prevent="onSubmit">
       <img src="https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Proyecto/image/Cargalogo.png?raw=true" class="logo" alt="Logo"/>
@@ -113,6 +116,8 @@ export default {
           <input
               type="email"
               v-model="loginForm.email"
+              :name="loginForm.rememberMe ? 'email' : ''"
+              :autocomplete="loginForm.rememberMe ? 'username' : ''"
               placeholder="Correo electrónico o Usuario"
               autofocus
           />
@@ -122,12 +127,17 @@ export default {
           <input
               type="password"
               v-model="loginForm.password"
+              :name="loginForm.rememberMe ? 'password' : ''"
+              :autocomplete="loginForm.rememberMe ? 'current-password' : ''"
               placeholder="Contraseña"
           />
         </div>
+        <!-- Dependiendo del navegador y configuración, Chrome puede requerir estos atributos para mostrar correos guardados. -->
 
         <div class="remember-me">
-          <label><input type="checkbox" v-model="loginForm.rememberMe" /> Recuérdame</label>
+          <label>
+            <input type="checkbox" v-model="loginForm.rememberMe" /> Mostrar correos
+          </label>
         </div>
 
         <div class="action" id="actionButtons">
