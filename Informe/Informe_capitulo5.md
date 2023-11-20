@@ -668,8 +668,8 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 | Sprint 3 Retrospective Summary | Se trabajo de manera ordenada, en la opinión del equipo creemos que pudimos haber avanzado más rapido el desarrollo del backend y front-end.  |
 | | **Sprint Goal & User Stories** |
 | Sprint & Goal | El objetivo del Sprint 4 sera terminar el backend de la applicación, asi como conectarlo con el front-end para tener asi la versión entregable de la app final. |
-| Sprint & Velocity | Debido al alcance establecido para este sprint, el Velocity establecido para este sprint es XX. |
-| Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es XX. |  
+| Sprint & Velocity | Debido al alcance establecido para este sprint, el Velocity establecido para este sprint es 35. |
+| Sum of Story Point | La suma de Story points que el equipo estara desarrollando este sprint es 35. |  
   
 #### 5.2.4.2. Sprint Backlog 4.  
 
