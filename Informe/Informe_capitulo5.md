@@ -696,6 +696,7 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
   
 #### 5.2.4.3. Development Evidence for Sprint Review.  
 
+Commits realizados durante el Sprint 4, en donde se desarrollo el backend y frontend.  
 
 <div style="text-align:center;">
     <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint4-1.png?raw=true" alt="Development Evidence" width="400">
@@ -706,7 +707,9 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 
 #### 5.2.4.4. Testing Suite Evidence for Sprint Review.  
   
+Acceptance Tests actualizados de los User Stories, archivos .feature utilizando el lenguaje Gherkin.  
 
+![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg?raw=true)  
 
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
