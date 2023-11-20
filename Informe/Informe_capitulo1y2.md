@@ -33,7 +33,7 @@ Ciclo 2023-02
   TF | 11/11/23 - 19/11/23  | Lucero Obispo      |   Se implemento los endpoints relacionados a los workers en el backend y se apoyo en la integracion del backend y frontend. Se realizo los services documentation.
   TF | 11/11/23 - 19/11/23  | Andrea O'Higgins   |   
   TF | 11/11/23 - 19/11/23  | Damaris Tasayco    |   
-  TF | 11/11/23 - 19/11/23  | Leonardo Patrocinio|   
+  TF | 11/11/23 - 19/11/23  | Leonardo Patrocinio|   Se desarrollo en el informe el sprint backlog 4 y Team Collaboration Insights during Sprint.. En el frontend, se implementó el flujo de reserva entre el cliente y la empresa. En el backend, se implemento los endpoints relacionados al booking history.
   
 ---
 1. Capitulo 1: Introducción  
