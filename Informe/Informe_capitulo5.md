@@ -1289,11 +1289,11 @@ Screenshoot:
   
 # Conclusiones
 
-- Durante el segundo sprint, hemos implementado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Hemos empleado elementos como tarjetas, tablas, paneles y formularios en Vue.js para crear una página web dinámica. Además, hemos utilizado los verbos HTTP GET y POST para obtener información específica de empresas y realizar reservas, respectivamente. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida y eficiente. 
+- Nuestro flujo principal se ha logrado implementar porque se ha agregado componentes de búsqueda de empresas e información de empresa en nuestra plataforma, lo que permitirá a nuestros usuarios encontrar y contactar rápidamente empresas de mudanza y carga para realizar reservas de servicios. Una vez se haya rellenado el formulario de reserva de un servicio de mudanza, este se crea en el historial de reservas. En este historial, se puede visualizar y actualizar el estado de la reserva, pues esta varia, ya que puede tener el estado Inciar proceso, Cancelar, Programar, Reprogramar y Finalizar. Esta implementación mejorará significativamente la experiencia de nuestros usuarios al hacer que la búsqueda de empresas y reserva de sus servicios sea más rápida, eficiente y segura. 
 
 - El desarrollo colaborativo en los sprints 1, 2, 3 y 4 fue fundamental para poder integrar las distintas partes de nuestro proyecto, realizadas por cada uno de los integrantes, garantizando así que éste funcionara de manera óptima. Además, durante este proceso, verificamos con atención que cumpliera con las características definidas en nuestras historias de usuario y se ajustara a los diseños de los wireframes y mockups previamente establecidos, asi como se agrego caracteristicas en la pagina como solucion de los problemas detectados de las evaluaciones heuristicas realizados por nuestros 2 segmentos objetivos.
 
-- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito tres sprints, con el cuarto sprint representando nuestra última entrega. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript para la parte frontend,  con el objetivo de desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios. En la parte backend, se implemtarios los servicios relacionados a crear, obtener información y actualizar las clases relacionadas a clientes, reseñas, empresas, membresias.
+- Concluyendo nuestra integración de equipo en el proyecto "Carga sin Estrés" de la startup de mudanzas, hemos completado con éxito cuatro sprints, con el cuarto sprint representando nuestra última entrega. Durante este período, utilizamos herramientas como WebStorm y lenguajes como Vue.js y JavaScript para la parte frontend,  con el objetivo de desarrollar componentes clave que mejoran la experiencia de nuestros usuarios al buscar empresas de mudanza y realizar reservas de servicios, el cual seria nuestro flujo principal. En la parte backend, se implementaron los servicios, controllers, modelos, etc. relacionados a crear, obtener información y actualizar las clases relacionadas a clientes, reseñas, empresas, trabajadores, membresias y reservas. Asimismo, se agrego security al backend para proteger la informacion de nuestros usuarios, asimismo se agrego el testing para comprobar que el backend cumpla con los escenarios previstos en las historias de usuario.
 
 
 ## Video About-the-Team
@@ -1316,7 +1316,7 @@ Testimonios:
 
 
 # Bibliografia  
---
+ 
 Cucumber. (s.f.). Gherkin Reference. Recuperado de: https://cucumber.io/docs/gherkin/reference/ [Fecha de consulta: 04 de septiembre de 2023]  
 
 El comercio. (s.f.). Diario Gestion. Los agentes especializados para mudarte a otro espacio.  
