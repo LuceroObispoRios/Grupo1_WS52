@@ -14,26 +14,13 @@ export default {
       dateCard: null,
       loadQuantity: null,
       reservation:{
-        id: null,
-        idCompany: null,
-        idClient: null,
         services: null,
         bookingDate: null,
         pickupAddress: null,
         destinationAddress: null,
         movingDate: null,
         movingTime: null,
-        status: null,
-        payment: {
-          totalAmount: null,
-          paymentMethod: null,
-        },
-        hiredCompany: {
-          name: null,
-          logo: null,
-        },
-        workers: [],
-        chat: []
+        weight: null
       },
       cargaSinEstres_service: null,
       ReviewService: null,
@@ -44,19 +31,30 @@ export default {
   },
   created() {
     const companyData = this.$route.query.companyData;
+
+    console.log("Company data detail:", companyData);
     // Obtiene el id del usuario
+
+
     this.userId = this.$route.params.id;
     console.log('User id:', this.userId);
-    if (companyData) {
-      this.company = JSON.parse(companyData);
-    }
+
     const routeParts = this.$route.path.split('/');
     this.userType = routeParts[1];
     console.log('User type:', this.userType);
 
+
+
+    if (companyData) {
+      this.company = JSON.parse(companyData);
+    }
+
     this.fetchReviews(); // Llama al método fetchReviews cuando se crea el componente
+
+
   },
   methods:{
+
     submitForm(){
       this.errorMessage = '';
       let warnings = '';
@@ -88,6 +86,10 @@ export default {
         warnings += 'La hora de movimiento debe tener el formato HH:MM.<br>';
       }
 
+      if (this.reservation.weight < 0){
+        warnings += 'El peso debe ser positivo';
+      }
+
       if (this.cardNumber.length < 16) {
         warnings += 'Número de tarjeta no válido, debe tener 16 dígitos <br>';
       }
@@ -108,25 +110,17 @@ export default {
         this.addReservation();
       }
     },
+
     addReservation() {
       // Asigna valores a las propiedades del objeto reservation
-      this.reservation.idCompany = this.company.id;
-      this.reservation.hiredCompany.name = this.company.name;
-      this.reservation.hiredCompany.logo = this.company.photo;
-      this.reservation.status = "En curso";
-      this.reservation.payment.totalAmount = 0;
-      this.reservation.payment.paymentMethod = "Por definir";
-      this.reservation.idClient=this.userId;
-
-
       this.cargaSinEstres_service = new HttpCommonService();
-      this.cargaSinEstres_service.createReservation(this.reservation)
+      this.cargaSinEstres_service.createReservation(this.userId, this.company.id ,this.reservation)
           .then((response) => {
             console.log("Reservation:");
             console.log(response.data);
             this.$data.reservation = response.data;
 
-            if(this.userType =='company'){
+            if(this.userType ==='company'){
               this.$router.push({
                 path: `/company/${this.userId}/company-booking-history`,
                 name:'company-booking-history',
@@ -140,20 +134,24 @@ export default {
             }
           });
     },
+
     async fetchReviews() { // Crea un nuevo método para obtener las reseñas
-      try {
-        this.ReviewService = new HttpCommonService();
-        const response = await this.ReviewService.getReviews();
-        this.reviews = response.data.filter(review => review.companyId === this.company.id);
-        // Calcula la calificación promedio
-        const totalRating = this.reviews.reduce((total, review) => total + review.rating, 0);
-        const averageRating = Math.round(totalRating / this.reviews.length);
-        this.averageRating = averageRating;
-        // Actualiza la calificación promedio en la base de datos
-        await this.ReviewService.updateCompany(this.company.id, { averageRating });
-      } catch (error) {
-        console.error(error);
-      }
+      this.ReviewService = new HttpCommonService();
+      console.log("ID for reviews", this.company.id);
+      this.ReviewService.getById(this.company.id)
+          .then((response) => {
+            const responseData = response.data;
+            console.log("Reviews: ", response.data.reviews);
+
+            this.company.reviews = response.data.reviews;
+            let TotalRating  = 0;
+            this.company.reviews.forEach((review)=>{
+              TotalRating += review.rating;
+            });
+            console.log("Total Rating: ", TotalRating); //8
+            this.company.averageRating = TotalRating/this.company.reviews.length;
+            console.log("Average Rating: ", this.company.averageRating);
+          });
     },
   }
 };
@@ -219,8 +217,8 @@ export default {
         <input type="text" v-model="reservation.bookingDate" id="bookingDate"  required placeholder="Ex. 2023-10-17"><br>
         <label for="services">Servicios:</label><br>
         <input type="text" v-model="reservation.services" id="services"  required placeholder="Ex. Carga"><br>
-        <label for="loadQuantity">Cantidad de carga:</label><br>
-        <input type="text" v-model="loadQuantity" id="loadQuantity"  required placeholder="Ex. 100kg"><br>
+        <label for="weight">Cantidad de carga:</label><br>
+        <input type="text" v-model="reservation.weight" id="weight"  required placeholder="Ex. 100kg"><br>
         <label for="pickupAddress">Direccion de entrega:</label><br>
         <input type="text" v-model="reservation.pickupAddress" id="pickupAddress" required placeholder="Ex. Monterrico"><br>
         <label for="destinationAddress">Direccion de destino:</label><br>
@@ -252,19 +250,19 @@ export default {
         <div class="average-rating">
           <h2>Calificación general</h2>
           <div class="rating-container"> <!-- Agrega este div -->
-            <Rating v-model="averageRating" :cancel="false" readonly />
+            <Rating v-model="company.averageRating" :cancel="false" readonly />
           </div>
           <div class="company-logo-container">
             <img :src="company.photo" alt="logo de empresa" class="company-logo">
           </div>
         </div>
 
-        <div v-for="review in reviews" :key="review.id" class="review">
+        <div v-for="review in company.reviews" :key="review.id" class="review">
 
           <Rating v-model="review.rating" :cancel="false" readonly />
           <p>{{ review.comment }}</p>
         </div>
-        <div  v-if="reviews.length === 0" class="review">
+        <div  v-if="company.reviews.length === 0" class="review">
           <p>Actualmente, no hay reseñas disponibles para esta empresa. Sé el primero en compartir tu experiencia.</p>
         </div>
       </pv-panel>
