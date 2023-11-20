@@ -109,7 +109,15 @@ export default {
       // Crear un objeto temporal solo con el campo 'tipoMembresia'
       const tipoMembresiaData = { tipoMembresia: this.formData.tipoMembresia };
       // Combinar el objeto 'company' original con el objeto temporal
-      const updatedCompanyData = Object.assign({}, this.company, tipoMembresiaData);
+      //const updatedCompanyData = Object.assign({}, this.company, tipoMembresiaData);
+      const updatedCompanyData = {
+        nombreEmpresa: this.nombreEmpresa,
+        ruc: this.ruc,
+        direction: this.direction,
+        tipoMembresia: this.formData.tipoMembresia,
+        tipoTarjeta: this.tipoTarjeta,
+        idCompany: this.id,
+      };
       this.saveUpdatedCompanyToServer(updatedCompanyData);
     },
 
@@ -118,7 +126,8 @@ export default {
       try {
         console.log("id a actualizar: ", this.company.id )
         console.log("company data: ", updatedCompanyData)
-        const response = await this.apiService.updateCompany(this.company.id, updatedCompanyData);
+        //const response = await this.apiService.updateCompany(this.company.id, updatedCompanyData);
+        const response = await this.apiService.createMembership(updatedCompanyData);
 
         if (response.status === 200) {
           this.$router.push({
