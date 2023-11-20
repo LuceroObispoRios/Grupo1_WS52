@@ -711,7 +711,7 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 
 ![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg?raw=true)  
 
-![testing evidence feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/testing-evidence.png?raw=true)  
+![testing evidence feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/testing-evidence.png?raw=true)  
 
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
