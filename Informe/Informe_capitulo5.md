@@ -701,9 +701,15 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
 Durante este cuarto y último sprint, en términos generales, hemos llegado a completar el flujo principal de nuestra aplicación web, que en este caso sería los "status" de una reserva hecha por el cliente al reservar un servicio.
+##### Clients
 
 ![status1](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/status1.jpg?raw=true) 
 ![status2](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/status%202.jpg?raw=true)
+
+##### Company
+
+![status1company](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/status1company.jpg?raw=true) 
+![status2company](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/status2company.jpg?raw=true)
   
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.  
   
