@@ -1340,3 +1340,4 @@ Vue (s.f.). Style Guide. Recuperado de: https://v2.vuejs.org/v2/style-guide/?red
 - TB1: [https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing ](https://drive.google.com/file/d/1lO7UTil6yBAc6I66j3eNU4A7-WtB1I02/view?usp=sharing)
 - TP: [https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing](https://drive.google.com/file/d/1ihPO069d1qt9DKH7sA-3yrXFCCbRZrZh/view?usp=sharing)
 - TB2: [https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing](https://drive.google.com/file/d/1a0y40cqPT7dWqhiZplSOioaRrhOQbErA/view?usp=sharing)
+- TF: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EaFBxJ1fZRNNlRHtT5DAdukBxYWuY0HacrTvipJlEUBP-Q?e=9mzIuP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111465_upc_edu_pe/EaFBxJ1fZRNNlRHtT5DAdukBxYWuY0HacrTvipJlEUBP-Q?e=9mzIuP)
