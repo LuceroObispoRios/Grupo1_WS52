@@ -31,7 +31,7 @@ Ciclo 2023-02
   TB2 | 29/09/23 - 02/11/23  | Leonardo Patrocinio| Se desarrollo en el informe el sprint backlog 3 y 6 problemas de evaluacion de heuristicas. En el frontend, se implementó realizar reseñas en el historial de reservas, visualizar reseñas en la informaación de la empresa y filtro de la empresa según su calificación promedio. En el backend, se apoyo con la estructura base del proyecto y un avance del historial de reserva.
   TF | 11/11/23 - 19/11/23  | Eric Cuevas        |   Se implementaron nuevos endpoints para la integración del backend y el frontend, y se actualizaron varios aspectos de ambos. Se realizo el sprint planning y deplloyment evidence del sprint 4. 
   TF | 11/11/23 - 19/11/23  | Lucero Obispo      |   Se implemento los endpoints relacionados a los workers en el backend y se apoyo en la integracion del backend y frontend. Se realizo los services documentation.
-  TF | 11/11/23 - 19/11/23  | Andrea O'Higgins   |   
+  TF | 11/11/23 - 19/11/23  | Andrea O'Higgins   |   Se desarrollo la integracion del backend y frontend. En el informe se añadió las historias de usuario, el development y testing evidence del sprint 4. 
   TF | 11/11/23 - 19/11/23  | Damaris Tasayco    |   
   TF | 11/11/23 - 19/11/23  | Leonardo Patrocinio|   Se desarrollo en el informe el sprint backlog 4 y Team Collaboration Insights during Sprint.. En el frontend, se implementó el flujo de reserva entre el cliente y la empresa. En el backend, se implemento los endpoints relacionados al booking history.
   
