@@ -407,6 +407,60 @@ DADO QUE, el usuario está viendo la lista de empresas. CUANDO, selecciona la op
         </td>
         <td>#3</td>
     </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Editar detalles reserva</td>
+        <td>Como usuario empresa, después de coordinar los detalles de la mudanza con el cliente, quiero tener la capacidad de editar la información de la reserva para reflejar cambios en los costos y fechas acordadas.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> El usuario visualiza la edición de la reserva
+DADO QUE, el usuario tenga una reserva con estado ‘Iniciar proceso’, Y se dirija en la sección de ‘Historial de reservas’  CUANDO seleccione el botón de ‘Editar detalles reserva” ENTONCES, se visualizará un dialogo para ingresar la fecha de mudanza, hora actual, el monto del pago total y botones Enviar y ‘Cancelar’.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario edita la reserva
+DADO QUE, el usuario se encuentre visualizando el dialogo de  edición de reserva, CUANDO ingrese la fecha de mudanza, el pago total y seleccione el botón de ‘Enviar’, ENTONCES se visualizará el cambio en la reserva.
+                </li>
+                <li><strong>Escenario 3:</strong> El usuario reprograma la reserva
+DADO QUE, el usuario se encuentre en la sección de “Historial de Reservas” y posea una reserva con estado “Programada”, CUANDO seleccione el botón de ‘Reprogramar reserva’ Y llene los campos de fecha, hora y monto con los datos a editar, Y selecciona el botón ‘Enviar’ ENTONCES se guardarán los cambios en la reserva.
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Confirmar la reserva</td>
+        <td>Como usuario cliente, después de coordinar los detalles de la mudanza con la empresa, quiero poder ver los cambios de la reserva para asegurarme de que la información sea la acordada.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> El usuario visualiza la edición de la reserva
+DADO QUE, el usuario tenga una reserva con estado ‘Iniciar proceso’, Y se encuentre en la sección de ‘Historial de reservas’  CUANDO seleccione el botón de “Ver cambios en la reserva” ENTONCES, se visualizará un diálogo la fecha de mudanza, hora, el monto del pago total y botones Confirmar y Rechazar.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario confirma la reserva
+DADO QUE, el usuario se encuentre visualizando el dialogo de  edición de reserva, CUANDO seleccione el botón enviar ENTONCES se cambiará el estado de la reserva a ‘Programada’.
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
+    <tr>
+        <td>Reserva de Servicios</td>
+        <td>Finalizar reserva</td>
+        <td>Como usuario empresa, después de completar el servicio, quiero poder finalizar la reserva para cerrar oficialmente el proceso y cambiar el estado de la reserva.
+        </td>
+        <td>
+            <ul>
+                <li><strong>Escenario 1:</strong> El usuario visualiza la finalización de la reserva
+DADO QUE, el usuario tenga una reserva con estado ‘Programada’, Y se encuentre en la sección de ‘Historial de reservas’  CUANDO seleccione el botón de ‘Finalizar reserva” ENTONCES, se visualizará el cambio de estado de la reserva a “Finalizado”.
+                </li>
+                <li><strong>Escenario 2:</strong> El usuario visualiza la finalización de la reserva con éxito
+DADO QUE, el usuario tenga una reserva con estado 'Programada' y se encuentre en la sección de 'Historial de Reservas', CUANDO el usuario seleccione el botón 'Finalizar reserva' después de haber completado el servicio de mudanza, ENTONCES se mostrará un mensaje de confirmación que indica se ha finalizado con éxito.
+                </li>
+            </ul>
+        </td>
+        <td>#4</td>
+    </tr>
 </table>
 
 
