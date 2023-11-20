@@ -799,6 +799,14 @@ Los usuarios desean actualizar reservas para que se envian los mensajes a traves
 
 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.  
+
+La aplicación frontend desplegada se encuentra en el siguiente enlace  
+[https://cargasinestres-vue-tb2.web.app](https://cargasinestres-vue-tb2.web.app),  
+  
+Asu vez, tambien se ha desplegado el backend por medio de azure  
+[https://web-cargasinestres-grupo1.azurewebsites.net](https://web-cargasinestres-grupo1.azurewebsites.net)  
+El cual utiliza una base de datos desplegada en railway, y cuyo repositorio desde el que se toman los archivos de despliege es el siguiente :  
+[Repositorio de despliegue backend - Carga Sin Estres](https://github.com/Ericcuevas03/Grupo1-Web-Backend-TF)  
   
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 Durante este sprint, nuestro equipo se centró en completar el backend de la aplicación e integrarlo con el frontend para lograr una versión entregable de la aplicación final. Para garantizar un proceso de colaboración fluido, continuamos utilizando Gitflow, un modelo de ramificación que facilita el control eficiente de versiones y la colaboración en GitHub.
