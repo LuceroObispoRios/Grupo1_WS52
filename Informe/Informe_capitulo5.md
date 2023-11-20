@@ -711,6 +711,8 @@ Acceptance Tests actualizados de los User Stories, archivos .feature utilizando 
 
 ![feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/US15.jpg?raw=true)  
 
+![testing evidence feature 15](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/Damaris/feature/Informe/Imagenes/testing-evidence.png?raw=true)  
+
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
 Durante este cuarto y último sprint, en términos generales, hemos llegado a completar el flujo principal de nuestra aplicación web, que en este caso sería los "status" de una reserva hecha por el cliente al reservar un servicio.
