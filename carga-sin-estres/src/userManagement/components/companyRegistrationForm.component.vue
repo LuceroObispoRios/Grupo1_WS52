@@ -12,7 +12,7 @@ export default {
       direccion: '',
       numeroContacto: '',
       password: '',
-      confirmarpassword: '',
+      confirmarPassword: '',
       userType: 'company',
       photo: '',
       transporte: false,
@@ -34,7 +34,7 @@ export default {
         direccion: this.direccion,
         numeroContacto: this.numeroContacto,
         password: this.password,
-        confirmarpassword: this.confirmarpassword,
+        confirmarPassword: this.confirmarPassword,
         photo: this.photo,
         transporte: this.transporte,
         carga: this.carga,
@@ -66,7 +66,7 @@ export default {
         warnings += 'La contraseña debe tener al menos 6 caracteres <br>';
       }
 
-      if (formData.password !== formData.confirmarpassword) {
+      if (formData.password !== formData.confirmarPassword) {
         warnings += 'Las contraseñas no coinciden <br>';
       }
 
@@ -92,7 +92,7 @@ export default {
           direccion: this.direccion,
           numeroContacto: this.numeroContacto,
           password: this.password,
-          confirmarpassword: this.confirmarpassword,
+          confirmarPassword: this.confirmarPassword,
           photo: this.photo,
           transporte: this.transporte,
           carga: this.carga,
@@ -111,6 +111,7 @@ export default {
           if (response.status === 201) {
             // Registro exitoso, puedes redirigir al usuario a inicio de sesión
             this.$router.push('/login');
+            console.log("")
           } else {
             this.errorMessage = 'Error al registrar la empresa. Intente nuevamente.';
           }
@@ -159,7 +160,7 @@ export default {
             <input type="password" placeholder="Contraseña" v-model="password" id="password" />
 
             <label for="confirmarpassword">Confirmar contraseña:</label><br>
-            <input type="password" placeholder="Confirmar contraseña" v-model="confirmarpassword" id="confirmarpassword" />
+            <input type="password" placeholder="Confirmar contraseña" v-model="confirmarPassword" id="confirmarPassword" />
 
             <label for="photo">Link al logo de la empresa como imagen:</label><br>
             <input type="text" placeholder="Link a la imagen" v-model="photo" id="photo" /><!--campo imagen logo de empresa--y pasarla a lo demás-->
