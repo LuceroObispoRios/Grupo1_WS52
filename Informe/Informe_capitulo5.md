@@ -727,6 +727,9 @@ Asmismo, los metodos POST, GET y PATCH workers se utilizan para registrar, obten
 |  /api/v1/booking-history/idclient/{clientId}  |    GET   | 200 Ok: Obtiene la informacion de la reserva segun id cliente | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idclient/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idclient/1) |
 |  /api/v1/booking-history/idcompany/{companyId}|   GET    | 200 Ok: Obtiene la informacion de la reserva segun id company | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idcompany/1](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/idcompany/1) |
 |  /api/v1/booking-history/{id}/messages  |    PUT    | 200 Ok: Actualiza la informacion de una reserva segun id | [http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1/messages](http://cargasinestres-001-site1.ftempurl.com/api/v1/booking-history/1/messages) |
+|  /api/v1/memberships/          |       GET       | 200 Ok: Obtiene la informacion de las membresias  | [http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships](http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships) |
+|  /api/v1/memberships/          |       POST       | 201 Created: Indica que la membresia sea creado exitosamente  | [http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships](http://cargasinestres-001-site1.ftempurl.com/api/v1/memberships) |
+
 
 Link del Repositorio de Web Services: [https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend](https://github.com/LuceroObispoRios/Grupo1_WS52/tree/main/backend)  
 Link del swagger desplegado: [http://cargasinestres-001-site1.ftempurl.com/swagger/index.html](http://cargasinestres-001-site1.ftempurl.com/swagger/index.html)
