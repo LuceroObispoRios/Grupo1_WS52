@@ -695,9 +695,19 @@ En adicion a ello, se tiene que tener en cuenta que en este sprint se ha agregad
 |                      |                          |     WI16                  |     Cancelar reserva                                                 |     Desarrollado en el backend e integrándose con el frontend para la implementación completa de la funcionalidad.   |     2h            |     Andrea O’Higgins    |     Completado       |
   
 #### 5.2.4.3. Development Evidence for Sprint Review.  
-  
+
+
+<div style="text-align:center;">
+    <img src="https://github.com/LuceroObispoRios/Grupo1_SW53/blob/main/Informe/Imagenes/development-evidence-sprint4-1.png?raw=true" alt="Development Evidence" width="400">
+</div>  
+
+
+
+
 #### 5.2.4.4. Testing Suite Evidence for Sprint Review.  
   
+
+
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 
 Durante este cuarto y último sprint, en términos generales, hemos llegado a completar el flujo principal de nuestra aplicación web, que en este caso sería los "status" de una reserva hecha por el cliente al reservar un servicio.
