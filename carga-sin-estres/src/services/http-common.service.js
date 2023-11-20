@@ -1,77 +1,87 @@
 import http from '../shared/services/http-common';
 
 export class HttpCommonService{
+
+    // company controller
+    createCompany(data){
+        return http.post('/companies/sign-up', data);
+    }
+    getCompaniesForLogin(data){  // authenticate request - sign in - fue cambiado de get -> post
+        return http.post( `/companies/sign-in`,data);
+    }
     getAll() {
         return http.get('/companies');
     }
-    getById(id) {
-        return http.get(`/companies/${id}`);
+    getById(workerId) {
+        return http.get(`/companies/${workerId}`);
     }
-    // booking history
-    getWorkersById(id){
-        return http.get(`/workers?id=${id}`);
-    }
-
-    updateWorkerComment(id, data) {
-        return http.patch(`/workers/${id}`, data);
-    }
-
-    getAllBookings() {
-        return http.get('/bookingHistory');
-    }
-    getBookingsByClient(id) {
-        return http.get(`/bookingHistory?idClient=${id}`);
-    }
-    getBookingsByCompany(id) {
-        return http.get(`/bookingHistory?idCompany=${id}`);
-    }
-    updateBooking(id, data) {
-        return http.put(`/bookingHistory/${id}`, data);
-    }
-
-    getClientsForLogin(email, password){
-        return http.get( `/clients?email=${email}&password=${password}`);
-    }
-    getCompaniesForLogin(email, password){
-        return http.get( `/companies?email=${email}&password=${password}`);
-    }
-
-    createReservation(data) {
-        return http.post('/bookingHistory', data);
-    }
-
-    createClient(data){
-        return http.post('/clients', data);
-    }
-
-    createCompany(data){
-        return http.post('/companies', data);
-    }
-
-    updateClient(id, data) {
-        return http.patch(`/clients/${id}`, data);
-    }
-
     updateCompany(id, data) {
         return http.patch(`/companies/${id}`, data);
     }
 
-    delete(id) {
-        return http.delete(`/companies/${id}`);
+    // client controller
+    createClient(data){
+        return http.post('/clients/sign-up', data);
     }
-    findByTitle(title) {
-        return http.get(`/companies?title=${title}`);
+    getClientsForLogin(data){  // authenticate request - sign in - fue cambiado de get -> post
+        return http.post( `/clients/sign-in`,data);
     }
+    // get all clients
     getClientById(id) {
         return http.get(`/clients/${id}`);
     }
-    addReview(companyId, review) {
+    updateClient(id, data) {
+        return http.patch(`/clients/${id}`, data);
+    }
 
-        review.companyId = companyId;
-        return http.post(`/reviews`, review);
+    // workers controller
+    // falta create workers
+    getWorkerById(id){
+        return http.get(`/workers/${id}`);
+    }
+
+    updateWorkerComment(id, data) {
+        return http.patch(`/workers/${id}/comments`, data);
+    }
+
+
+    // booking history controller
+    createReservation(clientId, companyId, data) {
+        console.log(clientId)
+        return http.post(`/booking-history?clientId=${clientId}&companyId=${companyId}`, data);
+    }
+    getAllBookings() {
+        return http.get('/booking-history');
+    }
+    getBookingsByClient(id) {
+        return http.get(`/booking-history/idClient/${id}`);
+    }
+    getBookingsByCompany(id) {
+        return http.get(`/booking-history/idCompany/${id}`);
+    }
+    updateBooking(id, data) {
+        return http.patch(`/booking-history/${id}`, data);
+    }
+
+    //chat
+    createMessage(id, data){
+        return http.put(`/booking-history/${id}/messages`, data);
+    }
+    // reviews controller
+    addReview(companyId,review) {
+        return http.post(`/reviews?companyId=${companyId}`, review);
     }
     getReviews() {
         return http.get('/reviews')
+    }
+
+    //membership
+    createMembership(data){
+        return http.post('/memberships', data);
+    }
+
+    getAllMemberships(){
+        return http.get('/memberships');
     }
 
 }
