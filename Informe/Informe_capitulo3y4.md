@@ -679,22 +679,22 @@ En el diagrama de contexto se observa la relación de tipos de usuarios que inte
 
 En el diagrama de contenedores se observa la relación de los componentes dentro de nuestra aplicación, como el landing page, la aplicación web, los contextos, la base de datos y el API REST.  
 
-![Container Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Contenedor.png?raw=true)  
+![Container Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Contenedor-v2.png?raw=true)  
 
 ### 4.6.3. Software Architecture Components Diagrams.  
 
 Los componentes de nuestra aplicación se dividen en 3 contextos, y los patrones utilizados son los siguientes:  
 El patrón **Repository** utilizado para separar la capa de acceso a datos de la capa de la lógica de negocio. Además, ayuda a decidir si debe recuperar datos de una red o usar resultados almacenados en caché de una base de datos local, lo que mejora la gestión de datos y la eficiencia de la aplicación.  
-El patrón **Gateway** utilizado para actuar como un intermediario entre nuestra aplicación y un sistema de pago externo Niubiz. Este enfoque nos proporciona una capa de abstracción que simplifica la comunicación y gestión de pagos, al tiempo que garantiza la seguridad y la flexibilidad en nuestras transacciones financieras.   
+ 
 
-**Service Context**  
-![Service Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/ServiceComponents.png?raw=true)  
+**Business Context**  
+![Business Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Service%20Components-v2.png?raw=true)  
 
-**Account Context**
-![Account Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AccountComponents.png?raw=true)  
+**User Management Context**
+![User Management Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/AccountComponents.png?raw=true)  
 
-**Notification Context**
-![Notification Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/NotificationComponents.png?raw=true)  
+**Security Context**
+![Security Component Diagram](https://github.com/LuceroObispoRios/Grupo1_WS52/blob/main/Informe/Imagenes/Security%20Components-v2.png?raw=true)  
 
 ## 4.7. Software Object-Oriented Design.  
 
